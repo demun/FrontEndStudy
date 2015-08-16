@@ -9,13 +9,13 @@
 
 
 ## 목차
-* msysgit 설치
-* github 회원가입
-* ssh-keygen 등록
-* 저장소 만들기
-* 로컬저장소와 동기화 시키기
-* add, commit, pull, push
-* 프로젝트로 참여하기
+* 01_msysgit 설치
+* 02_github 회원가입
+* 03_ssh-keygen 등록
+* 04_저장소 만들기
+* 05_로컬저장소와 동기화 시키기
+* 06_add, commit, pull, push
+* 07_프로젝트로 참여하기
 
 
 
