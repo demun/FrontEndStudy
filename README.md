@@ -3,7 +3,7 @@
 
 
 ### 참여인원
-@demun
+@demun @skypentum @JaYoungKim @wookchu @pearl0702 @baekmy @liberty914 @hcjfrom @jonghyun2040 @hooneui @onyourmark1219 @BaeSuHyang
 
 
 
