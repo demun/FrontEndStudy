@@ -13,6 +13,6 @@
 * [02-github-회원가입](docs/02-github-회원가입.md)
 * [03-ssh-keygen-등록](docs/03-ssh-keygen-등록.md)
 * [04-저장소-만들기](docs/04-저장소-만들기.md)
-* [05-로컬저장소-원격저장소-동기화시키기](docs/05-로컬저장소와-원격저장소-동기화시키기.md)
+* [05-순환구조](docs/05-순환구조.md)
 * [06-add-commit-pull-push](docs/06-add-commit-pull-push.md)
-* [07-프로젝트로-참여하기](docs/07-프로젝트로-참여하기.md)
+* [07-협업하기](docs/07-협업하기.md)
