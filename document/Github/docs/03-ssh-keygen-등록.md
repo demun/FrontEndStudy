@@ -44,5 +44,6 @@ glt을 먼저 설치하길 권장합니다.
 * [05-순환구조](05-순환구조.md)
 * [06-add-commit-pull-push](06-add-commit-pull-push.md)
 * [07-협업하기](07-협업하기.md)
+* [08-git-명령어](08-git-명령어.md)
 
 ----

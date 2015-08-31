@@ -16,3 +16,4 @@
 * [05-순환구조](docs/05-순환구조.md)
 * [06-add-commit-pull-push](docs/06-add-commit-pull-push.md)
 * [07-협업하기](docs/07-협업하기.md)
+* [08-git-명령어](docs/08-git-명령어.md)
