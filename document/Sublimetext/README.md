@@ -20,6 +20,3 @@
     - [Writing-on-Github](docs/103_Writing-on-Github.md)
     - [Mastering-Markdown](docs/104_Mastering-Markdown.md)
 
-
-
-
