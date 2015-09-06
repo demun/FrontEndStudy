@@ -1,5 +1,10 @@
 # 09-GitHub-for-Windows
 
+### GitHub for Windows 에 GitHub 연결하기
+
+깃허브에 로그인하는 이름과 이메일을 입력하면 된다.
+
+
 [GitHub for Windows](https://desktop.github.com/) 는 윈도우용 깃허브입니다. 이번에 업데이트가 되면서 이름도 변경되고 외모도 변했습니다.
 
 일일이 명령어를 입력하지 않아도 손쉽게 사용할 수 있으며 윈도우7이상에서 이용이 가능합니다.

@@ -71,6 +71,19 @@ master 는 브렌치의 이름이다.
 git push
 ```
 
+
+## 한글깨지문제 해결
+
+C:\Users\사용자이름
+
+폴더에 .bashrc 파일명
+
+```sh
+alias ls='ls -ph --show-control-chars'
+alias lsa='ls -al --color=auto --show-control-chars'
+```
+
+
 ----
 
 * [Github 목록으로 돌아가기](../README.md)
