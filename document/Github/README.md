@@ -4,7 +4,7 @@
 
 
 ### 참여인원
-
+@demun
 
 
 
@@ -18,4 +18,9 @@
 * [07-협업하기](docs/07-협업하기.md)
 * [08-git-명령어](docs/08-git-명령어.md)
 * [09-GitHub-for-Windows](docs/09-GitHub-for-Windows.md)
+
+----
+
+* [Pro Git 한글](http://git-scm.com/book/ko/v2)
+* [누구나 쉽게 이해할 수 있는 Git 입문](http://backlogtool.com/git-guide/kr/)
 
