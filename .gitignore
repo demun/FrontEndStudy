@@ -1,2 +1,23 @@
-.sass-cache
-*.css.map
+# Ignore docs files
+.ruby-version
+
+# Numerous always-ignore extensions
+*.diff
+*.log
+*.vi
+*~
+
+# OS or Editor folders
+Thumbs.db
+.cache
+*.sublime-project
+*.sublime-workspace
+
+
+# grunt-html-validation
+validation-status.json
+validation-report.json
+
+# Folders to ignore
+node_modules
+bower_components
