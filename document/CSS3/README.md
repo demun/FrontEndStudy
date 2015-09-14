@@ -8,12 +8,15 @@ css3 레퍼런스 참조 사이트
 ## 문서 작성 방법
 
 작성자 : 김동일
+
 작성일 : 2015-09-02 17:29
+
 css 레퍼런스 설명: 
  - color : 텍스트에 색상을 입힌다.
  - text-align : 텍스트의 위치를 정렬한다.
+
 sample code : 
-'''sh
+```sh
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,6 +32,8 @@ p {
 
 </body>
 </html>
-'''
+```
+
 결과 
+
 ![git bash](../images/sample.jpg)
