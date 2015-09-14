@@ -1,19 +1,19 @@
 # CSS3
 
-## css3 ·¹ÆÛ·±½º ÀÛ¼º ¹æ¹ı
+## css3 ë ˆí¼ëŸ°ìŠ¤ ì‘ì„± ë°©ë²•
 
-### css3 ·¹ÆÛ·±½º ÂüÁ¶ »çÀÌÆ®
+### css3 ë ˆí¼ëŸ°ìŠ¤ ì°¸ì¡° ì‚¬ì´íŠ¸
 * [CSS3 Browser Support Reference](http://www.w3schools.com/cssref/css3_browsersupport.asp)
 
-### ¹®¼­ ÀÛ¼º ¹æ¹ı
+### ë¬¸ì„œ ì‘ì„± ë°©ë²•
 
-ÀÛ¼ºÀÚ : ±èµ¿ÀÏ
+ì‘ì„±ì : ê¹€ë™ì¼
 
-ÀÛ¼ºÀÏ : 2015-09-02 17:29
+ì‘ì„±ì¼ : 2015-09-02 17:29
 
-css ·¹ÆÛ·±½º ¼³¸í: 
- - color : ÅØ½ºÆ®¿¡ »ö»óÀ» ÀÔÈù´Ù.
- - text-align : ÅØ½ºÆ®ÀÇ À§Ä¡¸¦ Á¤·ÄÇÑ´Ù.
+css ë ˆí¼ëŸ°ìŠ¤ ì„¤ëª…: 
+ - color : í…ìŠ¤íŠ¸ì— ìƒ‰ìƒì„ ì…íŒë‹¤.
+ - text-align : í…ìŠ¤íŠ¸ì˜ ìœ„ì¹˜ë¥¼ ì •ë ¬í•œë‹¤.
 
 `sample code` : 
 ```sh
@@ -22,8 +22,8 @@ css ·¹ÆÛ·±½º ¼³¸í:
 <head>
 <style>
 p {
-    color: red; //pÅ×±× »ö»ó 
-    text-align: center; // pÅ×Å© ±ÛÀÚ Á¤·Ä
+    color: red; //pí…Œê·¸ ìƒ‰ìƒ 
+    text-align: center; // pí…Œí¬ ê¸€ì ì •ë ¬
 }
 </style>
 </head>
@@ -34,6 +34,6 @@ p {
 </html>
 ```
 
-°á°ú 
+ê²°ê³¼ 
 
-![sample code](/images/sample.jpg)
+![sample code](images/sample.jpg)
