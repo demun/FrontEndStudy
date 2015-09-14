@@ -36,4 +36,4 @@ p {
 
 °á°ú 
 
-![sample code](../images/sample.jpg)
+![sample code](/images/sample.jpg)
