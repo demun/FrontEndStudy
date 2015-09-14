@@ -2,10 +2,10 @@
 
 ## css3 레퍼런스 작성 방법
 
-css3 레퍼런스 참조 사이트
+### css3 레퍼런스 참조 사이트
 * [CSS3 Browser Support Reference](http://www.w3schools.com/cssref/css3_browsersupport.asp)
 
-## 문서 작성 방법
+### 문서 작성 방법
 
 작성자 : 김동일
 
@@ -15,7 +15,7 @@ css 레퍼런스 설명:
  - color : 텍스트에 색상을 입힌다.
  - text-align : 텍스트의 위치를 정렬한다.
 
-sample code : 
+`sample code` : 
 ```sh
 <!DOCTYPE html>
 <html>
@@ -36,4 +36,4 @@ p {
 
 결과 
 
-![git bash](../images/sample.jpg)
+![sample code](../images/sample.jpg)
