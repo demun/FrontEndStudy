@@ -162,4 +162,4 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 °á°ú 
 
-![column_gap](../images/column-rule.jpg)
+![column_rule](../images/column-rule.jpg)
