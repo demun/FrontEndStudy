@@ -49,7 +49,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 결과 
 
-![column_count](images/column-count.JPG)
+![column_count](../images/column-count.JPG)
 
 
 ## column-gap
@@ -105,7 +105,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 결과 
 
-![column_gap](images/column-gap.JPG)
+![column_gap](../images/column-gap.JPG)
 
 ## column-rule
 
@@ -162,4 +162,4 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 결과 
 
-![column_gap](images/column-rule.jpg)
+![column_gap](../images/column-rule.jpg)
