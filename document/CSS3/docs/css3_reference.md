@@ -226,7 +226,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 결과 
 
-![column-rule-color](../images/column-rule-color.JPG)
+![column-rule-color](../images/column-rule-color.jpg)
 
 ## column-rule-style
 
@@ -306,7 +306,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 결과 
 
-![column-rule-style](../images/column-rule-style.JPG)
+![column-rule-style](../images/column-rule-style.jpg)
 
 ## column-rule-width
 
@@ -377,7 +377,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 결과 
 
-![column-rule-width](../images/column-rule-width.JPG)
+![column-rule-width](../images/column-rule-width.jpg)
 
 ## column-span
 
@@ -437,7 +437,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 결과 
 
-![column-span](../images/column-span.JPG)
+![column-span](../images/column-span.jpg)
 
 ## column-width
 
@@ -491,7 +491,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 결과 
 
-![column-width](../images/column-width.JPG)
+![column-width](../images/column-width.jpg)
 
 ## columns
 
@@ -545,4 +545,4 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 결과 
 
-![columns](../images/columns.JPG)
+![columns](../images/columns.jpg)
