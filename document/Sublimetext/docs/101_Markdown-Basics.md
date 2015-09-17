@@ -178,8 +178,9 @@ Here's an idea: why don't we take `SuperiorProject` and turn it into `**Reasonab
 
 다중라인은 역따옴표 3개로 코드 블럭을 표시합니다.
 
+![Markdown lines](../images/demun-056.jpg)
 
-![Multiple lines](../images/git-2015-06-30-001.jpg)
+
 
 Check out this neat program I wrote:
 

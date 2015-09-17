@@ -58,7 +58,7 @@ http://example.com
 
 따옴표 3개( \`\`\` )로 코드블럭을 래핑하며 4칸 들여쓰기로 변환됩니다.
 
-![코드블럭 이미지](../images/git-2015-06-30-002.jpg)
+![코드블럭 이미지](../images/demun-057.jpg)
 
 Here's an example:
 
@@ -77,7 +77,7 @@ function test() {
 
 아래는 루비의 구문강조 예제입니다.
 
-[루비 구문강조](../images/git-2015-06-30-003.jpg)
+[루비 구문강조](../images/demun-058.jpg)
 
 ```ruby
 require 'redcarpet'
