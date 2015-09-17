@@ -105,7 +105,7 @@ __이것 또한 굵게 될 것입니다__
 ```
 
 ![GitHub Logo](https://help.github.com/assets/images/site/set-up-git.gif)
-형식: ![대체텍스트](이미지주소)
+
 
 
 
