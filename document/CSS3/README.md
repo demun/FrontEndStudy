@@ -53,9 +53,10 @@ image :
  - 경로 : images 폴더에 넣을 것
 
  - 문서(*.md 파일)에 이미지 출력시 다음의 방법으로 작성함
- 
- ex) ![sample code](../images/image명.jpg)
 
+```sh
+![sample code](../images/image명.jpg)
+```
 
 cf) 문서 작성에 대한 상세 내용은 README.md파일의 소스를 참고하시기 바랍니다.
 cf) Github 사이트에 등록하는 방법도 [09-GitHub-for-Windows](../../Github/docs/09-GitHub-for-Windows)를 참고하시기 바랍니다
