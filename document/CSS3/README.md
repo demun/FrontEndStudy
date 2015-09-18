@@ -60,7 +60,7 @@ image :
 
 cf) 문서 작성에 대한 상세 내용은 README.md파일의 소스를 참고하시기 바랍니다.
 
-cf) Github 사이트에 등록하는 방법도 [09-GitHub-for-Windows](../../Github/docs/09-GitHub-for-Windows)를 참고하시기 바랍니다
+cf) Github 사이트에 등록하는 방법도 [09-GitHub-for-Windows](../Github/docs/09-GitHub-for-Windows.md)를 참고하시기 바랍니다
 
 ### 목록
 * [align-content](docs/align-content.md)
