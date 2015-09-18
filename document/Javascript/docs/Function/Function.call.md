@@ -1,3 +1,6 @@
 # Function.call
 
-이 곳에 설명이 들어갑니다.
+### 객체 매서드로서 함수를 호출한다.
+
+* Syntax
+\` function.call(thisobj, args...)\`
