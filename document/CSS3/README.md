@@ -39,6 +39,26 @@ p {
 
 ![sample code](images/sample.jpg)
 
+### 파일 작성 방법
+File 
+
+ - Format : css3_reference명.md 파일로 작성할 것
+
+ - 경로 : docs 폴더에 해당 파일을 넣을 것
+
+image : 
+
+ - Format : 레퍼런스 내용에 보여지는 이미지는 css3_reference명.jpg 파일로 작성할 것
+
+ - 경로 : images 폴더에 넣을 것
+
+ - 문서(*.md 파일)에 이미지 출력시 다음의 방법으로 작성함
+ 
+ ex) ![sample code](../images/image명.jpg)
+
+
+cf) 문서 작성에 대한 상세 내용은 README.md파일의 소스를 참고하시기 바랍니다.
+cf) Github 사이트에 등록하는 방법도 [09-GitHub-for-Windows](../../Github/docs/09-GitHub-for-Windows)를 참고하시기 바랍니다
 
 ### 목록
 * [align-content](docs/align-content.md)
