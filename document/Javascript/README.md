@@ -1,5 +1,6 @@
 # JavaScript
 
+[레퍼런스 참고 주소- http://devdocs.io/javascript-simd/](http://devdocs.io/javascript-simd/)
 [MDN 레퍼런스 참고주소](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference)
 
 
