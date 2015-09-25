@@ -2,25 +2,25 @@
 
 ## column-count
 
-ÀÛ¼ºÀÚ : ±èµ¿ÀÏ
+ì‘ì„±ì : ê¹€ë™ì¼
 
-ÀÛ¼ºÀÏ : 2015-09-14
+ì‘ì„±ì¼ : 2015-09-14
 
-css ·¹ÆÛ·±½º ¼³¸í: 
- - column-count : div ³» ÅØ½ºÆ®¸¦ ºĞÇÒÇÑ´Ù.
+css ë ˆí¼ëŸ°ìŠ¤ ì„¤ëª…: 
+ - column-count : div ë‚´ í…ìŠ¤íŠ¸ë¥¼ ë¶„í• í•œë‹¤.
 
  - syntax : 
 ```sh 
 column-count: length|auto|initial|inherit;
 ```
 
-length:column °³¼ö¸¦ ¸í½ÃÇÑ´Ù.
+length:column ê°œìˆ˜ë¥¼ ëª…ì‹œí•œë‹¤.
 
-auto:±âº» °ª, column-width¿¡ µû¶ó ÄÃ·³ ¼ö°¡ °áÁ¤µÈ´Ù.
+auto:ê¸°ë³¸ ê°’, column-widthì— ë”°ë¼ ì»¬ëŸ¼ ìˆ˜ê°€ ê²°ì •ëœë‹¤.
 
-initial:±âº» °ªÀ¸·Î setµÇ¾î ÀÖ´Â °ªÀ» ºÒ·¯¿Â´Ù.
+initial:ê¸°ë³¸ ê°’ìœ¼ë¡œ setë˜ì–´ ìˆëŠ” ê°’ì„ ë¶ˆëŸ¬ì˜¨ë‹¤.
 
-inherit:ºÎ¸ğ element¿¡ ¼³Á¤µÇ¾î ÀÖ´Â °ªÀ» »ó¼Ó ¹Ş´Â´Ù.
+inherit:ë¶€ëª¨ elementì— ì„¤ì •ë˜ì–´ ìˆëŠ” ê°’ì„ ìƒì† ë°›ëŠ”ë‹¤.
 
 sample code : 
 ```sh
@@ -29,9 +29,9 @@ sample code :
 <head>
 <style> 
 .newspaper {
-    -webkit-column-count: 3; /* Chrome, Safari, Opera¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -webkit-À» ºÙ¿©¾ßÇÔ)*/
-    -moz-column-count: 3; /* Firefox¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -moz-À» ºÙ¿©¾ßÇÔ)*/
-    column-count: 3; /*IE 10.0 ÀÌÈÄ ¿¡¼­ »ç¿ëÇÏ´Â css (ÀÌÀü ¹öÀüÀº Áö¿ø ¾ÈÇÔ)*/
+    -webkit-column-count: 3; /* Chrome, Safari, Operaì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -webkit-ì„ ë¶™ì—¬ì•¼í•¨)*/
+    -moz-column-count: 3; /* Firefoxì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -moz-ì„ ë¶™ì—¬ì•¼í•¨)*/
+    column-count: 3; /*IE 10.0 ì´í›„ ì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ì´ì „ ë²„ì „ì€ ì§€ì› ì•ˆí•¨)*/
 }
 </style>
 </head>
@@ -47,32 +47,32 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 </html>
 ```
 
-°á°ú 
+ê²°ê³¼ 
 
 ![column_count](../images/column-count.JPG)
 
 
 ## column-gap
 
-ÀÛ¼ºÀÚ : ±èµ¿ÀÏ
+ì‘ì„±ì : ê¹€ë™ì¼
 
-ÀÛ¼ºÀÏ : 2015-09-14
+ì‘ì„±ì¼ : 2015-09-14
 
-css ·¹ÆÛ·±½º ¼³¸í: 
- - column-gap : columnÀ¸·Î ºĞÇÒµÈ ÅØ½ºÆ® »çÀÌÀÇ °£°İÀ» ¼³Á¤ÇÑ´Ù.
+css ë ˆí¼ëŸ°ìŠ¤ ì„¤ëª…: 
+ - column-gap : columnìœ¼ë¡œ ë¶„í• ëœ í…ìŠ¤íŠ¸ ì‚¬ì´ì˜ ê°„ê²©ì„ ì„¤ì •í•œë‹¤.
  
  - syntax : 
 ```sh 
 column-gap: length|normal|initial|inherit;
 ```
 
-length:column Å©±â¸¦ ¸í½ÃÇÑ´Ù.(px,em µî)
+length:column í¬ê¸°ë¥¼ ëª…ì‹œí•œë‹¤.(px,em ë“±)
 
-normal:±âº» °ª, W3C¿¡¼­´Â 1emÀÇ °ªÀ» ÃßÃµÇÑ´Ù. 
+normal:ê¸°ë³¸ ê°’, W3Cì—ì„œëŠ” 1emì˜ ê°’ì„ ì¶”ì²œí•œë‹¤. 
 
-initial:±âº» °ªÀ¸·Î setµÇ¾î ÀÖ´Â °ªÀ» ºÒ·¯¿Â´Ù.
+initial:ê¸°ë³¸ ê°’ìœ¼ë¡œ setë˜ì–´ ìˆëŠ” ê°’ì„ ë¶ˆëŸ¬ì˜¨ë‹¤.
 
-inherit:ºÎ¸ğ element¿¡ ¼³Á¤µÇ¾î ÀÖ´Â °ªÀ» »ó¼Ó ¹Ş´Â´Ù.
+inherit:ë¶€ëª¨ elementì— ì„¤ì •ë˜ì–´ ìˆëŠ” ê°’ì„ ìƒì† ë°›ëŠ”ë‹¤.
 
 sample code : 
 ```sh
@@ -81,13 +81,13 @@ sample code :
 <head>
 <style> 
 .newspaper {
-    -webkit-column-count: 3; /* Chrome, Safari, Opera¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -webkit-À» ºÙ¿©¾ßÇÔ)*/
-    -moz-column-count: 3; /* Firefox¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -moz-À» ºÙ¿©¾ßÇÔ)*/
-    column-count: 3; /*IE 10.0 ÀÌÈÄ ¿¡¼­ »ç¿ëÇÏ´Â css (ÀÌÀü ¹öÀüÀº Áö¿ø ¾ÈÇÔ)*/
+    -webkit-column-count: 3; /* Chrome, Safari, Operaì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -webkit-ì„ ë¶™ì—¬ì•¼í•¨)*/
+    -moz-column-count: 3; /* Firefoxì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -moz-ì„ ë¶™ì—¬ì•¼í•¨)*/
+    column-count: 3; /*IE 10.0 ì´í›„ ì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ì´ì „ ë²„ì „ì€ ì§€ì› ì•ˆí•¨)*/
 
-    -webkit-column-gap: 40px; /* Chrome, Safari, Opera¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -webkit-À» ºÙ¿©¾ßÇÔ)*/
-    -moz-column-gap: 40px; /* Firefox ¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -moz-À» ºÙ¿©¾ßÇÔ)*/
-    column-gap: 40px; /*IE 10.0 ÀÌÈÄ ¿¡¼­ »ç¿ëÇÏ´Â css (ÀÌÀü ¹öÀüÀº Áö¿ø ¾ÈÇÔ)*/
+    -webkit-column-gap: 40px; /* Chrome, Safari, Operaì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -webkit-ì„ ë¶™ì—¬ì•¼í•¨)*/
+    -moz-column-gap: 40px; /* Firefox ì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -moz-ì„ ë¶™ì—¬ì•¼í•¨)*/
+    column-gap: 40px; /*IE 10.0 ì´í›„ ì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ì´ì „ ë²„ì „ì€ ì§€ì› ì•ˆí•¨)*/
 }
 </style>
 </head>
@@ -103,29 +103,29 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 </html>
 ```
 
-°á°ú 
+ê²°ê³¼ 
 
 ![column_gap](../images/column-gap.JPG)
 
 ## column-rule
 
-ÀÛ¼ºÀÚ : ±èµ¿ÀÏ
+ì‘ì„±ì : ê¹€ë™ì¼
 
-ÀÛ¼ºÀÏ : 2015-09-14
+ì‘ì„±ì¼ : 2015-09-14
 
-css ·¹ÆÛ·±½º ¼³¸í: 
- - column-rule : column°£ÀÇ width, style µîÀ» ¸í½Ã ÇÑ´Ù.
+css ë ˆí¼ëŸ°ìŠ¤ ì„¤ëª…: 
+ - column-rule : columnê°„ì˜ width, style ë“±ì„ ëª…ì‹œ í•œë‹¤.
  
  - syntax : 
 ```sh 
 column-rule: column-rule-width column-rule-style column-rule-color|initial|inherit;
 ```
 
-column-rule-width column-rule-style column-rule-color : columnÀÇ width, ½ºÅ¸ÀÏ, column°£ ÄÃ·¯¸¦ ¸í½ÃÇÑ´Ù.
+column-rule-width column-rule-style column-rule-color : columnì˜ width, ìŠ¤íƒ€ì¼, columnê°„ ì»¬ëŸ¬ë¥¼ ëª…ì‹œí•œë‹¤.
 
-initial:±âº» °ªÀ¸·Î setµÇ¾î ÀÖ´Â °ªÀ» ºÒ·¯¿Â´Ù.
+initial:ê¸°ë³¸ ê°’ìœ¼ë¡œ setë˜ì–´ ìˆëŠ” ê°’ì„ ë¶ˆëŸ¬ì˜¨ë‹¤.
 
-inherit:ºÎ¸ğ element¿¡ ¼³Á¤µÇ¾î ÀÖ´Â °ªÀ» »ó¼Ó ¹Ş´Â´Ù.
+inherit:ë¶€ëª¨ elementì— ì„¤ì •ë˜ì–´ ìˆëŠ” ê°’ì„ ìƒì† ë°›ëŠ”ë‹¤.
 
 sample code : 
 ```sh
@@ -134,17 +134,17 @@ sample code :
 <head>
 <style> 
 .newspaper {
-    -webkit-column-count: 3; /* Chrome, Safari, Opera¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -webkit-À» ºÙ¿©¾ßÇÔ)*/
-    -moz-column-count: 3; /* Firefox¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -moz-À» ºÙ¿©¾ßÇÔ)*/
-    column-count: 3; /*IE 10.0 ÀÌÈÄ ¿¡¼­ »ç¿ëÇÏ´Â css (ÀÌÀü ¹öÀüÀº Áö¿ø ¾ÈÇÔ)*/
+    -webkit-column-count: 3; /* Chrome, Safari, Operaì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -webkit-ì„ ë¶™ì—¬ì•¼í•¨)*/
+    -moz-column-count: 3; /* Firefoxì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -moz-ì„ ë¶™ì—¬ì•¼í•¨)*/
+    column-count: 3; /*IE 10.0 ì´í›„ ì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ì´ì „ ë²„ì „ì€ ì§€ì› ì•ˆí•¨)*/
 
-    -webkit-column-gap: 40px; /* Chrome, Safari, Opera¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -webkit-À» ºÙ¿©¾ßÇÔ)*/
-    -moz-column-gap: 40px; /* Firefox ¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -moz-À» ºÙ¿©¾ßÇÔ)*/
-    column-gap: 40px; /*IE 10.0 ÀÌÈÄ ¿¡¼­ »ç¿ëÇÏ´Â css (ÀÌÀü ¹öÀüÀº Áö¿ø ¾ÈÇÔ)*/
+    -webkit-column-gap: 40px; /* Chrome, Safari, Operaì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -webkit-ì„ ë¶™ì—¬ì•¼í•¨)*/
+    -moz-column-gap: 40px; /* Firefox ì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -moz-ì„ ë¶™ì—¬ì•¼í•¨)*/
+    column-gap: 40px; /*IE 10.0 ì´í›„ ì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ì´ì „ ë²„ì „ì€ ì§€ì› ì•ˆí•¨)*/
 
-    -webkit-column-rule: 4px outset #ff00ff; /* Chrome, Safari, Opera ¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -webkit-À» ºÙ¿©¾ßÇÔ)*/
-    -moz-column-rule: 4px outset #ff00ff; /* Firefox css ¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -moz-À» ºÙ¿©¾ßÇÔ)*/
-    column-rule: 4px outset #ff00ff; /*IE 10.0 ÀÌÈÄ ¿¡¼­ »ç¿ëÇÏ´Â css (ÀÌÀü ¹öÀüÀº Áö¿ø ¾ÈÇÔ)*/
+    -webkit-column-rule: 4px outset #ff00ff; /* Chrome, Safari, Opera ì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -webkit-ì„ ë¶™ì—¬ì•¼í•¨)*/
+    -moz-column-rule: 4px outset #ff00ff; /* Firefox css ì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -moz-ì„ ë¶™ì—¬ì•¼í•¨)*/
+    column-rule: 4px outset #ff00ff; /*IE 10.0 ì´í›„ ì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ì´ì „ ë²„ì „ì€ ì§€ì› ì•ˆí•¨)*/
 }
 </style>
 </head>
@@ -160,29 +160,29 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 </html>
 ```
 
-°á°ú 
+ê²°ê³¼ 
 
 ![column_rule](../images/column_rule.jpg)
 
 ## column-rule-color
 
-ÀÛ¼ºÀÚ : ±èµ¿ÀÏ
+ì‘ì„±ì : ê¹€ë™ì¼
 
-ÀÛ¼ºÀÏ : 2015-09-17
+ì‘ì„±ì¼ : 2015-09-17
 
-css ·¹ÆÛ·±½º ¼³¸í: 
- - column-rule-color : column°£ÀÇ ÄÃ·¯¸¦ ¸í½Ã ÇÑ´Ù.
+css ë ˆí¼ëŸ°ìŠ¤ ì„¤ëª…: 
+ - column-rule-color : columnê°„ì˜ ì»¬ëŸ¬ë¥¼ ëª…ì‹œ í•œë‹¤.
  
  - syntax : 
 ```sh 
 column-rule-color: color|initial|inherit;
 ```
 
-column-rule-color : column ÄÃ·¯¸¦ ¸í½ÃÇÑ´Ù.(ex: #fff, #f3f3f3, red, rgb(255, 0, 0), rgba(255, 0, 0, 0.3), hsl(120, 100%, 50%), hsla(120, 100%, 50%, 0.3) µî)
+column-rule-color : column ì»¬ëŸ¬ë¥¼ ëª…ì‹œí•œë‹¤.(ex: #fff, #f3f3f3, red, rgb(255, 0, 0), rgba(255, 0, 0, 0.3), hsl(120, 100%, 50%), hsla(120, 100%, 50%, 0.3) ë“±)
 
-initial:±âº» °ªÀ¸·Î setµÇ¾î ÀÖ´Â °ªÀ» ºÒ·¯¿Â´Ù.
+initial:ê¸°ë³¸ ê°’ìœ¼ë¡œ setë˜ì–´ ìˆëŠ” ê°’ì„ ë¶ˆëŸ¬ì˜¨ë‹¤.
 
-inherit:ºÎ¸ğ element¿¡ ¼³Á¤µÇ¾î ÀÖ´Â °ªÀ» »ó¼Ó ¹Ş´Â´Ù.
+inherit:ë¶€ëª¨ elementì— ì„¤ì •ë˜ì–´ ìˆëŠ” ê°’ì„ ìƒì† ë°›ëŠ”ë‹¤.
 
 sample code : 
 ```sh
@@ -191,19 +191,19 @@ sample code :
 <head>
 <style> 
 .newspaper {
-    /* Chrome, Safari, Opera¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -webkit-À» ºÙ¿©¾ßÇÔ)*/
+    /* Chrome, Safari, Operaì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -webkit-ì„ ë¶™ì—¬ì•¼í•¨)*/
     -webkit-column-count: 3;
     -webkit-column-gap: 40px;
     -webkit-column-rule-style: outset;
     -webkit-column-rule-color: #ff0000;
 
-    /* Firefox ¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -moz-À» ºÙ¿©¾ßÇÔ)*/
+    /* Firefox ì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -moz-ì„ ë¶™ì—¬ì•¼í•¨)*/
     -moz-column-count: 3;
     -moz-column-gap: 40px;
     -moz-column-rule-style: outset;
     -moz-column-rule-color: #ff0000;
 
-    /*IE 10.0 ÀÌÈÄ ¿¡¼­ »ç¿ëÇÏ´Â css (ÀÌÀü ¹öÀüÀº Áö¿ø ¾ÈÇÔ)*/
+    /*IE 10.0 ì´í›„ ì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ì´ì „ ë²„ì „ì€ ì§€ì› ì•ˆí•¨)*/
     column-count: 3;
     column-gap: 40px;
     column-rule-style: outset;
@@ -224,47 +224,47 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 ```
 
-°á°ú 
+ê²°ê³¼ 
 
 ![column-rule-color](../images/column-rule-color.jpg)
 
 ## column-rule-style
 
-ÀÛ¼ºÀÚ : ±èµ¿ÀÏ
+ì‘ì„±ì : ê¹€ë™ì¼
 
-ÀÛ¼ºÀÏ : 2015-09-17
+ì‘ì„±ì¼ : 2015-09-17
 
-css ·¹ÆÛ·±½º ¼³¸í: 
- - column-rule-style : column°£ÀÇ ½ºÅ¸ÀÏ¸¦ ¸í½Ã ÇÑ´Ù.
+css ë ˆí¼ëŸ°ìŠ¤ ì„¤ëª…: 
+ - column-rule-style : columnê°„ì˜ ìŠ¤íƒ€ì¼ë¥¼ ëª…ì‹œ í•œë‹¤.
  
  - syntax : 
 ```sh 
 column-rule-style: none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit;
 ```
 
-none : ±âº» °ª, ¾Æ¹«°Íµµ Àû¿ëÇÏÁö ¾Ê´Â´Ù.
+none : ê¸°ë³¸ ê°’, ì•„ë¬´ê²ƒë„ ì ìš©í•˜ì§€ ì•ŠëŠ”ë‹¤.
 
-hidden : column°£ ½ºÅ¸ÀÏÀ» ¼û±ä´Ù.
+hidden : columnê°„ ìŠ¤íƒ€ì¼ì„ ìˆ¨ê¸´ë‹¤.
 
-dotted : column°£ ½ºÅ¸ÀÏ ÂªÀº Á¡¼±À¸·Î ¼³Á¤
+dotted : columnê°„ ìŠ¤íƒ€ì¼ ì§§ì€ ì ì„ ìœ¼ë¡œ ì„¤ì •
 
-dashed : column°£ ½ºÅ¸ÀÏ ±ä Á¡¼±À¸·Î ¼³Á¤
+dashed : columnê°„ ìŠ¤íƒ€ì¼ ê¸´ ì ì„ ìœ¼ë¡œ ì„¤ì •
 
-solid : column°£ ½ºÅ¸ÀÏ ¼±À¸·Î ¼³Á¤
+solid : columnê°„ ìŠ¤íƒ€ì¼ ì„ ìœ¼ë¡œ ì„¤ì •
 
-double : column°£ ½ºÅ¸ÀÏ µÎ ¼±À¸·Î ¼³Á¤
+double : columnê°„ ìŠ¤íƒ€ì¼ ë‘ ì„ ìœ¼ë¡œ ì„¤ì •
 
-groove : column°£ ½ºÅ¸ÀÏ¿¡ groove°¡ µé¾î°£ 3D¼±À¸·Î ¼³Á¤. width¿Í »ö»ó¿¡ ¿µÇâÀ» ¹ŞÀ½
+groove : columnê°„ ìŠ¤íƒ€ì¼ì— grooveê°€ ë“¤ì–´ê°„ 3Dì„ ìœ¼ë¡œ ì„¤ì •. widthì™€ ìƒ‰ìƒì— ì˜í–¥ì„ ë°›ìŒ
 
-ridge :column°£ ½ºÅ¸ÀÏ¿¡ ridge°¡ µé¾î°£ 3D¼±À¸·Î ¼³Á¤. width¿Í »ö»ó¿¡ ¿µÇâÀ» ¹ŞÀ½
+ridge :columnê°„ ìŠ¤íƒ€ì¼ì— ridgeê°€ ë“¤ì–´ê°„ 3Dì„ ìœ¼ë¡œ ì„¤ì •. widthì™€ ìƒ‰ìƒì— ì˜í–¥ì„ ë°›ìŒ
 
-inset : column°£ ½ºÅ¸ÀÏ¿¡ inset°¡ µé¾î°£ 3D¼±À¸·Î ¼³Á¤. width¿Í »ö»ó¿¡ ¿µÇâÀ» ¹ŞÀ½
+inset : columnê°„ ìŠ¤íƒ€ì¼ì— insetê°€ ë“¤ì–´ê°„ 3Dì„ ìœ¼ë¡œ ì„¤ì •. widthì™€ ìƒ‰ìƒì— ì˜í–¥ì„ ë°›ìŒ
 
-outset : column°£ ½ºÅ¸ÀÏ¿¡ outset°¡ µé¾î°£ 3D¼±À¸·Î ¼³Á¤. width¿Í »ö»ó¿¡ ¿µÇâÀ» ¹ŞÀ½
+outset : columnê°„ ìŠ¤íƒ€ì¼ì— outsetê°€ ë“¤ì–´ê°„ 3Dì„ ìœ¼ë¡œ ì„¤ì •. widthì™€ ìƒ‰ìƒì— ì˜í–¥ì„ ë°›ìŒ
 
-initial:±âº» °ªÀ¸·Î setµÇ¾î ÀÖ´Â °ªÀ» ºÒ·¯¿Â´Ù.
+initial:ê¸°ë³¸ ê°’ìœ¼ë¡œ setë˜ì–´ ìˆëŠ” ê°’ì„ ë¶ˆëŸ¬ì˜¨ë‹¤.
 
-inherit:ºÎ¸ğ element¿¡ ¼³Á¤µÇ¾î ÀÖ´Â °ªÀ» »ó¼Ó ¹Ş´Â´Ù.
+inherit:ë¶€ëª¨ elementì— ì„¤ì •ë˜ì–´ ìˆëŠ” ê°’ì„ ìƒì† ë°›ëŠ”ë‹¤.
 
 sample code : 
 ```sh
@@ -273,17 +273,17 @@ sample code :
 <head>
 <style> 
 .newspaper {
-    /* Chrome, Safari, Opera¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -webkit-À» ºÙ¿©¾ßÇÔ)*/
+    /* Chrome, Safari, Operaì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -webkit-ì„ ë¶™ì—¬ì•¼í•¨)*/
     -webkit-column-count: 3;
     -webkit-column-gap: 40px;
     -webkit-column-rule-style: dotted;
 
-    /* Firefox ¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -moz-À» ºÙ¿©¾ßÇÔ)*/
+    /* Firefox ì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -moz-ì„ ë¶™ì—¬ì•¼í•¨)*/
     -moz-column-count: 3;
     -moz-column-gap: 40px;
     -moz-column-rule-style: dotted;
 
-    /*IE 10.0 ÀÌÈÄ ¿¡¼­ »ç¿ëÇÏ´Â css (ÀÌÀü ¹öÀüÀº Áö¿ø ¾ÈÇÔ)*/
+    /*IE 10.0 ì´í›„ ì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ì´ì „ ë²„ì „ì€ ì§€ì› ì•ˆí•¨)*/
     column-count: 3;
     column-gap: 40px;
     column-rule-style: dotted;
@@ -304,35 +304,35 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 ```
 
-°á°ú 
+ê²°ê³¼ 
 
 ![column-rule-style](../images/column-rule-style.jpg)
 
 ## column-rule-width
 
-ÀÛ¼ºÀÚ : ±èµ¿ÀÏ
+ì‘ì„±ì : ê¹€ë™ì¼
 
-ÀÛ¼ºÀÏ : 2015-09-17
+ì‘ì„±ì¼ : 2015-09-17
 
-css ·¹ÆÛ·±½º ¼³¸í: 
- - column-rule-width : column°£ÀÇ ³ĞÀÌ¸¦ ¸í½Ã ÇÑ´Ù.
+css ë ˆí¼ëŸ°ìŠ¤ ì„¤ëª…: 
+ - column-rule-width : columnê°„ì˜ ë„“ì´ë¥¼ ëª…ì‹œ í•œë‹¤.
  
  - syntax : 
 ```sh 
 column-rule-width: medium|thin|thick|length|initial|inherit;
 ```
 
-medium : ±âº» °ª, Áß°£ Å©±â·Î Á¤ÀÇÇÑ´Ù.
+medium : ê¸°ë³¸ ê°’, ì¤‘ê°„ í¬ê¸°ë¡œ ì •ì˜í•œë‹¤.
 
-thin : ¾ãÀº Å©±â·Î Á¤ÀÇÇÑ´Ù.
+thin : ì–‡ì€ í¬ê¸°ë¡œ ì •ì˜í•œë‹¤.
 
-thick : µÎ²¨¿î Å©±â·Î Á¤ÀÇÇÑ´Ù.
+thick : ë‘êº¼ìš´ í¬ê¸°ë¡œ ì •ì˜í•œë‹¤.
 
-length : ³ĞÀÌ °ªÀ» Á¤ÀÇÇÑ´Ù.
+length : ë„“ì´ ê°’ì„ ì •ì˜í•œë‹¤.
 
-initial:±âº» °ªÀ¸·Î setµÇ¾î ÀÖ´Â °ªÀ» ºÒ·¯¿Â´Ù.
+initial:ê¸°ë³¸ ê°’ìœ¼ë¡œ setë˜ì–´ ìˆëŠ” ê°’ì„ ë¶ˆëŸ¬ì˜¨ë‹¤.
 
-inherit:ºÎ¸ğ element¿¡ ¼³Á¤µÇ¾î ÀÖ´Â °ªÀ» »ó¼Ó ¹Ş´Â´Ù.
+inherit:ë¶€ëª¨ elementì— ì„¤ì •ë˜ì–´ ìˆëŠ” ê°’ì„ ìƒì† ë°›ëŠ”ë‹¤.
 
 sample code : 
 ```sh
@@ -341,19 +341,19 @@ sample code :
 <head>
 <style> 
 .newspaper {
-    /* Chrome, Safari, Opera¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -webkit-À» ºÙ¿©¾ßÇÔ)*/
+    /* Chrome, Safari, Operaì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -webkit-ì„ ë¶™ì—¬ì•¼í•¨)*/
     -webkit-column-count: 3;
     -webkit-column-gap: 40px;
     -webkit-column-rule-style: outset;
     -webkit-column-rule-width: 1px;
 
-    /* Firefox ¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -moz-À» ºÙ¿©¾ßÇÔ)*/
+    /* Firefox ì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -moz-ì„ ë¶™ì—¬ì•¼í•¨)*/
     -moz-column-count: 3;
     -moz-column-gap: 40px;
     -moz-column-rule-style: outset;
     -moz-column-rule-width: 1px;
 
-    /*IE 10.0 ÀÌÈÄ ¿¡¼­ »ç¿ëÇÏ´Â css (ÀÌÀü ¹öÀüÀº Áö¿ø ¾ÈÇÔ)*/
+    /*IE 10.0 ì´í›„ ì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ì´ì „ ë²„ì „ì€ ì§€ì› ì•ˆí•¨)*/
     column-count: 3;
     column-gap: 40px;
     column-rule-style: outset;
@@ -375,31 +375,31 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 ```
 
-°á°ú 
+ê²°ê³¼ 
 
 ![column-rule-width](../images/column-rule-width.jpg)
 
 ## column-span
 
-ÀÛ¼ºÀÚ : ±èµ¿ÀÏ
+ì‘ì„±ì : ê¹€ë™ì¼
 
-ÀÛ¼ºÀÏ : 2015-09-17
+ì‘ì„±ì¼ : 2015-09-17
 
-css ·¹ÆÛ·±½º ¼³¸í: 
- - column-span : ¸ğµç columnÀ» ÅëÇÕÇÏ¿© ÇÏ³ªÀÇ columnÀ¸·Î ÅëÇÕ Á¤ÀÇÇÑ´Ù.
+css ë ˆí¼ëŸ°ìŠ¤ ì„¤ëª…: 
+ - column-span : ëª¨ë“  columnì„ í†µí•©í•˜ì—¬ í•˜ë‚˜ì˜ columnìœ¼ë¡œ í†µí•© ì •ì˜í•œë‹¤.
  
  - syntax : 
 ```sh 
 column-span: 1|all|initial|inherit;
 ```
 
-1 : ±âº» °ª. ÇÏ³ªÀÇ column¿¡ text·Î Á¤ÀÇÇÑ´Ù.
+1 : ê¸°ë³¸ ê°’. í•˜ë‚˜ì˜ columnì— textë¡œ ì •ì˜í•œë‹¤.
 
-all : ¸ğµç ÄÃ·³À» ÇÑ columnÀ¸·Î Á¤ÀÇÇÏ¿© text¸¦ Á¤ÀÇÇÑ´Ù.
+all : ëª¨ë“  ì»¬ëŸ¼ì„ í•œ columnìœ¼ë¡œ ì •ì˜í•˜ì—¬ textë¥¼ ì •ì˜í•œë‹¤.
 
-initial:±âº» °ªÀ¸·Î setµÇ¾î ÀÖ´Â °ªÀ» ºÒ·¯¿Â´Ù.
+initial:ê¸°ë³¸ ê°’ìœ¼ë¡œ setë˜ì–´ ìˆëŠ” ê°’ì„ ë¶ˆëŸ¬ì˜¨ë‹¤.
 
-inherit:ºÎ¸ğ element¿¡ ¼³Á¤µÇ¾î ÀÖ´Â °ªÀ» »ó¼Ó ¹Ş´Â´Ù.
+inherit:ë¶€ëª¨ elementì— ì„¤ì •ë˜ì–´ ìˆëŠ” ê°’ì„ ìƒì† ë°›ëŠ”ë‹¤.
 
 sample code : 
 ```sh
@@ -408,15 +408,15 @@ sample code :
 <head>
 <style> 
 .newspaper {
-    -webkit-column-count: 3; /* Chrome, Safari, Opera¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -webkit-À» ºÙ¿©¾ßÇÔ)*/
+    -webkit-column-count: 3; /* Chrome, Safari, Operaì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -webkit-ì„ ë¶™ì—¬ì•¼í•¨)*/
     -moz-column-count: 3; /* Firefox */
     column-count: 3;
 }
 
 h2 {
-    -webkit-column-span: all; /* Chrome, Safari, Opera¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -webkit-À» ºÙ¿©¾ßÇÔ)*/
-    column-span: all; /*IE 10.0 ÀÌÈÄ ¿¡¼­ »ç¿ëÇÏ´Â css (ÀÌÀü ¹öÀüÀº Áö¿ø ¾ÈÇÔ)*/
-    /*Firefox ¹öÀüÀº Áö¿ø ¾ÈÇÔ*/
+    -webkit-column-span: all; /* Chrome, Safari, Operaì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -webkit-ì„ ë¶™ì—¬ì•¼í•¨)*/
+    column-span: all; /*IE 10.0 ì´í›„ ì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ì´ì „ ë²„ì „ì€ ì§€ì› ì•ˆí•¨)*/
+    /*Firefox ë²„ì „ì€ ì§€ì› ì•ˆí•¨*/
 }
 </style>
 </head>
@@ -435,31 +435,31 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 ```
 
-°á°ú 
+ê²°ê³¼ 
 
 ![column-span](../images/column-span.jpg)
 
 ## column-width
 
-ÀÛ¼ºÀÚ : ±èµ¿ÀÏ
+ì‘ì„±ì : ê¹€ë™ì¼
 
-ÀÛ¼ºÀÏ : 2015-09-17
+ì‘ì„±ì¼ : 2015-09-17
 
-css ·¹ÆÛ·±½º ¼³¸í: 
- - column-width : columnÀÇ Å©±â¸¦ px´ÜÀ§·Î Á¤ÀÇÇÑ´Ù.
+css ë ˆí¼ëŸ°ìŠ¤ ì„¤ëª…: 
+ - column-width : columnì˜ í¬ê¸°ë¥¼ pxë‹¨ìœ„ë¡œ ì •ì˜í•œë‹¤.
  
  - syntax : 
 ```sh 
 column-width: auto|length|initial|inherit;
 ```
 
-auto : ±âº» °ª. ºê¶ó¿ìÀú »çÀÌÁîº°·Î column°ªÀÌ ±ÕµîÇÏ°Ô ºĞÇÒµÈ´Ù.
+auto : ê¸°ë³¸ ê°’. ë¸Œë¼ìš°ì € ì‚¬ì´ì¦ˆë³„ë¡œ columnê°’ì´ ê· ë“±í•˜ê²Œ ë¶„í• ëœë‹¤.
 
-length : columnÀÇ Å©±â °ªÀ» ¼³Á¤ÇÑ´Ù.
+length : columnì˜ í¬ê¸° ê°’ì„ ì„¤ì •í•œë‹¤.
 
-initial:±âº» °ªÀ¸·Î setµÇ¾î ÀÖ´Â °ªÀ» ºÒ·¯¿Â´Ù.
+initial:ê¸°ë³¸ ê°’ìœ¼ë¡œ setë˜ì–´ ìˆëŠ” ê°’ì„ ë¶ˆëŸ¬ì˜¨ë‹¤.
 
-inherit:ºÎ¸ğ element¿¡ ¼³Á¤µÇ¾î ÀÖ´Â °ªÀ» »ó¼Ó ¹Ş´Â´Ù.
+inherit:ë¶€ëª¨ elementì— ì„¤ì •ë˜ì–´ ìˆëŠ” ê°’ì„ ìƒì† ë°›ëŠ”ë‹¤.
 
 sample code : 
 ```sh
@@ -468,9 +468,9 @@ sample code :
 <head>
 <style> 
 .newspaper {
-    -webkit-column-width: 100px; /* Chrome, Safari, Opera¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -webkit-À» ºÙ¿©¾ßÇÔ)*/
-    -moz-column-width: 100px; /* Firefox ¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -moz-À» ºÙ¿©¾ßÇÔ)*/
-    column-width: 100px; /*IE 10.0 ÀÌÈÄ ¿¡¼­ »ç¿ëÇÏ´Â css (ÀÌÀü ¹öÀüÀº Áö¿ø ¾ÈÇÔ)*/
+    -webkit-column-width: 100px; /* Chrome, Safari, Operaì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -webkit-ì„ ë¶™ì—¬ì•¼í•¨)*/
+    -moz-column-width: 100px; /* Firefox ì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -moz-ì„ ë¶™ì—¬ì•¼í•¨)*/
+    column-width: 100px; /*IE 10.0 ì´í›„ ì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ì´ì „ ë²„ì „ì€ ì§€ì› ì•ˆí•¨)*/
 }
 
 </style>
@@ -489,31 +489,31 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 ```
 
-°á°ú 
+ê²°ê³¼ 
 
 ![column-width](../images/column-width.jpg)
 
 ## columns
 
-ÀÛ¼ºÀÚ : ±èµ¿ÀÏ
+ì‘ì„±ì : ê¹€ë™ì¼
 
-ÀÛ¼ºÀÏ : 2015-09-17
+ì‘ì„±ì¼ : 2015-09-17
 
-css ·¹ÆÛ·±½º ¼³¸í: 
- - columns : columnÀÇ °³¼ö ¹× Å©±â¸¦ Á¤ÀÇÇÑ´Ù.
+css ë ˆí¼ëŸ°ìŠ¤ ì„¤ëª…: 
+ - columns : columnì˜ ê°œìˆ˜ ë° í¬ê¸°ë¥¼ ì •ì˜í•œë‹¤.
  
  - syntax : 
 ```sh 
 columns: auto|column-width column-count|initial|inherit;
 ```
 
-auto : ±âº» °ª. ºê¶ó¿ìÀú »çÀÌÁîº°·Î column°ªÀÌ ±ÕµîÇÏ°Ô ºĞÇÒµÈ´Ù.
+auto : ê¸°ë³¸ ê°’. ë¸Œë¼ìš°ì € ì‚¬ì´ì¦ˆë³„ë¡œ columnê°’ì´ ê· ë“±í•˜ê²Œ ë¶„í• ëœë‹¤.
 
-column-width column-count : columnÀÇ Å©±â °ª°ú °³¼ö¸¦ ¼³Á¤ÇÑ´Ù.
+column-width column-count : columnì˜ í¬ê¸° ê°’ê³¼ ê°œìˆ˜ë¥¼ ì„¤ì •í•œë‹¤.
 
-initial:±âº» °ªÀ¸·Î setµÇ¾î ÀÖ´Â °ªÀ» ºÒ·¯¿Â´Ù.
+initial:ê¸°ë³¸ ê°’ìœ¼ë¡œ setë˜ì–´ ìˆëŠ” ê°’ì„ ë¶ˆëŸ¬ì˜¨ë‹¤.
 
-inherit:ºÎ¸ğ element¿¡ ¼³Á¤µÇ¾î ÀÖ´Â °ªÀ» »ó¼Ó ¹Ş´Â´Ù.
+inherit:ë¶€ëª¨ elementì— ì„¤ì •ë˜ì–´ ìˆëŠ” ê°’ì„ ìƒì† ë°›ëŠ”ë‹¤.
 
 sample code : 
 ```sh
@@ -522,9 +522,9 @@ sample code :
 <head>
 <style> 
 .newspaper {
-    -webkit-columns: 100px 3; /* Chrome, Safari, Opera¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -webkit-À» ºÙ¿©¾ßÇÔ)*/
-    -moz-columns: 100px 3; /* Firefox ¿¡¼­ »ç¿ëÇÏ´Â css (¹İµå½Ã ¾Õ¿¡ -moz-À» ºÙ¿©¾ßÇÔ)*/
-    column-columns: 100px 3; /*IE 10.0 ÀÌÈÄ ¿¡¼­ »ç¿ëÇÏ´Â css (ÀÌÀü ¹öÀüÀº Áö¿ø ¾ÈÇÔ)*/
+    -webkit-columns: 100px 3; /* Chrome, Safari, Operaì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -webkit-ì„ ë¶™ì—¬ì•¼í•¨)*/
+    -moz-columns: 100px 3; /* Firefox ì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ë°˜ë“œì‹œ ì•ì— -moz-ì„ ë¶™ì—¬ì•¼í•¨)*/
+    column-columns: 100px 3; /*IE 10.0 ì´í›„ ì—ì„œ ì‚¬ìš©í•˜ëŠ” css (ì´ì „ ë²„ì „ì€ ì§€ì› ì•ˆí•¨)*/
 }
 
 </style>
@@ -543,31 +543,31 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 ```
 
-°á°ú 
+ê²°ê³¼ 
 
 ![columns](../images/columns.jpg)
 
 ## @keyframes
 
-ÀÛ¼ºÀÚ : ±èµ¿ÀÏ
+ì‘ì„±ì : ê¹€ë™ì¼
 
-ÀÛ¼ºÀÏ : 2015-09-18
+ì‘ì„±ì¼ : 2015-09-18
 
-css ·¹ÆÛ·±½º ¼³¸í: 
- - @keyframes : ´Ü°èÀûÀ¸·Î º¯È­¸¦ ÁÖ´Â ¾Ö´Ï¸ŞÀÌ¼Ç ÄÚµå
+css ë ˆí¼ëŸ°ìŠ¤ ì„¤ëª…: 
+ - @keyframes : ë‹¨ê³„ì ìœ¼ë¡œ ë³€í™”ë¥¼ ì£¼ëŠ” ì• ë‹ˆë©”ì´ì…˜ ì½”ë“œ
  
  - syntax : 
 ```sh 
 @keyframes animationname {keyframes-selector {css-styles;}}
 ```
 
-animationname : »ç¿ëÇÒ ¾Ö´Ï¸ŞÀÌ¼Ç ¸íÀ» Á¤ÀÇÇÑ´Ù.
+animationname : ì‚¬ìš©í•  ì• ë‹ˆë©”ì´ì…˜ ëª…ì„ ì •ì˜í•œë‹¤.
 
-keyframes-selector : ¾Ö´Ï¸ŞÀÌ¼ÇÀ» %º°·Î Á¤ÀÇÇÑ´Ù.
+keyframes-selector : ì• ë‹ˆë©”ì´ì…˜ì„ %ë³„ë¡œ ì •ì˜í•œë‹¤.
 
-                     Á¤ÀÇ ¹üÀ§ 0 ~ 100% ¶Ç´Â from(0%) ~ to(100%)
+                     ì •ì˜ ë²”ìœ„ 0 ~ 100% ë˜ëŠ” from(0%) ~ to(100%)
 
-css-styles : ÇÏ³ª ÀÌ»óÀÇ css ½ºÅ¸ÀÏÀ» Á¤ÀÇÇÑ´Ù.
+css-styles : í•˜ë‚˜ ì´ìƒì˜ css ìŠ¤íƒ€ì¼ì„ ì •ì˜í•œë‹¤.
 
 sample code : 
 ```sh
@@ -612,29 +612,29 @@ div {
 
 ```
 
-°á°ú 
+ê²°ê³¼ 
 
 [http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_keyframes](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_keyframes)
 
 ## border-image
 
-ÀÛ¼ºÀÚ : ±èµ¿ÀÏ
+ì‘ì„±ì : ê¹€ë™ì¼
 
-ÀÛ¼ºÀÏ : 2015-09-18
+ì‘ì„±ì¼ : 2015-09-18
 
-css ·¹ÆÛ·±½º ¼³¸í: 
- - border-image : border¸¦ ÀÌ¹ÌÁö·Î Á¤ÀÇÇÑ´Ù.
+css ë ˆí¼ëŸ°ìŠ¤ ì„¤ëª…: 
+ - border-image : borderë¥¼ ì´ë¯¸ì§€ë¡œ ì •ì˜í•œë‹¤.
  
  - syntax : 
 ```sh 
 border-image: source slice width outset repeat|initial|inherit;
 ```
 
-source slice width outset repeat : border·Î »ç¿ëÇÏ´Â ÀÌ¹ÌÁö °æ·Î, slice Å¸ÀÔ, Å©±â(%), outset, ¹İº¹(round/stretch) °ªÀ» Á¤ÀÇÇÑ´Ù.
+source slice width outset repeat : borderë¡œ ì‚¬ìš©í•˜ëŠ” ì´ë¯¸ì§€ ê²½ë¡œ, slice íƒ€ì…, í¬ê¸°(%), outset, ë°˜ë³µ(round/stretch) ê°’ì„ ì •ì˜í•œë‹¤.
 
-initial:±âº» °ªÀ¸·Î setµÇ¾î ÀÖ´Â °ªÀ» ºÒ·¯¿Â´Ù.
+initial:ê¸°ë³¸ ê°’ìœ¼ë¡œ setë˜ì–´ ìˆëŠ” ê°’ì„ ë¶ˆëŸ¬ì˜¨ë‹¤.
 
-inherit:ºÎ¸ğ element¿¡ ¼³Á¤µÇ¾î ÀÖ´Â °ªÀ» »ó¼Ó ¹Ş´Â´Ù.
+inherit:ë¶€ëª¨ elementì— ì„¤ì •ë˜ì–´ ìˆëŠ” ê°’ì„ ìƒì† ë°›ëŠ”ë‹¤.
 
 sample code : 
 ```sh
@@ -647,7 +647,7 @@ sample code :
     padding: 15px;
     -webkit-border-image: url(border.png) 30 round repeat; /* Safari 3.1-5 */
     -o-border-image: url(border.png) 30 round; /* Opera 11-12.1 */
-    border-image: url(border.png) 30 round; /*ie11 and chrome ¹öÀü¿¡¼­ »ç¿ë*/
+    border-image: url(border.png) 30 round; /*ie11 and chrome ë²„ì „ì—ì„œ ì‚¬ìš©*/
 }
 
 #borderimg2 { 
@@ -655,7 +655,7 @@ sample code :
     padding: 15px;
     -webkit-border-image: url(border.png) 30 stretch; /* Safari 3.1-5 */
     -o-border-image: url(border.png) 30 stretch; /* Opera 11-12.1 */
-    border-image: url(border.png) 30 stretch; /*ie11 and chrome ¹öÀü¿¡¼­ »ç¿ë*/
+    border-image: url(border.png) 30 stretch; /*ie11 and chrome ë²„ì „ì—ì„œ ì‚¬ìš©*/
 }
 </style>
 </head>
@@ -673,31 +673,31 @@ sample code :
 
 ```
 
-°á°ú 
+ê²°ê³¼ 
 
 ![border-image](../images/border-image.jpg)
 
 ## border-image-outset
 
-ÀÛ¼ºÀÚ : ±èµ¿ÀÏ
+ì‘ì„±ì : ê¹€ë™ì¼
 
-ÀÛ¼ºÀÏ : 2015-09-18
+ì‘ì„±ì¼ : 2015-09-18
 
-css ·¹ÆÛ·±½º ¼³¸í: 
- - border-image-outset : border imageÀÇ ³»ºÎ Å©±âÀ» Á¤ÀÇÇÑ´Ù.
+css ë ˆí¼ëŸ°ìŠ¤ ì„¤ëª…: 
+ - border-image-outset : border imageì˜ ë‚´ë¶€ í¬ê¸°ì„ ì •ì˜í•œë‹¤.
  
  - syntax : 
 ```sh 
 border-image-outset: length|number|initial|inherit;
 ```
 
-length : Ç¥½ÃÇÒ °ªÀ» Á¤ÀÇÇÑ´Ù. ±âº»°ªÀº 0ÀÌ¸ç, Ç¥½Ã ½Ã px´ÜÀ§·Î Á¤ÀÇÇÑ´Ù.
+length : í‘œì‹œí•  ê°’ì„ ì •ì˜í•œë‹¤. ê¸°ë³¸ê°’ì€ 0ì´ë©°, í‘œì‹œ ì‹œ pxë‹¨ìœ„ë¡œ ì •ì˜í•œë‹¤.
 
-number : border Å©±âÀÇ ¹è¼ö·Î Ç¥ÇöÇÑ´Ù.
+number : border í¬ê¸°ì˜ ë°°ìˆ˜ë¡œ í‘œí˜„í•œë‹¤.
 
-initial:±âº» °ªÀ¸·Î setµÇ¾î ÀÖ´Â °ªÀ» ºÒ·¯¿Â´Ù.
+initial:ê¸°ë³¸ ê°’ìœ¼ë¡œ setë˜ì–´ ìˆëŠ” ê°’ì„ ë¶ˆëŸ¬ì˜¨ë‹¤.
 
-inherit:ºÎ¸ğ element¿¡ ¼³Á¤µÇ¾î ÀÖ´Â °ªÀ» »ó¼Ó ¹Ş´Â´Ù.
+inherit:ë¶€ëª¨ elementì— ì„¤ì •ë˜ì–´ ìˆëŠ” ê°’ì„ ìƒì† ë°›ëŠ”ë‹¤.
 
 sample code : 
 ```sh
@@ -744,33 +744,33 @@ This DIV uses an image as a border.
 
 ```
 
-°á°ú 
+ê²°ê³¼ 
 
 ![border-image-outset](../images/border-image-outset.jpg)
 
 ## border-image-repeat
 
-ÀÛ¼ºÀÚ : ±èµ¿ÀÏ
+ì‘ì„±ì : ê¹€ë™ì¼
 
-ÀÛ¼ºÀÏ : 2015-09-18
+ì‘ì„±ì¼ : 2015-09-18
 
-css ·¹ÆÛ·±½º ¼³¸í: 
- - border-image-repeat : border imageÀÇ ¹İº¹ Å¸ÀÔÀ» Á¤ÀÇÇÑ´Ù.
+css ë ˆí¼ëŸ°ìŠ¤ ì„¤ëª…: 
+ - border-image-repeat : border imageì˜ ë°˜ë³µ íƒ€ì…ì„ ì •ì˜í•œë‹¤.
  
  - syntax : 
 ```sh 
 border-image-repeat: stretch|repeat|round|initial|inherit;
 ```
 
-stretch :±âº» °ª, ÀÌ¹ÌÁö¸¦ full·Î Ã¤¿î´Ù.
+stretch :ê¸°ë³¸ ê°’, ì´ë¯¸ì§€ë¥¼ fullë¡œ ì±„ìš´ë‹¤.
 
-repeat : ÀÌ¹ÌÁö¸¦ ¹ÙµÏÆÇ½ÄÀ¸·Î ¹İº¹ÀûÀ¸·Î Ã¤¿î´Ù.
+repeat : ì´ë¯¸ì§€ë¥¼ ë°”ë‘‘íŒì‹ìœ¼ë¡œ ë°˜ë³µì ìœ¼ë¡œ ì±„ìš´ë‹¤.
 
-round : ÀÌ¹ÌÁö¸¦ ¹ÙµÏÆÇ½ÄÀ¸·Î ¹İº¹ÀûÀ¸·Î Ã¤¿î´Ù. ÀÌ¹ÌÁö ÀüÃ¼·Î Ã¤¿ìÁö ¸øÇÏ´Â °æ¿ì ÀÌ¹ÌÁö°¡ °íÁ¤µÈ Å©±â·Î Àç¹èÄ¡ÇÑ´Ù.
+round : ì´ë¯¸ì§€ë¥¼ ë°”ë‘‘íŒì‹ìœ¼ë¡œ ë°˜ë³µì ìœ¼ë¡œ ì±„ìš´ë‹¤. ì´ë¯¸ì§€ ì „ì²´ë¡œ ì±„ìš°ì§€ ëª»í•˜ëŠ” ê²½ìš° ì´ë¯¸ì§€ê°€ ê³ ì •ëœ í¬ê¸°ë¡œ ì¬ë°°ì¹˜í•œë‹¤.
 
-initial:±âº» °ªÀ¸·Î setµÇ¾î ÀÖ´Â °ªÀ» ºÒ·¯¿Â´Ù.
+initial:ê¸°ë³¸ ê°’ìœ¼ë¡œ setë˜ì–´ ìˆëŠ” ê°’ì„ ë¶ˆëŸ¬ì˜¨ë‹¤.
 
-inherit:ºÎ¸ğ element¿¡ ¼³Á¤µÇ¾î ÀÖ´Â °ªÀ» »ó¼Ó ¹Ş´Â´Ù.
+inherit:ë¶€ëª¨ elementì— ì„¤ì •ë˜ì–´ ìˆëŠ” ê°’ì„ ìƒì† ë°›ëŠ”ë‹¤.
 
 sample code : 
 ```sh
@@ -817,33 +817,33 @@ This DIV uses an image as a border.
 
 ```
 
-°á°ú 
+ê²°ê³¼ 
 
 ![border-image-repeat](../images/border-image-repeat.jpg)
 
 ## border-image-slice
 
-ÀÛ¼ºÀÚ : ±èµ¿ÀÏ
+ì‘ì„±ì : ê¹€ë™ì¼
 
-ÀÛ¼ºÀÏ : 2015-09-18
+ì‘ì„±ì¼ : 2015-09-18
 
-css ·¹ÆÛ·±½º ¼³¸í: 
- - border-image-slice : border imageÀÇ ÀÚ¸£±â Á¤µµ¸¦ Á¤ÀÇÇÑ´Ù.
+css ë ˆí¼ëŸ°ìŠ¤ ì„¤ëª…: 
+ - border-image-slice : border imageì˜ ìë¥´ê¸° ì •ë„ë¥¼ ì •ì˜í•œë‹¤.
  
  - syntax : 
 ```sh 
 border-image-slice: number|%|fill|initial|inherit;
 ```
 
-number : ÀÚ¸¦ ÀÌ¹ÌÁö¸¦ px ´ÜÀ§ÀÇ °ªÀ¸·Î Á¤ÀÇÇÑ´Ù.
+number : ìë¥¼ ì´ë¯¸ì§€ë¥¼ px ë‹¨ìœ„ì˜ ê°’ìœ¼ë¡œ ì •ì˜í•œë‹¤.
 
-% : ÀÚ¸¦ ÀÌ¹ÌÁöÀÇ Å©±â³ª ³ôÀÌ¸¦ %´ÜÀ§·Î Á¤ÀÇÇÑ´Ù.
+% : ìë¥¼ ì´ë¯¸ì§€ì˜ í¬ê¸°ë‚˜ ë†’ì´ë¥¼ %ë‹¨ìœ„ë¡œ ì •ì˜í•œë‹¤.
 
-fill : ÀÚ¸£´Â ÀÌ¹ÌÁö±îÁö ÀüÃ¼¸¦ º¸¿©ÁØ´Ù.
+fill : ìë¥´ëŠ” ì´ë¯¸ì§€ê¹Œì§€ ì „ì²´ë¥¼ ë³´ì—¬ì¤€ë‹¤.
 
-initial:±âº» °ªÀ¸·Î setµÇ¾î ÀÖ´Â °ªÀ» ºÒ·¯¿Â´Ù.
+initial:ê¸°ë³¸ ê°’ìœ¼ë¡œ setë˜ì–´ ìˆëŠ” ê°’ì„ ë¶ˆëŸ¬ì˜¨ë‹¤.
 
-inherit:ºÎ¸ğ element¿¡ ¼³Á¤µÇ¾î ÀÖ´Â °ªÀ» »ó¼Ó ¹Ş´Â´Ù.
+inherit:ë¶€ëª¨ elementì— ì„¤ì •ë˜ì–´ ìˆëŠ” ê°’ì„ ìƒì† ë°›ëŠ”ë‹¤.
 
 sample code : 
 ```sh
@@ -895,31 +895,31 @@ sample code :
 
 ```
 
-°á°ú 
+ê²°ê³¼ 
 
 ![border-image-slice](../images/border-image-slice.jpg)
 
 ## border-image-source
 
-ÀÛ¼ºÀÚ : ±èµ¿ÀÏ
+ì‘ì„±ì : ê¹€ë™ì¼
 
-ÀÛ¼ºÀÏ : 2015-09-18
+ì‘ì„±ì¼ : 2015-09-18
 
-css ·¹ÆÛ·±½º ¼³¸í: 
- - border-image-source : border imageÀÇ °æ·Î¸¦ Á¤ÀÇÇÑ´Ù.
+css ë ˆí¼ëŸ°ìŠ¤ ì„¤ëª…: 
+ - border-image-source : border imageì˜ ê²½ë¡œë¥¼ ì •ì˜í•œë‹¤.
  
  - syntax : 
 ```sh 
 border-image-source: none|image|initial|inherit;
 ```
 
-none : ÀÌ¹ÌÁö¸¦ »ç¿ëÇÏÁö ¾Ê´Â´Ù.
+none : ì´ë¯¸ì§€ë¥¼ ì‚¬ìš©í•˜ì§€ ì•ŠëŠ”ë‹¤.
 
-image : ÀÌ¹ÌÁö °æ·Î¸¦ Á¤ÀÇÇÑ´Ù.
+image : ì´ë¯¸ì§€ ê²½ë¡œë¥¼ ì •ì˜í•œë‹¤.
 
-initial:±âº» °ªÀ¸·Î setµÇ¾î ÀÖ´Â °ªÀ» ºÒ·¯¿Â´Ù.
+initial:ê¸°ë³¸ ê°’ìœ¼ë¡œ setë˜ì–´ ìˆëŠ” ê°’ì„ ë¶ˆëŸ¬ì˜¨ë‹¤.
 
-inherit:ºÎ¸ğ element¿¡ ¼³Á¤µÇ¾î ÀÖ´Â °ªÀ» »ó¼Ó ¹Ş´Â´Ù.
+inherit:ë¶€ëª¨ elementì— ì„¤ì •ë˜ì–´ ìˆëŠ” ê°’ì„ ìƒì† ë°›ëŠ”ë‹¤.
 
 sample code : 
 ```sh
@@ -948,33 +948,33 @@ sample code :
 
 ```
 
-°á°ú 
+ê²°ê³¼ 
 
 ![border-image-source](../images/border-image-source.jpg)
 
 ## border-image-width
 
-ÀÛ¼ºÀÚ : ±èµ¿ÀÏ
+ì‘ì„±ì : ê¹€ë™ì¼
 
-ÀÛ¼ºÀÏ : 2015-09-18
+ì‘ì„±ì¼ : 2015-09-18
 
-css ·¹ÆÛ·±½º ¼³¸í: 
- - border-image-width : border imageÀÇ Å©±â¸¦ Á¤ÀÇÇÑ´Ù.
+css ë ˆí¼ëŸ°ìŠ¤ ì„¤ëª…: 
+ - border-image-width : border imageì˜ í¬ê¸°ë¥¼ ì •ì˜í•œë‹¤.
  
  - syntax : 
 ```sh 
 border-image-width: number|%|auto|initial|inherit;
 ```
 
-number : ÀÌ¹ÌÁö Å©±â¸¦ px ´ÜÀ§·Î Á¤ÀÇÇÑ´Ù
+number : ì´ë¯¸ì§€ í¬ê¸°ë¥¼ px ë‹¨ìœ„ë¡œ ì •ì˜í•œë‹¤
 
-% : ÀÌ¹ÌÁö Å©±â¸¦ % ´ÜÀ§·Î Á¤ÀÇÇÑ´Ù.
+% : ì´ë¯¸ì§€ í¬ê¸°ë¥¼ % ë‹¨ìœ„ë¡œ ì •ì˜í•œë‹¤.
 
-auto : ÀÚ¸¦ ÀÌ¹ÌÁö¿¡ Á¤ÀÇµÇ¾î ÀÖ´Â Å©±â ¶Ç´Â ³ôÀÌ¿¡ µû¶ó ÀÚµ¿ÀûÀ¸·Î Á¤ÀÇµÈ´Ù.
+auto : ìë¥¼ ì´ë¯¸ì§€ì— ì •ì˜ë˜ì–´ ìˆëŠ” í¬ê¸° ë˜ëŠ” ë†’ì´ì— ë”°ë¼ ìë™ì ìœ¼ë¡œ ì •ì˜ëœë‹¤.
 
-initial:±âº» °ªÀ¸·Î setµÇ¾î ÀÖ´Â °ªÀ» ºÒ·¯¿Â´Ù.
+initial:ê¸°ë³¸ ê°’ìœ¼ë¡œ setë˜ì–´ ìˆëŠ” ê°’ì„ ë¶ˆëŸ¬ì˜¨ë‹¤.
 
-inherit:ºÎ¸ğ element¿¡ ¼³Á¤µÇ¾î ÀÖ´Â °ªÀ» »ó¼Ó ¹Ş´Â´Ù.
+inherit:ë¶€ëª¨ elementì— ì„¤ì •ë˜ì–´ ìˆëŠ” ê°’ì„ ìƒì† ë°›ëŠ”ë‹¤.
 
 sample code : 
 ```sh
@@ -1025,31 +1025,31 @@ sample code :
 
 ```
 
-°á°ú 
+ê²°ê³¼ 
 
 ![border-image-width](../images/border-image-width.jpg)
 
 ## backface-visibility
 
-ÀÛ¼ºÀÚ : ±èµ¿ÀÏ
+ì‘ì„±ì : ê¹€ë™ì¼
 
-ÀÛ¼ºÀÏ : 2015-09-18
+ì‘ì„±ì¼ : 2015-09-18
 
-css ·¹ÆÛ·±½º ¼³¸í: 
- - backface-visibility : div Å×±× µŞ¸éÀÇ Ãâ·Â ¿©ºÎ¸¦ Á¤ÀÇÇÑ´Ù.
+css ë ˆí¼ëŸ°ìŠ¤ ì„¤ëª…: 
+ - backface-visibility : div í…Œê·¸ ë’·ë©´ì˜ ì¶œë ¥ ì—¬ë¶€ë¥¼ ì •ì˜í•œë‹¤.
  
  - syntax : 
 ```sh 
 backface-visibility: visible|hidden|initial|inherit;
 ```
 
-visible : ±âº» °ª, µŞ¸éÀÌ º¸¿©Áø´Ù.
+visible : ê¸°ë³¸ ê°’, ë’·ë©´ì´ ë³´ì—¬ì§„ë‹¤.
 
-hidden : µŞ¸éÀ» ¼û±ä´Ù.
+hidden : ë’·ë©´ì„ ìˆ¨ê¸´ë‹¤.
 
-initial:±âº» °ªÀ¸·Î setµÇ¾î ÀÖ´Â °ªÀ» ºÒ·¯¿Â´Ù.
+initial:ê¸°ë³¸ ê°’ìœ¼ë¡œ setë˜ì–´ ìˆëŠ” ê°’ì„ ë¶ˆëŸ¬ì˜¨ë‹¤.
 
-inherit:ºÎ¸ğ element¿¡ ¼³Á¤µÇ¾î ÀÖ´Â °ªÀ» »ó¼Ó ¹Ş´Â´Ù.
+inherit:ë¶€ëª¨ elementì— ì„¤ì •ë˜ì–´ ìˆëŠ” ê°’ì„ ìƒì† ë°›ëŠ”ë‹¤.
 
 sample code : 
 ```sh
@@ -1093,6 +1093,6 @@ div {
 
 ```
 
-°á°ú 
+ê²°ê³¼ 
 
 ![backface-visibility](../images/backface-visibility.jpg)
