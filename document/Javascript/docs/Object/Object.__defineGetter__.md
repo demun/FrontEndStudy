@@ -1,0 +1,1 @@
+# Object.__defineGetter__
