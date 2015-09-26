@@ -1,0 +1,1 @@
+#Math.LOG2E

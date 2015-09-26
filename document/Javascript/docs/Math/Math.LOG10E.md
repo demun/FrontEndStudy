@@ -1,0 +1,1 @@
+#Math.LOG10E
