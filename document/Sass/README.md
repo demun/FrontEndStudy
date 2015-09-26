@@ -1,8 +1,8 @@
 # Sass
 
 
-* [설치](http://sass-lang.com/install)
-* [sass 기본사항](http://sass-lang.com/guide)
+* [sass-시작](http://sass-lang.com/install)
+* [sass-기본사항](http://sass-lang.com/guide)
 	* Variables
 	* Nesting
 	* Partials
