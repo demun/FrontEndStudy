@@ -47,3 +47,6 @@ css 레퍼런스 설명:
 ```
 
 [결과보기](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_perspective-origin1)
+
+참고 예제 : [예제 보기](http://www.hanbit.co.kr/exam/1955/perspective.htm)
+
