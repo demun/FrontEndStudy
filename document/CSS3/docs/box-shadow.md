@@ -5,7 +5,7 @@
 작성일 : 2015-09-27
 
 css 레퍼런스 설명: 
-- box-shadow : 요소 박스의 그림자를 지정하는 속성이다.
+- box-shadow : 박스 요소의 그림자를 지정하는 속성이다.
 - 속성 값 : none, h-shadow v-shadow blur spread color, inset, initial, inherit
 
 `sample code` : 
