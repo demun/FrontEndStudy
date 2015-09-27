@@ -13,36 +13,36 @@ css 레퍼런스 설명:
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-#main {
-    width: 220px;
-    height: 300px;
-    border: 1px solid black;
-    display: -webkit-flex; /* Safari */
-    -webkit-align-items: flex-start; /* Safari 7.0+ */
-    display: flex;
-    align-items: flex-start;
-}
+  <head>
+    <style>
+      #main {
+          width: 220px;
+          height: 300px;
+          border: 1px solid black;
+          display: -webkit-flex; /* Safari */
+          -webkit-align-items: flex-start; /* Safari 7.0+ */
+          display: flex;
+          align-items: flex-start;
+      }
 
-#main div {
-    -webkit-flex: 1; /* Safari 6.1+ */
-    flex: 1;
-}
+      #main div {
+          -webkit-flex: 1; /* Safari 6.1+ */
+          flex: 1;
+      }
 
-#myBlueDiv {
-    -webkit-align-self: center; /* Safari 7.0+ */
-    align-self: center;
-}
-</style>
-</head>
-<body>
-<div id="main">
-  <div style="background-color:coral;">RED</div>
-  <div style="background-color:lightblue;" id="myBlueDiv">BLUE</div>  
-  <div style="background-color:lightgreen;">Green div with more content.</div>
-</div>
-</body>
+      #myBlueDiv {
+          -webkit-align-self: center; /* Safari 7.0+ */
+          align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div style="background-color:coral;">RED</div>
+      <div style="background-color:lightblue;" id="myBlueDiv">BLUE</div>  
+      <div style="background-color:lightgreen;">Green div with more content.</div>
+    </div>
+  </body>
 </html>
 ```
 
