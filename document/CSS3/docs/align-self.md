@@ -5,7 +5,7 @@
 작성일 : 2015-09-27
 
 css 레퍼런스 설명: 
-- align-self : flex로 지정된 부모 요소 내에서 기본 정렬을 지정하는 속성이다.
+- align-self : flex로 지정된 부모 요소 내에서 정렬을 지정하는 속성이다.
 - 속성 값 : auto, stretch, center, flex-start, flex-end, baseline, initial, inherit
 
 `sample code` : 
