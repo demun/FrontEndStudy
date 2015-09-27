@@ -5,7 +5,7 @@
 작성일 : 2015-09-27
 
 css 레퍼런스 설명: 
-- box-sizing : 요소 박스의 크기를 결정하는 방식을 지정하는 속성이다.
+- box-sizing : 박스 요소의 크기를 결정하는 방식을 지정하는 속성이다.
 - 속성 값 : content-box, border-box, initial, inherit
 
 `sample code` : 
