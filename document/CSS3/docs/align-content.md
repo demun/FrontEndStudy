@@ -5,7 +5,7 @@
 작성일 : 2015-09-27
 
 css 레퍼런스 설명: 
-- align-content : flex로 지정된 부모 요소 내에서 여러 개의 행이나 열로 구성된 요소 박스의 정렬을 지정하기 위한 속성이다.
+- align-content : flex로 지정된 부모 요소 내에서 여러 개의 행이나 열로 구성된 박스 요소의 정렬을 지정하기 위한 속성이다.
 - 속성 값 : stretch, center, flex-start, flex-end, space-between, space-around, initial, inherit
 
 `sample code` : 
