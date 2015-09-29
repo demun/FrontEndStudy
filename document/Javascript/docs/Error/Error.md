@@ -16,19 +16,19 @@ new Error([message[, fileName[, lineNumber]]])
 
 #### 인자(Parameters)
 
-- message
+- `message`
   
   선택사항. 사람이 읽을 수 있는 에러 메시지.
 
-- fileName
+- `fileName`
   
   선택사항. 생성된 에러 객체에 대한 파일 이름 값. 
-  파일 이름에 대한 기본 값은 Error() 생성자에 의해 호출된 코드를 포함하고 있다.
+  파일 이름에 대한 기본 값은 `Error()` 생성자에 의해 호출된 코드를 포함하고 있다.
 
-- lineNumber
+- `lineNumber`
   
-  선택사항. lineNumber 값은 생성된 에러 오브젝트의 속성이다.
-  lineNumber에 대한 기본 값은 Error() 생성자가 호출할 때 포함된다.
+  선택사항. `lineNumber` 값은 생성된 에러 오브젝트의 속성이다.
+  `lineNumber`에 대한 기본 값은 `Error()` 생성자가 호출할 때 포함된다.
 
 ---
 
@@ -36,46 +36,46 @@ new Error([message[, fileName[, lineNumber]]])
 
 런 타임 에러는 새로운 에러 객체가 생성되고 실행되었을 때의 결과이다.
 이 페이지는 에러 객체 그 자신일 때와, 생성자 함수에 의해 사용될 때에 관한 문서이다.
-Error 인스턴스들에 의해 상속된 프로퍼티와 메소드의 리스트, Error.prototype을 볼 수 있다.
+`Error` 인스턴스들에 의해 상속된 프로퍼티와 메소드의 리스트, `Error.prototype`을 볼 수 있다.
 
 
 ##### Error types
 
 자바스크립트에서 Error constructor는 6가지 종류가 있다.
 
-- EvalError
+- `EvalError`
 
   전역 함수 eval()과 관련된 에러가 발생할 때 나타나는 에러를 생성한다.
 
-- InternalError
+- `InternalError`
 
   자바스크립트 엔진에서 내부 에러가 발생할 때 생성한다. E.g. 재귀 과다 호출.
 
-- RangeError
+- `RangeError`
 
   유효한 범위 밖의 인자나 수치의 변수일 때 발생하는 에러를 생성한다.
 
-- ReferenceError
+- `ReferenceError`
 
   유효하지 않은 레퍼런스를 역참조 할 때 발생하는 에러를 생성한다.
 
-- SyntaxError
+- `SyntaxError`
 
   eval()에서 코드를 분석하는 동안 발생하는 구문 에러를 생성한다.
 
-- TypeError
+- `TypeError`
 
   변수나 파라미터가 유효하지 않은 타입일 때 발생하는 에러를 생성한다.
 
-- URIError
+- `URIError`
 
-  encodeURI() 혹은 decodeURI()가 유효하지 않은 파라미터로 통과될 때 발생하는 에러를 생성한다.
+  `encodeURI()` 혹은 `decodeURI()`가 유효하지 않은 파라미터로 통과될 때 발생하는 에러를 생성한다.
 
 ---
 
 #### 속성(Properties)
 
-- Error.prototype
+- `Error.prototype`
   
   에러 인스턴스들에 속성을 추가할 수 있음.
 
@@ -87,17 +87,17 @@ Error 인스턴스들에 의해 상속된 프로퍼티와 메소드의 리스트
 ---
 
 #### 에러 인스턴스(Error instances)
-모든 에러 인스턴스들과 정의되지 않은 타입의 에러들(non-generic errors)는 Error.prototype으로부터 상속된다. 모든 생성자 함수처럼, 당신은 생성자에 의해 새성된 모든 인스턴스들에 속성이나 메소드를 추가하기 위해 생성자의 프로포타입을 사용할 수 있다.
+모든 에러 인스턴스들과 정의되지 않은 타입의 에러들(non-generic errors)는 `Error.prototype`으로부터 상속된다. 모든 생성자 함수처럼, 당신은 생성자에 의해 새성된 모든 인스턴스들에 속성이나 메소드를 추가하기 위해 생성자의 프로포타입을 사용할 수 있다.
 
 ##### Properties
 ##### Standard properties
-- Error.prototype.constructor
+- `Error.prototype.constructor`
 
   인스턴스의 프로포타입을 생성하는 함수를 지정
-- Error.prototype.message
+- `Error.prototype.message`
 
   에러 메시지
-- Error.prototype.name
+- `Error.prototype.name`
 
   에러 이름
 
@@ -111,24 +111,24 @@ Error 인스턴스들에 의해 상속된 프로퍼티와 메소드의 리스트
 
 
 ##### Microsoft
-- Error.prototype.description
+- `Error.prototype.description`
 
-  에러 설명. message와 유사하다.
-- Error.prototype.number
+  에러 설명. `message`와 유사하다.
+- `Error.prototype.number`
   
   에러 숫자
 
 ##### Mozilla
-- Error.prototype.fileName
+- `Error.prototype.fileName`
   
   해당 에러가 발생한 파일의 경로
-- Error.prototype.lineNumber
+- `Error.prototype.lineNumber`
   
   해당 에러가 발생한 파일의 라인 넘버.
-- Error.prototype.columnNumber
+- `Error.prototype.columnNumber`
   
   해당 에러가 발생한 라인의 컬럼 수.
-- Error.prototype.stack
+- `Error.prototype.stack`
   
   스택 추적.
 
@@ -136,13 +136,13 @@ Error 인스턴스들에 의해 상속된 프로퍼티와 메소드의 리스트
 
 
 ##### Methods
-- Error.prototype.toSource()
+- `Error.prototype.toSource()`
   
-  발생한 에러 객체에 대한 소스를 포함하는 문자열을 반환한다. ; 당신은 이 값을 새로운 객체를 생성하는 데에 사용할 수 있다. Object.prototype.toSource() 메소드로 오버라이드.
+  발생한 에러 객체에 대한 소스를 포함하는 문자열을 반환한다. ; 당신은 이 값을 새로운 객체를 생성하는 데에 사용할 수 있다. `Object.prototype.toSource()` 메소드로 오버라이드.
 
-- Error.prototype.toString()
+- `Error.prototype.toString()`
   
-  객체를 대표하는 문자열을 반환한다. Object.prototype.toString() 메소드로 오버라이드.
+  객체를 대표하는 문자열을 반환한다. `Object.prototype.toString()` 메소드로 오버라이드.
 
 
 
@@ -150,8 +150,8 @@ Error 인스턴스들에 의해 상속된 프로퍼티와 메소드의 리스트
 
 - 일반 에러의 발생 (Throwing a generic error)
 
-  보통 'throw' 키워드를 사용하여 에러 오브젝트를 생성할 수 있다.
-try ~ catch 구문을 통해 에러를 핸들링한다.
+  보통 `'throw'` 키워드를 사용하여 에러 오브젝트를 생성할 수 있다.
+`try ~ catch` 구문을 통해 에러를 핸들링한다.
 ```javascript
 try {
   throw new Error('Whoops!');
