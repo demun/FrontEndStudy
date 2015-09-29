@@ -16,7 +16,7 @@ new Error([message[, fileName[, lineNumber]]])
 
 #### 인자(Parameters)
 
-- message
+- `message`
 선택사항. 사람이 읽을 수 있는 에러 메시지.
 
 - fileName
