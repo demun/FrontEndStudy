@@ -16,16 +16,16 @@ new Error([message[, fileName[, lineNumber]]])
 
 #### 인자(Parameters)
 
-- `message`
-선택사항. 사람이 읽을 수 있는 에러 메시지.
+- message
+  선택사항. 사람이 읽을 수 있는 에러 메시지.
 
 - fileName
-선택사항. 생성된 에러 객체에 대한 파일 이름 값. 
-파일 이름에 대한 기본 값은 Error() 생성자에 의해 호출된 코드를 포함하고 있다.
+  선택사항. 생성된 에러 객체에 대한 파일 이름 값. 
+  파일 이름에 대한 기본 값은 Error() 생성자에 의해 호출된 코드를 포함하고 있다.
 
 - lineNumber
-선택사항. lineNumber 값은 생성된 에러 오브젝트의 속성이다.
-lineNumber에 대한 기본 값은 Error() 생성자가 호출할 때 포함된다.
+  선택사항. lineNumber 값은 생성된 에러 오브젝트의 속성이다.
+  lineNumber에 대한 기본 값은 Error() 생성자가 호출할 때 포함된다.
 
 
 
