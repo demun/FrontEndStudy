@@ -18,10 +18,10 @@ Math.min(n1,n2,n3,...,nX)
 #### 예
 
 ```javascript
-Math.min(5, 10);          // [5]를 반환
-var a = Math.min(5, 10);  // [5]를 반환
+Math.min(5, 10);   // [5]를 반환
+var a = Math.min(5, 10); . // [5]를 반환
 var d = Math.min(-5, -10)   // [-10]를 반환
-var e = Math.min(1.5, 2.5);// [1.5]를 반환
+var e = Math.min(1.5, 2.5);...// [1.5]를 반환
 
 
 
