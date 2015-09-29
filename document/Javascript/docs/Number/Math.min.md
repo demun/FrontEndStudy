@@ -1,8 +1,8 @@
 #Math.min
 
-#링크 : http://www.w3schools.com/jsref/jsref_min.asp (한글번역) 
+###링크 : http://www.w3schools.com/jsref/jsref_min.asp (한글번역) 
 
-#링크 : https://msdn.microsoft.com/ko-kr/library/system.math.min(v=vs.110).aspx (한글번역) 
+###링크 : https://msdn.microsoft.com/ko-kr/library/system.math.min(v=vs.110).aspx (한글번역) 
 
 
 가장 낮은 값으로 수를 돌려줍니다
