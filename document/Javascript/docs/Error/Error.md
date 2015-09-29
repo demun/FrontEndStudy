@@ -92,15 +92,18 @@ Error 인스턴스들에 의해 상속된 프로퍼티와 메소드의 리스트
 ##### Properties
 ##### Standard properties
 - Error.prototype.constructor
+
   인스턴스의 프로포타입을 생성하는 함수를 지정
-
 - Error.prototype.message
-  에러 메시지
 
+  에러 메시지
 - Error.prototype.name
+
   에러 이름
 
-##### 공급자 별 확장(Vendor-specific extensions)
+---
+
+#### 공급자 별 확장(Vendor-specific extensions)
 
 > 비 표준
 > 이 형식은 비 표준이다. 이 것들을 웹에 바로 적용하지 마라. 이것은 모든 사용자에게 적용되지 않을 것이다.
@@ -176,14 +179,16 @@ try {
 ```
 
 
+---
 
-##### 커스텀 에러 작성(Custom Error Types)
+#### 커스텀 에러 작성(Custom Error Types)
 당신은 아마도 당신의 고유 에러 타입을 정의하고자 할지도 모른다. new MyError()를 발생시키고, 에러를 검사하고 예외를 발생시키는 핸들러로서 instanceof MyError를 유도하는 것 까지.
 이것을 하기위한 공통적인 방법은 아래를 참고.
 
 실행된 MyError는 적어도 파이어폭스(Firefox)에선 정확하지 않은 lineNumber 와 fileName를 보고한다는 것을 유의해야한다.
 
 참고 [What's a good way to extend Error in JavaScript?" discussion on Stackoverflow.](http://stackoverflow.com/questions/1382107/whats-a-good-way-to-extend-error-in-javascript)
+
 
 ```javascript
 // 에러 생성자로부터 프로토타입적으로(prototypally) 상속된 새로운 객체를 생성한다.
