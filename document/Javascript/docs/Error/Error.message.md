@@ -10,10 +10,19 @@ message 속성은 name 속성과 함께 Error.prototype.toString() 메소드를 
 일반적으로 message 속성은 빈 string 이지만, Error contstuctor에서 처음 설정된 메시지로 오버라이딩 될 수 있다.
 
 #### 예(Example)
-### Throwing a custom error
+##### Throwing a custom error
 
 ```javascript
 var e = new Error('입력한 값이 올바르지 않습니다.'); // e.message 는 '입력한 값이 올바르지 않습니다.'
 throw e;
 ```
+
+#### 브라우저 적합성(Browser compatibility)
+|Feature|Chrome|Firefox(Gecko)|Internet Explorer|Opera|Safari|
+| ------ | ----- | ----- | --------- | ----- | ----- |
+| 기본 지원 | O | O | O | O | O |
+
+|Feature|Android|Chrome for Android|Firefox Mobile(Gecko)|IE Mobile|Opera Mobile|Safari Mobile|
+| ------ | ----- | ----- | --------- | ----- | ----- | ----- |
+| 기본 지원 | O | O | O | O | O | O |
 
