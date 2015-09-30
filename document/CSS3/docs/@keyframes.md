@@ -1,0 +1,143 @@
+# @keyframes
+
+작성자 : 김동일
+
+작성일 : 2015-09-18
+
+css 레퍼런스 설명: 
+ - @keyframes : 단계적으로 변화를 주는 애니메이션 코드
+ 
+ - syntax : 
+```sh 
+@keyframes animationname {keyframes-selector {css-styles;}}
+```
+
+animationname : 사용할 애니메이션 명을 정의한다.
+
+keyframes-selector : 애니메이션을 %별로 정의한다.
+
+                     정의 범위 0 ~ 100% 또는 from(0%) ~ to(100%)
+
+css-styles : 하나 이상의 css 스타일을 정의한다.
+
+sample code : 
+```sh
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position :relative;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */ 
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes mymove1 {
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+}
+</style>
+</head>
+<body>
+
+<p><strong>Note:</strong> The @keyframes rule is not supported in Internet Explorer 9 and earlier versions.</p>
+
+<div></div>
+
+</body>
+</html>
+
+```
+
+결과 
+
+[http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_keyframes](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_keyframes)
+
+### 목록
+* [align-content](docs/align-content.md)
+* [align-items](docs/align-items.md)
+* [align-self](docs/align-self.md)
+* [@keyframes](docs/@keyframes.md)
+* [animation](docs/animation.md)
+* [animation-name](docs/animation-name.md)
+* [animation-duration](docs/animation-duration.md)
+* [animation-timing-function](docs/animation-timing-function.md)
+* [animation-delay](docs/animation-delay.md)
+* [animation-iteration-count](docs/animation-iteration-count.md)
+* [animation-direction](docs/animation-direction.md)
+* [animation-play-state](docs/animation-play-state.md)
+* [backface-visibility](docs/backface-visibility.md)
+* [background-clip](docs/background-clip.md)
+* [background-origin](docs/background-origin.md)
+* [background-size](docs/background-size.md)
+* [border-bottom-left-radius](docs/border-bottom-left-radius.md)
+* [border-bottom-right-radius](docs/border-bottom-right-radius.md)
+* [border-image](docs/border-image.md)
+* [border-image-outset](docs/border-image-outset.md)
+* [border-image-repeat](docs/border-image-repeat.md)
+* [border-image-slice](docs/border-image-slice.md)
+* [border-image-source](docs/border-image-source.md)
+* [border-image-width](docs/border-image-width.md)
+* [border-radius](docs/border-radius.md)
+* [border-top-left-radius](docs/border-top-left-radius.md)
+* [border-top-right-radius](docs/border-top-right-radius.md)
+* [box-shadow](docs/box-shadow.md)
+* [box-sizing](docs/box-sizing.md)
+* [column-count](docs/column-count.md)
+* [column-gap](docs/column-gap.md)
+* [column-rule](docs/column-rule.md)
+* [column-rule-color](docs/column-rule-color.md)
+* [column-rule-style](docs/column-rule-style.md)
+* [column-rule-width](docs/column-rule-width.md)
+* [column-span](docs/column-span.md)
+* [column-width](docs/column-width.md)
+* [columns](docs/columns.md)
+* [flex](docs/flex.md)
+* [flex-basis](docs/flex-basis.md)
+* [flex-direction](docs/flex-direction.md)
+* [flex-flow](docs/flex-flow.md)
+* [flex-grow](docs/flex-grow.md)
+* [flex-shrink](docs/flex-shrink.md)
+* [flex-wrap](docs/flex-wrap.md)
+* [@font-face](docs/@font-face.md)
+* [font-feature-settings](docs/font-feature-settings.md)
+* [hyphens](docs/hyphens.md)
+* [justify-content](docs/justify-content.md)
+* [opacity](docs/opacity.md)
+* [order](docs/order.md)
+* [outline-offset](docs/outline-offset.md)
+* [overflow-wrap](docs/overflow-wrap.md)
+* [overflow-x](docs/overflow-x.md)
+* [overflow-y](docs/overflow-y.md)
+* [@page](docs/@page.md)
+* [perspective](docs/perspective.md)
+* [perspective-origin](docs/perspective-origin.md)
+* [resize](docs/resize.md)
+* [tab-size](docs/tab-size.md)
+* [text-align-last](docs/text-align-last.md)
+* [text-overflow](docs/text-overflow.md)
+* [text-shadow](docs/text-shadow.md)
+* [transform](docs/transform.md)
+* [transform-origin](docs/transform-origin.md)
+* [transform-style](docs/transform-style.md)
+* [transition](docs/transition.md)
+* [transition-delay](docs/transition-delay.md)
+* [transition-duration](docs/transition-duration.md)
+* [transition-property](docs/transition-property.md)
+* [transition-timing-function](docs/transition-timing-function.md)
+* [word-break](docs/word-break.md)
+* [word-wrap](docs/word-wrap.md)
