@@ -41,3 +41,5 @@ var color2 = "coral";
 // 오류 발생 (color2는 문자열 객체가 아님.)
 "length" in color2
 ```
+###참조
+[http://devdocs.io/javascript/operators/in/](http://devdocs.io/javascript/operators/in/)
