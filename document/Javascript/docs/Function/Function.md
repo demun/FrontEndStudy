@@ -1,7 +1,7 @@
 # Function
 
-Function 생성자(constructor)는 새로운 함수(Function) 객체를 만든다.
-Javascript에서 모든 함수는 실제로 function 객체이다.
+  Function 생성자(constructor)는 새로운 함수(Function) 객체를 만든다. Javascript에서 모든 함수는 실제로 function 객체이다.
+
 ---
 ### 구문(Syntax)
 ```javascript
@@ -20,6 +20,7 @@ new Function ([arg1[, arg2[, ...argN]],] functionBody)
 
 ---
 ### 설명(Description)
+
 함수 생성자에 의해 생성된 함수 객체는 함수가 생성될 때 분석된다(parse). 이것은 어떤 함수들은 코드의 나머지에서 분석되기 때문에, 코드내에서 함수 표현식이나 함수 상태를 선언하여 호출하는 것 보다 덜 효과적이다.
 
 함수를 통과한 모든 인수(argument)들은, 통과한 순서대로 함수에서 생성한 매개변수의 이름으로 처리된다.
@@ -31,6 +32,7 @@ new Function ([arg1[, arg2[, ...argN]],] functionBody)
 
 ---
 ### 함수의 속성과 메소드 (Properties and Methods of Function)
+
 전역 함수 객체는 고유의 속성이나 메소드를 가지고 있지 않지만, 함수 그 자신이기 때문에 `Function.prototype`으로부터 프로토타입 체인을 통해 메소드와 프로퍼티를 상속한다.
 ---
 ### 함수 프로토타입 객체 (Function prototype object)
@@ -88,6 +90,7 @@ new Function ([arg1[, arg2[, ...argN]],] functionBody)
 함수인스턴스는 `Function.prototype`으로 부터 메소드와 속성들을 상속한다. 모든 생성자로 생성자의 프로토타입 객체가 모든 함수 인스턴스들을 바꿀 수 있도록 변경할 수 있다.
 ---
 ### 예제(Example)
+
 아래는 두개의 인자를 가진 함수 객체를 생성하는 예제이다.
 
 ```javascript
