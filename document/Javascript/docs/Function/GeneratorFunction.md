@@ -28,12 +28,5 @@ GeneratorFunction을 알기 위해서는 Generator에 대해서 알아야 한다
 >Generator 설명 링크
 
 
-## 예
 
-```
-```
-
-위의 예에서 마지막에 두 라인을 보면
-*var cheese*에는 *Food* 카테고리에 이름을 *feta*로 갖고 가격을 *5*로 하도록 되고
-*var fun*에는 *Toy* 카테고리에 이름을 *robot*으로 갖고 가격을 *40*으로 하도록 된다.
 

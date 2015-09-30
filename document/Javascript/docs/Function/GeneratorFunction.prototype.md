@@ -1,0 +1,2 @@
+# GeneratorFunction.prototype
+
