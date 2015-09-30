@@ -2,10 +2,10 @@
 
 ----
 
-* [Promise](docs/Promise/Promise.md)
-* [Promise.all](docs/Promise/Promise.all.md)
-* [Promise.catch](docs/Promise/Promise.catch.md)
-* [Promise.prototype](docs/Promise/Promise.prototype.md)
+* [Promise](../Promise/Promise.md)
+* [Promise.all](../Promise/Promise.all.md)
+* [Promise.catch](../Promise/Promise.catch.md)
+* [Promise.prototype](../Promise/Promise.prototype.md)
 
 ----
 
