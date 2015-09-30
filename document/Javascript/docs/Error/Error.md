@@ -164,7 +164,7 @@ try {
 
 - 특정 에러의 핸들링 (Handling a specific error)
 
-  특정 에러에 관해서만 선택적으로 핸들링 할 수 있는 방법에는 에러의 생성자 프로퍼티를 사용하여 에러 타입을 테스팅 하거나, (만약 모던 자바스크립트 엔진을 염두로 작성하고 있다면) instanceof 키워드를 이용하는 방법이 있다.
+  특정 에러에 관해서만 선택적으로 핸들링 할 수 있는 방법에는 에러의 생성자 프로퍼티를 사용하여 에러 타입을 테스팅 하거나, (만약 모던 자바스크립트 엔진을 염두로 작성하고 있다면) `instanceof` 키워드를 이용하는 방법이 있다.
 ```javascript
 try {
   foo.bar();
@@ -182,10 +182,10 @@ try {
 ---
 
 #### 커스텀 에러 작성(Custom Error Types)
-당신은 아마도 당신의 고유 에러 타입을 정의하고자 할지도 모른다. new MyError()를 발생시키고, 에러를 검사하고 예외를 발생시키는 핸들러로서 instanceof MyError를 유도하는 것 까지.
+당신은 아마도 당신의 고유 에러 타입을 정의하고자 할지도 모른다. `new MyError()`를 발생시키고, 에러를 검사하고 예외를 발생시키는 핸들러로서 `instanceof MyError`를 유도하는 것 까지.
 이것을 하기위한 공통적인 방법은 아래를 참고.
 
-실행된 MyError는 적어도 파이어폭스(Firefox)에선 정확하지 않은 lineNumber 와 fileName를 보고한다는 것을 유의해야한다.
+실행된 `MyError`는 적어도 파이어폭스(Firefox)에선 정확하지 않은 `lineNumber` 와 `fileName`를 보고한다는 것을 유의해야한다.
 
 참고 [What's a good way to extend Error in JavaScript?" discussion on Stackoverflow.](http://stackoverflow.com/questions/1382107/whats-a-good-way-to-extend-error-in-javascript)
 
