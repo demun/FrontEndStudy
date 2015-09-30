@@ -17,20 +17,19 @@ prop in objectName
 ```javascript
 // 배열
 var trees = new Array("redwood", "bay", "cedar", "oak", "maple");
-0 in trees        // returns true
-3 in trees        // returns true
-6 in trees        // returns false
-"bay" in trees    // returns false (you must specify the 
-                  // index number, not the value at that index)
-"length" in trees // returns true (length is an Array property)
+0 in trees        // true를 반환
+3 in trees        // true를 반환
+6 in trees        // false를 반환 
+"bay" in trees    // false를 반환 (index에 있는 값이 아니라, index번호를 지정해야 한다.)
+"length" in trees // true를 반환 (length는 배열 속성이다.)
 
 // 미리 정의 된 객체
-"PI" in Math          // returns true
+"PI" in Math          // true를 반환
 
 // 사용자 정의 객체
 var mycar = {make: "Honda", model: "Accord", year: 1998};
-"make" in mycar  // returns true
-"model" in mycar // returns true
+"make" in mycar  // true를 반환
+"model" in mycar // true를 반환
 ```
 당신은 "in" 연산자 오른쪽에 있는 객체를 지정해야 한. 예를 들어, String생성자로 만들어진 문자열을 지정할 수 있지만, 문자열 리터럴로는 지정할 수 없다.
 ```javascript
