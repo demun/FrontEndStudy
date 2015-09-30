@@ -2,7 +2,7 @@
 
 Function 생성자(constructor)는 새로운 함수(Function) 객체를 만든다.
 Javascript에서 모든 함수는 실제로 function 객체이다.
-
+---
 ### 구문(Syntax)
 ```javascript
 new Function ([arg1[, arg2[, ...argN]],] functionBody)
@@ -18,7 +18,7 @@ new Function ([arg1[, arg2[, ...argN]],] functionBody)
 
   함수 정의를 포함하여 자바스크립트 상태를 나타내는 String
 
-
+---
 ### 설명(Description)
 함수 생성자에 의해 생성된 함수 객체는 함수가 생성될 때 분석된다(parse). 이것은 어떤 함수들은 코드의 나머지에서 분석되기 때문에, 코드내에서 함수 표현식이나 함수 상태를 선언하여 호출하는 것 보다 덜 효과적이다.
 
@@ -29,10 +29,10 @@ new Function ([arg1[, arg2[, ...argN]],] functionBody)
 
 함수(새로운 연산자를 사용하지 않은)로서 함수 생성자를 호출하는 것은 생성자로서 이것을 호출하는 것과 같다.
 
-
+---
 ### 함수의 속성과 메소드 (Properties and Methods of Function)
 전역 함수 객체는 고유의 속성이나 메소드를 가지고 있지 않지만, 함수 그 자신이기 때문에 `Function.prototype`으로부터 프로토타입 체인을 통해 메소드와 프로퍼티를 상속한다.
-
+---
 ### 함수 프로토타입 객체 (Function prototype object)
 #### 속성(Properties)
 - `Function.arguments`
@@ -62,25 +62,109 @@ new Function ([arg1[, arg2[, ...argN]],] functionBody)
 #### 메소드(Methods)
 - `Function.prototype.apply()`
 
-
-  Applies the method of another object in the context of a different object (the calling object); arguments can be passed as an Array object.
+  (객체를 호출하는) 다른 한 객체의 문맥에서 또다를 객체에 대한 메소드를 적용; 인수들은 배열 객체로 전달 가능.
 - `Function.prototype.bind()`
 
   Creates a new function which, when called, itself calls this function in the context of the provided value, with a given sequence of arguments preceding any provided when the new function was called.
 - `Function.prototype.call()`
 
-  Calls (executes) a method of another object in the context of a different object (the calling object); arguments can be passed as they are.
+  실행하고 있는 다른 객체에 대한 문맥에서 또다른 객체의 메소드를 실행 ; 인자로 전달이 가능
+  
 - `Function.prototype.isGenerator()`
 
-  Returns true if the function is a generator; otherwise returns false.
+  만약 함수가 제너레이터(generator)라면 `true`를 리턴 ; 아닐경우 `false` 리턴.
 - `Function.prototype.toSource()`
 
-  Returns a string representing the source code of the function. Overrides the Object.prototype.toSource method.
+  함수의 대표 소스코드 문자열을 리턴. `Object.prototype.toSource` 메소드에 오버라이드.
+
 - `Function.prototype.toString()`
 
-  Returns a string representing the source code of the function. Overrides the Object.prototype.toString method.
+  함수의 대표 소스코드 문자열을 리턴. `Object.prototype.toString` 메소드에 오버라이드.
 
 
+---
 ### 함수 인스턴스 (Function instances)
 
-Function instances inherit methods and properties from Function.prototype. As with all constructors, you can change the constructor's prototype object to make changes to all Function instances.
+함수인스턴스는 `Function.prototype`으로 부터 메소드와 속성들을 상속한다. 모든 생성자로 생성자의 프로토타입 객체가 모든 함수 인스턴스들을 바꿀 수 있도록 변경할 수 있다.
+---
+### 예제(Example)
+아래는 두개의 인자를 가진 함수 객체를 생성하는 예제이다.
+
+```javascript
+// Example can be run directly in your JavaScript console
+
+// Create a function that takes two arguments and returns the sum of those arguments
+var adder = new Function('a', 'b', 'return a + b');
+
+// Call the function
+adder(2, 6);
+// > 8
+```
+#### A recursive shortcut to massively modify the DOM
+Creating functions with the Function constructor is one of the ways to dynamically create an indeterminate number of new objects with some executable code into the global scope from a function. The following example (a recursive shortcut to massively modify the DOM) is impossible without the invocation of the Function constructor for each new query if you want to avoid closures.
+````html
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>MDN Example - a recursive shortcut to massively modify the DOM</title>
+<script type="text/javascript">
+var domQuery = (function() {
+  var aDOMFunc = [
+    Element.prototype.removeAttribute,
+    Element.prototype.setAttribute,
+    CSSStyleDeclaration.prototype.removeProperty,
+    CSSStyleDeclaration.prototype.setProperty
+  ];
+
+  function setSomething(bStyle, sProp, sVal) {
+    var bSet = Boolean(sVal), fAction = aDOMFunc[bSet | bStyle << 1],
+        aArgs = Array.prototype.slice.call(arguments, 1, bSet ? 3 : 2),
+        aNodeList = bStyle ? this.cssNodes : this.nodes;
+
+    if (bSet && bStyle) { aArgs.push(''); }
+    for (
+      var nItem = 0, nLen = this.nodes.length;
+      nItem < nLen;
+      fAction.apply(aNodeList[nItem++], aArgs)
+    );
+    this.follow = setSomething.caller;
+    return this;
+  }
+
+  function setStyles(sProp, sVal) { return setSomething.call(this, true, sProp, sVal); }
+  function setAttribs(sProp, sVal) { return setSomething.call(this, false, sProp, sVal); }
+  function getSelectors() { return this.selectors; };
+  function getNodes() { return this.nodes; };
+
+  return (function(sSelectors) {
+    var oQuery = new Function('return arguments.callee.follow.apply(arguments.callee, arguments);');
+    oQuery.selectors = sSelectors;
+    oQuery.nodes = document.querySelectorAll(sSelectors);
+    oQuery.cssNodes = Array.prototype.map.call(oQuery.nodes, function(oInlineCSS) { return oInlineCSS.style; });
+    oQuery.attributes = setAttribs;
+    oQuery.inlineStyle = setStyles;
+    oQuery.follow = getNodes;
+    oQuery.toString = getSelectors;
+    oQuery.valueOf = getNodes;
+    return oQuery;
+  });
+})();
+</script>
+</head>
+
+<body>
+
+<div class="testClass">Lorem ipsum</div>
+<p>Some text</p>
+<div class="testClass">dolor sit amet</div>
+
+<script type="text/javascript">
+domQuery('.testClass')
+  .attributes('lang', 'en')('title', 'Risus abundat in ore stultorum')
+  .inlineStyle('background-color', 'black')('color', 'white')('width', '100px')('height', '50px');
+</script>
+</body>
+
+</html>
+````
