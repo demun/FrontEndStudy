@@ -7,22 +7,49 @@
 css 레퍼런스 설명: 
  - animation-duration : 
  
- - 속성 값 : 
+ - syntax : 
+```sh 
+animation-duration: time|initial|inherit;
+```
 
-`sample code` : 
-
+ - sample code : 
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-   
-    </style>
-  </head>
-  <body>
-   
-  </body>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation: mymove infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    animation: mymove infinite;
+    animation-duration: 2s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+</style>
+</head>
+<body>
+
+<p><strong>Note:</strong> The animation-duration property is not supported in Internet Explorer 9 and earlier versions.</p>
+<div></div>
+<p><b>Note:</b> Always specify the animation-duration property. Otherwise the duration is 0, and the animation will not be played.</p>
+
+</body>
 </html>
+
 ```
 
 결과 : [http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-duration](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-duration)

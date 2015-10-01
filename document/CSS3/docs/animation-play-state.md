@@ -7,22 +7,48 @@
 css 레퍼런스 설명: 
  - animation-play-state : 
  
- - 속성 값 : 
+ - syntax : 
+```sh 
+animation-play-state: paused|running|initial|inherit;
+```
 
-`sample code` : 
-
+ - sample code : 
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-   
-    </style>
-  </head>
-  <body>
-   
-  </body>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation: mymove 5s;  /* Chrome, Safari, Opera */
+    -webkit-animation-play-state: paused;  /* Chrome, Safari, Opera */
+    animation: mymove 5s;
+    animation-play-state: paused;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+</style>
+</head>
+<body>
+
+<p><strong>Note:</strong> The animation-play-state property is not supported in Internet Explorer 9 and earlier versions.</p>
+<div></div>
+
+</body>
 </html>
+
 ```
 
 결과 : [http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-play-state](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-play-state)

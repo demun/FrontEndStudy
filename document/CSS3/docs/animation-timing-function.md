@@ -7,22 +7,48 @@
 css 레퍼런스 설명: 
  - animation-timing-function : 
  
- - 속성 값 : 
+ - syntax : 
+```sh 
+animation-timing-function: linear|ease|ease-in|ease-out|cubic-bezier(n,n,n,n)|initial|inherit;
+```
 
-`sample code` : 
-
+ - sample code : 
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-   
-    </style>
-  </head>
-  <body>
-   
-  </body>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation: mymove 5s infinite;  /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: linear;  /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+    animation-timing-function: linear;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+</style>
+</head>
+<body>
+
+<p><strong>Note:</strong> The animation-timing-function property is not supported in Internet Explorer 9 and earlier versions.</p>
+<div></div>
+
+</body>
 </html>
+
 ```
 
 결과 : [http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-timing-function](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-timing-function)

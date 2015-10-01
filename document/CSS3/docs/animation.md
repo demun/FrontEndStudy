@@ -7,25 +7,57 @@
 css 레퍼런스 설명: 
  - animation : 
  
- - 속성 값 : 
+ - syntax : 
+```sh 
+animation : 
+```
 
-`sample code` : 
-
+ - sample code : 
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-   
-    </style>
-  </head>
-  <body>
-   
-  </body>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div></div>
+
+<p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+
+</body>
 </html>
 ```
 
-결과 : [http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1](http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1)
+결과 : 
+[http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1](http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1)
+[http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2](http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2)
+[http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation3](http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation3)
+
 
 ### 목록
 * [align-content](align-content.md)

@@ -7,22 +7,48 @@
 css 레퍼런스 설명: 
  - animation-delay : 
  
- - 속성 값 : 
+ - syntax : 
+```sh 
+animation-delay: time|initial|inherit;
+```
 
-`sample code` : 
-
+ - sample code : 
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-   
-    </style>
-  </head>
-  <body>
-   
-  </body>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+    animation-delay: 2s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+</style>
+</head>
+<body>
+
+<p><strong>Note:</strong> The animation-delay property is not supported in Internet Explorer 9 and earlier versions.</p>
+<div></div>
+
+</body>
 </html>
+
 ```
 
 결과 : [http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-delay](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-delay)

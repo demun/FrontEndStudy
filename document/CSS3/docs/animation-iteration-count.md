@@ -6,23 +6,49 @@
 
 css 레퍼런스 설명: 
  - animation-iteration-count : 
+ 
+ - syntax : 
+```sh 
+animation-iteration-count: number|infinite|initial|inherit;
+```
 
- - 속성 값 : 
-
-`sample code` : 
-
+ - sample code : 
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-   
-    </style>
-  </head>
-  <body>
-   
-  </body>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation: mymove 3s;  /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 3;  /* Chrome, Safari, Opera */
+    animation: mymove 3s;
+    animation-iteration-count: 3;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+</style>
+</head>
+<body>
+
+<p><strong>Note:</strong> The animation-iteration-count property is not supported in Internet Explorer 9 and earlier versions.</p>
+<div></div>
+
+</body>
 </html>
+
 ```
 
 결과 : [http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-iteration-count](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-iteration-count)
