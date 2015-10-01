@@ -1,11 +1,11 @@
-# animation
+# animation-play-state
 
 작성자 : 이연옥
 
 작성일 : 2015-10-01
 
 css 레퍼런스 설명: 
- - animation : 
+ - animation-play-state : 
  
  - 속성 값 : 
 
@@ -25,7 +25,7 @@ css 레퍼런스 설명:
 </html>
 ```
 
-결과 : [http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1](http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1)
+결과 : [http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-play-state](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-play-state)
 
 ### 목록
 * [align-content](align-content.md)
