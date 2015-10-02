@@ -1,1 +1,0 @@
-# Strict mod

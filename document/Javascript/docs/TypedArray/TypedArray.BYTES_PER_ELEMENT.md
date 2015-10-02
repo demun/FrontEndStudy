@@ -1,1 +1,0 @@
-# TypedArray.BYTES_PER_ELEMENT
