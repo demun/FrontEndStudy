@@ -1,43 +1,73 @@
-# word-break
+## border-image-outset
 
-작성자 : 송지은
+작성자 : 김동일
 
-작성일 : 2015-09-27
+작성일 : 2015-09-18
 
 css 레퍼런스 설명: 
-- word-break : 줄바꿈을 위한 단어 규칙을 지정하는 속성이다.
-- 속성 값 : normal, break-all, keep-all, initial, inherit
-
-`sample code` : 
-
-```html
-<!DOCTYPE html>
-<html>
-	<head>
-		<style>
-			p.test1 {
-			    width: 140px; 
-			    border: 1px solid #000000;
-			    word-break: keep-all;
-			}
-
-			p.test2 {
-			    width: 140px; 
-			    border: 1px solid #000000;
-			    word-break: break-all;
-			}
-		</style>
-	</head>
-	<body>
-		<p class="test1">This paragraph contains some text. This line will-break-at-hyphens.</p>
-		<p class="test2">This paragraph contains some text. The lines will break at any character.</p>
-	</body>
-</html>
+ - border-image-outset : border image의 내부 크기을 정의한다.
+ 
+ - syntax : 
+```sh 
+border-image-outset: length|number|initial|inherit;
 ```
 
-[결과보기](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_word-break)
+length : 표시할 값을 정의한다. 기본값은 0이며, 표시 시 px단위로 정의한다.
 
-참고 : 오페라 12 및 이하 버전에서는 지원되지 않는다.
+number : border 크기의 배수로 표현한다.
+
+initial:기본 값으로 set되어 있는 값을 불러온다.
+
+inherit:부모 element에 설정되어 있는 값을 상속 받는다.
+
+sample code : 
+```sh
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    /*ie11,chrome */
+    border: 15px solid transparent;
+    padding: 5px;   
+    border-image: url(border.png);
+    border-image-slice: 30;
+    border-image-repeat: round;
+    border-image-outset:0 0 0 0;
+    
+    /*Safari 3.1-5*/
+    -webkit-border-image: url(border.png);
+    -webkit-border-image-slice: 30;
+    -webkit-border-image-repeat: round;
+    -webkit-border-image-outset:0 0 0 0;
+
+    /*Opera 11-12.1*/
+    -o-border-image: url(border.png);
+    -o-border-image-slice: 30;
+    -o-border-image-repeat: round;
+    -o-border-image-outset:0 0 0 0;
+    }
+</style>
+</head>
+<body>
+
+<div>
+This DIV uses an image as a border.
+</div>
+<p>Here is the image used:</p>
+<img src="border.png">
+
+<p><b>Note: </b>Internet Explorer 10, Opera 12, and Safari 5 do not support the border-image-repeat property.</p>
+
+</body>
+</html>
+
+
+```
+
+결과 
+
+![border-image-outset](../images/border-image-outset.jpg)
 
 ### 목록
 * [align-content](align-content.md)

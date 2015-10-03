@@ -1,0 +1,91 @@
+(수정중입니다)
+
+The CSS3 background-size property allows you to specify the size of background images.
+배경 이미지의 사이즈를 설정
+
+Before CSS3, the size of a background image was the actual size of the image. CSS3 allows us to re-use background images in different contexts.
+
+The size can be specified in lengths, percentages, or by using one of the two keywords: contain or cover.
+http://www.w3schools.com/css/tryit.asp?filename=trycss3_background-size
+The two other possible values for background-size are contain and cover.
+The contain keyword scales the background image to be as large as possible (but both its width and its height must fit inside the content area). As such, depending on the proportions of the background image and the background positioning area, there may be some areas of the background which are not covered by the background image.
+The cover keyword scales the background image so that the content area is completely covered by the background image (both its width and height are equal to or exceed the content area). As such, some parts of the background image may not be visible in the background positioning area.
+The following example illustrates the use of contain and cover:
+
+http://www.w3schools.com/css/tryit.asp?filename=trycss3_background-size_contain
+http://superkts.com/css/background-size
+
+###목차
+* [align-content](docs/align-content.md)
+* [align-items](docs/align-items.md)
+* [align-self](docs/align-self.md)
+* [@keyframes](docs/@keyframes.md)
+* [animation](docs/animation.md)
+* [animation-name](docs/animation-name.md)
+* [animation-duration](docs/animation-duration.md)
+* [animation-timing-function](docs/animation-timing-function.md)
+* [animation-delay](docs/animation-delay.md)
+* [animation-iteration-count](docs/animation-iteration-count.md)
+* [animation-direction](docs/animation-direction.md)
+* [animation-play-state](docs/animation-play-state.md)
+* [backface-visibility](docs/backface-visibility.md)
+* [background-clip](docs/background-clip.md)
+* [background-origin](docs/background-origin.md)
+* [background-size](docs/background-size.md)
+* [border-bottom-left-radius](docs/border-bottom-left-radius.md)
+* [border-bottom-right-radius](docs/border-bottom-right-radius.md)
+* [border-image](docs/border-image.md)
+* [border-image-outset](docs/border-image-outset.md)
+* [border-image-repeat](docs/border-image-repeat.md)
+* [border-image-slice](docs/border-image-slice.md)
+* [border-image-source](docs/border-image-source.md)
+* [border-image-width](docs/border-image-width.md)
+* [border-radius](docs/border-radius.md)
+* [border-top-left-radius](docs/border-top-left-radius.md)
+* [border-top-right-radius](docs/border-top-right-radius.md)
+* [box-shadow](docs/box-shadow.md)
+* [box-sizing](docs/box-sizing.md)
+* [column-count](docs/column-count.md)
+* [column-gap](docs/column-gap.md)
+* [column-rule](docs/column-rule.md)
+* [column-rule-color](docs/column-rule-color.md)
+* [column-rule-style](docs/column-rule-style.md)
+* [column-rule-width](docs/column-rule-width.md)
+* [column-span](docs/column-span.md)
+* [column-width](docs/column-width.md)
+* [columns](docs/columns.md)
+* [flex](docs/flex.md)
+* [flex-basis](docs/flex-basis.md)
+* [flex-direction](docs/flex-direction.md)
+* [flex-flow](docs/flex-flow.md)
+* [flex-grow](docs/flex-grow.md)
+* [flex-shrink](docs/flex-shrink.md)
+* [flex-wrap](docs/flex-wrap.md)
+* [@font-face](docs/@font-face.md)
+* [font-feature-settings](docs/font-feature-settings.md)
+* [hyphens](docs/hyphens.md)
+* [justify-content](docs/justify-content.md)
+* [opacity](docs/opacity.md)
+* [order](docs/order.md)
+* [outline-offset](docs/outline-offset.md)
+* [overflow-wrap](docs/overflow-wrap.md)
+* [overflow-x](docs/overflow-x.md)
+* [overflow-y](docs/overflow-y.md)
+* [@page](docs/@page.md)
+* [perspective](docs/perspective.md)
+* [perspective-origin](docs/perspective-origin.md)
+* [resize](docs/resize.md)
+* [tab-size](docs/tab-size.md)
+* [text-align-last](docs/text-align-last.md)
+* [text-overflow](docs/text-overflow.md)
+* [text-shadow](docs/text-shadow.md)
+* [transform](docs/transform.md)
+* [transform-origin](docs/transform-origin.md)
+* [transform-style](docs/transform-style.md)
+* [transition](docs/transition.md)
+* [transition-delay](docs/transition-delay.md)
+* [transition-duration](docs/transition-duration.md)
+* [transition-property](docs/transition-property.md)
+* [transition-timing-function](docs/transition-timing-function.md)
+* [word-break](docs/word-break.md)
+* [word-wrap](docs/word-wrap.md)

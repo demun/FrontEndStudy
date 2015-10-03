@@ -1,43 +1,80 @@
-# word-break
+## border-image-slice
 
-작성자 : 송지은
+작성자 : 김동일
 
-작성일 : 2015-09-27
+작성일 : 2015-09-18
 
 css 레퍼런스 설명: 
-- word-break : 줄바꿈을 위한 단어 규칙을 지정하는 속성이다.
-- 속성 값 : normal, break-all, keep-all, initial, inherit
-
-`sample code` : 
-
-```html
-<!DOCTYPE html>
-<html>
-	<head>
-		<style>
-			p.test1 {
-			    width: 140px; 
-			    border: 1px solid #000000;
-			    word-break: keep-all;
-			}
-
-			p.test2 {
-			    width: 140px; 
-			    border: 1px solid #000000;
-			    word-break: break-all;
-			}
-		</style>
-	</head>
-	<body>
-		<p class="test1">This paragraph contains some text. This line will-break-at-hyphens.</p>
-		<p class="test2">This paragraph contains some text. The lines will break at any character.</p>
-	</body>
-</html>
+ - border-image-slice : border image의 자르기 정도를 정의한다.
+ 
+ - syntax : 
+```sh 
+border-image-slice: number|%|fill|initial|inherit;
 ```
 
-[결과보기](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_word-break)
+number : 자를 이미지를 px 단위의 값으로 정의한다.
 
-참고 : 오페라 12 및 이하 버전에서는 지원되지 않는다.
+% : 자를 이미지의 크기나 높이를 %단위로 정의한다.
+
+fill : 자르는 이미지까지 전체를 보여준다.
+
+initial:기본 값으로 set되어 있는 값을 불러온다.
+
+inherit:부모 element에 설정되어 있는 값을 상속 받는다.
+
+sample code : 
+```sh
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#borderimg1 {
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(border.png) round; /* Safari 3.1-5 */
+    -o-border-image: url(border.png) round; /* Opera 11-12.1 */
+    border-image: url(border.png) round;
+    border-image-slice: 50;
+}
+
+#borderimg2 {
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(border.png) round; /* Safari 3.1-5 */
+    -o-border-image: url(border.png) round; /* Opera 11-12.1 */
+    border-image: url(border.png) round;
+    border-image-slice: 20%;
+}
+
+#borderimg3 {
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(border.png) round; /* Safari 3.1-5 */
+    -o-border-image: url(border.png) round; /* Opera 11-12.1 */
+    border-image: url(border.png) round;
+    border-image-slice: 30%;
+}
+</style>
+</head>
+<body>
+
+<p id="borderimg1">border-image-slice: 50;</p>
+<p id="borderimg2">border-image-slice: 20%;</p>
+<p id="borderimg3">border-image-slice: 30%;</p>
+
+<p>Here is the image used:</p>
+<img src="border.png">
+
+<p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image-slice property.</p>
+
+</body>
+</html>
+
+```
+
+결과 
+
+![border-image-slice](../images/border-image-slice.jpg)
 
 ### 목록
 * [align-content](align-content.md)

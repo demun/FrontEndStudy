@@ -1,43 +1,71 @@
-# word-break
+## backface-visibility
 
-작성자 : 송지은
+작성자 : 김동일
 
-작성일 : 2015-09-27
+작성일 : 2015-09-18
 
 css 레퍼런스 설명: 
-- word-break : 줄바꿈을 위한 단어 규칙을 지정하는 속성이다.
-- 속성 값 : normal, break-all, keep-all, initial, inherit
-
-`sample code` : 
-
-```html
-<!DOCTYPE html>
-<html>
-	<head>
-		<style>
-			p.test1 {
-			    width: 140px; 
-			    border: 1px solid #000000;
-			    word-break: keep-all;
-			}
-
-			p.test2 {
-			    width: 140px; 
-			    border: 1px solid #000000;
-			    word-break: break-all;
-			}
-		</style>
-	</head>
-	<body>
-		<p class="test1">This paragraph contains some text. This line will-break-at-hyphens.</p>
-		<p class="test2">This paragraph contains some text. The lines will break at any character.</p>
-	</body>
-</html>
+ - backface-visibility : div 테그 뒷면의 출력 여부를 정의한다.
+ 
+ - syntax : 
+```sh 
+backface-visibility: visible|hidden|initial|inherit;
 ```
 
-[결과보기](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_word-break)
+visible : 기본 값, 뒷면이 보여진다.
 
-참고 : 오페라 12 및 이하 버전에서는 지원되지 않는다.
+hidden : 뒷면을 숨긴다.
+
+initial:기본 값으로 set되어 있는 값을 불러온다.
+
+inherit:부모 element에 설정되어 있는 값을 상속 받는다.
+
+sample code : 
+```sh
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    background-color: red;
+    -webkit-transform: rotateY(180deg);  /* Chrome, Safari, Opera */
+    transform: rotateY(180deg);
+}
+
+#div1 {
+    -webkit-backface-visibility: hidden;  /* Chrome, Safari, Opera */
+    backface-visibility: hidden;
+}
+
+#div2 {
+    -webkit-backface-visibility: visible;  /* Chrome, Safari, Opera */
+    backface-visibility: visible;
+}
+</style>
+</head>
+<body>
+
+<p>This example shows two div elements, rotated 180 degrees, facing away from the user.</p>
+<p>The first div element has the backface-visibility property set to "hidden", and should therefore be invisible.</p>
+
+<div id="div1">DIV 1</div>
+<div id="div2">DIV 2</div>
+
+<p><strong>Note:</strong> The backface-visibility property is not supported in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>
+
+
+```
+
+결과 
+
+![backface-visibility](../images/backface-visibility.jpg)
+
 
 ### 목록
 * [align-content](align-content.md)

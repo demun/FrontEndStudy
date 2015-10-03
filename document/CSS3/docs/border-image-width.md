@@ -1,43 +1,79 @@
-# word-break
+## border-image-width
 
-작성자 : 송지은
+작성자 : 김동일
 
-작성일 : 2015-09-27
+작성일 : 2015-09-18
 
 css 레퍼런스 설명: 
-- word-break : 줄바꿈을 위한 단어 규칙을 지정하는 속성이다.
-- 속성 값 : normal, break-all, keep-all, initial, inherit
-
-`sample code` : 
-
-```html
-<!DOCTYPE html>
-<html>
-	<head>
-		<style>
-			p.test1 {
-			    width: 140px; 
-			    border: 1px solid #000000;
-			    word-break: keep-all;
-			}
-
-			p.test2 {
-			    width: 140px; 
-			    border: 1px solid #000000;
-			    word-break: break-all;
-			}
-		</style>
-	</head>
-	<body>
-		<p class="test1">This paragraph contains some text. This line will-break-at-hyphens.</p>
-		<p class="test2">This paragraph contains some text. The lines will break at any character.</p>
-	</body>
-</html>
+ - border-image-width : border image의 크기를 정의한다.
+ 
+ - syntax : 
+```sh 
+border-image-width: number|%|auto|initial|inherit;
 ```
 
-[결과보기](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_word-break)
+number : 이미지 크기를 px 단위로 정의한다
 
-참고 : 오페라 12 및 이하 버전에서는 지원되지 않는다.
+% : 이미지 크기를 % 단위로 정의한다.
+
+auto : 자를 이미지에 정의되어 있는 크기 또는 높이에 따라 자동적으로 정의된다.
+
+initial:기본 값으로 set되어 있는 값을 불러온다.
+
+inherit:부모 element에 설정되어 있는 값을 상속 받는다.
+
+sample code : 
+```sh
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#borderimg1 { 
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image-source: url(border.png);
+    border-image-repeat: round;
+    border-image-slice: 30;
+    border-image-width: 10px;        
+}
+
+#borderimg2 { 
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image-source: url(border.png);
+    border-image-repeat: round;
+    border-image-slice: 30;
+    border-image-width: 20px;        
+}
+
+#borderimg3 { 
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image-source: url(border.png);
+    border-image-repeat: round;    
+    border-image-slice: 30;
+    border-image-width: 30px;        
+}
+</style>
+</head>
+<body>
+
+<p>The border-image-width property specifies the width of the border image:</p>
+<p id="borderimg1">border-image-width: 10px;</p>
+<p id="borderimg2">border-image-width: 20px;</p>
+<p id="borderimg3">border-image-width: 30px;</p>
+
+<p>Here is the original image:</p><img src="border.png">
+<p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image-width property.</p>
+
+</body>
+</html>
+
+```
+
+결과 
+
+![border-image-width](../images/border-image-width.jpg)
 
 ### 목록
 * [align-content](align-content.md)

@@ -1,43 +1,63 @@
-# word-break
+## border-image
 
-작성자 : 송지은
+작성자 : 김동일
 
-작성일 : 2015-09-27
+작성일 : 2015-09-18
 
 css 레퍼런스 설명: 
-- word-break : 줄바꿈을 위한 단어 규칙을 지정하는 속성이다.
-- 속성 값 : normal, break-all, keep-all, initial, inherit
-
-`sample code` : 
-
-```html
-<!DOCTYPE html>
-<html>
-	<head>
-		<style>
-			p.test1 {
-			    width: 140px; 
-			    border: 1px solid #000000;
-			    word-break: keep-all;
-			}
-
-			p.test2 {
-			    width: 140px; 
-			    border: 1px solid #000000;
-			    word-break: break-all;
-			}
-		</style>
-	</head>
-	<body>
-		<p class="test1">This paragraph contains some text. This line will-break-at-hyphens.</p>
-		<p class="test2">This paragraph contains some text. The lines will break at any character.</p>
-	</body>
-</html>
+ - border-image : border를 이미지로 정의한다.
+ 
+ - syntax : 
+```sh 
+border-image: source slice width outset repeat|initial|inherit;
 ```
 
-[결과보기](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_word-break)
+source slice width outset repeat : border로 사용하는 이미지 경로, slice 타입, 크기(%), outset, 반복(round/stretch) 값을 정의한다.
 
-참고 : 오페라 12 및 이하 버전에서는 지원되지 않는다.
+initial:기본 값으로 set되어 있는 값을 불러온다.
+
+inherit:부모 element에 설정되어 있는 값을 상속 받는다.
+
+sample code : 
+```sh
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#borderimg1 { 
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(border.png) 30 round repeat; /* Safari 3.1-5 */
+    -o-border-image: url(border.png) 30 round; /* Opera 11-12.1 */
+    border-image: url(border.png) 30 round; /*ie11 and chrome 버전에서 사용*/
+}
+
+#borderimg2 { 
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(border.png) 30 stretch; /* Safari 3.1-5 */
+    -o-border-image: url(border.png) 30 stretch; /* Opera 11-12.1 */
+    border-image: url(border.png) 30 stretch; /*ie11 and chrome 버전에서 사용*/
+}
+</style>
+</head>
+<body>
+
+<p>The border-image property specifies an image to be used as the border around an element:</p>
+<p id="borderimg1">Here, the middle sections of the image are repeated to create the border.</p>
+<p id="borderimg2">Here, the middle sections of the image are stretched to create the border.</p>
+
+<p>Here is the original image:</p><img src="border.png">
+<p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+
+</body>
+</html>
+
+```
+
+결과 
+
+![border-image](../images/border-image.jpg)
 
 ### 목록
 * [align-content](align-content.md)

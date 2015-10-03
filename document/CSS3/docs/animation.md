@@ -1,43 +1,67 @@
-# word-break
+# animation
 
-작성자 : 송지은
+작성자 : 이연옥
 
-작성일 : 2015-09-27
+작성일 : 2015-10-01
 
 css 레퍼런스 설명: 
-- word-break : 줄바꿈을 위한 단어 규칙을 지정하는 속성이다.
-- 속성 값 : normal, break-all, keep-all, initial, inherit
+ - animation : 
+ 
+ - syntax : 
+```sh 
+animation : 
+```
 
-`sample code` : 
-
+ - sample code : 
 ```html
 <!DOCTYPE html>
 <html>
-	<head>
-		<style>
-			p.test1 {
-			    width: 140px; 
-			    border: 1px solid #000000;
-			    word-break: keep-all;
-			}
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+}
 
-			p.test2 {
-			    width: 140px; 
-			    border: 1px solid #000000;
-			    word-break: break-all;
-			}
-		</style>
-	</head>
-	<body>
-		<p class="test1">This paragraph contains some text. This line will-break-at-hyphens.</p>
-		<p class="test2">This paragraph contains some text. The lines will break at any character.</p>
-	</body>
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div></div>
+
+<p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+
+</body>
 </html>
 ```
 
-[결과보기](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_word-break)
+결과 : 
 
-참고 : 오페라 12 및 이하 버전에서는 지원되지 않는다.
+[http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1](http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1)
+
+[http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2](http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2)
+
+[http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation3](http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation3)
+
+
 
 ### 목록
 * [align-content](align-content.md)

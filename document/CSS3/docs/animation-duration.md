@@ -1,43 +1,58 @@
-# word-break
+# animation-duration
 
-작성자 : 송지은
+작성자 : 이연옥
 
-작성일 : 2015-09-27
+작성일 : 2015-10-01
 
 css 레퍼런스 설명: 
-- word-break : 줄바꿈을 위한 단어 규칙을 지정하는 속성이다.
-- 속성 값 : normal, break-all, keep-all, initial, inherit
+ - animation-duration : 
+ 
+ - syntax : 
+```sh 
+animation-duration: time|initial|inherit;
+```
 
-`sample code` : 
-
+ - sample code : 
 ```html
 <!DOCTYPE html>
 <html>
-	<head>
-		<style>
-			p.test1 {
-			    width: 140px; 
-			    border: 1px solid #000000;
-			    word-break: keep-all;
-			}
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation: mymove infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    animation: mymove infinite;
+    animation-duration: 2s;
+}
 
-			p.test2 {
-			    width: 140px; 
-			    border: 1px solid #000000;
-			    word-break: break-all;
-			}
-		</style>
-	</head>
-	<body>
-		<p class="test1">This paragraph contains some text. This line will-break-at-hyphens.</p>
-		<p class="test2">This paragraph contains some text. The lines will break at any character.</p>
-	</body>
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+</style>
+</head>
+<body>
+
+<p><strong>Note:</strong> The animation-duration property is not supported in Internet Explorer 9 and earlier versions.</p>
+<div></div>
+<p><b>Note:</b> Always specify the animation-duration property. Otherwise the duration is 0, and the animation will not be played.</p>
+
+</body>
 </html>
+
 ```
 
-[결과보기](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_word-break)
-
-참고 : 오페라 12 및 이하 버전에서는 지원되지 않는다.
+결과 : [http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-duration](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-duration)
 
 ### 목록
 * [align-content](align-content.md)

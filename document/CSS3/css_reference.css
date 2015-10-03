@@ -1,0 +1,11 @@
+/** 
+*	작성자 : 김동일
+*   작성일 : 2015-09-02 17:29
+*   comment : 이 곳은 css reference 를 작성하는 공간 입니다.
+*             css 관련 reference는 이 곳에 작성해 주세요
+**/
+# Example
+p {
+    color: red; //p테그 색상
+    text-align: center; // p테크 글자 정렬
+}

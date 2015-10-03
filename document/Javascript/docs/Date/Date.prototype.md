@@ -1,1 +1,0 @@
-# Date.prototype
