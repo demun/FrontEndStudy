@@ -6,7 +6,7 @@
 ## Rule
 
 * [LoadMap](document/@Rule/RoadMap.md)
-* [문서-작성-방법](document/@Rule문서-작성-방법.md)
+* [문서-작성-방법](document/@Rule/문서-작성-방법.md)
 
 ## 목차
 
