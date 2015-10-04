@@ -87,7 +87,7 @@
 
  - 특징(tutorial) 및 자주 쓰이는 함수
 
-   http://api.jquery.com/을 참고한다.
+   http://api.jquery.com/ 을 참고한다.
 
    크게 3종류의 API가 있다.
 
@@ -103,7 +103,7 @@
 
    오픈 소스용 또는 상용 버전의 Plugin들을 조사한다.
 
-   http://plugins.jquery.com/을 참조하여 조사함
+   http://plugins.jquery.com/ 을 참조하여 조사함
 
    * 그래프(차트), 테이블(grid), datepicker, colorpicker, tree, multiselect 등의 UI 관련 plugin
 
@@ -118,7 +118,7 @@
 
    - 시작하기(tutorial) 
 
-   http://bootstrapk.com/getting-started/를 참조로 스터디(해당 사이트가 한글 지원도 되니 필요하시면 이 url로 보시면됩니다.)
+   http://bootstrapk.com/getting-started/ 를 참조로 스터디(해당 사이트가 한글 지원도 되니 필요하시면 이 url로 보시면됩니다.)
    
   - bootstrap CSS 
 
@@ -128,7 +128,7 @@
     http://bootstrapk.com/javascript/
 
   - bootstrap component(plugin)
-    http://bootstrapk.com/components/를 참조로 스터디
+    http://bootstrapk.com/components/ 를 참조로 스터디
     bootstrap plugin 조사(은근 많습니다. JQuery Plugin과 최대한 안겹치고, Bootstrape을 바탕으로 만든 Plugin만을 조사)
 
  ** Angular JS 
