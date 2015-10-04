@@ -5,7 +5,8 @@
 
 ## 각 문서 RoadMap
 
-* [LoadMap](document/RoadMap/README.md)
+* [LoadMap](document/@Rule/RoadMap.md)
+* [문서-작성-방법](document/@Rule문서-작성-방법.md)
 
 ## 목차
 
@@ -38,6 +39,3 @@
 * [Atom](document/Atom/README.md) - 진행대기
 
 
-----------------------
-
-* [문서-작성-방법](document/문서-작성-방법.md)
