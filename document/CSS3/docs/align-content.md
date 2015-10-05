@@ -1,16 +1,17 @@
-# align-content
+## align-content
 
 작성자 : 송지은
 
 작성일 : 2015-09-27
 
 css 레퍼런스 설명: 
-- align-content : flex로 지정된 부모 요소 내에서 여러 개의 행이나 열로 구성된 박스 요소의 정렬을 지정하기 위한 속성이다.
-- 
+ - align-content : flex로 지정된 부모 요소 내에서 여러 개의 행이나 열로 구성된 박스 요소의 정렬을 지정하기 위한 속성이다.
+
  - syntax : 
 ```sh 
 align-content: stretch|center|flex-start|flex-end|space-between|space-around|initial|inherit;
 ```
+
 stretch : 기본 값. 박스 요소는 나머지 공간을 사용하고 박스 요소 사이에 균등하게 분할된다.
 
 center : 박스 요소는 flex로 지정된 부모 요소의 중심에 정렬된다.
@@ -66,7 +67,7 @@ inherit : 부모 요소에 적용된 이 속성 값을 상속한다.
 
 [결과보기 >](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_align-content)
 
-[모든 속성 값에 대한 결과 보기 >] (https://mdn.mozillademos.org/en-US/docs/Web/CSS/align-content$samples/Examples?revision=921425)
+[모든 속성 값에 대한 결과 보기 >] (http://mdn.mozillademos.org/en-US/docs/Web/CSS/align-content%24samples/Examples?revision=921425)
 
 참고 : 
 - 인터넷 익스플로러 10 및 이하 버전에서는 align-content 속성을 지원하지 않는다.
