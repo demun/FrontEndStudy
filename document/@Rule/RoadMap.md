@@ -1,8 +1,8 @@
-##각 언어별 Load Map
+## 각 언어별 Load Map
 > **모든 스터디에는 *sample 예제* 가 있어야 한다.**
 
 =
-##javascript 실무
+### javascript 실무
 **동기 vs 비동기 통신**
 
 * 차이점    
@@ -59,9 +59,9 @@
     
 * 향후 심화 과정으로 그룹 스터디 진행합니다~
 
-<br>
 
-## JQuery 실무
+=
+### JQuery 실무
 
 **특징(tutorial) 및 자주 쓰이는 함수**
 
@@ -85,9 +85,9 @@
     - Upload / downlaod 등의 ajax 관련 plugin
     - animation plugin
     - slider / responsive 관련 plugin 등
-<br>   
-
-## Bootstrap 실무
+   
+=
+### Bootstrap 실무
 
 * 시작하기(tutorial)    
     - [http://getbootstrap.com/getting-started/](http://getbootstrap.com/getting-started/)   
@@ -110,16 +110,16 @@
     - [http://blog.getbootstrap.com/2015/08/19/bootstrap-4-alpha/](http://blog.getbootstrap.com/2015/08/19/bootstrap-4-alpha/)    
     (새롭게 출시되는 4버전)
 
-<br>    
-
-## Angular JS
+    
+=
+### Angular JS
 
 * 교제 선정 및 그것을 중심으로 스터디 진행.
 * 10/15(목)에 교제 선정 완료 및 로드맵 진행.
 
-<br>
 
-## SASS 
+=
+### SASS 
 * SASS 설치 및 설정 및 변환 방법
 * SASS 기초(Tutorial)
  http://sass-guidelin.es/ko/#section-6 ,  http://sass-lang.com/guide 를 참고하여 스터디 
