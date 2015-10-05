@@ -117,6 +117,24 @@
 * 교제 선정 및 그것을 중심으로 스터디 진행.
 * 10/15(목)에 교제 선정 완료 및 로드맵 진행.
 
+<br>
+
+## SASS 
+* SASS 설치 및 설정 및 변환 방법
+* SASS 기초(Tutorial)
+ - Preprocessing
+ - Variables
+ - Nesting
+ - Partials
+ - Import
+ - Mixins
+ - Inheritance
+ - Operators
+ - 조건문
+ - 반복문
+ - 경고와 오류
+* postcss
+ - https://github.com/postcss/postcss 를 참고로하여 스터디
 
 <br>
 ---
