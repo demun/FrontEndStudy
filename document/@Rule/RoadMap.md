@@ -122,6 +122,7 @@
 ## SASS 
 * SASS 설치 및 설정 및 변환 방법
 * SASS 기초(Tutorial)
+ http://sass-guidelin.es/ko/#section-6 ,  http://sass-lang.com/guide 를 참고하여 스터디 
  - Preprocessing
  - Variables
  - Nesting
