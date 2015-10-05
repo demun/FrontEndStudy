@@ -1,0 +1,84 @@
+{
+	// 출처: https://github.com/yamoo9/Making-Modern-Web-Design-Work-Process/blob/master/04-Emmet/Emmet.sublime-settings
+	"snippets": {
+		// 주언어, 인코딩 설정
+		"variables": {
+			"lang": "ko",
+			"locale": "ko-KR",
+			"charset": "UTF-8"
+		},
+		// HTML 사용자 정의 설정
+		"html": {
+			// 스니펫 
+			"snippets": {
+				"nav+": "nav[id=\"${1:gnb}\"]>ul>li*${2:3}>a$3",
+				"contentinfo": "footer[role=contentinfo]>p>{Copyright }+a[href=http://${1:yamoo9.net}]{${1:yamoo9.net}}+{. All rights reserved.}",
+				"ce": "<!--// |${child} -->",
+				// 조건부 주석문
+				"cc:ie6": "<!--[if IE 6]>${child}|<![endif]-->",
+				"cc:ie7": "<!--[if IE 7]>${child}|<![endif]-->",
+				"cc:ie8": "<!--[if IE 8]>${child}|<![endif]-->",
+				"cc:ie9": "<!--[if IE 9]>${child}|<![endif]-->",
+				"cc:lt-ie7": "<!--[if lt IE 7]>${child}|<![endif]-->",
+				"cc:lt-ie8": "<!--[if lt IE 8]>${child}|<![endif]-->",
+				"cc:lt-ie9": "<!--[if lt IE 9]>${child}|<![endif]-->",
+				"cc:lte-ie7": "<!--[if lte IE 7]>${child}|<![endif]-->",
+				"cc:lte-ie8": "<!--[if lte IE 8]>${child}|<![endif]-->",
+				"cc:lte-ie9": "<!--[if lte IE 9]>${child}|<![endif]-->",
+				"cc:gt-ie6": "<!--[if gt IE 6]>${child}|<![endif]-->",
+				"cc:gt-ie7": "<!--[if gt IE 7]>${child}|<![endif]-->",
+				"cc:gt-ie8": "<!--[if gt IE 8]>${child}|<![endif]-->",
+				"cc:gte-ie6": "<!--[if gte IE 6]>${child}|<![endif]-->",
+				"cc:gte-ie7": "<!--[if gte IE 7]>${child}|<![endif]-->",
+				"cc:gte-ie8": "<!--[if gte IE 8]>${child}|<![endif]-->"				
+			},
+			// 축약 표현식
+			"abbreviations": {
+				// Emmet 기본 table+ 덮어쓰기
+				"table+": "table[border=1 id=]>caption+tr>th",
+				"iframe": "<iframe src=\"\">",
+				"meta:compat": "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=${1:Edge}\" />",
+				"doc": "html>(head>meta:compat+meta[charset=UTF-8]+title{${1:문서 제목}})+body",
+				"project": "html>(head>meta:compat+meta[charset=UTF-8]+title+meta:mobile+link:c)+body",
+				"!": "!!!+doc[lang=ko-KR]",
+				"!!": "!!!+project[lang=ko-KR]",
+				// 신규 축약 코드 생성
+				"aimg": "a>img",
+				"meta:seo": "meta[name=description content=$1]+meta[name=keywords content=$2]",
+				"style:4": "style[type=text/css]",
+				"script:4": "script[type=text/javascript]"
+			}
+		},
+		// CSS 사용자 정의 설정
+		"css": {
+			// 스니펫
+			"snippets": {
+				"reset-space": "m0+bd0+p0",
+				"reset-list": "lisn+pl0"
+			}
+		}
+	},
+	// Emmet 확장 경로 설정
+	"extensions_path": "c://emmet",
+	
+	"preferences": {
+		// Lorem Ipsum 기본 언어 설정: 한글(ko), 영어(en), 러시아어(ru)
+		"lorem.defaultLang": "ko",
+
+		// CSS Hex 컬러 단축(3 Dgit) 설정
+		"css.color.short": false,
+		
+		// CSS 벤더 프리픽스 자동 추가 설정
+		// "css.autoInsertVendorPrefixes": false,
+		
+		// CSS 그레디언트 대체 컬러 추가 설정
+		"css.gradient.fallback": true,
+		
+		// CSS 그레디언트 구형 Webkit 문법 추가 설정
+		// "css.gradient.oldWebkit": true,
+		
+		// 영역 시작/끝 지점에 코멘트 추가 설정
+		"filter.commentBefore": "<!-- 시작: <%= attr('id', '#')%><%= attr('class', '.')%> -->\n",
+		"filter.commentAfter": "\n<!-- 끝: <%= attr('id', '#')%><%= attr('class', '.')%> -->"
+	}
+}
