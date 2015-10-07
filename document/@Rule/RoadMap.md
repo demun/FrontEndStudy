@@ -60,12 +60,14 @@
 * 향후 심화 과정으로 그룹 스터디 진행합니다~
 
 ** web socket **
+
   HTML5 스터디하면 할까 하다 Javascript 실무에서 많이 쓰이다 보니 여기서 스터디 하겠습니다.
 * HTML5에서 추가로 도입한 Socket 통신 방법(javascript로 코딩)
 * 개념 및 기초
   https://www.websocket.org/ , http://html5korea.com/%EC%9B%B9%EC%86%8C%EC%BC%93websocket-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0%EA%B0%95%EC%9D%98%EB%B2%88%EC%97%AD/ 를 바탕으로 스터디함
 
 ** web worker **
+
  HTML5 스터디하면 할까 하다 Javascript 실무에서 많이 쓰이다 보니 여기서 스터디 하겠습니다.
  http://www.w3schools.com/html/html5_webworkers.asp 를 바당으로 스터디 할 것
 
