@@ -1,12 +1,31 @@
-# align-items
+## align-items
 
 작성자 : 송지은
 
 작성일 : 2015-09-27
 
 css 레퍼런스 설명: 
-- align-items : flex로 지정된 요소 내에서 기본 정렬을 지정하는 속성이다.
-- 속성 값 : stretch, center, flex-start, flex-end, baseline, initial, inherit
+ - align-items : flex로 지정된 부모 요소 내에서 모든 flex 항목의 기본 정렬을 지정하는 속성이다.
+
+ - syntax : 
+```sh 
+align-items: stretch|center|flex-start|flex-end|baseline|initial|inherit;
+```
+
+stretch : 기본 값. 항목이 부모 요소에 크기에 맞게 채워지고 같은 크기로 분할 된다.
+
+center : 항목이 부모 요소의 중간 위치에 정렬된다.
+
+flex-start : 부모 요소의 시작 기준선에 일치하여 정렬된다.
+
+flex-end : 부모 요소의 끝나는 기준선에 일치하여 정렬된다.
+
+baseline : 부모 요소의 기준선에 일치하여 정렬된다.
+
+initial : 기본 초기값이다.
+
+inherit : 부모 요소에 적용된 이 속성 값을 상속한다. 
+
 
 `sample code` : 
 
