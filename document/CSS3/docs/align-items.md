@@ -60,7 +60,7 @@ inherit : 부모 요소에 적용된 이 속성 값을 상속한다.
 </html>
 ```
 
-[결과보기](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_align-items)
+[결과보기 >](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_align-items)
 
 
 참고 : 
