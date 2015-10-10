@@ -1,12 +1,33 @@
-# align-self
+## align-self
 
 작성자 : 송지은
 
 작성일 : 2015-09-27
 
 css 레퍼런스 설명: 
-- align-self : flex로 지정된 부모 요소 내에서 정렬을 지정하는 속성이다.
-- 속성 값 : auto, stretch, center, flex-start, flex-end, baseline, initial, inherit
+ - align-self : flex로 지정된 부모 요소 내에서 flex 항목 자기 자신만의 정렬을 지정하는 속성이다.
+ 
+ - syntax : 
+```sh 
+align-self: auto|stretch|center|flex-start|flex-end|baseline|initial|inherit;
+```
+
+auto : 부모 요소의 값으로 정렬 된다. 부모 요소가 없다면 기본 값으로 정렬.
+
+stretch : 기본 값. 항목이 부모 요소에 크기에 맞게 채워지고 형제 요소와 같은 넓이로 분배된다.
+
+center : 항목이 부모 요소의 중간 위치에 정렬된다.
+
+flex-start : 부모 요소의 시작 기준선에 일치하여 정렬된다.
+
+flex-end : 부모 요소의 끝나는 기준선에 일치하여 정렬된다.
+
+baseline : 부모 요소의 기준선에 일치하여 정렬된다.
+
+initial : 기본 초기값이다.
+
+inherit : 부모 요소에 정의된 align-items 속성 값을 상속 받는다. 
+
 
 `sample code` : 
 
