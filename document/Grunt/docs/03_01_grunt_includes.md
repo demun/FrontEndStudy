@@ -256,6 +256,6 @@ watch: {
 ***
 
 
-- 이전글 [03_00_html_task](03_00_html_task)
-- 다음글 [03_02_grunt_htmlhint](03_02_grunt_htmlhint)
+- 이전글 [03_00_html_task](03_00_html_task.md)
+- 다음글 [03_02_grunt_htmlhint](03_02_grunt_htmlhint.md)
 

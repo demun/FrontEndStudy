@@ -310,7 +310,7 @@ grunt.initConfig({
 
 ***
 
-- 이전글 [05_00_javascript_task](05_00_javascript_task)
-- 다음글 [05_02_grunt_contrib_concat](05_02_grunt_contrib_concat)
+- 이전글 [05_00_javascript_task](05_00_javascript_task.md)
+- 다음글 [05_02_grunt_contrib_concat](05_02_grunt_contrib_concat.md)
 
 

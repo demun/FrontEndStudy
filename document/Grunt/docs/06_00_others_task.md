@@ -50,7 +50,7 @@ clean: {
 
 * 관련 문서를 참고세요.
 
-[06_01_grunt_contrib_clean](06_01_grunt_contrib_clean)
+[06_01_grunt_contrib_clean](06_01_grunt_contrib_clean.md)
 
 
 
@@ -142,7 +142,7 @@ copy: {
 
 * 관련 문서를 참고세요.
 
-[06_02_grunt_contrib_copy](06_02_grunt_contrib_copy)
+[06_02_grunt_contrib_copy](06_02_grunt_contrib_copy.md)
 
 
 
@@ -179,15 +179,15 @@ imagemin: {
 
 * 관련 문서를 참고세요.
 
-[06_03_grunt_contrib_imagemin](06_03_grunt_contrib_imagemin)
+[06_03_grunt_contrib_imagemin](06_03_grunt_contrib_imagemin.md)
 
 
 
 
 ***
 
-- 이전글 [05_03_grunt_contrib_uglify](05_03_grunt_contrib_uglify)
-- 다음글 [06_01_grunt_contrib_clean](06_01_grunt_contrib_clean)
+- 이전글 [05_03_grunt_contrib_uglify](05_03_grunt_contrib_uglify.md)
+- 다음글 [06_01_grunt_contrib_clean](06_01_grunt_contrib_clean.md)
 
 
 

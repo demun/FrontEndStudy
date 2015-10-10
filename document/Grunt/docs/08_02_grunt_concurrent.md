@@ -90,6 +90,6 @@ grunt.registerTask('default', ['concurrent:target']);
 
 ***
 
-- 이전글 [08_01_grunt_newer](08_01_grunt_newer)
-- 다음글 [08_03_time_grunt](08_03_time_grunt)
+- 이전글 [08_01_grunt_newer](08_01_grunt_newer.md)
+- 다음글 [08_03_time_grunt](08_03_time_grunt.md)
 

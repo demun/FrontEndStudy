@@ -619,6 +619,6 @@ grunt.initConfig({
 
 ***
 
-- 이전글 [05_02_grunt_contrib_concat](05_02_grunt_contrib_concat)
-- 다음글 [06_00_others_task](06_00_others_task)
+- 이전글 [05_02_grunt_contrib_concat](05_02_grunt_contrib_concat.md)
+- 다음글 [06_00_others_task](06_00_others_task.md)
 

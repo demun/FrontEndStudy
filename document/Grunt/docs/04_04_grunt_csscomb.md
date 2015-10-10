@@ -156,5 +156,5 @@ grunt.initConfig({
 
 ***
 
-- 이전글 [04_03_grunt_autoprefixer](04_03_grunt_autoprefixer)
-- 다음글 [04_05_grunt_contrib_cssmin](04_05_grunt_contrib_cssmin)
+- 이전글 [04_03_grunt_autoprefixer](04_03_grunt_autoprefixer.md)
+- 다음글 [04_05_grunt_contrib_cssmin](04_05_grunt_contrib_cssmin.md)

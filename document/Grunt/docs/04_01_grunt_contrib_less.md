@@ -349,6 +349,6 @@ less: {
 
 ***
 
-- 이전글 [04_00_css_task](04_00_css_task)
-- 다음글 [04_02_grunt_contrib_csslint](04_02_grunt_contrib_csslint)
+- 이전글 [04_00_css_task](04_00_css_task.md)
+- 다음글 [04_02_grunt_contrib_csslint](04_02_grunt_contrib_csslint.md)
 

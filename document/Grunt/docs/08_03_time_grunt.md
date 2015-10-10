@@ -62,6 +62,6 @@ require('time-grunt')(grunt, function (stats, done) {
 
 ***
 
-- 이전글 [08_02_grunt_concurrent](08_02_grunt_concurrent)
-- 다음글 [08_04_load_grunt_tasks](08_04_load_grunt_tasks)
+- 이전글 [08_02_grunt_concurrent](08_02_grunt_concurrent.md)
+- 다음글 [08_04_load_grunt_tasks](08_04_load_grunt_tasks.md)
 

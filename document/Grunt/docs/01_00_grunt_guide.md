@@ -149,6 +149,6 @@
 \---node_modules
 ```
 
-- 다음글 [03_00_html_task](03_00_html_task)
+- 다음글 [03_00_html_task](03_00_html_task.md)
 
 

@@ -82,14 +82,14 @@ connect: {
 
 * 관련 문서를 참고세요.
 
-[07_02_grunt_contrib_connect](07_02_grunt_contrib_connect)
+[07_02_grunt_contrib_connect](07_02_grunt_contrib_connect.md)
 
 
 
 
 ***
 
-- 이전글 [06_03_grunt_contrib_imagemin](06_03_grunt_contrib_imagemin)
-- 다음글 [07_01_grunt_contrib_watch](07_01_grunt_contrib_watch)
+- 이전글 [06_03_grunt_contrib_imagemin](06_03_grunt_contrib_imagemin.md)
+- 다음글 [07_01_grunt_contrib_watch](07_01_grunt_contrib_watch.md)
 
 

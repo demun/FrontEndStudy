@@ -471,6 +471,6 @@ grunt.registerTask('jasmine-server', 'start web server for jasmine tests in brow
 
 ***
 
-- 이전글 [07_01_grunt_contrib_watch](07_01_grunt_contrib_watch)
-- 다음글 [08_00_최적화](08_00_최적화)
+- 이전글 [07_01_grunt_contrib_watch](07_01_grunt_contrib_watch.md)
+- 다음글 [08_00_최적화](08_00_최적화.md)
 

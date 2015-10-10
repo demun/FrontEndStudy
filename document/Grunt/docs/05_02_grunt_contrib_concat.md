@@ -361,6 +361,6 @@ grunt.initConfig({
 
 ***
 
-- 이전글 [05_01_grunt_contrib_jshint](05_01_grunt_contrib_jshint)
-- 다음글 [05_03_grunt_contrib_uglify](05_03_grunt_contrib_uglify)
+- 이전글 [05_01_grunt_contrib_jshint](05_01_grunt_contrib_jshint.md)
+- 다음글 [05_03_grunt_contrib_uglify](05_03_grunt_contrib_uglify.md)
 

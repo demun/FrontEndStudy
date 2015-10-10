@@ -65,9 +65,9 @@ htmlhint: {
 
 * 관련 문서를 참고세요.
 
-[03_02_grunt_htmlhint](03_02_grunt_htmlhint)
+[03_02_grunt_htmlhint](03_02_grunt_htmlhint.md)
 
-[03_02_grunt_htmlhint_option](03_02_grunt_htmlhint_option)
+[03_02_grunt_htmlhint_option](03_02_grunt_htmlhint_option.md)
 
 
 
@@ -118,11 +118,11 @@ include "../include/head.html"
 
 * 관련 문서를 참고세요.
 
-[03_01_grunt_includes](03_01_grunt_includes)
+[03_01_grunt_includes](03_01_grunt_includes.md)
 
 
 ***
 
-- 이전글 [02_00_grunt_소개](02_00_grunt_소개)
-- 다음글 [03_01_grunt_includes](03_01_grunt_includes)
+- 이전글 [02_00_grunt_소개](02_00_grunt_소개.md)
+- 다음글 [03_01_grunt_includes](03_01_grunt_includes.md)
 

@@ -214,6 +214,6 @@ override 옵션에 대한 사용예:
 
 ***
 
-- 이전글 [08_00_최적화](08_00_최적화)
-- 다음글 [08_02_grunt_concurrent](08_02_grunt_concurrent)
+- 이전글 [08_00_최적화](08_00_최적화.md)
+- 다음글 [08_02_grunt_concurrent](08_02_grunt_concurrent.md)
 

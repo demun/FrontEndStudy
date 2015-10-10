@@ -591,7 +591,7 @@ grunt.initConfig({
 
 ***
 
-- 이전글 [07_00_watch_task](07_00_watch_task)
-- 다음글 [07_02_grunt_contrib_connect](07_02_grunt_contrib_connect)
+- 이전글 [07_00_watch_task](07_00_watch_task.md)
+- 다음글 [07_02_grunt_contrib_connect](07_02_grunt_contrib_connect.md)
 
 

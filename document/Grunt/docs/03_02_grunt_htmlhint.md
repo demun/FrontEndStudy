@@ -128,5 +128,5 @@ htmlhint: {
 
 ***
 
-- 이전글 [03_01_grunt_includes](03_01_grunt_includes)
-- 다음글 [03_02_grunt_htmlhint_option](03_02_grunt_htmlhint_option)
+- 이전글 [03_01_grunt_includes](03_01_grunt_includes.md)
+- 다음글 [03_02_grunt_htmlhint_option](03_02_grunt_htmlhint_option.md)

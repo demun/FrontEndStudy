@@ -201,5 +201,5 @@ module.exports = function(grunt) {
 };
 ```
 
-- 이전글 [01_00_grunt_guide](01_00_grunt_guide)
-- 다음글 [03_00_html_task](03_00_html_task)
+- 이전글 [01_00_grunt_guide](01_00_grunt_guide.md)
+- 다음글 [03_00_html_task](03_00_html_task.md)

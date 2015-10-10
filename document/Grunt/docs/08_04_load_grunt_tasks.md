@@ -190,8 +190,8 @@ Values: `'dependencies'`, `'devDependencies'`, `'peerDependencies'`, `'optionalD
 
 ***
 
-- 이전글 [08_03_time_grunt](08_03_time_grunt)
-- 다음글 [09_00_task_실행](09_00_task_실행)
+- 이전글 [08_03_time_grunt](08_03_time_grunt.md)
+- 다음글 [09_00_task_실행](09_00_task_실행.md)
 
 
 

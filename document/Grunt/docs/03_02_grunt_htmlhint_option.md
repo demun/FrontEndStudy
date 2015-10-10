@@ -229,6 +229,6 @@ Level: warning
 
 ***
 
-- 이전글 [03_02_grunt_htmlhint](03_02_grunt_htmlhint)
-- 다음글 [04_00_css_task](04_00_css_task)
+- 이전글 [03_02_grunt_htmlhint](03_02_grunt_htmlhint.md)
+- 다음글 [04_00_css_task](04_00_css_task.md)
 

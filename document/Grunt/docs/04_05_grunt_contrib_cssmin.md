@@ -126,6 +126,6 @@ cssmin: {
 
 ***
 
-- 이전글 [04_04_grunt_csscomb](04_04_grunt_csscomb)
-- 다음글 [05_00_javascript_task](05_00_javascript_task)
+- 이전글 [04_04_grunt_csscomb](04_04_grunt_csscomb.md)
+- 다음글 [05_00_javascript_task](05_00_javascript_task.md)
 

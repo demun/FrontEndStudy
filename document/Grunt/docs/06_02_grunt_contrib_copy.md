@@ -278,7 +278,7 @@ Aborted due to warnings.(경고로 인해 중단되었습니다.)
 
 ***
 
-- 이전글 [06_01_grunt_contrib_clean](06_01_grunt_contrib_clean)
-- 다음글 [06_03_grunt_contrib_imagemin](06_03_grunt_contrib_imagemin)
+- 이전글 [06_01_grunt_contrib_clean](06_01_grunt_contrib_clean.md)
+- 다음글 [06_03_grunt_contrib_imagemin](06_03_grunt_contrib_imagemin.md)
 
 

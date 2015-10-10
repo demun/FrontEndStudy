@@ -125,7 +125,7 @@ clean: {
 
 ***
 
-- 이전글 [06_00_others_task](06_00_others_task)
-- 다음글 [06_02_grunt_contrib_copy](06_02_grunt_contrib_copy)
+- 이전글 [06_00_others_task](06_00_others_task.md)
+- 다음글 [06_02_grunt_contrib_copy](06_02_grunt_contrib_copy.md)
 
 

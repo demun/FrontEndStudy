@@ -39,7 +39,7 @@ jshint: {
 
 * 관련 문서를 참고세요.
 
-[05_01_grunt_contrib_jshint](05_01_grunt_contrib_jshint)
+[05_01_grunt_contrib_jshint](05_01_grunt_contrib_jshint.md)
 
 
 
@@ -70,7 +70,7 @@ concat: {
 
 * 관련 문서를 참고세요.
 
-[05_02_grunt_contrib_concat](05_02_grunt_contrib_concat)
+[05_02_grunt_contrib_concat](05_02_grunt_contrib_concat.md)
 
 
 
@@ -101,12 +101,12 @@ uglify: {
 
 * 관련 문서를 참고세요.
 
-[05_03_grunt_contrib_uglify](05_03_grunt_contrib_uglify)
+[05_03_grunt_contrib_uglify](05_03_grunt_contrib_uglify.md)
 
 
 
 ***
 
-- 이전글 [04_05_grunt_contrib_cssmin](04_05_grunt_contrib_cssmin)
-- 다음글 [05_01_grunt_contrib_jshint](05_01_grunt_contrib_jshint)
+- 이전글 [04_05_grunt_contrib_cssmin](04_05_grunt_contrib_cssmin.md)
+- 다음글 [05_01_grunt_contrib_jshint](05_01_grunt_contrib_jshint.md)
 

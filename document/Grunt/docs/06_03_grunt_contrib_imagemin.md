@@ -172,7 +172,7 @@ grunt.registerTask('default', ['imagemin']);
 
 ***
 
-- 이전글 [06_02_grunt_contrib_copy](06_02_grunt_contrib_copy)
-- 다음글 [07_00_watch_task](07_00_watch_task)
+- 이전글 [06_02_grunt_contrib_copy](06_02_grunt_contrib_copy.md)
+- 다음글 [07_00_watch_task](07_00_watch_task.md)
 
 

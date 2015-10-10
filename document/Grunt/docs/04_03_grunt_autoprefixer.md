@@ -194,6 +194,6 @@ npm update caniuse-db
 
 ***
 
-- 이전글 [04_02_grunt_contrib_csslint](04_02_grunt_contrib_csslint)
-- 다음글 [04_04_grunt_csscomb](04_04_grunt_csscomb)
+- 이전글 [04_02_grunt_contrib_csslint](04_02_grunt_contrib_csslint.md)
+- 다음글 [04_04_grunt_csscomb](04_04_grunt_csscomb.md)
 

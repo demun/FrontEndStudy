@@ -753,6 +753,6 @@ ID가 사용된 모든 사례에 대해 경고합니다.
 
 ***
 
-- 이전글 [04_01_grunt_contrib_less](04_01_grunt_contrib_less)
-- 다음글 [04_03_grunt_autoprefixer](04_03_grunt_autoprefixer)
+- 이전글 [04_01_grunt_contrib_less](04_01_grunt_contrib_less.md)
+- 다음글 [04_03_grunt_autoprefixer](04_03_grunt_autoprefixer.md)
 
