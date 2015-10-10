@@ -149,6 +149,6 @@
 \---node_modules
 ```
 
-- 다음글 [03_00_html_task](03_00_html_task.md)
+- 다음글 [02_00_grunt_소개](02_00_grunt_소개.md)
 
 
