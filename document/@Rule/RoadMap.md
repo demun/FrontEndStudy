@@ -127,6 +127,9 @@
 
 * 교제 선정 및 그것을 중심으로 스터디 진행.
 * 10/15(목)에 교제 선정 완료 및 로드맵 진행.
+* 교제 선정 완료.
+  - 프로 Angular JS
+  - [http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788994774879&orderClick=LEA&Kc=](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788994774879&orderClick=LEA&Kc=)
 
 
 =
