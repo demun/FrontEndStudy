@@ -100,26 +100,34 @@
 =
 ### Bootstrap 실무
 
-* 시작하기(tutorial)    
-    - [http://getbootstrap.com/getting-started/](http://getbootstrap.com/getting-started/)   
-    (원래사이트입니다. 아래 사이트는 이 사이트를 번역한 사이트로 업데이트가 늦어질 경우가 있습니다. 확인해본 결과 현재는 3.2.5버전이고 아래는 3.2.2 버전까지 업데이트 되어있습니다. 문서작성시 원래 사이트와 필히 비교하시고 작성해주세요. )
-    - [http://bootstrapk.com/getting-started/](http://bootstrapk.com/getting-started/)   
-    (한글로 번역된 사이트입니다.)
-* Bootstrap CSS  
-    - [http://getbootstrap.com/css/](http://getbootstrap.com/css/)    
+** 핵심기능 위주 레퍼런스 정리
+* Bootstrap CSS
+ 	- grid system
+ 	- container
+* Bootstrap component   
+    - panel
+    - list group
+* Bootstrap Javascript
+	- collapse
+	- modal
+
+* 참고사이트
+	- [http://getbootstrap.com/css/](http://getbootstrap.com/css/)    
     - [http://bootstrapk.com/css/](http://bootstrapk.com/css/)
-* Bootstrap Javascript   
-    - [http://getbootstrap.com/javascript/](http://getbootstrap.com/javascript/)  
-    - [http://bootstrapk.com/javascript/](http://bootstrapk.com/javascript/)
-* Bootstrap component(plugin)   
-    - [http://getbootstrap.com/components/](http://getbootstrap.com/components/)  
-    - [http://bootstrapk.com/components/](http://bootstrapk.com/components/)
-    Bootstrap plugin 조사(은근 많습니다. JQuery Plugin과 최대한 안겹치고, Bootstrape을 바탕으로 만든 Plugin만을 조사)
+
+** 레퍼런스 정리 전 기초적으로 시작하기 부분은 각자 숙지 
+* 시작하기(tutorial)    
+    - [http://getbootstrap.com/getting-started/](http://getbootstrap.com/getting-started/)
+    - [http://bootstrapk.com/getting-started/](http://bootstrapk.com/getting-started/)
+
+** 예제사이트 조사 & 카피 (추후 자세한 내용 확정 예정)
 * Bootstrap Theme
     - [http://themes.getbootstrap.com/](http://themes.getbootstrap.com/)
 * Bootstrap 4
     - [http://blog.getbootstrap.com/2015/08/19/bootstrap-4-alpha/](http://blog.getbootstrap.com/2015/08/19/bootstrap-4-alpha/)    
     (새롭게 출시되는 4버전)
+
+
 
     
 =
