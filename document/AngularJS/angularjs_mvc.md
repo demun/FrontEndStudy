@@ -1,5 +1,7 @@
 angular js mvc partten 
-개념 : Model / View / Controller 의 약자로 software achitecher partten 중 하나인 개발 방법
+
+개념 : Model / View / Controller 의 약자로 software achitecher 개발 방법 중 하나
+
 특징 : 
 - 하나의 기능을 모듈화하여 가독성 및 재사용성을 높임
 - 소수의 뛰어난 엔지니어들이 해결한 문제를 다수의 엔지니어들이 처리할 수 있도록 함으로써, 개발자들간의 커뮤니케이션 효용성을 높임
