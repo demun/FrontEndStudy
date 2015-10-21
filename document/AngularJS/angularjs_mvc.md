@@ -8,7 +8,7 @@ angular js mvc partten
 model1 vs model2(mvc) : http://wiki.javajigi.net/pages/viewpage.action?pageId=73 의 내용을 참고하였음
 model1 
 
-![model1](../images/model1.jpg)
+![model1](images/model1.jpg)
 
 장점 : 
  - Model 1개발 방식은 현재 국내에서 가장 많이 사용되고 있는 개발 방식
@@ -23,7 +23,7 @@ model1
 
 model2
 
-![model1](../images/model1.jpg)
+![model1](images/mvc.jpg)
 
 장점 : 
  - Model 1 개발 방식의 단점들을 보완하였음.
