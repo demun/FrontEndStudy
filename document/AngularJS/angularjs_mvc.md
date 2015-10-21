@@ -59,8 +59,13 @@ View는 클라이언트 측 기술인 html/css/javascript들을 모아둔 컨테
 소스코드를 통한 mvc 규칙
 (angular js 샘플 예제 - http://soomong.net/blog/2014/01/20/translation-ultimate-guide-to-learning-angularjs-in-one-day/ 를 참조)
 
-url : /angular/test1.do
-controller : 
+url 
+```
+/angular/test1.do
+```
+
+controller
+```
 <script>
 	//angular js 모듈 정의
 	var myApp = angular.module('myApp', []);
@@ -75,7 +80,9 @@ controller :
 	}]);
 	...
 </script>
-model : 
+
+model
+```
 <script>
 	...
 	myApp.service('Math', function () {
@@ -85,14 +92,19 @@ model :
 	});
 	...
 </script>
-view : 
+```
+
+view 
+```
 <html>
 <div ng-controller="MathCtrl">
 	{{ result }}
 </div>
 </html>
+```
 
 소스 전체 
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -127,3 +139,4 @@ view :
     </div>
 </body>
 </html>
+```
