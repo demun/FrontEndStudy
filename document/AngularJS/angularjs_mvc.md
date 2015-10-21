@@ -1,75 +1,76 @@
 angular js mvc partten 
-°³³ä : Model / View / Controller ÀÇ ¾àÀÚ·Î software achitecher partten Áß ÇÏ³ªÀÎ °³¹ß ¹æ¹ý
-Æ¯Â¡ : 
-- ÇÏ³ªÀÇ ±â´ÉÀ» ¸ðµâÈ­ÇÏ¿© °¡µ¶¼º ¹× Àç»ç¿ë¼ºÀ» ³ôÀÓ
-- ¼Ò¼öÀÇ ¶Ù¾î³­ ¿£Áö´Ï¾îµéÀÌ ÇØ°áÇÑ ¹®Á¦¸¦ ´Ù¼öÀÇ ¿£Áö´Ï¾îµéÀÌ Ã³¸®ÇÒ ¼ö ÀÖµµ·Ï ÇÔÀ¸·Î½á, °³¹ßÀÚµé°£ÀÇ Ä¿¹Â´ÏÄÉÀÌ¼Ç È¿¿ë¼ºÀ» ³ôÀÓ
-  (ex ÇÊ¿ä¼º..)
+ê°œë… : Model / View / Controller ì˜ ì•½ìžë¡œ software achitecher partten ì¤‘ í•˜ë‚˜ì¸ ê°œë°œ ë°©ë²•
+íŠ¹ì§• : 
+- í•˜ë‚˜ì˜ ê¸°ëŠ¥ì„ ëª¨ë“ˆí™”í•˜ì—¬ ê°€ë…ì„± ë° ìž¬ì‚¬ìš©ì„±ì„ ë†’ìž„
+- ì†Œìˆ˜ì˜ ë›°ì–´ë‚œ ì—”ì§€ë‹ˆì–´ë“¤ì´ í•´ê²°í•œ ë¬¸ì œë¥¼ ë‹¤ìˆ˜ì˜ ì—”ì§€ë‹ˆì–´ë“¤ì´ ì²˜ë¦¬í•  ìˆ˜ ìžˆë„ë¡ í•¨ìœ¼ë¡œì¨, ê°œë°œìžë“¤ê°„ì˜ ì»¤ë®¤ë‹ˆì¼€ì´ì…˜ íš¨ìš©ì„±ì„ ë†’ìž„
+  (ex í•„ìš”ì„±..)
 
-model1 vs model2(mvc) : http://wiki.javajigi.net/pages/viewpage.action?pageId=73 ÀÇ ³»¿ëÀ» Âü°íÇÏ¿´À½
+model1 vs model2(mvc) : http://wiki.javajigi.net/pages/viewpage.action?pageId=73 ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŒ
+
 model1 
 
 ![model1](images/model1.jpg)
 
-ÀåÁ¡ : 
- - Model 1°³¹ß ¹æ½ÄÀº ÇöÀç ±¹³»¿¡¼­ °¡Àå ¸¹ÀÌ »ç¿ëµÇ°í ÀÖ´Â °³¹ß ¹æ½Ä
- - ÆäÀÌÁö º°·Î °³¹ßÇÏ±â ¶§¹®¿¡ ´Ü¼øÇÔ.(ex : JSP / Servlet, PHP, ASP µî)
- - °³¹ß ¼Óµµ°¡ ºü¸£´Ù.
- - °³¹ßÀÚÀÇ ½ºÅ³ÀÌ ³·¾Æµµ ¹è¿ì±â ½¬¿ö ºü¸£°Ô Àû¿ë
+ìž¥ì  : 
+ - Model 1ê°œë°œ ë°©ì‹ì€ í˜„ìž¬ êµ­ë‚´ì—ì„œ ê°€ìž¥ ë§Žì´ ì‚¬ìš©ë˜ê³  ìžˆëŠ” ê°œë°œ ë°©ì‹
+ - íŽ˜ì´ì§€ ë³„ë¡œ ê°œë°œí•˜ê¸° ë•Œë¬¸ì— ë‹¨ìˆœí•¨.(ex : JSP / Servlet, PHP, ASP ë“±)
+ - ê°œë°œ ì†ë„ê°€ ë¹ ë¥´ë‹¤.
+ - ê°œë°œìžì˜ ìŠ¤í‚¬ì´ ë‚®ì•„ë„ ë°°ìš°ê¸° ì‰¬ì›Œ ë¹ ë¥´ê²Œ ì ìš©
 
-´ÜÁ¡ :
- - ÆäÀÌÁö¿¡¼­ ÇÁ¸®Á¨Å×ÀÌ¼Ç ·ÎÁ÷ / ºñÁî´Ï½º ·ÎÁ÷À» ¸ðµÎ Æ÷ÇÔÇÏ¹Ç·Î ÆäÀÌÁö°¡ ³Ê¹« º¹ÀâÇØ Áø´Ù.
- - ÇÁ¸®Á¨Å×ÀÌ¼Ç ·ÎÁ÷ / ºñÁî´Ï½º ·ÎÁ÷ÀÌ È¥ÀçµÇ¾î ÀÖ±â ¶§¹®¿¡ °³¹ßÀÚ¿Í µðÀÚÀÌ³ÊÀÇ ºÐ¸®µÈ ÀÛ¾÷ÀÌ ¾î·Á¿öÁø´Ù.
- - ÆäÀÌÁöÀÇ ÄÚµå°¡ º¹ÀÛÇØ ÁüÀ¸·Î ÀÎÇØ À¯Áöº¸¼ö ÇÏ±â ¾î·Á¿öÁø´Ù.
+ë‹¨ì  :
+ - íŽ˜ì´ì§€ì—ì„œ í”„ë¦¬ì  í…Œì´ì…˜ ë¡œì§ / ë¹„ì¦ˆë‹ˆìŠ¤ ë¡œì§ì„ ëª¨ë‘ í¬í•¨í•˜ë¯€ë¡œ íŽ˜ì´ì§€ê°€ ë„ˆë¬´ ë³µìž¡í•´ ì§„ë‹¤.
+ - í”„ë¦¬ì  í…Œì´ì…˜ ë¡œì§ / ë¹„ì¦ˆë‹ˆìŠ¤ ë¡œì§ì´ í˜¼ìž¬ë˜ì–´ ìžˆê¸° ë•Œë¬¸ì— ê°œë°œìžì™€ ë””ìžì´ë„ˆì˜ ë¶„ë¦¬ëœ ìž‘ì—…ì´ ì–´ë ¤ì›Œì§„ë‹¤.
+ - íŽ˜ì´ì§€ì˜ ì½”ë“œê°€ ë³µìž‘í•´ ì§ìœ¼ë¡œ ì¸í•´ ìœ ì§€ë³´ìˆ˜ í•˜ê¸° ì–´ë ¤ì›Œì§„ë‹¤.
 
 model2
 
 ![model1](images/mvc.jpg)
 
-ÀåÁ¡ : 
- - Model 1 °³¹ß ¹æ½ÄÀÇ ´ÜÁ¡µéÀ» º¸¿ÏÇÏ¿´À½.
- - ÇÁ¸®Á¨Å×ÀÌ¼Ç ·ÎÁ÷ / ºñÁî´Ï½º ·ÎÁ÷À» ºÐ¸®ÇÏ¹Ç·Î ±â´Éº°·Î ¸ðµâÈ­ÇÔ
- - °³¹ßÀÚ¿Í µðÀÚÀÌ³Ê°£ÀÇ ÀÛ¾÷ÀÌ ¿ëÀÌÇÏ´Ù.
- - ÄÚµå°¡ ´Ü¼øÇØ ÁüÀ¸·Î ÀÎÇØ À¯Áöº¸¼ö°¡ ¿ëÀÌÇÏ´Ù.
+ìž¥ì  : 
+ - Model 1 ê°œë°œ ë°©ì‹ì˜ ë‹¨ì ë“¤ì„ ë³´ì™„í•˜ì˜€ìŒ.
+ - í”„ë¦¬ì  í…Œì´ì…˜ ë¡œì§ / ë¹„ì¦ˆë‹ˆìŠ¤ ë¡œì§ì„ ë¶„ë¦¬í•˜ë¯€ë¡œ ê¸°ëŠ¥ë³„ë¡œ ëª¨ë“ˆí™”í•¨
+ - ê°œë°œìžì™€ ë””ìžì´ë„ˆê°„ì˜ ìž‘ì—…ì´ ìš©ì´í•˜ë‹¤.
+ - ì½”ë“œê°€ ë‹¨ìˆœí•´ ì§ìœ¼ë¡œ ì¸í•´ ìœ ì§€ë³´ìˆ˜ê°€ ìš©ì´í•˜ë‹¤.
 
-´ÜÁ¡ : 
- - ¼ÒÇÁÆ®¿þ¾î °øÇÐ partten °³³äÀ» ÀÌÇØÇÏ¿©¾ß ÇÔ(¹è¿ì±â ¾î·Á¿ò : ¸ð¸£´Â »ç¶÷¿¡°Ô´Â model1º¸´Ù º¹ÀâÇØ º¸ÀÏ ¼ö ÀÖÀ½)
- - °³¹ß ¼Óµµ°¡ model1º¸´Ù´Â ´À¸®´Ù.(±×·¯³ª ÀÍ¼÷ÇØÁö¸é model1º¸´Ù ºü¸£´Ù.)
+ë‹¨ì  : 
+ - ì†Œí”„íŠ¸ì›¨ì–´ ê³µí•™ partten ê°œë…ì„ ì´í•´í•˜ì—¬ì•¼ í•¨(ë°°ìš°ê¸° ì–´ë ¤ì›€ : ëª¨ë¥´ëŠ” ì‚¬ëžŒì—ê²ŒëŠ” model1ë³´ë‹¤ ë³µìž¡í•´ ë³´ì¼ ìˆ˜ ìžˆìŒ)
+ - ê°œë°œ ì†ë„ê°€ model1ë³´ë‹¤ëŠ” ëŠë¦¬ë‹¤.(ê·¸ëŸ¬ë‚˜ ìµìˆ™í•´ì§€ë©´ model1ë³´ë‹¤ ë¹ ë¥´ë‹¤.)
 
 
-MVC ±¸¼º ¹× Èå¸§µµ : https://opentutorials.org/course/697/3828 ÀÇ ³»¿ëÀ» Âü°íÇÏ¿´À½
+MVC êµ¬ì„± ë° íë¦„ë„ : https://opentutorials.org/course/697/3828 ì˜ ë‚´ìš©ì„ ì°¸ê³ í•˜ì˜€ìŒ
 
- - ¿¹Á¦
-1. »ç¿ëÀÚ°¡ À¥»çÀÌÆ®¿¡ Á¢¼ÓÇÑ´Ù. (Uses)
-2. Controller´Â »ç¿ëÀÚ°¡ ¿äÃ»ÇÑ À¥ÆäÀÌÁö¸¦ ¼­ºñ½º ÇÏ±â À§ÇØ¼­ ¸ðµ¨À» È£ÃâÇÑ´Ù. (Manipulates)
-3. ¸ðµ¨Àº µ¥ÀÌÅÍº£ÀÌ½º³ª ÆÄÀÏ°ú °°Àº µ¥ÀÌÅÍ ¼Ò½º¸¦ Á¦¾îÇÑ ÈÄ¿¡ ±× °á°ú¸¦ ¸®ÅÏÇÑ´Ù.
-4. Controller´Â ModelÀÌ ¸®ÅÏÇÑ °á°ú¸¦ View¿¡ ¹Ý¿µÇÑ´Ù. (Updates)
-5. µ¥ÀÌÅÍ°¡ ¹Ý¿µµÈ VIew´Â »ç¿ëÀÚ¿¡°Ô º¸¿©Áø´Ù. (Sees)
+ - ì˜ˆì œ
+1. ì‚¬ìš©ìžê°€ ì›¹ì‚¬ì´íŠ¸ì— ì ‘ì†í•œë‹¤. (Uses)
+2. ControllerëŠ” ì‚¬ìš©ìžê°€ ìš”ì²­í•œ ì›¹íŽ˜ì´ì§€ë¥¼ ì„œë¹„ìŠ¤ í•˜ê¸° ìœ„í•´ì„œ ëª¨ë¸ì„ í˜¸ì¶œí•œë‹¤. (Manipulates)
+3. ëª¨ë¸ì€ ë°ì´í„°ë² ì´ìŠ¤ë‚˜ íŒŒì¼ê³¼ ê°™ì€ ë°ì´í„° ì†ŒìŠ¤ë¥¼ ì œì–´í•œ í›„ì— ê·¸ ê²°ê³¼ë¥¼ ë¦¬í„´í•œë‹¤.
+4. ControllerëŠ” Modelì´ ë¦¬í„´í•œ ê²°ê³¼ë¥¼ Viewì— ë°˜ì˜í•œë‹¤. (Updates)
+5. ë°ì´í„°ê°€ ë°˜ì˜ëœ VIewëŠ” ì‚¬ìš©ìžì—ê²Œ ë³´ì—¬ì§„ë‹¤. (Sees)
 
- - ¼³¸í
+ - ì„¤ëª…
 Controller :
-»ç¿ëÀÚ°¡ Á¢±Ù ÇÑ URL¿¡ µû¶ó¼­ »ç¿ëÀÚÀÇ ¿äÃ»»çÇ×À» ÆÄ¾ÇÇÑ ÈÄ¿¡ ±× ¿äÃ»¿¡ ¸Â´Â µ¥ÀÌÅÍ¸¦ Model¿¡ ÀÇ·ÚÇÏ°í, µ¥ÀÌÅÍ¸¦ View¿¡ ¹Ý¿µÇØ¼­ »ç¿ëÀÚ¿¡°Ô ¾Ë·ÁÁØ´Ù. 
+ì‚¬ìš©ìžê°€ ì ‘ê·¼ í•œ URLì— ë”°ë¼ì„œ ì‚¬ìš©ìžì˜ ìš”ì²­ì‚¬í•­ì„ íŒŒì•…í•œ í›„ì— ê·¸ ìš”ì²­ì— ë§žëŠ” ë°ì´í„°ë¥¼ Modelì— ì˜ë¢°í•˜ê³ , ë°ì´í„°ë¥¼ Viewì— ë°˜ì˜í•´ì„œ ì‚¬ìš©ìžì—ê²Œ ì•Œë ¤ì¤€ë‹¤. 
 
 Model :
-ÀÏ¹ÝÀûÀ¸·Î CI(CodeIgniter)ÀÇ ¸ðµ¨Àº µ¥ÀÌÅÍº£ÀÌ½º Å×ÀÌºí¿¡ ´ëÀÀµÈ´Ù. ÀÌ¸¦Å×¸é TopicÀÌ¶ó´Â Å×ÀÌºíÀº topic_modelÀÌ¶ó´Â ModelÀ» ¸¸µç´Ù. ±×·±µ¥ ÀÌ °ü°è°¡ °­Á¦ÀûÀÌÁö ¾Ê±â ¶§¹®¿¡ ±ÔÄ¢À» ÀÏ°ü¼º ÀÖ°Ô Á¤ÀÇÇÏ´Â °ÍÀÌ ÇÊ¿äÇÏ´Ù.
+ì¼ë°˜ì ìœ¼ë¡œ CI(CodeIgniter)ì˜ ëª¨ë¸ì€ ë°ì´í„°ë² ì´ìŠ¤ í…Œì´ë¸”ì— ëŒ€ì‘ëœë‹¤. ì´ë¥¼í…Œë©´ Topicì´ë¼ëŠ” í…Œì´ë¸”ì€ topic_modelì´ë¼ëŠ” Modelì„ ë§Œë“ ë‹¤. ê·¸ëŸ°ë° ì´ ê´€ê³„ê°€ ê°•ì œì ì´ì§€ ì•Šê¸° ë•Œë¬¸ì— ê·œì¹™ì„ ì¼ê´€ì„± ìžˆê²Œ ì •ì˜í•˜ëŠ” ê²ƒì´ í•„ìš”í•˜ë‹¤.
 
 View :
-View´Â Å¬¶óÀÌ¾ðÆ® Ãø ±â¼úÀÎ html/css/javascriptµéÀ» ¸ð¾ÆµÐ ÄÁÅ×ÀÌ³ÊÀÌ´Ù. 
+ViewëŠ” í´ë¼ì´ì–¸íŠ¸ ì¸¡ ê¸°ìˆ ì¸ html/css/javascriptë“¤ì„ ëª¨ì•„ë‘” ì»¨í…Œì´ë„ˆì´ë‹¤. 
 
-¼Ò½ºÄÚµå¸¦ ÅëÇÑ mvc ±ÔÄ¢
-(angular js »ùÇÃ ¿¹Á¦ - http://soomong.net/blog/2014/01/20/translation-ultimate-guide-to-learning-angularjs-in-one-day/ ¸¦ ÂüÁ¶)
+ì†ŒìŠ¤ì½”ë“œë¥¼ í†µí•œ mvc ê·œì¹™
+(angular js ìƒ˜í”Œ ì˜ˆì œ - http://soomong.net/blog/2014/01/20/translation-ultimate-guide-to-learning-angularjs-in-one-day/ ë¥¼ ì°¸ì¡°)
 
 url : /angular/test1.do
 controller : 
 <script>
-	//angular js ¸ðµâ Á¤ÀÇ
+	//angular js ëª¨ë“ˆ ì •ì˜
 	var myApp = angular.module('myApp', []);
 	
-	//controller Á¤ÀÇ
+	//controller ì •ì˜
     	myApp.controller('MathCtrl', ['$scope', 'Math', function ($scope, Math) {
 	    var a = 12;
 	    var b = 24;
 
-	    // °á°ú´Â 288
+	    // ê²°ê³¼ëŠ” 288
 		$scope.result = Math.multiply(a, b);
 	}]);
 	...
@@ -91,7 +92,7 @@ view :
 </div>
 </html>
 
-¼Ò½º ÀüÃ¼ 
+ì†ŒìŠ¤ ì „ì²´ 
 <!DOCTYPE html>
 <html>
 <head>
@@ -100,7 +101,7 @@ view :
 <script type="text/javascript" src="/sti/js/jquery-migrate-1.2.1.js"></script>
 <script type="text/javascript" src="/sti/js/angular.js"></script>
 <script>
-	//angular js ¸ðµâ Á¤ÀÇ
+	//angular js ëª¨ë“ˆ ì •ì˜
 	var myApp = angular.module('myApp', []);
 	
 	// Math
@@ -110,12 +111,12 @@ view :
 	  };
 	});
 	
-	/*$scope - application ¸ðµ¨À» ³ªÅ¸³»´Â angular jsÀÇ ±âº» °´Ã¼*/
+	/*$scope - application ëª¨ë¸ì„ ë‚˜íƒ€ë‚´ëŠ” angular jsì˜ ê¸°ë³¸ ê°ì²´*/
 	myApp.controller('MathCtrl', ['$scope', 'Math', function ($scope, Math) {
 	    var a = 12;
 	    var b = 24;
 
-	    // °á°ú´Â 288
+	    // ê²°ê³¼ëŠ” 288
 	    $scope.result = Math.multiply(a, b);
 	}]);
 </script>
