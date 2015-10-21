@@ -47,6 +47,7 @@ MVC 구성 및 흐름도 : https://opentutorials.org/course/697/3828 의 내용�
 5. 데이터가 반영된 VIew는 사용자에게 보여진다. (Sees)
 
  - 설명
+
 Controller :
 사용자가 접근 한 URL에 따라서 사용자의 요청사항을 파악한 후에 그 요청에 맞는 데이터를 Model에 의뢰하고, 데이터를 View에 반영해서 사용자에게 알려준다. 
 
@@ -57,6 +58,7 @@ View :
 View는 클라이언트 측 기술인 html/css/javascript들을 모아둔 컨테이너이다. 
 
 소스코드를 통한 mvc 규칙
+
 (angular js 샘플 예제 - http://soomong.net/blog/2014/01/20/translation-ultimate-guide-to-learning-angularjs-in-one-day/ 를 참조)
 
 url 
@@ -80,6 +82,7 @@ controller
 	}]);
 	...
 </script>
+```
 
 model
 ```
