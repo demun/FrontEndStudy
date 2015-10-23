@@ -74,7 +74,9 @@ httpRequest.send(null);
 **비동기 방식**은 send() 함수가 호출된 뒤 곧바로 다음의 코드가 실행되는 것이다. 위의 코드를 예로 보면 send() 함수가 호출된 뒤에 서버와의 통신 진행 상태에 상관없이 callSome() 함수가 호출된다는 것이다.
 
 ##참고
-[차이점][차이점]
+[차이점- http://blog.naver.com/lifesoft/30015652725][차이점]
 [차이점]:http://blog.naver.com/lifesoft/30015652725
-[정의 및 특징][정의 및 특징]
+[정의 및 특징- http://apple77y.tistory.com/11][정의 및 특징]
 [정의 및 특징]:http://apple77y.tistory.com/11
+[예시- http://apple77y.tistory.com/11][예시]
+[예시]:http://funny7103.blog.me/90027301799
