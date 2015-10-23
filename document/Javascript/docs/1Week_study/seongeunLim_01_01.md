@@ -5,4 +5,4 @@
 
 ##차이점
 
-![동기,비동기 차이점 이미지](../../../../Javascript/images/seongeun_01.jpg)
+![동기,비동기 차이점 이미지](../../../Javascript/images/seongeun_01.jpg)
