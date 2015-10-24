@@ -40,28 +40,6 @@
 |clearTimeout(id) |일정 시간 후 함수를 한 번 실행하는 것을 중지|
 |clearlnterval(id) |일정 시간마다 함수를 반복하는 것을 중단|
 
-setTimeout 예제 
-
-<!DOCTYPE html>
-<html>
-<body>
-
-<p>Click the button to wait 3 seconds, then alert "Hello".</p>
-
-<button onclick="myFunction()">Try it</button>
-
-<script>
-function myFunction() {
-    setTimeout(function(){ alert("Hello"); }, 3000);
-}
-</script>
-
-</body>
-</html>
- 
-
-
-
 - 자바스크립트 setInterval / clearInterval 사용방법
    [변수] = setInterval([함수명], [함수가 실행될 시간]);
    clearInterval([변수]);
@@ -80,6 +58,7 @@ function myFunction() {
       }
       var timer = setInterval(add, 1000);
    </script>
+   ```
 
 ​위의 예제를 실행하면 0부터 1초마다 값이 계속 올라갑니다. 
 
@@ -97,15 +76,14 @@ clearInterval 예제
       }
       var timer = setInterval(add, 1000);
    </script>
-
-[출처] 자바스크립트 일정시간마다 함수실행 (setInterval / clearInterval)|작성자 창공
-
-
-
-
-
 ```
 
 
-[출처] 자바스크립트 일정시간마다 함수실행 (setInterval / clearInterval)|작성자 창공
+
+
+
+
+
+
+
 [타이머 참고- http://blog.naver.com/starrything/220318844552]
