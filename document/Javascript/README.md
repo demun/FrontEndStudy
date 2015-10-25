@@ -37,20 +37,20 @@
     - confirm(String)
     - prompt(String)
     
-**scope**
+**3. scope**
 
-**3. 사용자 정의 함수**
+**4. 사용자 정의 함수**
 
 * 정의 및 정의 방법    
     * 사용자 정의 함수 
     * 사용자 정의 객체
-    * 사용자 정의 이벤트
+    * 사용자 정의 이벤트   
    
-**4. web socket **   
+**5. web socket **   
     *HTML5에서 추가로 도입한 Socket 통신 방법(javascript로 코딩)
     *개념 및 기초   
 
-**5. web worker **
+**6. web worker **
 
 ---
 
