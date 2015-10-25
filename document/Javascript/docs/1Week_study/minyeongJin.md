@@ -1,0 +1,88 @@
+#동기와 비동기 
+
+동기 요청처리(synchronous)
+
+​ - 작업 요청을 했을 때 그 요청의 결과값(리턴값)을 직접 받는 것.
+
+​ - 요청의 결과값이 리턴값과 동일함.
+
+
+비동기 요청처리(asynchronous)
+
+​- 작업 요청을 했을 때 그 요청의 결과값을 간접적으로 받는 것. 
+
+​- 요청의 결과값이 리턴값과 다름. 
+
+​- 해당 요청작업은 별도의 쓰레드에서 실행하게 됨.
+​
+
+비동기 요청처리 결과 전달 방법 : 
+
+   1. 콜백(Call Back) - 요청 처리가 완료되면 콜백 호출
+
+   2. 결과 조회  - Future<V>. 비동기 작업 결과를 조회해볼 수 있는 핸들러. 요청이 완료되었는지 확인가능.
+
+#자바스트립트 내장 함수 
+```
+자바스트립트는 자체적으로 몇 가지 함수를 제공 한다. 이렇게 기본적으로 내장된 함수를 내장 함수라고 한다. 
+```
+
+타이머
+```
+특정한 시간에 특정한 함수를 실행할 수 있게 하는 함수. 
+```
+
+
+|매소드| 설명|
+| :------------ | :------------|
+|setTimeout(funtion, millisecond) |일정 시간 후 함수를 다시 한 번 실행|
+|setinterval(funtion, millisecond) |일정 시간 마다 함수를 반복해서 실행|
+|clearTimeout(id) |일정 시간 후 함수를 한 번 실행하는 것을 중지|
+|clearlnterval(id) |일정 시간마다 함수를 반복하는 것을 중단|
+
+
+setInterval 예제 
+
+
+```javascript
+//1초마다 함수를 실행
+   <span id='txt'>0</span>
+   <script>
+      var cnt = 0;
+      function add(){
+         document.getElementById("txt").innerHTML = cnt;
+         cnt++;
+      }
+      var timer = setInterval(add, 1000);
+   </script>
+   ```
+
+​위의 예제를 실행하면 0부터 1초마다 값이 계속 올라갑니다. 
+
+clearInterval 예제 
+
+```javascript
+<span id='txt'>0</span>
+   <script>
+      var cnt = 0;  
+      function add(){
+         if (cnt == 20){ 
+            clearInterval(timer);
+         }
+         document.getElementById("txt").innerHTML = cnt;
+         cnt++;
+      }
+      var timer = setInterval(add, 1000);
+   </script>
+```
+위의 예제를 실행하면 0부터 1초마다 값이 계속 올라가다가 20에서 멈춥니다. 
+
+
+
+
+
+
+
+
+[타이머 참고- http://blog.naver.com/starrything/220318844552]
+[예제 - http://blog.naver.com/diceworld/220192647229]

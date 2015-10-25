@@ -2,31 +2,35 @@
 > **모든 스터디에는 *sample 예제* 가 있어야 한다.**
 
 =
-### javascript 실무
-**동기 vs 비동기 통신**
+### javascript 실무 - 10월 18일 수정
+#### - 분량 나누기(11월 14일 발표 분량) -
+- 매주 일요일 밤 10~11시 정기 후기 회의 진행 결정
+- 4주차는 3주차 문서에 대한 정리 및 발표 준비
+
+**동기 vs 비동기 통신 (1주차-10/19~25)**
 
 * 차이점    
 * 정의 및 특징   
   
 **실무에 자주 쓰이는 함수**    
 
-* 타이머함수
+* 타이머함수 __(1주차-10/19~25)__
 
     - setTimeout(function,millisecond)
     - setInterval(function,millisecond)clearTimeout(id)
     - clearINterval(id)
     - __setTimeout과 setInterval의 차이점__ (중요함)
     
-* 인코딩/디코딩 함수escape() / unescape()
+* 인코딩/디코딩 함수escape() / unescape() __(2주차-10/26~11/1)__
 
     - encodeURI(url) / decodeURI(encodeURI)
     - encodeURIComponent(uriComponent) / decodeURIComponent(encodedURI)
     
-* 코드 실행 함수
+* 코드 실행 함수 __(2주차-10/26~11/1)__
 
     - eval(String)
     
-* 숫자 확인 함수
+* 숫자 확인 함수 __(3주차-11/2~8)__
 
     - isFinite()
     - isNaN()
@@ -37,7 +41,7 @@
     - Number(String)
     - Boolean(String)
     
-* 기타
+* 기타 __(3주차-11/2~8)__
 
     - typeof()
     - confirm(String)
