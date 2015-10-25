@@ -14,7 +14,7 @@ javascript 작업인 jshint , concat , uglify 모듈의 사용방법 및 예제�
 ```javascript
 jshint: {
     options: {
-        jshintrc: 'gruntConfig/.jshintrc',
+        jshintrc: 'grunt/.jshintrc',
         force: true, // error 검출시 task를 fail 시키지 않고 계속 진단
         reporter: require('jshint-stylish') // output을 수정 할 수 있는 옵션
     },

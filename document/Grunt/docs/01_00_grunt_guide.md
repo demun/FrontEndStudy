@@ -77,7 +77,7 @@
 그러트 가이드를 위한 예제 프로젝트의 폴더 구조입니다.
 
 - app 폴더는 소스코드 폴더입니다.
-- gruntConfig 폴더는 그런트 모듈의 설정 파일이 있는 폴더입니다
+- grunt 폴더는 그런트 모듈의 설정 파일이 있는 폴더입니다
 - node_modules 폴더는 그런트 모듈 폴더입니다.
 
 
@@ -140,7 +140,7 @@
 |       \---site
 |               site1.less
 |               
-+---gruntConfig
++---grunt
 |       .csscomb.json
 |       .csslintrc
 |       .htmlhintrc

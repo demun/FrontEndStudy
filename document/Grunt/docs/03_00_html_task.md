@@ -36,9 +36,9 @@
 
 `htmlhint` 는 작성한 `html` 코드가 오류가 있는지, 최적화는 되었는지 등등을 판단해서 코드를 관리하게 해줍니다.
 
-유지보수를 위해 `gruntConfig` 폴더를 만들고 그 안에 `grunt` 와 관련된 설정파일을 넣습니다.
+유지보수를 위해 `grunt` 폴더를 만들고 그 안에 `grunt` 와 관련된 설정파일을 넣습니다.
 
-`htmlhint` 옵션에 사용되는 규칙은 `gruntConfig/.htmlhintrc` 에 넣어두었습니다.
+`htmlhint` 옵션에 사용되는 규칙은 `grunt/.htmlhintrc` 에 넣어두었습니다.
 
 
 
@@ -47,7 +47,7 @@
 ```javascript
 htmlhint: {
     options: {
-        htmlhintrc: 'gruntConfig/.htmlhintrc'
+        htmlhintrc: 'grunt/.htmlhintrc'
     },
     dist: [
         'app/docs/html/**/*.html',

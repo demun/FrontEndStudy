@@ -49,7 +49,7 @@ less: {
 ```javascirpt
 csslint: {
     options: {
-        csslintrc: 'gruntConfig/.csslintrc'
+        csslintrc: 'grunt/.csslintrc'
     },
     dist: {
         src: '<%= less.dist.dest %>'
@@ -123,7 +123,7 @@ autoprefixer: {
 ```javascript
 csscomb: {
     options: {
-        config: 'gruntConfig/.csscomb.json'
+        config: 'grunt/.csscomb.json'
     },
     dist: {
         src: '<%= autoprefixer.dist.dest %>',

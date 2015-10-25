@@ -14,9 +14,9 @@
 * [html5](document/html5/README.md) - 진행대기
 
 -
-* [Javascript](document/Javascript/README.md) - 진행대기
-* [Jquery](document/Jquery/README.md) - 진행대기
-* [Angularjs](document/Angularjs/README.md) - 진행대기
+* [Javascript](document/Javascript/README.md) - 진행중
+* [Jquery](document/Jquery/README.md) - 진행중
+* [Angularjs](document/Angularjs/README.md) - 진행중
 
 -
 * [CSS](document/CSS/README.md) - 진행대기
@@ -26,14 +26,14 @@
 * [PostCSS](document/PostCSS/README.md) - 진행대기
 
 -
-* [Grunt](document/Grunt/README.md) - 진행대기
+* [Grunt](document/Grunt/README.md) - 진행중
 * [Gulp](document/Gulp/README.md) - 진행대기
 * [Bower](document/Bower/README.md) - 진행대기
 * [Yeoman](document/Yeoman/README.md) - 진행대기
 
 -
 * [Github](document/Github/README.md) - 진행중
-* [Bootstrap](document/Bootstrap/README.md) - 진행대기
+* [Bootstrap](document/Bootstrap/README.md) - 진행중
 
 -
 * [Sublimetext](document/Sublimetext/README.md) - 진행중
