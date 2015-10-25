@@ -46,9 +46,10 @@
     * 사용자 정의 객체
     * 사용자 정의 이벤트
    
-**4. web socket **
+**4. web socket **   
     *HTML5에서 추가로 도입한 Socket 통신 방법(javascript로 코딩)
-    *개념 및 기초
+    *개념 및 기초   
+
 **5. web worker **
 
 ---
