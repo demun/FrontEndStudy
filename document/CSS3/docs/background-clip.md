@@ -8,18 +8,19 @@ The background-clip property specifies the painting area of the background.
 
 The property takes three different values: 3가지 value!
 
-1. border-box - (default) the background is painted to the outside edge of the border
-  디폴트 값. 테두리를 포함하여 배경색 지정. 
+1. border-box - (default) the background is painted to the outside edge of the border<br/>
+  디폴트 값. 테두리를 포함하여 배경색 지정. <br/>
   border가 dashed이거나 dotted일 때와 같이 빈 공간이 있는 경우만 눈으로 확인할 수 있음
 
-2. padding-box - the background is painted to the outside edge of the padding
+2. padding-box - the background is painted to the outside edge of the padding<br/>
   border값 포함하지 않고 padding의 바깥가장자리부터 칠해짐
 
-3. content-box - the background is painted within the content box
+3. content-box - the background is painted within the content box<br/>
   컨텐츠, 즉 내용만 배경색!
 
 
 http://www.w3schools.com/css/tryit.asp?filename=trycss3_background-clip
+<br/>
 http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_js_background-clip
 
 ###목차
