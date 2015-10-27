@@ -1,8 +1,13 @@
-(작성중 - 추후 업데이트 예정)
+작성자 : 박성희
 
+작성일 : 2015-10-28
+
+css 레퍼런스 설명:
 
 Defines the shape of the border of the bottom-right corner
-http://www.w3schools.com/cssref/css3_pr_border-bottom-right-radius.asp
+우측 하단 코너의 보더 모양 관련 프로퍼티
+
+http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_border-bottom-right-radius
 
 ### 목록
 * [align-content](align-content.md)
