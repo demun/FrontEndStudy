@@ -1,6 +1,13 @@
-Defines the shape of the border of the top-right corner
+작성자 : 박성희
 
-http://www.w3schools.com/cssref/css3_pr_border-top-right-radius.asp
+작성일 : 2015-10-28
+
+css 레퍼런스 설명:
+
+Defines the shape of the border of the top-right corner
+우측 상단 코너의 보더 모양 관련 프로퍼티
+
+http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_border-top-right-radius
 
 ### 목록
 * [align-content](align-content.md)
