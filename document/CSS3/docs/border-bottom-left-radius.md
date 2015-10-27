@@ -1,5 +1,13 @@
+작성자 : 박성희
+
+작성일 : 2015-10-28
+
+css 레퍼런스 설명:
+
 Defines the shape of the border of the bottom-left corner
-http://www.w3schools.com/cssref/css3_pr_border-bottom-left-radius.asp
+좌측 하단 코너의 보더 모양 관련 프로퍼티
+
+http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_border-bottom-left-radius
 
 ### 목록
 * [align-content](align-content.md)
