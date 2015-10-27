@@ -1,17 +1,36 @@
+작성자 : 박성희
+
+작성일 : 2015-10-28
+
+css 레퍼런스 설명:
+
+사각형 각 모서리 둥글게 만드는 속성, 4개 모서리의 축약 속성, border-radius로 선언하면 4개의 모서리가 동일하게 적용됨.
+예제 : http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_border-radius
+
+
+1.  length : px, em 등 단위로 직접 숫자 지정 
+
+2. % : % 값으로 둥근 정도를 지정 
+
+
+
+
 (작성중 - 추후 업데이트 예정)
 
-Specify Each Corner!
-http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_border-radius
 
 If you specify only one value for the border-radius property, this radius will be applied to all 4 corners.
+하나의 value를 주려면, 이 프로터티가 4개 모두에 적용된다.
 However, you can specify each corner separately if you wish. Here are the rules:
+그러나, 4군데의 코너에 각기 다른 value값을 줄 수 있다.
 
 1.Four values: first value applies to top-left, second value applies to top-right, third value applies to bottom-right, and fourth value applies to bottom-left corner
+4개 : 좌측 상단, 우측 상단, 좌측 하단, 좌측 하단
 
 2.Three values: first value applies to top-left, second value applies to top-right and bottom-left, and third value applies to bottom-right
+3개 : 좌측 상단, 우측 상단, 우측 하단
 
 3.Two values: first value applies to top-left and bottom-right corner, and the second value applies to top-right and bottom-left corner
-
+2개 : 좌측 상단, 우측 하단 /  우측 상단 
 4.One value: all four corners are rounded equally
 
 http://www.w3schools.com/css/tryit.asp?filename=trycss3_border-radius2
