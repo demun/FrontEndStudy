@@ -12,11 +12,11 @@ Note: If the background-attachment property is set to "fixed", this property has
 
 The property takes three different values: 3가지 value!
 
-1. border-box - the background image starts from the upper left corner of the border
+1. border-box - the background image starts from the upper left corner of the border<br/>
   상단 왼쪽 위에부터 시작
-2. padding-box - (default) the background image starts from the upper left corner of the padding edge
+2. padding-box - (default) the background image starts from the upper left corner of the padding edge<br/>
   디폴트 값. 패딩에서 상단 왼쪽 위에부터 시작. 보더는 포함 안함
-3. content-box - the background image starts from the upper left corner of the content
+3. content-box - the background image starts from the upper left corner of the content<br/>
   컨텐츠의 상단 왼쪽 위에부터 시작.
 
 http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_background-origin
