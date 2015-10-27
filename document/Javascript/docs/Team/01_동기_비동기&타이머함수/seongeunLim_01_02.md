@@ -30,7 +30,7 @@ setTimeout() 메서드와 setInterval() 메서드를 사용하면 **아이디를
 이 타이머 아이디를 **clearTimeout() 메서드**와 **clearInterval() 메서**드의 매개 변수에 넣어주면 타이머를 정지 할 수 있다.
 
 **[아래 그림은 setTimeout() 메서드와 setInterval() 메서드의 차이를 나타낸 그림]**
-![setTimeout() 메서드와 setInterval() 메서드의 차이 이미지](../../../Javascript/images/seongeun_02.jpg)
+![setTimeout() 메서드와 setInterval() 메서드의 차이 이미지](../../../../Javascript/images/seongeun_02.jpg)
 
 ###예시
 
