@@ -1,15 +1,18 @@
 ﻿
 부트스트랩을 시작하면서 세팅해야 하는 파일들과 파일 구조, 기본세팅 등을 정리 해 놓았습니다.
+
 이미 부트스트랩 홈페이지나 부트스트랩 한글사이트에 나와 있는 내용이지만 다시한번 필요하다고 생각되는 부분만 정리하였습니다.
+
 (소스다운로드와 좀더 자세한 내용은 아래 사이트를 참고하세요)
 
-[참고사이트/영문](http://getbootstrap.com/getting-started/)
-[부트스트랩/한글](http://bootstrapk.com/getting-started/)
+[부트스트랩/영문] (http://getbootstrap.com/getting-started/)
+
+[부트스트랩/한글] (http://bootstrapk.com/getting-started/)
 
 
-# 파일 구조
+## 파일 구조
 
-## 최소화된 부트스트랩 Compiled and minified Bootstrap
+### 최소화된 부트스트랩 Compiled and minified Bootstrap
 
 ```
 bootstrap/
@@ -33,7 +36,7 @@ bootstrap/
 
 * 사이트에서 최소로 사용한다면 위 파일중에서 `*.min.css` 와 `*.min.js` 만 로드하고 `font`를 로드하면 됩니다.
 
-## 전체 부트 스트랩 소스 Bootstrap source
+### 전체 부트 스트랩 소스 Bootstrap source
 
 ```
 bootstrap/
@@ -54,7 +57,7 @@ bootstrap/
 > 필요합니다. 
 
 
-## 부트스트랩 CDN Bootstrap CDN
+### 부트스트랩 CDN Bootstrap CDN
 
   * [MaxCDN ](https://www.maxcdn.com/) 에서 부트스트랩의 CSS 와 자바스크립트를 CDN 으로 지원합니다. 이를 사용하려면, 아래의 부트스트랩 CDN 링크들을 사용하세요.
 
@@ -69,9 +72,9 @@ bootstrap/
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 ```
 
-#기본 템플릿 Basic template
+##기본 템플릿 Basic template
 
-## 기본세팅
+### 기본세팅
 
 ```
 <!DOCTYPE html>
@@ -112,7 +115,7 @@ bootstrap/
 [예제 템플릿](http://getbootstrap.com/getting-started/#examples)
 
 
-## 반응성 끄기 Disabling responsiveness
+### 반응성 끄기 Disabling responsiveness
 
 반응형 기능을 끄기 위해, 다음의 순서를 따라하세요. 
 
