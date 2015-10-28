@@ -1,12 +1,20 @@
-# word-wrap
+## word-wrap
 
 작성자 : 송지은
 
 작성일 : 2015-09-27
 
 css 레퍼런스 설명: 
-- word-wrap : 단어가 박스 요소의 너비보다 길어질 경우 자동 줄바꿈이 발생하는데 이때 단어를 나눌지의 여부를 지정하는 속성이다.
-- 속성 값 : normal, break-word, initial, inherit
+ - word-wrap : 단어가 박스 요소의 너비보다 길어질 경우 자동 줄바꿈이 발생하는데 이때 단어를 나눌지의 여부를 지정하는 속성이다.
+
+ - syntax : 
+```sh 
+word-wrap: normal|break-word|initial|inherit;
+```
+
+normal : 기본 값. 일반적으로 단어들이 나뉘는 지점에서 나눌 수 있도록 지정 된다.
+
+break-word : 일반적으로 나눌 수 없는 단어를 임의의 지점에서 나눌 수 있도록 지정된다.
 
 `sample code` : 
 
