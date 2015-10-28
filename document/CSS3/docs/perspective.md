@@ -1,13 +1,20 @@
-# perspective
+## perspective
 
 작성자 : 송지은
 
 작성일 : 2015-09-27
 
 css 레퍼런스 설명: 
-- perspective : 3D 공간에서 요소와 관측 점과의 거리, 즉 원근감을 지정하는 속성이다.
+ - perspective : 3D 공간에서 요소와 관측 점과의 거리, 즉 원근감을 지정하는 속성이다.
                 (얼마나 많은 3차원 픽셀을 놓을 것인지 정의하는 속성)
-- 속성 값 : length, none
+ - syntax : 
+```sh 
+perspective: length|none;
+```
+
+length : 평면에 원근감 거리를 제공한다. 이것은 평면의 중심과 컨텐츠 변환을 적용하기 위해 사용된다. 그 경우 0 또는 음의 값은 적용되지 않는다.
+
+none : 기본 값. 0과 같다. 값이 없음을 의미한다.
 
 `sample code` : 
 
