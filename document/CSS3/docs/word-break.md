@@ -1,12 +1,22 @@
-# word-break
+## word-break
 
 작성자 : 송지은
 
 작성일 : 2015-09-27
 
 css 레퍼런스 설명: 
-- word-break : 줄바꿈을 위한 단어 규칙을 지정하는 속성이다.
-- 속성 값 : normal, break-all, keep-all, initial, inherit
+ - word-break : 줄바꿈을 위한 단어 규칙을 지정하는 속성이다.
+
+ - syntax : 
+```sh 
+word-break: normal|break-all|keep-all|initial|inherit;
+```
+
+normal : 기본 값. 기본 줄 바꿈 규칙을 사용한다.
+
+break-all: 한국어, 일본어, 중국어의 단어 내에 줄바꿈하는 속성이다.
+
+keep-all : 한국어, 일본어, 중국어 외에 단어들과 동일한 줄바꿈 규칙을 사용하는 속성이다.
 
 `sample code` : 
 
