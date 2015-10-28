@@ -1,12 +1,20 @@
-# perspective-origin
+## perspective-origin
 
 작성자 : 송지은
 
 작성일 : 2015-09-27
 
 css 레퍼런스 설명: 
-- perspective-origin : 3D 공간상에서 원근감의 방향을 지정하는 속성이다. 3D 요소가 x축과 y축에 기초한다.
-- 속성 값 : x-axis y-axis, initial, inherit
+ - perspective-origin : 3D 공간상에서 원근감의 방향을 지정하는 속성이다. 3D 요소가 x축과 y축에 기초한다.
+
+ - syntax : 
+```sh 
+perspective-origin: x-axis y-axis|initial|inherit;
+```
+
+x-axis : x위치의 가로 좌표의 소실점 위치를 나타낸다.
+
+y-axis : y위치 좌표의 소실점 위치를 나타낸다.
 
 `sample code` : 
 
