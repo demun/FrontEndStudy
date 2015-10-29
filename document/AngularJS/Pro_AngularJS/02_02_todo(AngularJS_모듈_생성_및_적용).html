@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app='todoApp'>  <!--AngularJS가 모듈을 어떻게 적용해야 하는지 알려줌,
+                             파일 내 html엘리먼트 중 AngularJS가 컴파일하고 처리해야 할 모듈이 들어 있음을 알려주는 역할을 한다.
+                             자바스크립트 프레임워크로 AngularJS만 사용하는 경우, 관례상 ng-app 어트리뷰트를 html엘리먼트에 적용하지만,
+                             제이쿼리같은 다른 기술과 함께 사용하는 경우에는 ng-app 어트리뷰트를
+                             문서 내 엘리먼트에 적용함으로써 AngularJS 앱이 차지하는 범위를 제한할 수 있다.-->
+<head>
+  <script src='LiveReload.js'></script>  <!--LiveReload툴을 사용-->
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />  <!--이게 없으면 한글이 깨진다-->
+  <title>To Do List</title>
+  <link href='bootstrap.css' rel='stylesheet' />
+  <link href='bootstrap-theme.css' rel='stylesheet' />
+  <script src='angular.js'></script>
+  <script>
+    var todoApp = angular.module('todoApp', []);
+    //메소드의 인자는 생성할모듈명과, 필요한 추가모듈배열. (지금은 추가모듈이 필요없음을 보여줌)
+    
+  </script>
+<head>
+
+<body>
+  <div class='page-header'>
+    <h1>Rex's To Do List</h1>
+  </div>
+  <div class='panel'>
+    <div class='input-group'>
+      <input class='form-control' />
+      <span class='input-group-btn' />
+        <button class='btn btn-default'>ADD</button>
+      </span>
+    </div>
+    <table class='table table-striped'>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Done</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Buy Flowers</td><td>No</td></tr>
+        <tr><td>Get Shoes</td><td>No</td></tr>
+        <tr><td>Collect Tickets</td><td>Yes</td></tr>
+        <tr><td>Call Joe</td><td>No</td></tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
