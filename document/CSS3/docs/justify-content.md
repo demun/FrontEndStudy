@@ -1,20 +1,26 @@
-## flex-basis
+## justify-content
 
 작성자 : 김동일
 
 작성일 : 2015-10-30
 
 css 레퍼런스 설명: 
- - flex-basis : div 영역 내 flex item 의 크기를 설정한다.
+ - justify-content : div 영역 내 flex item 가로 크기를 정의한다.
  
  - syntax : 
 ```sh 
-flex-basis: number|auto|initial|inherit;
+justify-content: flex-start|flex-end|center|space-between|space-around|initial|inherit;
 ```
 
-number : 영역 내 flex item 크기를 정의 한다. (auto, inherit, %, px, em 등)
+flex-start : 기본 값, flex item들이 영역 시작 부분으로 정의한다.
 
-auto : 기본 값, div 영역 내에 flex item의 개수 만큼 크기를 같게 나눈다.
+flex-end : flex item들이 영역 끝 부분으로 정의한다.
+
+center : flex item들이 영역 가운데 부분으로 정의한다.
+
+space-between : flex item들이 서로간에 간격을 띄어 정의한다.
+
+space-around : flex item들이 영역 시작과 끝 부분에 간격을 띄면서, 서로간에 간격을 띄어 정의한다.
 
 initial:기본 값으로 set되어 있는 값을 불러온다.
 
@@ -25,27 +31,20 @@ sample code :
 <!DOCTYPE html>
 <html>
 <head>
-<style>
+<style> 
 #main {
-    width: 350px;
-    height: 100px;
+    width: 400px;
+    height: 150px;
     border: 1px solid #c3c3c3;
     display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
     display: flex;
+    justify-content: initial;
 }
 
 #main div {
-    -webkit-flex-grow: 0; /* Safari 6.1+ */
-    -webkit-flex-shrink: 0; /* Safari 6.1+ */
-    -webkit-flex-basis: 40px; /* Safari 6.1+ */
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 40px;
-}
-
-#main div:nth-of-type(2) {
-    -webkit-flex-basis: 80px; /* Safari 6.1+ */
-    flex-basis: 80px;
+    width: 70px;
+    height: 70px;
 }
 </style>
 </head>
@@ -56,12 +55,11 @@ sample code :
   <div style="background-color:lightblue;"></div>
   <div style="background-color:khaki;"></div>
   <div style="background-color:pink;"></div>
-  <div style="background-color:lightgrey;"></div>
 </div>
 
-<p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the flex-basis property.</p>
+<p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the justify-content property.</p>
 
-<p><b>Note:</b> Safari 6.1 (and newer) supports an alternative, the -webkit-flex-basis property.</p>
+<p><b>Note:</b> Safari 6.1 (and newer) supports an alternative, the -webkit-justify-content property.</p>
 
 </body>
 </html>
@@ -70,7 +68,7 @@ sample code :
 
 결과 
 
-![flex-basis](../images/flex-basis.jpg)
+![justify-content](../images/justify-content.jpg)
 
 ### 목록
 * [align-content](align-content.md)

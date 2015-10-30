@@ -1,76 +1,30 @@
-## flex-basis
+## overflow-wrap
 
 작성자 : 김동일
 
 작성일 : 2015-10-30
 
 css 레퍼런스 설명: 
- - flex-basis : div 영역 내 flex item 의 크기를 설정한다.
+ - overflow-wrap : div 영역 내 문장들이 overflow가 될 시 처리 방법을 정의한다.
  
  - syntax : 
 ```sh 
-flex-basis: number|auto|initial|inherit;
+overflow-wrap : normal|break-word|initial|inherit;
 ```
 
-number : 영역 내 flex item 크기를 정의 한다. (auto, inherit, %, px, em 등)
+normal : 별도의 new line이 나오기 전까지 div 영역을 무시하고 한 라인으로 표시한다.
 
-auto : 기본 값, div 영역 내에 flex item의 개수 만큼 크기를 같게 나눈다.
+break-word :div 영역에 따라 overflow 되면 new line으로 표시한다.
 
-initial:기본 값으로 set되어 있는 값을 불러온다.
+initial:기본 값으로 set되어 있는 값을 불러온다.(normal)
 
 inherit:부모 element에 설정되어 있는 값을 상속 받는다.
 
-sample code : 
-```sh
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-#main {
-    width: 350px;
-    height: 100px;
-    border: 1px solid #c3c3c3;
-    display: -webkit-flex; /* Safari */
-    display: flex;
-}
-
-#main div {
-    -webkit-flex-grow: 0; /* Safari 6.1+ */
-    -webkit-flex-shrink: 0; /* Safari 6.1+ */
-    -webkit-flex-basis: 40px; /* Safari 6.1+ */
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 40px;
-}
-
-#main div:nth-of-type(2) {
-    -webkit-flex-basis: 80px; /* Safari 6.1+ */
-    flex-basis: 80px;
-}
-</style>
-</head>
-<body>
-
-<div id="main">
-  <div style="background-color:coral;"></div>
-  <div style="background-color:lightblue;"></div>
-  <div style="background-color:khaki;"></div>
-  <div style="background-color:pink;"></div>
-  <div style="background-color:lightgrey;"></div>
-</div>
-
-<p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the flex-basis property.</p>
-
-<p><b>Note:</b> Safari 6.1 (and newer) supports an alternative, the -webkit-flex-basis property.</p>
-
-</body>
-</html>
-
-```
 
 결과 
 
-![flex-basis](../images/flex-basis.jpg)
+![http://code.webplatform.org/gist/5842405]사이트 참조
+
 
 ### 목록
 * [align-content](align-content.md)

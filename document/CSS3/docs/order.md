@@ -1,20 +1,18 @@
-## flex-basis
+## order
 
 작성자 : 김동일
 
 작성일 : 2015-10-30
 
 css 레퍼런스 설명: 
- - flex-basis : div 영역 내 flex item 의 크기를 설정한다.
+ - order : 정의된 div 의 표시 순서를 설정한다.
  
  - syntax : 
 ```sh 
-flex-basis: number|auto|initial|inherit;
+order: number|initial|inherit;
 ```
 
-number : 영역 내 flex item 크기를 정의 한다. (auto, inherit, %, px, em 등)
-
-auto : 기본 값, div 영역 내에 flex item의 개수 만큼 크기를 같게 나눈다.
+number : 정의된 div의 순서를 정의한다. (기본값 : 0)
 
 initial:기본 값으로 set되어 있는 값을 불러온다.
 
@@ -25,43 +23,45 @@ sample code :
 <!DOCTYPE html>
 <html>
 <head>
-<style>
+<style> 
 #main {
-    width: 350px;
-    height: 100px;
+    width: 400px;
+    height: 150px;
     border: 1px solid #c3c3c3;
     display: -webkit-flex; /* Safari */
     display: flex;
 }
 
 #main div {
-    -webkit-flex-grow: 0; /* Safari 6.1+ */
-    -webkit-flex-shrink: 0; /* Safari 6.1+ */
-    -webkit-flex-basis: 40px; /* Safari 6.1+ */
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 40px;
+    width: 70px;
+    height: 70px;
 }
 
-#main div:nth-of-type(2) {
-    -webkit-flex-basis: 80px; /* Safari 6.1+ */
-    flex-basis: 80px;
-}
+/* Safari 6.1+ */
+div#myRedDIV   {-webkit-order: 2;}
+div#myBlueDIV  {-webkit-order: 4;}
+div#myGreenDIV {-webkit-order: 3;}
+div#myPinkDIV  {-webkit-order: 1;}
+
+/* Standard syntax */
+div#myRedDIV   {order: 2;}
+div#myBlueDIV  {order: 4;}
+div#myGreenDIV {order: 3;}
+div#myPinkDIV  {order: 1;}
 </style>
 </head>
 <body>
 
 <div id="main">
-  <div style="background-color:coral;"></div>
-  <div style="background-color:lightblue;"></div>
-  <div style="background-color:khaki;"></div>
-  <div style="background-color:pink;"></div>
-  <div style="background-color:lightgrey;"></div>
+  <div style="background-color:coral;" id="myRedDIV"></div>
+  <div style="background-color:lightblue;" id="myBlueDIV"></div>
+  <div style="background-color:lightgreen;" id="myGreenDIV"></div>
+  <div style="background-color:pink;" id="myPinkDIV"></div>
 </div>
 
-<p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the flex-basis property.</p>
+<p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the order property.</p>
 
-<p><b>Note:</b> Safari 6.1 (and newer) supports an alternative, the -webkit-flex-basis property.</p>
+<p><b>Note:</b> Safari 6.1 (and newer) supports an alternative, the -webkit-order property.</p>
 
 </body>
 </html>
@@ -70,7 +70,7 @@ sample code :
 
 결과 
 
-![flex-basis](../images/flex-basis.jpg)
+![order](../images/order.jpg)
 
 ### 목록
 * [align-content](align-content.md)

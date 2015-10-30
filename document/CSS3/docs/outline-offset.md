@@ -1,20 +1,18 @@
-## flex-basis
+## outline-offset
 
 작성자 : 김동일
 
 작성일 : 2015-10-30
 
 css 레퍼런스 설명: 
- - flex-basis : div 영역 내 flex item 의 크기를 설정한다.
+ - outline-offset: 외각선의 오프셋 크기를 정의한다.
  
  - syntax : 
 ```sh 
-flex-basis: number|auto|initial|inherit;
+outline-offset: length|initial|inherit;
 ```
 
-number : 영역 내 flex item 크기를 정의 한다. (auto, inherit, %, px, em 등)
-
-auto : 기본 값, div 영역 내에 flex item의 개수 만큼 크기를 같게 나눈다.
+length : 외각선 오프셋의 크기를 정의한다.
 
 initial:기본 값으로 set되어 있는 값을 불러온다.
 
@@ -25,43 +23,23 @@ sample code :
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-#main {
-    width: 350px;
-    height: 100px;
-    border: 1px solid #c3c3c3;
-    display: -webkit-flex; /* Safari */
-    display: flex;
-}
-
-#main div {
-    -webkit-flex-grow: 0; /* Safari 6.1+ */
-    -webkit-flex-shrink: 0; /* Safari 6.1+ */
-    -webkit-flex-basis: 40px; /* Safari 6.1+ */
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 40px;
-}
-
-#main div:nth-of-type(2) {
-    -webkit-flex-basis: 80px; /* Safari 6.1+ */
-    flex-basis: 80px;
-}
+<style> 
+div {
+    margin: 20px;
+    width: 150px; 
+    padding: 10px;
+    height: 70px;
+    border: 2px solid black;
+    outline: 2px solid red;
+    outline-offset: 15px;
+} 
 </style>
 </head>
 <body>
 
-<div id="main">
-  <div style="background-color:coral;"></div>
-  <div style="background-color:lightblue;"></div>
-  <div style="background-color:khaki;"></div>
-  <div style="background-color:pink;"></div>
-  <div style="background-color:lightgrey;"></div>
-</div>
+<p><b>Note:</b> Internet Explorer does not support the outline-offset property.</p>
 
-<p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the flex-basis property.</p>
-
-<p><b>Note:</b> Safari 6.1 (and newer) supports an alternative, the -webkit-flex-basis property.</p>
+<div>This div has an outline border 15px outside the border edge.</div>
 
 </body>
 </html>
@@ -70,7 +48,7 @@ sample code :
 
 결과 
 
-![flex-basis](../images/flex-basis.jpg)
+![outline-offset](../images/outline-offset.jpg)
 
 ### 목록
 * [align-content](align-content.md)
