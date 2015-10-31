@@ -36,24 +36,96 @@
 ## Containers
 
   * 부트스트랩은 사이트 콘텐츠를 감싸고 그리드 시스템을 만들 콘테이너 요소가 필요합니다. 
+  * 레이아웃을 만드는 가장 상위 요소에 `.container` 또는 `.container-fluid`를 추가합니다.
   * 2가지 콘테이너 중 하나를 선택할 수 있습니다.
-  *container는 기본적으로 중첩 될 수없는 것을 유의하십시오.*
+  **container는 기본적으로 중첩 될 수없는 것을 유의하십시오.**
 
-  * 반응형 고정폭 콘테이너를 위해 `.container` 를 
+
+### .container의 속성(고정폭 콘테이너)
+
+  ```
+      .container {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    @media (min-width: 768px) {
+      .container {
+        width: 750px;
+      }
+    }
+    @media (min-width: 992px) {
+      .container {
+        width: 970px;
+      }
+    }
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px;
+      }
+    }
+  ```
+
+가로 해상도 - 767px 이하에서는 100%, 
+            - 768px 이상에서는 750px, 
+            - 992px 이상에서는 970px, 
+            - 1200px 이상에서는 1170px
+
+
+### .container-fluid 속성(전체폭까지 늘어나는 최대폭 콘테이너)
+
 ```
-<div class="container">
-  ...
-</div>
+  .container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 ```
+
+가로 해상도에 관계없이 100%의 가로폭을 가집니다.
+
+* 예제
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>고정폭 container</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <style type="text/css">
+        div {
+              background-color: yellow;
+              color: darkblue;
+              font-family: verdana;
+              font-size: 2rem;
+              font-weight: bold;
+            }
+    </style>
+</head>
+<body>
+    <h1>Bootstrap Container</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">container Column 1</div>
+      <div class="col-md-6">container Column 2</div>
+    </div>
+  </div>  
+  <br />
+  <h1>Bootstrap Container-fluid</h1>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">container-fluid Column 1</div>
+      <div class="col-md-6">container-fluid Column 2</div>
+    </div>
+  </div>  
+</body>
+</html>
+
  
- * 뷰포트 전체폭까지 늘어나는 최대폭 콘테이너를 위해 `.container-fluid` 을 사용
-```
-<div class="container-fluid">
-  ...
-</div>
-```
-
-
 [이전페이지- 부트스트랩 시작하기](bootstrap-start.md)
 
 [다음페이지- 부트스트랩CSS_그리드](css-grid.md)
