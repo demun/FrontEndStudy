@@ -83,7 +83,8 @@ bootstrap/
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 
+    어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
     <title>부트스트랩 101 템플릿</title>
 
     <!-- 부트스트랩 -->
@@ -107,9 +108,9 @@ bootstrap/
 </html>
 ```
 
-> html5shiv.js 는 익스플로러가 html5 의 구문을 모르기때문에 알려주는 역할을
+> `html5shiv.js` 는 익스플로러가 html5 의 구문을 모르기때문에 알려주는 역할을
 > 합니다. 그래야만 html 이 로드될때 제대로 인식하기 때문입니다.
-> respond.min.js 는 인터넷 익스플로러 8의 미디어쿼리를 지원하기 위해 
+> `respond.min.js` 는 인터넷 익스플로러 8의 미디어쿼리를 지원하기 위해 
 > 필요합니다.
 
 [예제 템플릿](http://getbootstrap.com/getting-started/#examples)
@@ -120,7 +121,7 @@ bootstrap/
 반응형 기능을 끄기 위해, 다음의 순서를 따라하세요. 
 
 * 문서내 CSS 에 명시된 뷰포트 <meta>를 제거합니다.
-* .container에 width: 970px !important; 같은 수치값을 넣어줍니다.
+* `.container`에 width: 970px !important; 같은 수치값을 넣어줍니다.
 
   **이것들은 기본 부트스트랩 CSS 뒤에 와야함을 명심하세요**
 
@@ -128,11 +129,14 @@ bootstrap/
 * 그리드 레이아웃을 위해, .col-md-* 나 .col-lg-* 클래스 대신 `.col-xs-*` 클래스를 사용하세요. ( 모든 해상도에서 동일하게 작동합니다.)
 * 여전히 IE8 을 위해 `respond.js` 가 필요합니다(미디어쿼리는 여전히 필요하기때문에).이것은 부트스트랩의 "모바일 사이트" 측면을 꺼지게 합니다.
 
+
+[비반응형 예제](http://bootstrapk.com/examples/non-responsive/)
+
+
 ### 인터넷 익스플로러 8 과 9
 
 인터넷 익스플로러 8 과 9 또한 지원됩니다만, 이 브라우저들이 완전하게 지원하지 않는 몇몇 CSS 속성과 HTML5 요소들을 주의해주세요. 또한, 인터넷 익스플로러 8 은 미디어쿼리를 지원하기 위해 `Respond.js` 의 사용을 필요합니다.
 
-<!DOCTYPE html>
 <html>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -180,7 +184,7 @@ bootstrap/
 </body>
 </html>
 
-[비반응형 예제](http://bootstrapk.com/examples/non-responsive/)
+
 
 
 [다음페이지- 부트스트랩CSS_컨테이너](css-container.md)

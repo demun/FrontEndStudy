@@ -1,4 +1,4 @@
-﻿### HTML5 문서 유형 HTML5 doctype
+﻿### HTML5 문서 유형
 
 ```
 <!DOCTYPE html>
@@ -38,6 +38,7 @@
   * 부트스트랩은 사이트 콘텐츠를 감싸고 그리드 시스템을 만들 콘테이너 요소가 필요합니다. 
   * 레이아웃을 만드는 가장 상위 요소에 `.container` 또는 `.container-fluid`를 추가합니다.
   * 2가지 콘테이너 중 하나를 선택할 수 있습니다.
+
   **container는 기본적으로 중첩 될 수없는 것을 유의하십시오.**
 
 
@@ -88,7 +89,6 @@
 
 * 예제
 
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
