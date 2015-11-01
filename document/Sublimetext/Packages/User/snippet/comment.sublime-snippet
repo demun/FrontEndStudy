@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+// ${1:주석명}
+// --------------------------------------------------
+${2}
+]]></content>
+	<tabTrigger>comment</tabTrigger>
+	<scope>source.js,source.scss,source.less</scope>
+</snippet>
