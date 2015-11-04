@@ -109,7 +109,6 @@ sample code :
 * [column-span](column-span.md)
 * [column-width](column-width.md)
 * [columns](columns.md)
-* [flex](flex.md)
 * [flex-basis](flex-basis.md)
 * [flex-direction](flex-direction.md)
 * [flex-flow](flex-flow.md)

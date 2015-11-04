@@ -115,7 +115,6 @@ In my younger and more vulnerable years my father gave me some advice that I've 
 * [overflow-wrap](overflow-wrap.md)
 * [overflow-x](overflow-x.md)
 * [overflow-y](overflow-y.md)
-* [@page](@page.md)
 * [perspective](perspective.md)
 * [perspective-origin](perspective-origin.md)
 * [resize](resize.md)

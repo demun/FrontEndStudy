@@ -1,67 +1,55 @@
-# animation
+## text-shadow
 
-작성자 : 이연옥
+작성자 : 김동일
 
-작성일 : 2015-10-01
+작성일 : 2015-11-04
 
 css 레퍼런스 설명: 
- - animation : 
+ - text-shadow : text에 그림자를 설정한다.
  
  - syntax : 
 ```sh 
-animation : 
+text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;
 ```
 
- - sample code : 
-```html
+h-shadow : 가로 그림자의 값을 설정(필수)
+
+v-shadow : 세로 그림자의 값을 설정(필수)
+
+blur-radius : 그림자의 흐림도 값 설정(옵션)
+
+color : 그림자의 색을 설정(옵션)
+
+initial:기본 값으로 set되어 있는 값을 불러온다.
+
+inherit:부모 element에 설정되어 있는 값을 상속 받는다.
+
+sample code : 
+```sh
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
-div {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    -webkit-animation-name: example; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-    animation-name: example;
-    animation-duration: 4s;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
-}
-
-/* Standard syntax */
-@keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
+<style>
+h1 {
+    text-shadow: 2px 2px #FF0000;
 }
 </style>
 </head>
 <body>
 
-<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+<h1>Text-shadow effect</h1>
 
-<div></div>
-
-<p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+<p><b>Note:</b> Internet Explorer 9 and earlier do not support the text-shadow property.</p>
 
 </body>
 </html>
+
+
 ```
 
-결과 : 
+결과 
 
-[http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1](http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1)
-
-[http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2](http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2)
-
-[http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation3](http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation3)
-
-
+![text-overflow](../images/text-overflow.jpg)
 
 ### 목록
 * [align-content](align-content.md)

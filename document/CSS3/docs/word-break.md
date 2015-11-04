@@ -105,7 +105,6 @@ keep-all : 한국어, 일본어, 중국어 외에 단어들과 동일한 줄바�
 * [overflow-wrap](overflow-wrap.md)
 * [overflow-x](overflow-x.md)
 * [overflow-y](overflow-y.md)
-* [@page](@page.md)
 * [perspective](perspective.md)
 * [perspective-origin](perspective-origin.md)
 * [resize](resize.md)

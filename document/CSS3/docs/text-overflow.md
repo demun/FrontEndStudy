@@ -1,67 +1,67 @@
-# animation
+## text-overflow
 
-작성자 : 이연옥
+작성자 : 김동일
 
-작성일 : 2015-10-01
+작성일 : 2015-11-04
 
 css 레퍼런스 설명: 
- - animation : 
+ - text-overflow : text 내용이 over 되는 경우를 설정한다.
  
  - syntax : 
 ```sh 
-animation : 
+text-overflow: clip|ellipsis|initial|inherit;
 ```
 
- - sample code : 
-```html
+clip : 기본 값, text 내용을 자른다.
+
+ellipsis : 택스트 내용이 over되는 경우 "..."로 처리한다.
+
+initial:기본 값으로 set되어 있는 값을 불러온다.
+
+inherit:부모 element에 설정되어 있는 값을 상속 받는다.
+
+sample code : 
+```sh
 <!DOCTYPE html>
 <html>
 <head>
 <style> 
-div {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    -webkit-animation-name: example; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-    animation-name: example;
-    animation-duration: 4s;
+#div1 {
+    white-space: nowrap; 
+    width: 12em; 
+    overflow: hidden;
+    text-overflow: clip; 
+    border: 1px solid #000000;
 }
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
+#div2 {
+    white-space: nowrap; 
+    width: 12em; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    border: 1px solid #000000;
 }
 
-/* Standard syntax */
-@keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
-}
 </style>
 </head>
 <body>
 
-<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+<p>The following two divs contains a long text that will not fit in the box. As you can see, the text is clipped.</p>
 
-<div></div>
+<p>This div uses "text-overflow:clip":</p>
+<div id="div1">This is some long text that will not fit in the box</div>
 
-<p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+<p>This div uses "text-overflow:ellipsis":</p>
+<div id="div2">This is some long text that will not fit in the box</div>
 
 </body>
 </html>
+
 ```
 
-결과 : 
+결과 
 
-[http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1](http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1)
-
-[http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2](http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2)
-
-[http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation3](http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation3)
-
-
+![text-overflow](../images/text-overflow.jpg)
 
 ### 목록
 * [align-content](align-content.md)

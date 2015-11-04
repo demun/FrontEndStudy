@@ -134,7 +134,6 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 * [overflow-wrap](overflow-wrap.md)
 * [overflow-x](overflow-x.md)
 * [overflow-y](overflow-y.md)
-* [@page](@page.md)
 * [perspective](perspective.md)
 * [perspective-origin](perspective-origin.md)
 * [resize](resize.md)
