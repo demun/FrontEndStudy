@@ -64,7 +64,7 @@
 
 ---
 
-#### 맥락적인 클래스
+#### 맥락적인 클래스(색상/스타일)
 
 - 각 항목별 의미에 따라 기본 색상이 지정되어 있다.
 - `list-group-item`에 클래스를 추가하여 사용
@@ -108,4 +108,11 @@
   </a>
 </div>
 ```
+
+---
+
+* [원문사이트 바로가기](http://getbootstrap.com/components/#list-group)
+
+* [이전페이지- 부트스트랩CSS_그리드](css-grid.md)
+* [다음페이지- 부트스트랩 컴포넌트 : 패널(panelmark)](component-panelmark.md)
 
