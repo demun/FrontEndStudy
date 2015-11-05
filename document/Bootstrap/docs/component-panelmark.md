@@ -96,10 +96,10 @@
 
 - 패널 내부에 테이블을 추가할 수 있음.
 - 두가지 경우
--- `.panel-body`가 있는 경우 : 본문과 테이블 사이에 구분선이 들어감
--- `.panel-body`가 없는 경우
+   - `.panel-body`가 있는 경우 : 본문과 테이블 사이에 구분선이 들어감
+   - `.panel-body`가 없는 경우
 
-1. `.panel-body`가 있는 경우
+* `.panel-body`가 있는 경우
 
 ![스크린샷](../images/bootstrap-cp-panel-05.png)
 
@@ -118,7 +118,7 @@
 </div>
 ```
 
-2. `.panel-body`가 없는 경우
+* `.panel-body`가 없는 경우
 
 ![스크린샷](../images/bootstrap-cp-panel-06.png)
 
