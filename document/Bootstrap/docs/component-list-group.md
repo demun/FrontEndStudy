@@ -51,7 +51,7 @@
 
 2. 비활성 링크항목
 
-![스크린샷](../images/bootstrap-cp-list-0302.png)
+![스크린샷](../images/bootstrap-cp-list-04.png)
 
 
 ```html
@@ -82,7 +82,7 @@
 3. 노랑 : `.list-group-item-warning`
 4. 빨강 : `.list-group-item-danger`
 
-![스크린샷](../images/bootstrap-cp-list-04.png)
+![스크린샷](../images/bootstrap-cp-list-05.png)
 
 ```html
 <ul class="list-group">
@@ -104,7 +104,7 @@
 #### 컨텐츠가 있는 항목
 - 항목에 컨텐츠를 추가하는 것이 가능함.
 
-![스크린샷](../images/bootstrap-cp-list-05.png)
+![스크린샷](../images/bootstrap-cp-list-06.png)
 
 ```html
 <div class="list-group">
