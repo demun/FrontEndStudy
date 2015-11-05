@@ -6,6 +6,15 @@
 
 #### 기본예제
 
+
+<ul class="list-group">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+
 ```html
 <ul class="list-group">
   <li class="list-group-item">Cras justo odio</li>
@@ -61,10 +70,10 @@
 - `list-group-item`에 클래스를 추가하여 사용
 - 링크 항목에도 동일하게 적용
 
-> 초록 : `.list-group-item-success`
-> 파랑 : `.list-group-item-info`
-> 노랑 : `.list-group-item-warning`
-> 빨강 : `.list-group-item-danger`
+- 초록 : `.list-group-item-success`
+- 파랑 : `.list-group-item-info`
+- 노랑 : `.list-group-item-warning`
+- 빨강 : `.list-group-item-danger`
 
 ```html
 <ul class="list-group">
