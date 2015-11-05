@@ -6,14 +6,7 @@
 
 #### 기본예제
 
-
-<ul class="list-group">
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Dapibus ac facilisis in</li>
-  <li class="list-group-item">Morbi leo risus</li>
-  <li class="list-group-item">Porta ac consectetur ac</li>
-  <li class="list-group-item">Vestibulum at eros</li>
-</ul>
+![스크린샷](../images/bootstrap-cp-list-01.png)
 
 ```html
 <ul class="list-group">
@@ -70,23 +63,24 @@
 - `list-group-item`에 클래스를 추가하여 사용
 - 링크 항목에도 동일하게 적용
 
-- 초록 : `.list-group-item-success`
-- 파랑 : `.list-group-item-info`
-- 노랑 : `.list-group-item-warning`
-- 빨강 : `.list-group-item-danger`
+
+1. 초록 : `.list-group-item-success`
+2. 파랑 : `.list-group-item-info`
+3. 노랑 : `.list-group-item-warning`
+4. 빨강 : `.list-group-item-danger`
 
 ```html
 <ul class="list-group">
-  <li class="list-group-item list-group-item-success">초록색 항목</li>
-  <li class="list-group-item list-group-item-info">파란색 항목</li>
-  <li class="list-group-item list-group-item-warning">노란색 항목</li>
-  <li class="list-group-item list-group-item-danger">빨간색 항목</li>
+  <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+  <li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
+  <li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+  <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
 </ul>
 <div class="list-group">
-  <a href="#" class="list-group-item list-group-item-success">초록색 링크항목</a>
-  <a href="#" class="list-group-item list-group-item-info">파란색 링크항목</a>
-  <a href="#" class="list-group-item list-group-item-warning">노란색 링크항목</a>
-  <a href="#" class="list-group-item list-group-item-danger">빨간색 링크항</a>
+  <a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
+  <a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
 </div>
 ```
 
@@ -98,8 +92,8 @@
 ```html
 <div class="list-group">
   <a href="#" class="list-group-item active">
-    <h4 class="list-group-item-heading">제목이 들어갑니다.</h4>
-    <p class="list-group-item-text">부가적인 텍스트도 들어갈 수 있습니다.</p>
+    <h4 class="list-group-item-heading">List group item heading</h4>
+    <p class="list-group-item-text">...</p>
   </a>
 </div>
 ```
