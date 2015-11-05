@@ -24,6 +24,8 @@
 
 목록 항목(item)에 뱃지를 추가하면 오른쪽에 자동 위치
 
+![스크린샷](../images/bootstrap-cp-list-02.png)
+
 ```html
 <ul class="list-group">
   <li class="list-group-item">
@@ -38,8 +40,13 @@
 #### 링크항목
 
 링크항목은 `<ul>` 대신 `<div>` 와 `<a>`를 사용. (class는 기본예제와 동일)
-- 실행중인 링크항목 : `.list-group-item.active`
-- 비활성 링크항목 : `.list-group-item.disabled`
+
+1. 실행중인 링크항목 : `.list-group-item.active`
+2. 비활성 링크항목 : `.list-group-item.disabled`
+
+
+![스크린샷](../images/bootstrap-cp-list-03.png)
+
 
 ```html
 <div class="list-group">
@@ -69,6 +76,8 @@
 3. 노랑 : `.list-group-item-warning`
 4. 빨강 : `.list-group-item-danger`
 
+![스크린샷](../images/bootstrap-cp-list-04.png)
+
 ```html
 <ul class="list-group">
   <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
@@ -88,6 +97,8 @@
 
 #### 컨텐츠가 있는 항목
 - 항목에 컨텐츠를 추가하는 것이 가능함.
+
+![스크린샷](../images/bootstrap-cp-list-05.png)
 
 ```html
 <div class="list-group">
