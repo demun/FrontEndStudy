@@ -45,7 +45,13 @@
 2. 비활성 링크항목 : `.list-group-item.disabled`
 
 
+1. 실행중인 링크항목 표시
+
 ![스크린샷](../images/bootstrap-cp-list-03.png)
+
+2. 비활성 링크항목
+
+![스크린샷](../images/bootstrap-cp-list-0302.png)
 
 
 ```html
