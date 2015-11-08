@@ -68,6 +68,65 @@ $('#foo').trigger('click');
 
 
 
+## each(반복문) 함수
+
+<pre><code>
+
+.each()는 선택한 요소가 여러개일 때 각각에 대하여 반복하여 함수를 실행시킵니다.
+
+문법  :  .each( function )
+
+특정 조건을 만족할 때 반복 작업에서 빠져려면  :  return false 사용합니다.
+</code></pre>
+
+
+<pre><code>
+## 예제_01
+
+
+
+<!-- <!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Methods | .each()</title>
+    <style>
+      .s1 {color: red;}
+      .s2 {color: blue;}
+      .s3 {color: green;}
+      .s4 {color: brown;}
+    </style>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+      $( document ).ready( function() {
+        var i=1
+        $( 'p' ).each( function() {
+          $( this ).addClass( 's' + i );
+          i = i + 1;
+        } );
+      } );
+    </script>
+  </head>
+  <body>
+    <p>Lorem</p>
+    <p>Ipsum</p>
+    <p>Dolor</p>
+    <p>Amet</p>
+  </body>
+</html> -->
+
+
+
+</code></pre>
+
+
+
+
+
+
+
+
+
 선택자명 | 설명
 --- | ---
 $('tag') | Tag라는 이름의 모든 태그 요소를 선택
