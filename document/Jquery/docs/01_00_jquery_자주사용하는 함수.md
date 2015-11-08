@@ -35,34 +35,41 @@ $('#foo').trigger('click');
 </code></pre>
 
 
-<pre><code>
+
 
 ## 예제_02
 
 
-   $(document).ready(function () {
-      //btn클릭 이벤트 처리
-      $("#btn").click(function () { alert('버튼이 클릭되었습니다.') });
-      //페이지 로드시 버튼 클릭
-      $('#my .hover').click(function () { alert('버튼이 클릭'); });
-      $('#my input[type=button]').one("click", function () {
-         alert('역시 버튼이 사용자에 의해서 클릭됨');
-      });
-      $('#btn').bind("click", function () { alert('버튼이 클릭됨'); });
-      //버튼 클릭이 아니라 코드에 의해서 click이벤트를 실행하고 싶다면?
-      $('#btn').trigger('click'); 
-   });
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Methods | .each()</title>
+    <style>
+      .s1 {color: red;}
+      .s2 {color: blue;}
+      .s3 {color: green;}
+      .s4 {color: brown;}
+    </style>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+      $( document ).ready( function() {
+        var i=1
+        $( 'p' ).each( function() {
+          $( this ).addClass( 's' + i );
+          i = i + 1;
+        } );
+      } );
+    </script>
+  </head>
+  <body>
+    <p>Lorem</p>
+    <p>Ipsum</p>
+    <p>Dolor</p>
+    <p>Amet</p>
+  </body>
+</html>
 
 
-   모든 click  이벤트가   $('#btn').trigger('click'); 코딩에 의하여  강제로 실행되는 예제 입니다.
-
-   div id="my"
-   input type="button" id="btn" value="버튼" class="hover" /
-   /div
-
-
-
-</code></pre>
 
 
 
@@ -82,15 +89,10 @@ $('#foo').trigger('click');
 
 <pre><code>
 ## 예제_01
-
-
-
-
       .s1 {color: red;}
       .s2 {color: blue;}
       .s3 {color: green;}
       .s4 {color: brown;}
-
 
       $( document ).ready( function() {
         var i=1
@@ -100,13 +102,10 @@ $('#foo').trigger('click');
         } );
       } );
 
-
-    (<p>Lorem</p>)
-    (<p>Ipsum</p>)
-    (<p>Dolor</p>)
-    (<p>Amet</p>)
-
-
+    Lorem  (p태그)
+    Ipsum   (p태그)
+    Dolor   (p태그)
+    Amet   (p태그)
 
 </code></pre>
 
