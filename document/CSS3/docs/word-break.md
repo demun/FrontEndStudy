@@ -14,9 +14,9 @@ word-break: normal|break-all|keep-all|initial|inherit;
 
 normal : 기본 값. 기본 줄 바꿈 규칙을 사용한다.
 
-break-all: 한국어, 일본어, 중국어의 단어 내에 줄바꿈하는 속성이다.
+break-all: 영어를 한 단어 내에 줄바꿈하는 속성이다. 한국어, 일본어, 중국어는 띄어쓰기를 기준으로 줄바꿈 된다.
 
-keep-all : 한국어, 일본어, 중국어 외에 단어들과 동일한 줄바꿈 규칙을 사용하는 속성이다.
+keep-all : 영어도 한국어, 일본어, 중국어와 동일한 줄바꿈 규칙을 사용하는 속성이다.
 
 `sample code` : 
 
