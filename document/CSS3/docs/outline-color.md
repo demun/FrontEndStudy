@@ -102,7 +102,6 @@ p {
 * [overflow-wrap](overflow-wrap.md)
 * [overflow-x](overflow-x.md)
 * [overflow-y](overflow-y.md)
-* [@page](@page.md)
 * [perspective](perspective.md)
 * [perspective-origin](perspective-origin.md)
 * [resize](resize.md)

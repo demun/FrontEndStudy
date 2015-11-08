@@ -114,7 +114,6 @@ y-axis : y위치 좌표의 소실점 위치를 나타낸다.
 * [overflow-wrap](overflow-wrap.md)
 * [overflow-x](overflow-x.md)
 * [overflow-y](overflow-y.md)
-* [@page](@page.md)
 * [perspective](perspective.md)
 * [perspective-origin](perspective-origin.md)
 * [resize](resize.md)

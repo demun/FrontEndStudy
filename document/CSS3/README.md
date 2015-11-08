@@ -118,7 +118,6 @@ cf) Github 사이트에 등록하는 방법도 [09-GitHub-for-Windows](../Github
 * [overflow-wrap](docs/overflow-wrap.md)
 * [overflow-x](docs/overflow-x.md)
 * [overflow-y](docs/overflow-y.md)
-* [@page](docs/@page.md)
 * [perspective](docs/perspective.md)
 * [perspective-origin](docs/perspective-origin.md)
 * [resize](docs/resize.md)
