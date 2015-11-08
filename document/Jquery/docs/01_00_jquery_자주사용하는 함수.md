@@ -85,19 +85,13 @@ $('#foo').trigger('click');
 
 
 
-<!-- <!doctype html>
-<html lang="ko">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery Methods | .each()</title>
-    <style>
+
       .s1 {color: red;}
       .s2 {color: blue;}
       .s3 {color: green;}
       .s4 {color: brown;}
-    </style>
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script>
+
+
       $( document ).ready( function() {
         var i=1
         $( 'p' ).each( function() {
@@ -105,15 +99,12 @@ $('#foo').trigger('click');
           i = i + 1;
         } );
       } );
-    </script>
-  </head>
-  <body>
-    <p>Lorem</p>
-    <p>Ipsum</p>
-    <p>Dolor</p>
-    <p>Amet</p>
-  </body>
-</html> -->
+
+
+    (<p>Lorem</p>)
+    (<p>Ipsum</p>)
+    (<p>Dolor</p>)
+    (<p>Amet</p>)
 
 
 
