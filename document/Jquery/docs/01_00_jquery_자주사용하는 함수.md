@@ -4,6 +4,7 @@
 ## Triggrt 함수
 
 <pre><code>
+
 원문 링크  http://api.jquery.com/trigger/
 
 .trigger( eventType [, extraParameters] )
@@ -15,6 +16,19 @@ eventType JavaScript 이벤트 타입을 표현하는 문자열, click 또는 su
 extraParameters 이벤트 핸들러에 전달할 추가 파라미터.
 .trigger( event )
 event jQuery.Event 객체.
+
+</code></pre>
+
+
+
+<pre><code>
+## 예제_01
+.trigger() 함수는 이벤트가 발생할 때 실행될 함수나 .bind() 함수로 연결된 어떤 이벤트 핸들러를 강제로 실행시켜 줍니다. 
+
+$('#foo').bind('click', function() {
+      alert($(this).text());
+    });
+$('#foo').trigger('click');
 
 </code></pre>
 
