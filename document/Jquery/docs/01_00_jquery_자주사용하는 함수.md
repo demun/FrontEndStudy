@@ -30,7 +30,8 @@ $('#foo').bind('click', function() {
     });
 $('#foo').trigger('click');
 
-#foot 선택자를 클릭 하지 않아도  alert($(this).text()); 실행됩니다.
+#foot 선택자를 클릭 하지 않아도   trigger함수에 연결된 click 이벤트가  trigger함수의 특징의 의하여
+ alert($(this).text()); 를  강제로 실행합니다.
 </code></pre>
 
 
@@ -52,6 +53,8 @@ $('#foo').trigger('click');
       $('#btn').trigger('click'); 
    });
 
+
+   모든 click  이벤트가   $('#btn').trigger('click'); 코딩에 의하여  강제로 실행되는 예제 입니다.
 
    div id="my"
    input type="button" id="btn" value="버튼" class="hover" /
