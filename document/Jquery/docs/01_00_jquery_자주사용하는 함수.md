@@ -30,7 +30,45 @@ $('#foo').bind('click', function() {
     });
 $('#foo').trigger('click');
 
+#foot 선택자를 클릭 하지 않아도  alert($(this).text()); 실행됩니다.
 </code></pre>
+
+
+<pre><code>
+
+## 예제_02
+
+<!DOCTYPE html>
+<html  lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>trigger</title>
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+   $(document).ready(function () {
+      //btn클릭 이벤트 처리
+      $("#btn").click(function () { alert('버튼이 클릭되었습니다.') });
+      //페이지 로드시 버튼 클릭
+      $('#my .hover').click(function () { alert('버튼이 클릭'); });
+      $('#my input[type=button]').one("click", function () {
+         alert('역시 버튼이 사용자에 의해서 클릭됨');
+      });
+      $('#btn').bind("click", function () { alert('버튼이 클릭됨'); });
+      //버튼 클릭이 아니라 코드에 의해서 click이벤트를 실행하고 싶다면?
+      $('#btn').trigger('click'); 
+   });
+</script>
+</head>
+<body>
+   <div id="my">
+   <input type="button" id="btn" value="버튼" class="hover" />
+   </div>
+</body>
+</html>
+
+</code></pre>
+
+
 
 
 
