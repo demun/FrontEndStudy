@@ -158,5 +158,51 @@
 </div>
 ```
 
+아래 예제는 이벤트 타이밍을 볼 수 있는 예제입니다.
+```
+<div class="container">
+  <h2>Collapsible Methods</h2>
+  <p>The toggle method toggles the collapsible content.</p>
+  <p>The show method shows the collapsible content.</p>
+  <p>The hide method hides the collapsible content.</p>
+  <button type="button" class="btn btn-primary">Toggle</button>
+  <button type="button" class="btn btn-success">Show</button>
+  <button type="button" class="btn btn-warning">Hide</button> 
+    
+  <div class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $(".btn-primary").click(function(){
+        $(".collapse").collapse('toggle');
+    });
+    $(".btn-success").click(function(){
+        $(".collapse").collapse('show');
+    });
+    $(".btn-warning").click(function(){
+        $(".collapse").collapse('hide');
+    });
+    $(".collapse").on('show.bs.collapse', function(){
+        alert('The collapsible content is about to be shown.');
+    });
+    $(".collapse").on('shown.bs.collapse', function(){
+        alert('The collapsible content is now fully shown.');
+    });
+    $(".collapse").on('hide.bs.collapse', function(){
+        alert('The collapsible content is about to be hidden.');
+    });
+    $(".collapse").on('hidden.bs.collapse', function(){
+        alert('The collapsible content is now hidden.');
+    });
+});
+</script>
+```
+예제를 보면 show의 경우 내용이 보여지기 전에 알림창이 보이는 것을 볼 수 있고,
+shown의 경우 내용이 보여진 후 알림창이 보이는 것을 볼 수 있습니다.
 
 

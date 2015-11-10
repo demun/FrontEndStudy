@@ -181,9 +181,150 @@
 
 ### 트리거 버튼을 기반으로한 다양한 모달 컨텐츠
 
+아래의 예제는 버튼을 클릭할 때 해당 버튼을 기반으로 나타나는 모달창의 값을 바꾸어주는 예제입니다.
+참고로 script에 ready를 넣은 것은 단독 페이지에서는 이 함수를 써야 jQuery가 동작하기 때문입니다.
+```
+<script>
+	$(document).ready(function(){
+		$('#exampleModal').on('show.bs.modal', function (event) {
+		  var button = $(event.relatedTarget) // Button that triggered the modal
+		  var recipient = button.data('whatever') // Extract info from data-* attributes
+		  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+		  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+		  var modal = $(this)
+		  modal.find('.modal-title').text('New message to ' + recipient)
+		  modal.find('.modal-body input').val(recipient)
+		})
+	});
+</script>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+...more buttons...
 
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
 
+```
 
+###자바스크립트를 사용한 방법
+자바스크립트를 사용하여 모달을 동작시킬 수 있습니다.
+```
+$("#myModal").modal();
+```
+
+아래는 이 것을 사용한 예제입니다.
+다른 모든 설정은 같으나 모달을 토글하는 것이 자바스크립트로 구현되어 있습니다.
+```
+<div class="container">
+  <h2>Activate Modal with JavaScript</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" id="myBtn">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+```
+
+### 이벤트 예제
+
+아래의 예제를 통해 이벤트의 동작하는 방식을 볼 수 있습니다.
+```
+<div class="container">
+  <h2>Modal Events - shown.bs.modal</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" id="myBtn">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>The <strong>shown.bs.modal</strong> event occurs when the modal is fully shown.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+</div>
+ 
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal("show");
+    });
+        $("#myModal").on('show.bs.modal', function () {
+            alert('The modal is about to be shown.');
+    });
+        $("#myModal").on('shown.bs.modal', function () {
+            alert('The modal is fully shown.');
+    });
+});
+</script>
+```
+예제를 실행시켜 보면
+show의 경우 모달 창이 실행되기 전에 나타나는 것을 볼 수 있고,
+shown의 경우 모달 창이 실행된 후에 나타나는 것을 볼 수 있습니다.
 
 
 
