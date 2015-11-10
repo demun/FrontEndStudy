@@ -2,7 +2,7 @@
 
 작성자 : 장현웅
 
-작성일 : 2015-11-04
+작성일 : 2015-11-10
 
 css 레퍼런스 설명: 시각적 서식 모델(visual formatting model)의 좌표 공간을 변형시킬 수 있다. 해당 속성에 지정된 값에 따라 엘리먼트(element)에 이동(translate), 회전(rotate), 크기변경(scale), 기울임(skew)등의 효과를 줄 수 있다. 
 
@@ -92,6 +92,9 @@ perspective(n) : 지정된 픽셀만큼 더 멀리서 보는 효과를 낸다
 matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n) : translate, scale, rotate, skew 각 속성을 한꺼번에 적용할 수 있는 매트릭스 함수
 
 
+sample code : 
+```sh
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -167,6 +170,9 @@ transform-style: flat | preserve-3d;
 flat : 하위요소에 3D속성을 전달하지 않게 지정
 preserve-3d : 하위요소에 3D속성을 그대로 전달
 
+
+sample code : 
+```sh
 
 <!DOCTYPE html>
 <html>
