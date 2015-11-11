@@ -231,7 +231,9 @@
   기본그리드로 콘텐츠를 중첩하려면, 존재하는 .col-md-* 컬럼 내에 새로운 .row 와 .col-md-* 컬럼 세트를 추가하세요. 중첩된 행은 합쳐서 12 가 되는 하나의 컬럼 세트가 됩니다.  
 * **`col-push와 col-pull `**  
   .col-md-push-* 와.col-md-pull-* 수식클래스들로 그리드 컬럼들의 순서를 쉽게 변경할수 있습니다.
-#### 예제 2
+
+
+#### 예제 2  
 <p data-height="268" data-theme-id="11744" data-slug-hash="jbvXdp" data-default-tab="result" data-user="hklim" class='codepen'>See the Pen <a href='http://codepen.io/hklim/pen/jbvXdp/'>bootstrap3</a> by kerobugi (<a href='http://codepen.io/hklim'>@hklim</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
