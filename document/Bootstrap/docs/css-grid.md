@@ -214,7 +214,7 @@
 
 #### 예제 1
 그리드 클래스인 `.col-md-*` 싱글 세트를 사용하여, 당신은 데스크탑(중간) 기기에서 수평으로 되기전까지, 모바일 기기와 태블릿 기기(매우 작음에서 작음까지)에서 쌓이기 시작하는 기본 그리드 시스템을 만들 수 있다. `.row` 안에 그리드 컬럼을 놓으세요.
-<p data-height="268" data-theme-id="11744" data-slug-hash="RWBZXx" data-default-tab="result" data-user="hklim" class='codepen'>See the Pen <a href='http://codepen.io/hklim/pen/RWBZXx/'>bootstrap</a> by kerobugi (<a href='http://codepen.io/hklim'>@hklim</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="268" data-theme-id="11744" data-slug-hash="RWBZXx" data-default-tab="result" data-user="hklim" class='codepen'>See the Pen <a href='http://codepen.io/hklim/pen/RWBZXx/'>bootstrap</a> by kerobugi on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 
@@ -234,7 +234,7 @@
 
 
 #### 예제 2  
-<p data-height="268" data-theme-id="11744" data-slug-hash="jbvXdp" data-default-tab="result" data-user="hklim" class='codepen'>See the Pen <a href='http://codepen.io/hklim/pen/jbvXdp/'>bootstrap3</a> by kerobugi (<a href='http://codepen.io/hklim'>@hklim</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="268" data-theme-id="11744" data-slug-hash="jbvXdp" data-default-tab="result" data-user="hklim" class='codepen'>See the Pen <a href='http://codepen.io/hklim/pen/jbvXdp/'>bootstrap3</a> by kerobugi on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ***
