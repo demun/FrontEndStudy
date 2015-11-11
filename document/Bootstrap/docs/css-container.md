@@ -88,9 +88,16 @@
 **가로 해상도에 관계없이 100%의 가로폭을 가집니다.**
 
 ### 예제
-
-<p data-height="205" data-theme-id="11744" data-slug-hash="MaPzXb" data-default-tab="result" data-user="hklim" class='codepen'>See the Pen <a href='http://codepen.io/hklim/pen/MaPzXb/'>bootstrap container</a> by kerobugi (<a href='http://codepen.io/hklim'>@hklim</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p data-height="205" data-theme-id="11744" data-slug-hash="MaPzXb" data-default-tab="result" data-user="hklim" class='codepen'>See the Pen <a href='http://codepen.io/hklim/pen/MaPzXb/'>bootstrap container</a> by kerobugi (<a href='http://codepen.io/hklim'>@hklim</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</body>
+</html>
+
 
  
 
