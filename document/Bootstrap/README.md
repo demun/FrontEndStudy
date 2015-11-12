@@ -3,24 +3,22 @@
 
 ## Bootstrap 레퍼런스 정리
 
-  - 부트스트랩 시작하기(세팅)
+  *grunt와 less Sass를 활용한 부트스트랩의 사용과 예제 등은 다음 예제사이트 진행시에 정리할 계획입니다.(아직미정-협의필요)*
 
-    *grunt와 less Sass를 활용한 부트스트랩의 사용과 예제 등은 다음 예제사이트 진행시에 정리할 계획입니다.(아직미정-협의필요)*
-  - Bootstrap CSS
+  - 부트스트랩 시작하기(세팅)   
+      -[bootstrap-start](docs/bootstrap-start.md)
+  
+  - Bootstrap CSS    
+      -[css-container](docs/css-container.md)    
+      -[css-grid](docs/css-grid.md) 
 
-      -container
+  - Bootstrap component   
+      -[component-list-group](docs/component-list-group.md)  
+      -[component-panelmark](docs/component-panelmark.md)
 
-      -grid system
-  - Bootstrap component
-
-      -panelmark
-
-      -list group  
-  - Bootstrap Javascript
-
-      -[collapse](docs/javascript-collapse.md)
-
-      -[modal](docs/javascript-modal.md)
+  - Bootstrap Javascript   
+      -[collapse](docs/javascript-collapse.md)  
+      -[modal](docs/javascript-modal.md)  
 
 ### 참고사이트
   - [http://getbootstrap.com/css/](http://getbootstrap.com/css/)    
@@ -35,12 +33,14 @@
 * [css-container](docs/css-container.md)
 * [css-grid](docs/css-grid.md)
 * [component-list-group](docs/component-list-group.md)
-* [component-panelmark](docs/component-panelmark.md)
+* [component-panelmark](docs/component-panelmark.md)  
+* [javascript-collapse](docs/javascript-collapse.md)
+* [javascript-modal](docs/javascript-modal.md)
 
 
 ## Bootstrap Javascript 예제용 코드
   - 아래 코드에 자바스크립트 예제 코드를 넣으면 확인이 가능합니다.
-  ```
+```
   <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -57,4 +57,6 @@
     <!-- 여기 예제를 추가하세요. -->
   </body>
   </html>
-  ```
+```
+
+

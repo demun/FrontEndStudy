@@ -88,16 +88,10 @@
 **가로 해상도에 관계없이 100%의 가로폭을 가집니다.**
 
 ### 예제
-
-<body>
-	<p data-height="205" data-theme-id="11744" data-slug-hash="MaPzXb" data-default-tab="result" data-user="hklim" class='codepen'>See the Pen <a href='http://codepen.io/hklim/pen/MaPzXb/'>bootstrap container</a></p>
+<div>
+<p data-height="268" data-theme-id="0" data-slug-hash="PPxrbB" data-default-tab="result" data-user="hklim82" class='codepen'>See the Pen <a href='http://codepen.io/hklim82/pen/PPxrbB/'>bootstrap container</a> by kero (<a href='http://codepen.io/hklim82'>@hklim82</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-</body>
-</html>
+ </div>
 
-
- 
-
-[이전페이지- 부트스트랩 시작하기](bootstrap-start.md)
-
+[이전페이지- 부트스트랩 시작하기](bootstrap-start.md)  
 [다음페이지- 부트스트랩CSS_그리드](css-grid.md)

@@ -214,8 +214,11 @@
 
 #### 예제 1
 그리드 클래스인 `.col-md-*` 싱글 세트를 사용하여, 당신은 데스크탑(중간) 기기에서 수평으로 되기전까지, 모바일 기기와 태블릿 기기(매우 작음에서 작음까지)에서 쌓이기 시작하는 기본 그리드 시스템을 만들 수 있다. `.row` 안에 그리드 컬럼을 놓으세요.
-<p data-height="268" data-theme-id="11744" data-slug-hash="RWBZXx" data-default-tab="result" data-user="hklim" class='codepen'>See the Pen <a href='http://codepen.io/hklim/pen/RWBZXx/'>bootstrap3_grid1</a></p>
+
+<div>
+  <p data-height="268" data-theme-id="0" data-slug-hash="jbQjMo" data-default-tab="result" data-user="hklim82" class='codepen'>See the Pen <a href='http://codepen.io/hklim82/pen/jbQjMo/'>bootstrap grid1</a> by kero (<a href='http://codepen.io/hklim82'>@hklim82</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>
 
 
 
@@ -231,18 +234,18 @@
   기본그리드로 콘텐츠를 중첩하려면, 존재하는 .col-md-* 컬럼 내에 새로운 .row 와 .col-md-* 컬럼 세트를 추가하세요. 중첩된 행은 합쳐서 12 가 되는 하나의 컬럼 세트가 됩니다.  
 * **`col-push와 col-pull `**  
   .col-md-push-* 와.col-md-pull-* 수식클래스들로 그리드 컬럼들의 순서를 쉽게 변경할수 있습니다.
+#### 예제 2
 
-
-#### 예제 2  
-<p data-height="268" data-theme-id="11744" data-slug-hash="jbvXdp" data-default-tab="result" data-user="hklim" class='codepen'>See the Pen <a href='http://codepen.io/hklim/pen/jbvXdp/'>bootstrap3_grid2</a></p>
+<div>
+  <p data-height="268" data-theme-id="0" data-slug-hash="JYeQKE" data-default-tab="result" data-user="hklim82" class='codepen'>See the Pen <a href='http://codepen.io/hklim82/pen/JYeQKE/'>bootstrap grid2</a> by kero (<a href='http://codepen.io/hklim82'>@hklim82</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>
 
 ***
 
 
 
 
-[이전페이지- 부트스트랩CSS_컨테이너](css-container.md)
-
+[이전페이지- 부트스트랩CSS_컨테이너](css-container.md)  
 [다음페이지- component-list-group](component-list-group.md)
 
