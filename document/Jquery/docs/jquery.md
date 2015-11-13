@@ -1,8 +1,5 @@
 # jQuery
 
-<style type="text/css">
-	p { margin: 0 !important; }
-</style>
 
 <table>
 	<tr>
