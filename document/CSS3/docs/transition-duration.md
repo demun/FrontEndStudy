@@ -74,26 +74,4 @@ sample code:
 ```
 
 
-##실행결과
-
-<style>
-.transition {
-	width: 200px;
-	height: 200px;
-	background: green;
-	transition-property: width, background;
-	transition-duration: 2s, 5s;
-}
-
-
-.transition:hover {
-	width: 500px;
-	height: 300px;
-	background: blue;
-}
-
-</style>
-
-<div class="transition">
-
-</div>
+## [실행결과 보기](http://codepen.io/jhw811/pen/EVGRjO)
