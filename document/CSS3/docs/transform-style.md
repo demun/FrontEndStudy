@@ -149,7 +149,5 @@ sample code :
 
 
 
-##실행결과
+## [실행결과 보기](http://codepen.io/demun/pen/qOLYxM)
 
-<p data-height="268" data-theme-id="0" data-slug-hash="qOLYxM" data-default-tab="result" data-user="demun" class='codepen'>See the Pen <a href='http://codepen.io/demun/pen/qOLYxM/'>qOLYxM</a> by demun (<a href='http://codepen.io/demun'>@demun</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
