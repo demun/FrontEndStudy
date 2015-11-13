@@ -17,6 +17,7 @@
 * [Javascript](document/Javascript/README.md) - 진행중
 * [Jquery](document/Jquery/README.md) - 진행중
 * [Angularjs](document/AngularJS/README.md) - 진행중
+* [CoffeeScript](document/CoffeeScript/README.md) - 진행대기
 
 -
 * [CSS](document/CSS/README.md) - 진행대기
