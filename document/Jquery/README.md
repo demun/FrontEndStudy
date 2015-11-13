@@ -7,5 +7,5 @@
 
 ---
 
-* [jquery](document/docs/README.md)
+* [jquery](docs/jquery.md)
 
