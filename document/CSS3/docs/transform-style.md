@@ -11,8 +11,8 @@ preserve-3d : 하위요소에 3D속성을 그대로 전달
 
 
 sample code : 
-```html
 
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -151,6 +151,8 @@ sample code :
 
 ##실행결과
 
+
+```html
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <style> 
 div.container .cube {
@@ -301,3 +303,4 @@ $('.scrollArea').on('scroll',function(event){
 	$('.cube').css('transform','perspective('+(250+$(this).scrollTop())+'px)');
 })
 </script>
+```
