@@ -84,6 +84,10 @@ alias lsa='ls -al --color=auto --show-control-chars'
 ```
 
 
+[.bashrc 파일](../.bashrc)
+
+
+
 ----
 
 * [Github 목록으로 돌아가기](../README.md)
