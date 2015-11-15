@@ -478,7 +478,7 @@ collback -> 1
 collback(function() {
   return 1;
 });
-``
+```
 
 
 
