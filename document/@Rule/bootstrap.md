@@ -2,6 +2,7 @@
 
 문서 상단에 이름을 표기하시고 작성하기 바랍니다.
 
+[문서 작성 방법](문서-작성-방법.md) 을 참고하시기 바랍니다.
 
 
 ## 부트스트랩 소개
@@ -66,5 +67,34 @@
 	- 맞춤화에 대한 간단 소개
 
 
+----
 
+
+### Bootstrap 실무
+
+* 핵심기능 위주 레퍼런스 정리
+	- Bootstrap CSS
+ 		- grid system
+ 		- container
+	- Bootstrap component   
+    	- panel
+    	- list group
+	- Bootstrap Javascript
+		- collapse
+		- modal
+	- 참고사이트
+		- [http://getbootstrap.com/css/](http://getbootstrap.com/css/)    
+	    - [http://bootstrapk.com/css/](http://bootstrapk.com/css/)
+
+* 레퍼런스 정리 전 기초적으로 시작하기 부분은 각자 숙지 
+	- 시작하기(tutorial)    
+	    - [http://getbootstrap.com/getting-started/](http://getbootstrap.com/getting-started/)
+	    - [http://bootstrapk.com/getting-started/](http://bootstrapk.com/getting-started/)
+
+* 예제사이트 조사 & 카피 (추후 자세한 내용 확정 예정)
+	- Bootstrap Theme
+	    - [http://themes.getbootstrap.com/](http://themes.getbootstrap.com/)
+	- Bootstrap 4
+	    - [http://blog.getbootstrap.com/2015/08/19/bootstrap-4-alpha/](http://blog.getbootstrap.com/2015/08/19/bootstrap-4-alpha/)    
+	    (새롭게 출시되는 4버전)
 
