@@ -1,0 +1,4 @@
+[{ "action": "꽃 구매하기", "done": false },
+ { "action": "신발 받기", "done": false },
+ { "action": "티켓 모으기", "done": true }, 
+ { "action": "전화하기", "done": false }]

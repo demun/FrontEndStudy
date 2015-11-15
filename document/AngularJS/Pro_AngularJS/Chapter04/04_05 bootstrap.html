@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+  <script src='../resources/js/core/LiveReload.js'></script>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />  <!--이게 없으면 한글이 깨진다-->
+  <title>BootStrap 예제</title>
+  <!--<link href='../resources/css/core/bootstrap-4.0.0-alpha.css' rel='stylesheet' />-->
+  <link href='../resources/css/core/bootstrap-3.3.5.css' rel='stylesheet' />
+  <link href='../resources/css/core/bootstrap-theme-3.3.5.css' rel='stylesheet' />
+</head>
+
+
+<!--
+   * 예제에 사용한 기본 부트스트랩 CSS클래스
+  panel  ==>  둥근 모서리를 적용한 패널을 표시, 패널은 헤더와 푸터를 가질 수 있다.
+  panel-heading  ==> 패널의 제목을 생성
+  btn  ==> 버튼을 생성
+  well  ==> 들여쓰기 효과와 함께 엘리먼트를 그룹으로 지정한다.
+
+   * 스타일 컨텍스트  ==> 기본클래스와 함께 적용되며, 주로 강조를 위해 사용한다. (선택사항)
+  btn-primary
+  btn-block 등등
+
+   * 테이블용 부트스트랩 CSS클래스 (모두 <table>태그에 직접 적용되는 클래스들임)
+  table  ==> 일반 스타일을 테이블 엘리먼트 및 그 내용에 적용한다.
+  table-striped  ==> 테이블 행에 2줄 간격 스트라이프를 적용한다.
+  table-bordered ==> 모든 행과 컬럼에 보더를 적용한다.
+  table-hover  ==> 테이블 행에 마우스를 올릴 때 다른 스타일을 적용한다.
+  table-condensed  ==> 좀 더 촘촘한 레이아웃을 보여주기 위해 테이블 내 간격을 축소한다.
+-->
+
+
+<body>
+  <div class='panel'>
+    <h3 class='panel-heading'>Button Styles</h3>
+    <button class='btn'>Basic Button(btn)</button>
+    <button class='btn btn-primary'>btn-primary</button>
+    <button class='btn btn-success'>btn-success</button>
+    <button class='btn btn-warning'>btn-warning</button>
+    <button class='btn btn-info'>btn-info</button>
+    <button class='btn btn-danger'>btn-danger</button>
+  </div>
+
+  <div class='well'>
+    <h3 class='panel-heading'>Button Sizes</h3>
+    <button class='btn btn-large btn-success'>btn-large</button>
+    <button class='btn btn-warning'>Default Size</button>
+    <button class='btn btn-small btn-danger'>btn-small</button>
+  </div>
+
+  <div class='well'>
+    <h3 class='panel-heading'>Block Buttons</h3>
+    <button class='btn btn-block btn-success'>btn-block</button>
+  </div>
+
+  <hr/>
+  <hr/>
+  <hr/>
+
+  <div class='panel'>
+    <h3 class='panel-heading'>Standard Table with Context</h3>
+    <table class='table'>
+      <thead>
+        <tr><th>Country</th><th>Capital City</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>United Kingdom(영국)</td><td>London</td></tr>
+        <tr><td>France(프랑스)</td><td>Paris</td></tr>
+        <tr><td>Spain(스페인)</td><td>Madrid</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class='panel'>
+    <h3 class='panel-heading'>Striped, Bordered and Highlighted Table</h3>
+    <table class='table table-striped table-bordered table-hover'>
+      <thead>
+        <tr><th>Country</th><th>Capital City</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>United Kingdom(영국)</td><td>London</td></tr>
+        <tr><td>France(프랑스)</td><td>Paris</td></tr>
+        <tr><td>Spain(스페인)</td><td>Madrid</td></tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html ng-app='todoApp'>  <!-- ng-app 디렉티브 : AngularJS가 모듈을 어떻게 적용해야 하는지 알려줌 (문서 내 HTML을 컴파일한다)
+                             파일 내 html엘리먼트 중 AngularJS가 컴파일하고 처리해야 할 모듈이 들어 있음을 알려주는 역할을 한다.
+                             자바스크립트 프레임워크로 AngularJS만 사용하는 경우, 관례상 ng-app 어트리뷰트를 html엘리먼트에 적용하지만,
+                             제이쿼리같은 다른 기술과 함께 사용하는 경우에는 ng-app 어트리뷰트를 문서 내 엘리먼트(div 등)에 적용함으로써
+                             AngularJS 앱이 차지하는 범위를 제한할 수 있다. (비표준은 앞에 data-를 붙임으로서 해결할수 있다.) -->
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />  <!--이게 없으면 한글이 깨진다-->
+  <title>To Do List</title>
+  <link href='../resources/css/core/bootstrap.css' rel='stylesheet' />
+  <link href='../resources/css/core/bootstrap-theme.css' rel='stylesheet' />
+  <script src='../resources/js/core/LiveReload.js'></script>  <!--LiveReload툴을 사용-->
+  <script src='../resources/js/core/angular.js'></script>
+  <script>
+    var todoApp = angular.module('todoApp', []);  //module 메소드를 호출해서 모듈을 생성함.
+    //AngularJS 앱은 하나 이상의 모듈로 구성된다.
+    //메소드의 인자는 생성할모듈이름과, 필요한 추가모듈배열을 넣음. (지금은 추가모듈이 필요없음을 보여줌)
+
+    var model = {
+      user: 'Rex',
+      items: [{ action: '꽃 구매하기', done: false },
+              { action: '신발 받기', done: false },
+              { action: '티켓 모으기', done: true }, 
+              { action: '전화하기', done: false }]
+    };
+
+    todoApp.controller('ToDoCtrl', function($scope) {  //ToDoCtrl 이라는 이름으로 맵핑되어있음.
+      $scope.todo = model;  //★★★ View로 보내게될 스코프에 Model 객체를 보냄!
+      
+      $scope.incompleteCount = function() {  //'동작' 정의
+        var count = 0;
+        angular.forEach($scope.todo.items, function (item) {
+          if (! item.done) { count++; }  //false이면 카운트가 1씩증가
+        });
+        //==> angular라는 내장객체에 존재하는 forEach()함수 (arr.forEach()함수와 거의 비슷하다)
+        //==> 배열의 내용물을 index별로, function의 인자로 전달하여 하나하나씩 작업을 처리함.
+
+        return count;
+      };
+    });
+  </script>
+<head>
+
+
+
+<!--
+    ng-app 디렉티브 : AngularJS가 어떤 모듈을 적용해야 하는지 지시함 (문서 내 HTML을 컴파일한다)
+    ng-repeat 디렉티브 : 배열객체의 length만큼 반복하라고 지시함
+                      "todo.items 객체를 aaa 변수로 참조하겠습니다"
+                      ==> for in 문의 사용법에서 var만 제외됨
+                      ng-repeat 디렉티브는 앞으로 가장 많이 사용하게 될 디렉티브중 하나이다!
+    ng-model 어트리뷰트 : AngularJS에서 입력 엘리먼트와 데이터 객체의 done 속성 사이에 양방향 데이터바인딩을 적용하게끔 한다.
+    ng-hide 디렉티브 : 지정된 표현식이 true일 때, 해당 엘리먼트를 hide(숨김) 할것을 지시함
+    
+    디렉티브 : AngularJS에게 콘텐츠를 어떻게 처리할것인지 지시한다. (AngularJS의 동작에 있어서 핵심이 된다.)
+    컨트롤러 : $scope의 동작을 정의.
+            View를 지원하는데 필요한 비즈니스 로직을 정의.
+            모델과 뷰 사이에 위치하여 둘을 서로 연결해준다.
+    모델 : 데이터의 저장 및 조회와 관련된 로직을 가지고있다.
+    뷰 : 데이터를 포멧팅하고 사용자에게 보여주는 로직을 가지고있다.
+        컨트롤러에서 제공하는 데이터를, 브라우저에서 보여줄 콘텐츠로 생성하게 하는 Annotation HTML 엘리먼트와 결합함으로써 생성된다.
+    동작 : Application의 비즈니스로직을 구현하기 위해, 모델 내 데이터에 수행하는 기능을 말함. ($scope에 정의된 함수)
+    스코프 : 컨트롤러를 사용해 뷰가 접근할 수 있는 데이터 영역
+-->
+
+
+
+<body ng-controller='ToDoCtrl'>  <!--ToDoCtrl 컨트롤러 사용-->
+  <div class='page-header'>
+    <h1>
+      {{todo.user}}'s To Do List  <!--컨트롤러에서 $scope객체의 todo속성에 model을 담았기때문에 데이터바인딩 가능!-->
+      <span class='label label-default' ng-hide='incompleteCount() == 0'>
+        {{incompleteCount()}}  <!--동작은 다른 함수와 마찬가지로, 객체를 인자로 넘겨줄수도 있다-->
+      </span>
+      //
+      <span class='label label-default'>
+        {{todo.items.length}}
+      </span>
+    </h1>
+  </div>
+
+  <div class='panel'>
+    <div class='input-group'>
+      <input class='form-control' />
+      <span class='input-group-btn' />
+        <button class='btn btn-default'>추가하기</button>
+      </span>
+    </div>
+    <table class='table table-striped'>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Done</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat='aaa in todo.items'>
+          <td>{{aaa.action}}</td>
+          <td><input type='checkbox' ng-model='aaa.done' /></td>  <!--여기에서 aaa.done을 조정가능-->
+          <td>{{aaa.done}}</td>  <!--양방향 데이터바인딩 ==> 엘리먼트의 변화가 생기면 모델 또한 같이 바뀌게 된다.-->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

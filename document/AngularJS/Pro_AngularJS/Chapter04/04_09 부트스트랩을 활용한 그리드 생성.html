@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+  <script src='../resources/js/core/LiveReload.js'></script>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />  <!--이게 없으면 한글이 깨진다-->
+  <title>BootStrap 예제</title>
+  <!--<link href='../resources/css/core/bootstrap-4.0.0-alpha.css' rel='stylesheet' />-->
+  <link href='../resources/css/core/bootstrap-3.3.5.css' rel='stylesheet' />
+  <link href='../resources/css/core/bootstrap-theme-3.3.5.css' rel='stylesheet' />
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!--★★★모바일용 viewport 메타태그  ==> 모바일 브라우저에게 콘텐츠를 실제 크기로 표시하게끔 지시한다.
+      이 메타태그가 없다면 모바일에서 브라우저 실행시, 글자가 안보이면 사용자가 줌인할거라고 생각하므로,
+      모바일 기기를 대상으로 할 때에는 반.드.시. 추가해야한다!  -->
+</head>
+
+
+<!--
+   * 예제에 사용한 기본 부트스트랩 CSS클래스
+  panel  ==>  둥근 모서리를 적용한 패널을 표시, 패널은 헤더와 푸터를 가질 수 있다.
+  panel-heading  ==> 패널의 제목을 생성
+  btn  ==> 버튼을 생성
+  well  ==> 들여쓰기 효과와 함께 엘리먼트를 그룹으로 지정한다.
+
+   * 스타일 컨텍스트  ==> 기본클래스와 함께 적용되며, 주로 강조를 위해 사용한다. (선택사항)
+  btn-primary
+  btn-block 등등
+-->
+
+<style>
+#gridContainer {padding: 20px; }
+.grid-row > div {
+  border: 1px solid lightgray;
+  background-color: aliceblue;
+  margin: 5px 0;
+  padding: 10px;
+}
+</style>
+
+<body>
+  <div class='panel'>
+    <h3 class='panel-heading'>Grid Layout</h3>
+    
+    <div id='gridContainer'>
+      <div class='row grid-row'>
+        <div class='col-xs-1'>xs1</div>  <!--모바일 그리드 (768px 미만)-->
+        <div class='col-xs-1'>xs1</div>
+        <div class='col-xs-2'>xs2</div>
+        <div class='col-xs-2'>xs2</div>
+        <div class='col-xs-6'>xs6</div>
+
+        <div class='col-xs-12'>xs12</div>
+      </div>
+
+      <div class='row grid-row'>
+        <div class='col-sm-3'>sm3</div>  <!--태블릿 그리드 (768px 이상) 보통 sm을 기준으로 하는게 반응형 만들기 속편함-->
+        <div class='col-sm-4'>sm4</div>
+        <div class='col-sm-5'>sm5</div>
+      </div>
+
+      <div class='row grid-row'>
+        <div class='col-md-6'>md6</div>  <!--일반pc 그리드 (992px 이상)-->
+        <div class='col-md-6'>md6</div>
+      </div>
+
+      <div class='row grid-row'>
+        <div class='col-lg-11'>lg11</div>  <!--고해상도pc 그리드 (1200px 이상)-->
+        <div class='col-lg-1'>lg1</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

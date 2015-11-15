@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+  <script src='../resources/js/core/LiveReload.js'></script>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />  <!--이게 없으면 한글이 깨진다-->
+  <title>BootStrap 예제</title>
+  <!--<link href='../resources/css/core/bootstrap-4.0.0-alpha.css' rel='stylesheet' />-->
+  <link href='../resources/css/core/bootstrap-3.3.5.css' rel='stylesheet' />
+  <link href='../resources/css/core/bootstrap-theme-3.3.5.css' rel='stylesheet' />
+</head>
+
+
+<!--
+   * 예제에 사용한 기본 부트스트랩 CSS클래스
+  panel  ==>  둥근 모서리를 적용한 패널을 표시, 패널은 헤더와 푸터를 가질 수 있다.
+  panel-heading  ==> 패널의 제목을 생성
+  btn  ==> 버튼을 생성
+  well  ==> 들여쓰기 효과와 함께 엘리먼트를 그룹으로 지정한다.
+
+   * 스타일 컨텍스트  ==> 기본클래스와 함께 적용되며, 주로 강조를 위해 사용한다. (선택사항)
+  btn-primary
+  btn-block 등등
+-->
+
+
+<body>
+  <div class='panel'>
+    <h3 class='panel-heading'>Form Elements</h3>
+
+    <div class='form-group'>
+      <label for='nameId'>Name : </label>
+      <input id='nameId' name='name' class='form-control' />
+    </div>
+
+    <div class='form-group'>
+      <label>Email :  <!--라벨태그를 이렇게 쓸수도 있다. input태그를 포함하면 for 어트리뷰트를 사용하지 않아도 적용되며, 부트스트랩과 무관하게 IE-Chrome에서 모두 작동한다.-->
+        <input name='email' class='form-control' />
+      </label>
+    </div>
+
+    <div class='radio'>
+      <label>  <!--div태그의 radio, checkbox클래스가 커서를 자동 생성한다.-->
+        <input type='radio' name='junkmail' value='yes' checked />
+        Yes, send me endless junk mail<br/>
+        (예, 메일을 보내주세요)
+      </label>
+    </div>
+    <div class='radio'>  <!--라디오를 하나에 모두 써줘도 되고, 이렇게 나눠서 써도 된다.-->
+      <label>
+        <input type='radio' name='junkmail' value='no' />
+        No, I never want to hear from you again<br/>
+        (아니요, 당신으로부터 어떤것도 듣기를 원하지 않습니다)
+      </label>
+    </div>
+
+    <div class='checkbox'>
+      <label>
+        <input type='checkbox' />
+        I agree to the terms and conditions.<br/>
+        (나는 이용 약관에 동의합니다.)
+      </label>
+    </div>
+
+    <input type='button' class='btn btn-primary' value='Subscribe' /><br/>
+    <button class='btn btn-primary'>Subscribe</button><br/>
+    
+    <input type='text' class='btn btn-primary btn-block' value='버튼을 가장한 text박스 ㅋㅋ 신기방기' />
+    <p class='btn btn-primary'>하하하 이것도 버튼인가? p태그인데 ㅋㅋ</p><br/>
+
+  </div>
+</body>
+</html>

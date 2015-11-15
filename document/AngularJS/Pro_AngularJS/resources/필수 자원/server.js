@@ -1,4 +1,4 @@
-/*
+﻿/*
 var connect = require('connect');
 connect.createServer(
   connect.static('./../../Desktop/Rex/Programming/_Rex_Github_Repositories/Pro_AngularJS')
@@ -7,12 +7,14 @@ connect.createServer(
 
 
 
+
+
 //localhost:7777 를 로컬서버로 사용한다.
 //버전이 변경되면서 뭔가 바뀐것같다.
 
 var connect = require('connect'),
     serveStatic = require('serve-static'),
-    workspaceDir = './../../Desktop/Rex/Programming/_Rex_Github_Repositories/Pro_AngularJS',
+    workspaceDir = './../../Desktop/Rex/Programming/_Rex_Github_Repositories/SelfStudy/Pro_AngularJS',
     port = 7777;
 
 var app = connect();
@@ -21,6 +23,13 @@ app.use(serveStatic(workspaceDir));
 app.listen(port);
 
 console.log('서버 실행중, http://localhost:' + port);
+
+
+
+
+
+
+
 
 
 

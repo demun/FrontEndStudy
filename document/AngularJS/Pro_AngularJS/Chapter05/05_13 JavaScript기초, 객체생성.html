@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+  <script src='../resources/js/core/LiveReload.js'></script>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />  <!--이게 없으면 한글이 깨진다-->
+  <title>자바스크립트 기초</title>
+  <!--<link href='../resources/css/core/bootstrap-3.3.5.css' rel='stylesheet' />
+      <link href='../resources/css/core/bootstrap-theme-3.3.5.css' rel='stylesheet' />-->
+  <!--<link href='../resources/css/core/bootstrap-4.0.0-alpha.css' rel='stylesheet' />-->
+  <!--<meta name='viewport' content='width=device-width, initial-scale=1'>
+      ★★★모바일용 viewport 메타태그  ==> 모바일 브라우저에게 콘텐츠를 실제 크기로 표시하게끔 지시한다.
+      이 메타태그가 없다면 모바일에서 브라우저 실행시, 글자가 안보이면 사용자가 줌인할거라고 생각하므로,
+      모바일 기기를 대상으로 할 때에는 반.드.시. 추가해야한다!  -->
+</head>
+
+<body>
+  <p>
+    이것은 간단한 예제<br>
+    F12로 콘솔창을 보세요.
+  </p>
+</body>
+</html>
+
+<!--
+   * 지역변수 : 함수 내에 정의한 변수
+   * 전역변수 : script엘리먼트 안에 직접 정의한 변수, 같은 HTML문서 내에 다른 스크립트를 비롯해 어디에서나 접근할 수 있다.
+   * AngularJS 개발을 할 때는 전역변수 사용을 지양해야한다.
+     ==> 관심사의 분리를 저해할수 있고, 단위 테스트를 어렵게한다.
+
+  angular.isFunction(Object); ==> 함수 판단
+  angular.isString(Object);  ==> 문자열 판단
+  angular.isNumber(Object);  ==> 숫자 판단
+  angular.isArray(Object);  ==> 배열 판단
+  angular.isObject(Object);  ==> 객체 판단
+  angular.lowercase(string);  ==> 문자열을 소문자로 변환
+  angular.uppercase(string);  ==> 문자열을 대문자로 변환
+  angular.extend(자식/하위/SubObject, 부모/상위/SuperObject);  ==> 객체 상속 메소드
+  angular.copy(Object);  ==> 객체의 복사본을 생성하고 리턴한다. (동일속성이지만, 다른참조값을 가진 새로운 객체)
+  angular.forEach(반복할객체, function(value, key) {})
+  angular.equals(Object1, Object2)  ==> 항등성검사(===)를 통과하거나 or 두 인자가 모두 객체이고, 모든 속성이 항등성 검사를 통과할 경우 true리턴 (copy의 경우 해당)
+
+  toString()  ==> 형변환이 아닌, 객체의 string형 return
+  Number(Object)     ==> number형으로 형변환 (정수 또는 실수로 변환)
+  parseInt(Object)   ==> number형으로 형변환 (정수 형태)
+  parseFloat(Object) ==> number형으로 형변환 (정수 또는 실수로 변환)
+
+-->
+
+<script src='../resources/js/core/angular.js'></script>
+<script>
+  //예제 5-13, 객체 생성
+  var myData = new Object();
+  myData.name = '렉스';
+  myData.weather = '맑음';      //방법1
+  myData['weather'] = '화창함';  //방법2
+  console.log('안녕 '+myData.name+'?');
+  console.log('오늘 날씨는 '+myData.weather+' 이구나!');
+
+
+  //예제 5-14, 객체 리터럴 활용
+  var myData2 = {
+    name: 'Rex',
+    weather: 'sunny',
+    printMessage: function() {  //메소드 선언 및 초기화
+      console.log('안녕? 나는 '+this.name+'라고 해!');
+      console.log('오늘 날씨는 참 '+this.weather+'하구나!');  //this키워드를 사용하면 객체내부의 어트리뷰트를 가리킴
+    }
+  };
+  myData2.printMessage();
+
+
+  //예제 5-16, 객체 상속
+  var myExtendedObject = {
+    city: 'seoul'
+  };
+
+  angular.extend(myExtendedObject, myData2);  //angular객체의 extend()메소드로 상속을 아주 쉽게 할수있다.
+  console.log(myExtendedObject.name);
+  console.log(myExtendedObject.city);
+
+
+  //예제 5-19, 객체 속성 나열
+  for (var prop in myData2) {
+    console.log('Name: '+prop+' Value: '+myData2[prop]);
+  }
+  console.log('---');
+  angular.forEach(myData2, function(value, key) {
+    console.log('Name: '+key+' Value: '+value);
+  });
+
+
+  //예제 5-23, 객체 속성 존재여부 감지 (in 표현식 또는 ['인덱스'] 사용)
+  if ('name' in myData2) console.log('name속성 존재함');  //방법1
+  else console.log('name속성 없음');
+  if (myData2['data']) console.log('data속성 존재함');    //방법2
+  else console.log('data속성 없음');
+
+
+  //예제 5-22, 객체 속성 삭제 (delete 키워드 사용)
+  console.log(myData2);
+  delete myData2.name;
+  delete myData2['weather'];
+  delete myData2.printMessage;
+  console.log(myData2);
+</script>
