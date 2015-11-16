@@ -3,6 +3,9 @@
 [cssnext 원문](http://cssnext.io/features/)
 
 
+작성자: 허종문
+
+<br>
 
 
 ## custom properties & var()
@@ -29,6 +32,7 @@ a {
 ```
 
 
+<br>
 
 
 ## calc()
@@ -53,7 +57,7 @@ h1 {
 ```
 
 
-
+<br>
 
 
 ## custom media queries
@@ -75,6 +79,7 @@ h1 {
 }
 ```
 
+<br>
 
 
 ## media queries ranges
@@ -96,6 +101,7 @@ h1 {
 ```
 
 
+<br>
 
 
 ## custom selectors
@@ -130,6 +136,7 @@ button:focus,
 ```
 
 
+<br>
 
 
 ## color
@@ -155,6 +162,7 @@ a:hover {
 }
 ```
 
+<br>
 
 
 ## hwb
@@ -175,6 +183,7 @@ body {
 ```
 
 
+<br>
 
 
 ## gray()
@@ -201,6 +210,7 @@ body {
 }
 ```
 
+<br>
 
 
 ## rrggbbaa
@@ -220,6 +230,7 @@ body {
 }
 ```
 
+<br>
 
 
 
@@ -240,6 +251,7 @@ body {
 ```
 
 
+<br>
 
 
 
@@ -271,6 +283,7 @@ table {
 ```
 
 
+<br>
 
 
 ## filter
@@ -292,6 +305,7 @@ table {
 }
 ```
 
+<br>
 
 
 
@@ -313,6 +327,7 @@ table {
 }
 ```
 
+<br>
 
 
 ## :any-link pseudo-class
@@ -331,6 +346,7 @@ nav:link,nav:visited {
 }
 ```
 
+<br>
 
 
 ## matches pseudo-class
@@ -350,6 +366,7 @@ p:first-child, p.special {
 }
 ```
 
+<br>
 
 
 ## :not pseudo-class
@@ -369,7 +386,7 @@ p:not(:first-child):not(.special) {
 ```
 
 
-
+<br>
 
 
 ## pseudo-elements
@@ -389,7 +406,7 @@ a:before {
 }
 ```
 
-
+<br>
 
 
 ## Alpah colors
@@ -411,7 +428,7 @@ body {
 
 
 
-
+<br>
 
 
 ## Bonus features
@@ -420,4 +437,11 @@ body {
 - @import
 - minification
 - @todo
+
+
+----
+
+
+* [FrontEndStudy](../../../../)
+
 

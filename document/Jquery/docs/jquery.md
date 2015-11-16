@@ -1,6 +1,10 @@
 # jQuery
 
 
+작성자: 허종문
+
+<br>
+
 <table>
 	<tr>
 		<th>분류</th>

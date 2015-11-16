@@ -3,8 +3,9 @@
 이 문서는 프론트엔드 스터디에 필요한 git 사용법에 대한 문서입니다.
 
 
-### 참여인원
-@demun
+작성자: 허종문
+
+<br>
 
 
 
@@ -23,4 +24,11 @@
 
 * [Pro Git 한글](http://git-scm.com/book/ko/v2)
 * [누구나 쉽게 이해할 수 있는 Git 입문](http://backlogtool.com/git-guide/kr/)
+
+
+----
+
+
+* [FrontEndStudy](../../../../)
+
 

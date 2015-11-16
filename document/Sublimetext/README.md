@@ -1,10 +1,8 @@
 # Sublimetext
 
+작성자: 허종문
 
-### 참여인원
-@demun
-
-
+<br>
 
 ## 목차
 * [01-프로그램-설치](docs/01-프로그램-설치.md)
@@ -19,4 +17,11 @@
     - [GitHub-Flavored-Markdown](docs/102_Github-Flavored-Markdown.md)
     - [Writing-on-Github](docs/103_Writing-on-Github.md)
     - [Mastering-Markdown](docs/104_Mastering-Markdown.md)
+
+
+----
+
+
+* [FrontEndStudy](../../README.md)
+
 
