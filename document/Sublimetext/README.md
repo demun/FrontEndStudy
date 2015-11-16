@@ -1,8 +1,7 @@
 # Sublimetext
 
+작성자 : 허종문
 
-### 참여인원
-@demun
 
 
 
