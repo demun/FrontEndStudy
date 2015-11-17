@@ -82,7 +82,10 @@ codepen.io [예제](http://codepen.io/luensys/pen/avXjmz)
 가장 상위 div를 삭제하 되면 각각은 독립적으로 동작하게 됩니다.
 
 또한 .panel-body 들을 .list-group 들로 교환하는 것도 가능합니다.
-따라서 그 반대인 .list-group 들을 .panel-body 들로 교환하는 것도 가능합니다.
+따라서 그 반대인 .list-group 들을 .panel-body 들로 교환하는 것도 가능합니다.  
+
+jsfiddle [예제](http://jsfiddle.net/luensys/2e6jm9hm/2/)  
+codepen.io [예제](http://codepen.io/luensys/pen/GpzXWP)  
 ```
 <div class="panel-group" role="tablist">
   <div class="panel panel-default">
@@ -108,7 +111,8 @@ codepen.io [예제](http://codepen.io/luensys/pen/avXjmz)
 ### 이벤트 예제
 
 아래는 Collapse를 이용해 대상을 숨길 때 이벤트가 생기는 예제 입니다
-참고로 script에 ready를 넣은 것은 단독 페이지에서는 이 함수를 써야 jQuery가 동작하기 때문입니다.
+참고로 아래 코드에서 script에 ready를 넣은 것은 단독 페이지에서는 이 함수를 써야 jQuery가 동작하기 때문입니다.  
+[예제](http://codepen.io/luensys/pen/QjYZmq)
 ```
 <script>
 	$(document).ready(function(){
@@ -163,7 +167,8 @@ codepen.io [예제](http://codepen.io/luensys/pen/avXjmz)
 </div>
 ```
 
-아래 예제는 이벤트 타이밍을 볼 수 있는 예제입니다.
+아래 예제는 이벤트 타이밍을 볼 수 있는 예제입니다.  
+[예제](http://codepen.io/luensys/pen/bVzmMW)
 ```
 <div class="container">
   <h2>Collapsible Methods</h2>
@@ -183,27 +188,27 @@ codepen.io [예제](http://codepen.io/luensys/pen/avXjmz)
 
 <script>
 $(document).ready(function(){
-    $(".btn-primary").click(function(){
-        $(".collapse").collapse('toggle');
-    });
-    $(".btn-success").click(function(){
-        $(".collapse").collapse('show');
-    });
-    $(".btn-warning").click(function(){
-        $(".collapse").collapse('hide');
-    });
-    $(".collapse").on('show.bs.collapse', function(){
-        alert('The collapsible content is about to be shown.');
-    });
-    $(".collapse").on('shown.bs.collapse', function(){
-        alert('The collapsible content is now fully shown.');
-    });
-    $(".collapse").on('hide.bs.collapse', function(){
-        alert('The collapsible content is about to be hidden.');
-    });
-    $(".collapse").on('hidden.bs.collapse', function(){
-        alert('The collapsible content is now hidden.');
-    });
+  $(".btn-primary").click(function(){
+      $(".collapse").collapse('toggle');
+  });
+  $(".btn-success").click(function(){
+      $(".collapse").collapse('show');
+  });
+  $(".btn-warning").click(function(){
+      $(".collapse").collapse('hide');
+  });
+  $(".collapse").on('show.bs.collapse', function(){
+      alert('The collapsible content is about to be shown.');
+  });
+  $(".collapse").on('shown.bs.collapse', function(){
+      alert('The collapsible content is now fully shown.');
+  });
+  $(".collapse").on('hide.bs.collapse', function(){
+      alert('The collapsible content is about to be hidden.');
+  });
+  $(".collapse").on('hidden.bs.collapse', function(){
+      alert('The collapsible content is now hidden.');
+  });
 });
 </script>
 ```

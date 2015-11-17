@@ -6,9 +6,10 @@
 
 ### 정적 예제
 
-아래의 예제를 사용하면 모달 창의 기본적인 모습을 확인할 수 있습니다.
+아래의 예제를 사용하면 모달 창의 기본적인 모습을 확인할 수 있습니다.  
+[예제](http://codepen.io/luensys/pen/NGoOLv)
 ```
-<div class="modal fade">
+<div class="modal fade in" style="display: block;">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -36,7 +37,8 @@
 
 ### 버튼 데모
 
-아래의 예제를 사용하면 버튼을 눌렀을 때 모달창이 나타나는 것을 볼 수 있습니다.
+아래의 예제를 사용하면 버튼을 눌렀을 때 모달창이 나타나는 것을 볼 수 있습니다.  
+[예제](http://codepen.io/luensys/pen/wKNYYe)
 ```
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -67,7 +69,8 @@
 
 ### 모달 크기 옵션
 
-모달은 2개의 선택 가능한 옵션이 있습니다. .modal-dialog에 그 클래스를 적용하는 것이 가능합니다.
+모달은 2개의 선택 가능한 옵션이 있습니다. .modal-dialog에 그 클래스를 적용하는 것이 가능합니다.  
+[예제](http://codepen.io/luensys/pen/RWveqa)
 ```
 <!-- Large modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
@@ -116,7 +119,8 @@
 
 ### 애니메이션 제거
 
-모달이 나오는 것을 간단하게 하기 위해 애니메이션을 제거하는 것도 가능합니다.
+모달이 나오는 것을 간단하게 하기 위해 애니메이션을 제거하는 것도 가능합니다.  
+[예제](http://codepen.io/luensys/pen/epxPQP)
 ```
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal">Open modal no Animation</button>
 
@@ -130,7 +134,8 @@
 ```
 
 ### 그리드 시스템을 사용하는 것
-모달에서는 부트스트랩 그리드 시스템의 이점을 얻기위해서는 `.modal-body`안에 `.row`를 사용해 일반적인 그리드 시스템 클래스를 사용할 수 있습니다.
+모달에서는 부트스트랩 그리드 시스템의 이점을 얻기위해서는 `.modal-body`안에 `.row`를 사용해 일반적인 그리드 시스템 클래스를 사용할 수 있습니다.  
+[예제](http://codepen.io/luensys/pen/YyBJdy)
 ```
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#gridSystemModal">
@@ -182,7 +187,8 @@
 ### 트리거 버튼을 기반으로한 다양한 모달 컨텐츠
 
 아래의 예제는 버튼을 클릭할 때 해당 버튼을 기반으로 나타나는 모달창의 값을 바꾸어주는 예제입니다.
-참고로 script에 ready를 넣은 것은 단독 페이지에서는 이 함수를 써야 jQuery가 동작하기 때문입니다.
+참고로 script에 ready를 넣은 것은 단독 페이지에서는 이 함수를 써야 jQuery가 동작하기 때문입니다.  
+[예제](http://codepen.io/luensys/pen/zvemeb)
 ```
 <script>
 	$(document).ready(function(){
@@ -238,7 +244,8 @@ $("#myModal").modal();
 ```
 
 아래는 이 것을 사용한 예제입니다.
-다른 모든 설정은 같으나 모달을 토글하는 것이 자바스크립트로 구현되어 있습니다.
+다른 모든 설정은 같으나 모달을 토글하는 것이 자바스크립트로 구현되어 있습니다.  
+[예제](http://codepen.io/luensys/pen/epxPXQ)
 ```
 <div class="container">
   <h2>Activate Modal with JavaScript</h2>
@@ -280,6 +287,8 @@ $(document).ready(function(){
 ### 이벤트 예제
 
 아래의 예제를 통해 이벤트의 동작하는 방식을 볼 수 있습니다.
+[예제](http://codepen.io/luensys/pen/NGoOmw)
+
 ```
 <div class="container">
   <h2>Modal Events - shown.bs.modal</h2>
@@ -310,15 +319,15 @@ $(document).ready(function(){
  
 <script>
 $(document).ready(function(){
-    $("#myBtn").click(function(){
-        $("#myModal").modal("show");
-    });
-        $("#myModal").on('show.bs.modal', function () {
-            alert('The modal is about to be shown.');
-    });
-        $("#myModal").on('shown.bs.modal', function () {
-            alert('The modal is fully shown.');
-    });
+  $("#myBtn").click(function(){
+      $("#myModal").modal("show");
+  });
+      $("#myModal").on('show.bs.modal', function () {
+          alert('The modal is about to be shown.');
+  });
+      $("#myModal").on('shown.bs.modal', function () {
+          alert('The modal is fully shown.');
+  });
 });
 </script>
 ```
