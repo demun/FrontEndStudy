@@ -9,7 +9,9 @@
 .collapsing 전환 중에 적용됩니다.
 .collapse.in 컨텐츠를 보여줍니다.
 
-아래는 버튼을 누르면 나타나고 사라지는 예제 입니다.
+아래는 버튼을 누르면 나타나고 사라지는 예제 입니다.  
+jsfiddle [예제](http://jsfiddle.net/luensys/2e6jm9hm/)  
+codepen.io [예제](http://codepen.io/luensys/pen/epxjWw)
 ```
 <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 	Link with href
@@ -25,7 +27,10 @@
 ```
 
 ### Accordion 예제
-패널 콤포넌트와 Accodion을 만드려면 기본 컬랩스 행위를 확장하세요.
+패널 콤포넌트와 Accodion을 만드려면 기본 컬랩스 행위를 확장하세요.  
+  
+jsfiddle [예제](http://jsfiddle.net/luensys/2e6jm9hm/1/)  
+codepen.io [예제](http://codepen.io/luensys/pen/avXjmz)  
 ```
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
