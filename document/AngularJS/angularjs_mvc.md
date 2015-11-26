@@ -139,9 +139,11 @@ view
 </script>
 </head>
 <body>
+  <div ng-app="myApp">
     <div ng-controller="MathCtrl">
         {{ result }}
     </div>
+  </div>
 </body>
 </html>
 ```
