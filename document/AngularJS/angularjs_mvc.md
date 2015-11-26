@@ -61,7 +61,7 @@ Model
 View 
  - View는 클라이언트 측 기술인 html/css/javascript들을 모아둔 컨테이너이다. 
 
-### 소스코드를 통한 mvc 규칙
+## 소스코드를 통한 mvc 규칙
  - http://soomong.net/blog/2014/01/20/translation-ultimate-guide-to-learning-angularjs-in-one-day/ 를 참조
 
 url 
