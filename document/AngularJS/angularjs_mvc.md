@@ -39,6 +39,9 @@
  - 소프트웨어 공학 partten 개념을 이해하여야 함(배우기 어려움 : 모르는 사람에게는 model1보다 복잡해 보일 수 있음)
  - 개발 속도가 model1보다는 느리다.(그러나 익숙해지면 model1보다 빠르다.)
 
+Angular JS 또한 model2 pattern으로 구성되어 있고, View 부분을 DOM방식으로 처리하는 것만 추가 되었다.
+
+![angularmvc](images/angularmvc.jpg)
 
 ## MVC 구성 및 흐름도 
  - https://opentutorials.org/course/697/3828 의 내용을 참고하였음
