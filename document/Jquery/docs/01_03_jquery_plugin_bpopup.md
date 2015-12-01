@@ -1,4 +1,4 @@
-# jQuery  slider plugin
+# jQuery  bpopup plugin
 
 작성자: 이연옥
 
