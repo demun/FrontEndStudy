@@ -12,8 +12,9 @@
 
 -----
 
-## 1.[기초문서 정리](docs/01_00_jquery_기초문서.md)
+## 1.기초문서 정리
 
+- [기초문서 정리](docs/01_00_jquery_기초문서.md)
 - 1. jQuery 선택자
 - 2. jQuery 메소드
 - 3. jQuery 이벤트
@@ -24,7 +25,7 @@
 
 ## 2.제이쿼리 사용법 정리
 
-* [jquery](docs/jquery.md)
+* [jquery 정리](docs/jquery.md)
 
 
 <br>

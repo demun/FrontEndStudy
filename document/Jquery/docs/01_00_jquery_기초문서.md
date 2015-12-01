@@ -11,15 +11,15 @@ $('tag') | Tag라는 이름의 모든 태그 요소를 선택
 $(‘.class’) | class라는 클래스명의 모든 클래스 요소를 선택
 $(‘#id’) | id라는 아이디명의 아이디 요소를 선택
 $(‘div li’) | div에 있는 li 모두 선택
-$(‘div > p’) | div의 p태그라는 직계 자식을 선택 
+$(‘div > p’) | div의 p태그라는 직계 자식을 선택
 $(this) | 현재 선택 중인 요소를 가리킴
 
 ### jQuery 메소드
 
 메소드명 | 설명
 --- | ---
-eq(n) | n번째에 위치하는 요소를 선택. 
-length() | 요소의 개수를 알 수 있음. 
+eq(n) | n번째에 위치하는 요소를 선택.
+length() | 요소의 개수를 알 수 있음.
 parent()  /  parents() | 요소의 직계 부모 선택  /  요소의 모든 부모들 선택
 children(“a”) | 요소의 a태그의 직계자손 선택
 prev()  /  next() | 이전 요소 선택  /  다음 요소 선택
@@ -54,7 +54,7 @@ keypress() | 글자가 입력될 때 발생
 * 기존 내용을 없애고 필요한 html구문을 생성함
 
 ```
-ex) 
+ex)
 $subMenu1.html("<li>text</li>");
 ```
 
@@ -72,10 +72,10 @@ $subMenu1.html("<li>text</li>");
 * 해당 요소의 CSS를 설정 및 값 추출
 
 ```
-ex) 
+ex)
 $("#header").css({height:80, overflow:"hidden"}) //height, overflow 설정
 
-ex) 
+ex)
 var $alpha=$(".subMenu").css("opacity"); //opacity 값 추출
 ```
 
@@ -84,13 +84,13 @@ var $alpha=$(".subMenu").css("opacity"); //opacity 값 추출
 * 해당 요소의 속성을 설정 및 값 추출
 
 ```
-ex) 
+ex)
 $mainImg.attr("class","img02");  //클래스명 설정
 
-ex) 
+ex)
 $("#visual_img").attr("src", "images/main/visual_02.jpg") //이미지 경로 변경
 
-ex) 
+ex)
 var $className=$("#visual_img").attr("class"); //클래스명 값 추출
 ```
 
@@ -130,10 +130,10 @@ $("#imgWrap:not(:animated)").animate({left:300, opacity:0}, 1000, "easeOutCubic"
 
 ### Show, hide Image
 * show(), hide() 사용
-* tab menu, modalWindow 활용가능 
+* tab menu, modalWindow 활용가능
 
 ### Scroll Image
-* scrollTop() 사용 
+* scrollTop() 사용
 
 
 ## 특이사항
@@ -240,3 +240,20 @@ function onOut() {
 }
 </script>
 ```
+
+
+----
+
+
+* [Jquery README](../README.md)
+* [01_00_jquery_기초문서](01_00_jquery_기초문서.md)
+* [01_00_jquery_자주사용하는_함수](01_00_jquery_자주사용하는_함수.md)
+* [01_01_jquery_plugin_bxslider](01_01_jquery_plugin_bxslider.md)
+* [01_02_jquery_plugin_slidesjs](01_02_jquery_plugin_slidesjs.md)
+* [jquery](jquery.md)
+* [Datepicker](Datepicker.md)
+
+----
+
+
+* [FrontEndStudy](../../README.md)
