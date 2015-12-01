@@ -76,6 +76,18 @@ gem install sass
 
 라고 입력해주면 자동으로 설치가 됩니다.
 
+```
+ERROR:  While executing gem ... (Gem::FilePermissionError)
+    You don't have write permissions for the /Library/Ruby/Gems/2.0.0 directory.
+```
+
+라는식의 에러가 난다면 
+
+sudo gem install sass 라고 입력해 주고 맥로그인할때 입력하는 비밀번호를 입력하면 설치가 잘 됩니다.
+
+[sudo명령어에관해](https://ko.wikipedia.org/wiki/Sudo)
+
+
 
 
 ## sass 명령어
@@ -130,7 +142,7 @@ ul li { display: inline-block; }
 
 ```css
 ul{font-family:Georgia;color:#333333}ul li{display:inline-block}
-```
+```	
 
 
 
