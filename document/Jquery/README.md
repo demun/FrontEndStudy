@@ -12,7 +12,7 @@
 
 -----
 
-## 1.기초문서 정리
+## 1.[기초문서 정리](docs/01_00_jquery_기초문서.md)
 
 - 1. jQuery 선택자
 - 2. jQuery 메소드
@@ -22,7 +22,7 @@
 <br>
 
 
-## 2.제이쿼리 사용법 정리 (정리예정)
+## 2.제이쿼리 사용법 정리
 
 * [jquery](docs/jquery.md)
 
@@ -34,8 +34,8 @@
 - [플러그인 모음-htmldrive](http://www.htmldrive.net)
 - [플러그인 모음-jqueryrain](http://www.jqueryrain.com)
 - 슬라이드
-    - [slidesjs 플러그인](http://www.slidesjs.com/)
-    - [bxslider](http://bxslider.com/)
+    - [slidesjs 플러그인](docs/01_02_jquery_plugin_slidesjs.md)
+    - [bxslider](docs/01_01_jquery_plugin_bxsider.md)
     - [Swiper](http://www.idangero.us/swiper/#.VkhuaXbhC70)
     - [cycle2](http://jquery.malsup.com/cycle2/)
     - slick 플러그인 정리
@@ -48,13 +48,15 @@
     - [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)
     - [bpopup](http://dinbror.dk/bpopup/)
 - 달력
-    - [datepicker](http://jqueryui.com/datepicker/)
+    - [datepicker](docs/Datepicker.md)
     - [fullcalendar](http://fullcalendar.io/)
 
 
 <br>
 
 ## 4.제이쿼리에서 자주 사용되는 중요 함수 정리
+
+* [자주 사용하는 함수 each, trigger](docs/01_00_jquery_자주사용하는 함수.md)
 
 * each함수    
 	- setTimeout(function,millisecond)    
