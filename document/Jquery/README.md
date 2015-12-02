@@ -47,7 +47,7 @@
     - [masonry](http://masonry.desandro.com/), [isotope](http://isotope.metafizzy.co/), [packery](http://packery.metafizzy.co/)
 - 팝업
     - [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)
-    - [bpopup](http://dinbror.dk/bpopup/)
+    - [bpopup](docs/01_03_jquery_plugin_bpopup.md)
 - 달력
     - [datepicker](docs/Datepicker.md)
     - [fullcalendar](http://fullcalendar.io/)

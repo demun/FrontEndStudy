@@ -1,9 +1,8 @@
-# jQuery  slider plugin
+# bxSlider
 
 작성자: 신종현, 허종문
 
-### bxSlider 4.2.5
-http://bxslider.com
+bxSlider 4.2.5 , http://bxslider.com
 
 
 

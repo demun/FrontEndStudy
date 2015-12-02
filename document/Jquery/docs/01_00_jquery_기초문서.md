@@ -1,5 +1,6 @@
 # jQuery 기초문서
 
+작성자: 주이슬
 
 ## jQuery 기초
 
@@ -53,8 +54,7 @@ keypress() | 글자가 입력될 때 발생
 #### html()
 * 기존 내용을 없애고 필요한 html구문을 생성함
 
-```
-ex)
+```javascript
 $subMenu1.html("<li>text</li>");
 ```
 
@@ -71,11 +71,11 @@ $subMenu1.html("<li>text</li>");
 #### css()
 * 해당 요소의 CSS를 설정 및 값 추출
 
-```
-ex)
+```javascript
+// ex)
 $("#header").css({height:80, overflow:"hidden"}) //height, overflow 설정
 
-ex)
+// ex)
 var $alpha=$(".subMenu").css("opacity"); //opacity 값 추출
 ```
 
@@ -83,14 +83,14 @@ var $alpha=$(".subMenu").css("opacity"); //opacity 값 추출
 #### attr()
 * 해당 요소의 속성을 설정 및 값 추출
 
-```
-ex)
+```javascript
+// ex)
 $mainImg.attr("class","img02");  //클래스명 설정
 
-ex)
+// ex)
 $("#visual_img").attr("src", "images/main/visual_02.jpg") //이미지 경로 변경
 
-ex)
+// ex)
 var $className=$("#visual_img").attr("class"); //클래스명 값 추출
 ```
 
@@ -107,15 +107,15 @@ var $className=$("#visual_img").attr("class"); //클래스명 값 추출
 * 속성의 값만큼 시간주기로 해당효과를 낸 후 함수를 실행함
 * 효과 : jQuery의 easing효과(32가지의 easing 효과 사용 가능)
 
-```
-ex)
+```javascript
+//ex)
 function onLeft() {
    #imgWrap.animate({marginLeft:-400},500,"easeOutCubic");
 }
 ```
 
-```
-ex)
+```javascript
+//ex)
 $("#imgWrap:not(:animated)").animate({left:300, opacity:0}, 1000, "easeOutCubic", function() {
    #imgWrap.css({left:0, opacity:1});
 });
@@ -141,7 +141,7 @@ $("#imgWrap:not(:animated)").animate({left:300, opacity:0}, 1000, "easeOutCubic"
 ### 작동 유무 변수 설정
 * 여러 함수에서 한 함수의 동작이 실행중일 때 동시에 다른 함수 동작을 하지 못하도록 함.
 
-```
+```javascript
 <script type="text/javascript">
 var count;
 var $panel;
@@ -184,7 +184,7 @@ function onStop() {
 * 해당 애니메이션이 진행중일 때 다른 애니메이션 실행을 못하도록 함.
 * 해당 애니메이션이 다 끝나고 다음 애니메이션이 실행 됨.
 
-```
+```javascript
 <script type="text/javascript">
 var $mainMenu;
 var $subMenu;
@@ -220,7 +220,7 @@ $(document).ready(function(e) {
 * 진행중인 애니메이션을 모두 멈춤.
 * 여러 애니메이션이 동시 진행시 실행하던 애니메이션의 동작 완료 전 다른 애니메이션 실행시 사용.
 
-```
+```javascript
 <script type="text/javascript">
 var $menu;
 $(document).ready(function(e) {

@@ -1,17 +1,20 @@
 # jQuery  자주 사용하는 함수
 
+작성자: 한충재
+
+
 
 ## Triggrt 함수
 
 원문 링크:  http://api.jquery.com/trigger/
 
-```
+```javascript
 .trigger( eventType [, extraParameters] )
 ```
 
 개요 : 특정 이벤트 유형에 대해 선택된 요소에 연결된 모든 핸들러와 동작(behavior)을 실행합니다.
 
-```
+```javascript
 .trigger( eventType [, extraParameters] )
 ```
 
