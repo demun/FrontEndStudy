@@ -4,22 +4,16 @@
 
 bPopup.js  : 
 * [레퍼런스 사이트 : http://dinbror.dk/bpopup/ ] (http://dinbror.dk/bpopup/)
-* [v0.11.0 다운로드 :  jquery.bpopup.min.js ] (https://raw.github.com/dinbror/bpopup/master/jquery.bpopup.min.js)
+* v0.11.0 다운로드 :  [jquery.bpopup.min.js ] (https://raw.github.com/dinbror/bpopup/master/jquery.bpopup.min.js)
 
 
 
 ### 특징
-* 가로/세로 가운데 정렬 가능, 수동으로 위치 조절 가능
-  - 미설정의 경우 레이어의 높이에 따라 absolut | fixed 자동설정됨
-   
-* 다중팝업 지원
-  - 나중에 열린 팝업이 닫힌 후 먼저 열린 팝업이 순차적으로 닫힘
-
+* 가로/세로 자동 정렬 및 수동셋팅 가능 (컨텐츠 높이에 따라 absolut | fixed 자동설정)   
+* 다중팝업 지원 (다중으로 팝업을 열 수 있으며, 열린 순서 역순으로 닫힘)
 * 콜백 지원
-
 * Ajax, image, iframe 지원
-
-* 지원 브라우져:  Internet Explorer 6*-9, Firefox 2+, Opera 9+, Safari 4+ and Chrome 4+
+* 하위 브라우져 tested :  Internet Explorer 6*-9, Firefox 2+, Opera 9+, Safari 4+ and Chrome 4+
 
 
 
@@ -29,13 +23,20 @@ bPopup.js  :
 <!doctype html>
 <html>
 <head>
-  <meta charset="uft-8">
-  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="./jquery.bpopup.min.js"></script>	
+	<meta charset="uft-8">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="./jquery.bpopup.min.js"></script>
 	<script type="text/javascript">
+		/* auto */
 		$(window).load(function(){
 			$('#bpopupLayer').bPopup({
-				// option
+				//follow: [false, false]
+			});
+		});
+		/* click */
+		$('#bpopupBtn').click(function(){
+			$('#bpopupLayer').bPopup({
+				//option
 			});
 		});
 	</script>
@@ -50,20 +51,20 @@ bPopup.js  :
 </html>
 ```
 
-* 예제 : [예제샘플] (http://codepen.io/dot2flower/pen/LpwajB/)
+* [=> codepen 예제] (http://codepen.io/dot2flower/pen/LpwajB/)
 
 
 
 ## 구성 옵션
 
-###General
+###기본옵션
 
-**option**
+** option **
 기본옵션
 ``` javascript
 $('element_to_pop_up').bPopup(
-  follow: [false, false], //x, y 순 | true or false | 팝업이 따라다니는 것을 정지시킬 수 있음.
-  position: [150, 400], //x, y 
+	follow: [false, false], //x, y  | true or false | 팝업이 따라다니는 것을 정지시킬 수 있음.
+	position: [150, 400], //x, y 
 	modalClose: false, //배경을 눌러서 팝업 닫기 여부
 	opacity: 0.6, //배경 투명도
 	positionStyle: 'fixed', //'fixed' or 'absolute'
@@ -71,12 +72,12 @@ $('element_to_pop_up').bPopup(
 	followSpeed: 1500, //따라다니는 속도 'slow' or 'fast' or int
 	modalColor: 'greenYellow' , //
 	easing: 'easeOutBack', //uses jQuery easing plugin 
-  speed: 450, //에니메이션 속도
-  transition: 'slideDown', // 팝업 열릴 때 애니메이션 옵션  | 'slideDown' or  'slideIn'
+	speed: 450, //에니메이션 속도
+	transition: 'slideDown', // 팝업 열릴 때 애니메이션 옵션  | 'slideDown' or  'slideIn'
 	transitionClose: 'slideBack' // 팝업 닫힐 때 애니메이션 옵션
 	autoClose: // 자동 닫기 (밀리초)
 );
-
+```
 
 
 ----
