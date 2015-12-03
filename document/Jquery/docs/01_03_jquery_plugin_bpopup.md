@@ -30,7 +30,7 @@ bPopup.js  :
 		/* auto */
 		$(window).load(function(){
 			$('#bpopupLayer').bPopup({
-				//follow: [false, false]
+				//option
 			});
 		});
 		/* click */
@@ -55,27 +55,62 @@ bPopup.js  :
 
 
 
-## 구성 옵션
+## 구성
 
-###기본옵션
-
-** option **
+**option**
 기본옵션
 ``` javascript
 $('element_to_pop_up').bPopup(
-	follow: [false, false], //x, y  | true or false | 팝업이 따라다니는 것을 정지시킬 수 있음.
-	position: [150, 400], //x, y 
-	modalClose: false, //배경을 눌러서 팝업 닫기 여부
-	opacity: 0.6, //배경 투명도
-	positionStyle: 'fixed', //'fixed' or 'absolute'
-	fadeSpeed: 'slow', // 사라지는 속도 'slow', 'fast' or int
-	followSpeed: 1500, //따라다니는 속도 'slow' or 'fast' or int
-	modalColor: 'greenYellow' , //
-	easing: 'easeOutBack', //uses jQuery easing plugin 
-	speed: 450, //에니메이션 속도
-	transition: 'slideDown', // 팝업 열릴 때 애니메이션 옵션  | 'slideDown' or  'slideIn'
-	transitionClose: 'slideBack' // 팝업 닫힐 때 애니메이션 옵션
-	autoClose: // 자동 닫기 (밀리초)
+	follow: [false, false], 
+	// true or false (boolean) | x, y 
+	// default : true
+	// 팝업이 따라다니는 것을 정지시킬 수 있으며, 한쪽만 고정 가능
+
+	position: [150, 400], 
+	// int |  x, y 
+	// default : auto 
+	// 팝업 좌표
+
+	modalClose: false,  
+	// true or false 
+	// default : true
+	// 배경을 눌러서 팝업 닫기 여부
+
+	autoClose: 
+	// 자동 닫기 (밀리초)
+
+	opacity: 0.6, 
+	// default : 0.7 	
+	//배경 투명도
+
+	positionStyle: 'fixed', 
+	//'fixed' or 'absolute'
+	// default : auto
+	// 팝업의 position 유형
+	
+	fadeSpeed: 'slow', 
+	// 사라지는 속도 'slow', 'fast' or int
+
+	followSpeed: 1500, 
+	//따라다니는 속도 'slow' or 'fast' or int
+
+	modalColor: 'greenYellow' , 	
+	// default : #000	
+	// 모달의 컬러 
+
+	easing: 'easeOutBack', 
+	//uses jQuery easing plugin 
+
+	speed: 450, 
+	//에니메이션 속도
+
+	transition: 'slideDown', 
+	// 'slideDown' or  'slideIn'
+	// 팝업 열릴 때 애니메이션 옵션 
+	
+	transitionClose: 'slideBack' 
+	// 팝업 닫힐 때 애니메이션 옵션
+
 );
 ```
 
