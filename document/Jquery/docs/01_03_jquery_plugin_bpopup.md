@@ -76,7 +76,8 @@ $('element_to_pop_up').bPopup(
 	// default : true
 	// 배경을 눌러서 팝업 닫기 여부
 
-	autoClose: 
+	autoClose: 1000 ,
+	//Auto closes after 
 	// 자동 닫기 (밀리초)
 
 	opacity: 0.6, 
@@ -94,7 +95,7 @@ $('element_to_pop_up').bPopup(
 	followSpeed: 1500, 
 	//따라다니는 속도 'slow' or 'fast' or int
 
-	modalColor: 'greenYellow' , 	
+	modalColor: 'yellow' , 	
 	// default : #000	
 	// 모달의 컬러 
 
