@@ -22,10 +22,10 @@
 
 ## 목차
 
-* [Github](document/Github/README.md) - 진행중
-* [Sublimetext](document/Sublimetext/README.md) - 진행중
-* [Grunt](document/Grunt/README.md) - 진행중
-* [CSS3](document/CSS3/README.md) - 진행중
+* [Github](document/Github/README.md) - 진행완료
+* [Sublimetext](document/Sublimetext/README.md) - 진행완료
+* [Grunt](document/Grunt/README.md) - 진행완료
+* [CSS3](document/CSS3/README.md) - 진행완료
 
 <br>
 
@@ -33,12 +33,8 @@
 * [Jquery](document/Jquery/README.md) - 진행중
 * [Angularjs](document/AngularJS/README.md) - 진행중
 * [Bootstrap](document/Bootstrap/README.md) - 진행중
+* [Sass](document/Sass/README.md) - 진행중
 
-
-<br>
-
-
-* [Sass](document/Sass/README.md) - 진행대기
 
 <br>
 
@@ -48,7 +44,6 @@
 * [Atom](document/Atom/README.md) - 진행대기
 * [html5](document/html5/README.md) - 진행대기
 * [CSS](document/CSS/README.md) - 진행대기
-* [Less](document/Less/README.md) - 진행대기
 * [Gulp](document/Gulp/README.md) - 진행대기
 * [Bower](document/Bower/README.md) - 진행대기
 * [Yeoman](document/Yeoman/README.md) - 진행대기
