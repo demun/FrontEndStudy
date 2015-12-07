@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="sportsStore">
+<head>
+<title>SportsStore</title>
+<script src="AngularJS/angular.js"></script>
+<link href="AngularJS/bootstrap.css" rel="stylesheet" />
+<link href="AngularJS/bootstrap-theme.css" rel="stylesheet" />
+<script>
+    /*
+    	angular define 부분
+    	기본 포멧 : 
+    	angular.module(app_name, [filter, directive, etc...]);
+    	module별로 아래의 별도 script 생성 또는 이곳에 직접 넣어도 됨    	
+    */
+	angular.module("sportsStore", ["customFilters","cart"]);
+</script>
+<script src="controller/sportsStore.js"></script>
+<script src="filter/customFilter.js"></script>
+<script src="controller/productListController.js"></script>
+<script src="cart/cart.js"></script>
+</head>
+<body ng-controller="sportsStoreCtrl">
+	<div class="navbar navbar-inverse">
+		<a class="navbar-brand" href="#">SPORTS STORE</a>
+		<cart-summary />
+	</div>
+	<div class="alert alert-danger" ng-show="data.error">
+		Error ({{data.error.status}}). The product data was not loaded.
+		<a href="/app.html" class="alert-link">Click here to try again</a>
+	</div>
+	<div class="panel panel-default row" ng-controller="productListCtrl" ng-hide="data.error">
+<!--		<div class="col-xs-3">
+			<a ng-click="selectCategory()" class="btn btn-block btn-default btn-lg">Home</a>
+			<a ng-repeat="item in data.products | orderBy:'category' | unique:'category'" ng-click="selectCategory(item)" class=" btn btn-block btn-default btn-lg" ng-class="getCategoryClass(item)">
+				{{item}}
+			</a>
+		</div>
+		<div class="col-xs-8">
+			<div class="well" ng-repeat="item in data.products | filter:categoryFilterFn | range:selectedPage:pageSize">
+				<h3>
+				<strong>{{item.name}}</strong>
+				<span class="pull-right label label-primary">
+				{{item.price | currency}}
+				</span>
+				</h3>
+				<button ng-click="addProductToCart(item)" class="btn btn-success pull-right">
+					Add to cart
+				</button>
+				<span class="lead">{{item.description}}</span>
+			</div>
+			<div class="pull-right btn-group">
+				<a ng-repeat="page in data.products | filter:categoryFilterFn | pageCount:pageSize"	ng-click="selectPage($index + 1)" class="btn btn-default" ng-class="getPageClass($index + 1)">
+				{{$index + 1}}
+				</a>
+			</div>
+		</div>
+	</div>-->
+	<ng-include src="'views/productList.html'"></ng-include>
+</body>
+</html>
