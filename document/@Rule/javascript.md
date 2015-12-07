@@ -13,41 +13,42 @@
 
 - 분량 나누기(11월 14일 발표 분량)
 
-**동기 vs 비동기 통신 (1주차-10/19~25)**
+**[동기 vs 비동기 통신](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/1.%EB%8F%99%EA%B8%B0vs%EB%B9%84%EB%8F%99%EA%B8%B0_%ED%86%B5%EC%8B%A0.md) (1주차-10/19~25)**
 
 - 차이점    
 - 정의 및 특징   
   
 **실무에 자주 쓰이는 함수**    
 
-- 타이머함수 __(1주차-10/19~25)__
+- [타이머함수](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-1.%ED%83%80%EC%9D%B4%EB%A8%B8%ED%95%A8%EC%88%98.md) __(1주차-10/19~25)__
 
     - setTimeout(function,millisecond)
     - setInterval(function,millisecond)clearTimeout(id)
     - clearINterval(id)
     - __setTimeout과 setInterval의 차이점__ (중요함)
     
-- 인코딩/디코딩 함수escape() / unescape() __(2주차-10/26~11/1)__
+- [인코딩/디코딩 함수escape() / unescape()](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-2.%EC%9D%B8%EC%BD%94%EB%94%A9_%EB%94%94%EC%BD%94%EB%94%A9_%ED%95%A8%EC%88%98.md) __(2주차-10/26~11/1)__
 
     - encodeURI(url) / decodeURI(encodeURI)
     - encodeURIComponent(uriComponent) / decodeURIComponent(encodedURI)
     
-- 코드 실행 함수 __(2주차-10/26~11/1)__
+- [코드 실행 함수](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-3.%EC%BD%94%EB%93%9C%EC%8B%A4%ED%96%89_%ED%95%A8%EC%88%98.md) __(2주차-10/26~11/1)__
 
     - eval(String)
     
-- 숫자 확인 함수 __(3주차-11/2~8)__
+- [숫자 확인 함수](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-4.%EC%88%AB%EC%9E%90%ED%99%95%EC%9D%B8_%ED%95%A8%EC%88%98.md) __(3주차-11/2~8)__
 
     - isFinite()
     - isNaN()
-    - cast 함수
+- [형변환 함수](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-5.%ED%98%95%EB%B3%80%ED%99%98_%ED%95%A8%EC%88%98.md) __(3주차-11/2~8)__
+
     - parseInt(String)
     - parseFloat(String)
     - String(number)
     - Number(String)
     - Boolean(String)
     
-- 기타 __(3주차-11/2~8)__
+- [기타](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-6.%EA%B8%B0%ED%83%80_%ED%95%A8%EC%88%98.md) __(3주차-11/2~8)__
 
     - typeof()
     - confirm(String)
