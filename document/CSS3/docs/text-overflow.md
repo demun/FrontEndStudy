@@ -4,11 +4,11 @@
 
 작성일 : 2015-11-04
 
-css 레퍼런스 설명: 
+css 레퍼런스 설명:
  - text-overflow : text 내용이 over 되는 경우를 설정한다.
- 
- - syntax : 
-```sh 
+
+ - syntax :
+```sh
 text-overflow: clip|ellipsis|initial|inherit;
 ```
 
@@ -20,25 +20,25 @@ initial:기본 값으로 set되어 있는 값을 불러온다.
 
 inherit:부모 element에 설정되어 있는 값을 상속 받는다.
 
-sample code : 
-```sh
+sample code :
+```html
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
+<style>
 #div1 {
-    white-space: nowrap; 
-    width: 12em; 
+    white-space: nowrap;
+    width: 12em;
     overflow: hidden;
-    text-overflow: clip; 
+    text-overflow: clip;
     border: 1px solid #000000;
 }
 
 #div2 {
-    white-space: nowrap; 
-    width: 12em; 
+    white-space: nowrap;
+    width: 12em;
     overflow: hidden;
-    text-overflow: ellipsis; 
+    text-overflow: ellipsis;
     border: 1px solid #000000;
 }
 
@@ -59,7 +59,7 @@ sample code :
 
 ```
 
-결과 
+결과
 
 ![text-overflow](../images/text-overflow.jpg)
 
@@ -69,13 +69,6 @@ sample code :
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

@@ -11,11 +11,11 @@
 
 작성일 : 2015-09-02 17:29
 
-css 레퍼런스 설명: 
+css 레퍼런스 설명:
 - color : 텍스트에 색상을 입힌다.
 - text-align : 텍스트의 위치를 정렬한다.
 
-`sample code` : 
+`sample code` :
 
 ```html
 <!DOCTYPE html>
@@ -23,7 +23,7 @@ css 레퍼런스 설명:
 <head>
 <style>
 p {
-    color: red; /*p테그 색상*/ 
+    color: red; /*p테그 색상*/
     text-align: center;  /*p테크 글자 정렬*/
 }
 </style>
@@ -35,18 +35,18 @@ p {
 </html>
 ```
 
-결과 
+결과
 
 ![sample code](images/sample.jpg)
 
 ### 파일 작성 방법
-File 
+File
 
  - Format : css3_reference명.md 파일로 작성할 것
 
  - 경로 : docs 폴더에 해당 파일을 넣을 것
 
-image : 
+image :
 
  - Format : 레퍼런스 내용에 보여지는 이미지는 css3_reference명.jpg 파일로 작성할 것
 
@@ -68,13 +68,6 @@ cf) Github 사이트에 등록하는 방법도 [09-GitHub-for-Windows](../Github
 * [align-self](docs/align-self.md)
 * [@keyframes](docs/@keyframes.md)
 * [animation](docs/animation.md)
-* [animation-name](docs/animation-name.md)
-* [animation-duration](docs/animation-duration.md)
-* [animation-timing-function](docs/animation-timing-function.md)
-* [animation-delay](docs/animation-delay.md)
-* [animation-iteration-count](docs/animation-iteration-count.md)
-* [animation-direction](docs/animation-direction.md)
-* [animation-play-state](docs/animation-play-state.md)
 * [backface-visibility](docs/backface-visibility.md)
 * [background-clip](docs/background-clip.md)
 * [background-origin](docs/background-origin.md)

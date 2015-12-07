@@ -4,11 +4,11 @@
 
 작성일 : 2015-10-30
 
-css 레퍼런스 설명: 
+css 레퍼런스 설명:
  - opacity : div 영역 내 투명도를 설정한다.
- 
- - syntax : 
-```sh 
+
+ - syntax :
+```sh
 opacity: number|initial|inherit;
 ```
 
@@ -18,12 +18,12 @@ initial:기본 값으로 set되어 있는 값을 불러온다.
 
 inherit:부모 element에 설정되어 있는 값을 상속 받는다.
 
-sample code : 
-```sh
+sample code :
+```html
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
+<style>
 div {
     background-color: red;
     opacity: 0.5;
@@ -37,10 +37,9 @@ div {
 
 </body>
 </html>
-
 ```
 
-결과 
+결과
 
 ![opacity](../images/opacity.jpg)
 

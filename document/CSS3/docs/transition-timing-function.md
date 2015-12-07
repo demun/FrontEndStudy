@@ -8,8 +8,8 @@
 
 css 레퍼런스 설명: 변화되어지는 시간동안 각 구간마다 빠르고 느림을 개별로 지정해주는 속성. 큐빅베이지어(cubic bezier)를 정의하는 네 점에 의해 정의됨 [큐빅베이지어](https://developer.mozilla.org/en-US/docs/Web/CSS/timing-function)
 
-syntax: 
-```css 
+syntax:
+```
 transition-timing-function: ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier()|initial|inherit;
 ```
 
@@ -37,7 +37,7 @@ sample code :
 .transition-timing-function.ease {
 	transition-timing-function:ease;
 	top:0px;
-	
+
 }
 .transition-timing-function.linear {
 	transition-timing-function:linear;
@@ -122,13 +122,6 @@ $(document).ready(function(){
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

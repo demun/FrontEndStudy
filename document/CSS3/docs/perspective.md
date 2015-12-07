@@ -4,11 +4,11 @@
 
 작성일 : 2015-09-27
 
-css 레퍼런스 설명: 
+css 레퍼런스 설명:
  - perspective : 3D 공간에서 요소와 관측 점과의 거리, 즉 원근감을 지정하는 속성이다.
                 (얼마나 많은 3차원 픽셀을 놓을 것인지 정의하는 속성)
- - syntax : 
-```sh 
+ - syntax :
+```sh
 perspective: length|none;
 ```
 
@@ -16,7 +16,7 @@ length : 평면에 원근감 거리를 제공한다. 이것은 평면의 중심�
 
 none : 기본 값. 0과 같다. 값이 없음을 의미한다.
 
-`sample code` : 
+`sample code` :
 
 ```html
 <!DOCTYPE html>
@@ -62,13 +62,6 @@ none : 기본 값. 0과 같다. 값이 없음을 의미한다.
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

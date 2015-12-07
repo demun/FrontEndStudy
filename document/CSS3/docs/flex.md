@@ -4,11 +4,11 @@
 
 작성일 : 2015-10-27
 
-css 레퍼런스 설명: 
+css 레퍼런스 설명:
  - flex : div 영역 내 모든 div tag를 같은 크기로 융통성있게 구분한다.
- 
- - syntax : 
-```sh 
+
+ - syntax :
+```sh
 flex: flex-grow flex-shrink flex-basis|auto|initial|inherit;
 ```
 
@@ -26,12 +26,12 @@ none : 0으로 처리한다.
 
 inherit:부모 element에 설정되어 있는 값을 상속 받는다.
 
-sample code : 
+sample code :
 ```sh
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
+<style>
 #main {
     width: 220px;
     height: 300px;
@@ -66,7 +66,7 @@ sample code :
 
 ```
 
-결과 
+결과
 
 ![flex](../images/flex.jpg)
 
@@ -76,13 +76,6 @@ sample code :
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

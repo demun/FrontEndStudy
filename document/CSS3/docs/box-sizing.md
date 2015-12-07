@@ -4,11 +4,11 @@
 
 작성일 : 2015-09-27
 
-css 레퍼런스 설명: 
+css 레퍼런스 설명:
  - box-sizing : 박스 요소의 크기를 결정하는 방식을 지정하는 속성이다.
 
- - syntax : 
-```sh 
+ - syntax :
+```sh
 box-sizing: content-box|border-box|initial|inherit;
 ```
 
@@ -20,7 +20,7 @@ initial : 기본 초기값이다.
 
 inherit : 부모 요소에 적용된 이 속성 값을 상속한다.
 
-`sample code` : 
+`sample code` :
 
 ```html
 <!DOCTYPE html>
@@ -77,13 +77,6 @@ inherit : 부모 요소에 적용된 이 속성 값을 상속한다.
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

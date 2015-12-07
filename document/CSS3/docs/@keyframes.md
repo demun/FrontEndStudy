@@ -4,13 +4,13 @@
 
 작성일 : 2015-09-18
 
-comment : 테스트입니다 
+comment : 테스트입니다
 
-css 레퍼런스 설명: 
+css 레퍼런스 설명:
  - @keyframes : 단계적으로 변화를 주는 애니메이션 코드
- 
- - syntax : 
-```sh 
+
+ - syntax :
+```sh
 @keyframes animationname {keyframes-selector {css-styles;}}
 ```
 
@@ -22,22 +22,22 @@ keyframes-selector : 애니메이션을 %별로 정의한다.
 
 css-styles : 하나 이상의 css 스타일을 정의한다.
 
-sample code : 
+sample code :
 ```sh
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
+<style>
 div {
     width: 100px;
     height: 100px;
     background: red;
     position :relative;
-    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */ 
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
     animation: mymove 5s infinite;
 }
 
-/* Chrome, Safari, Opera */ 
+/* Chrome, Safari, Opera */
 @-webkit-keyframes mymove1 {
     0%   {top: 0px;}
     25%  {top: 200px;}
@@ -65,7 +65,7 @@ div {
 
 ```
 
-결과 
+결과
 
 [http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_keyframes](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_keyframes)
 
@@ -75,13 +75,6 @@ div {
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

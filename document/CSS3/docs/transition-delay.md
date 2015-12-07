@@ -1,4 +1,4 @@
-#transition-delay 
+#transition-delay
 
 
 작성자 : 장현웅
@@ -9,8 +9,8 @@
 css 레퍼런스 설명: 변화가 언제 시작될지 지정해주는 속성
 
 
-syntax: 
-```css 
+syntax:
+```
 transition-delay : time|initial|inherit;
 ```
 
@@ -39,7 +39,7 @@ sample code :
 .transition-delay.sec1 {
 	transition-delay:1s;
 	top:0px;
-	
+
 }
 .transition-delay.sec2 {
 	transition-delay:2s;
@@ -100,13 +100,6 @@ $(document).ready(function(){
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

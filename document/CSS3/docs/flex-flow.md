@@ -4,28 +4,28 @@
 
 작성일 : 2015-10-30
 
-css 레퍼런스 설명: 
+css 레퍼런스 설명:
  - flex-flow : div 영역 내 flex item 의 표시 방식을 설정한다.
- 
- - syntax : 
-```sh 
+
+ - syntax :
+```sh
 flex-flow: flex-direction flex-wrap|initial|inherit;
 ```
 
 flex-direction :영역 내 flex item들의 방향을 설정한다.(기본값 : row)
 
-flex-wrap : 영역 내 flex item들의 표시 방식을 설정한다. (nowrap(기본 값) | wrap | wrap-reverse | initial | inherit) 
+flex-wrap : 영역 내 flex item들의 표시 방식을 설정한다. (nowrap(기본 값) | wrap | wrap-reverse | initial | inherit)
 
 initial:기본 값으로 set되어 있는 값을 불러온다.
 
 inherit:부모 element에 설정되어 있는 값을 상속 받는다.
 
-sample code : 
+sample code :
 ```sh
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
+<style>
 #main {
     width: 200px;
     height: 200px;
@@ -62,7 +62,7 @@ sample code :
 
 ```
 
-결과 
+결과
 
 ![flex-flow](../images/flex-flow.jpg)
 
@@ -72,13 +72,6 @@ sample code :
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

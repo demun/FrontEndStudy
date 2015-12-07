@@ -4,11 +4,11 @@
 
 작성일 : 2015-10-30
 
-css 레퍼런스 설명: 
+css 레퍼런스 설명:
  - outline-offset: 외각선의 오프셋 크기를 정의한다.
- 
- - syntax : 
-```sh 
+
+ - syntax :
+```sh
 outline-offset: length|initial|inherit;
 ```
 
@@ -18,21 +18,21 @@ initial:기본 값으로 set되어 있는 값을 불러온다.
 
 inherit:부모 element에 설정되어 있는 값을 상속 받는다.
 
-sample code : 
-```sh
+sample code :
+```html
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
+<style>
 div {
     margin: 20px;
-    width: 150px; 
+    width: 150px;
     padding: 10px;
     height: 70px;
     border: 2px solid black;
     outline: 2px solid red;
     outline-offset: 15px;
-} 
+}
 </style>
 </head>
 <body>
@@ -46,7 +46,7 @@ div {
 
 ```
 
-결과 
+결과
 
 ![outline-offset](../images/outline-offset.jpg)
 
@@ -56,13 +56,6 @@ div {
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

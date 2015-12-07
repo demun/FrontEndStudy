@@ -4,11 +4,11 @@
 
 작성일 : 2015-10-30
 
-css 레퍼런스 설명: 
+css 레퍼런스 설명:
  - overflow-y : div 영역이 overflow가 될 시 세로축에 대한 처리를 정의한다.
- 
- - syntax : 
-```sh 
+
+ - syntax :
+```sh
 overflow-y: visible|hidden|scroll|auto|initial|inherit;
 ```
 
@@ -24,12 +24,12 @@ initial:기본 값으로 set되어 있는 값을 불러온다.(normal)
 
 inherit:부모 element에 설정되어 있는 값을 상속 받는다.
 
-sample code : 
-```sh
+sample code :
+```html
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
+<style>
 div {
     width: 110px;
     height: 110px;
@@ -43,7 +43,7 @@ div {
 
 <div><p style="width:140px">
 In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.
-'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.' 
+'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'
 </p></div>
 
 <p>Overflow-x specifies whether or not to clip the left/right edges of the content.</p>
@@ -54,7 +54,7 @@ In my younger and more vulnerable years my father gave me some advice that I've 
 
 ```
 
-결과 
+결과
 
 ![overflow-y](../images/overflow-y.jpg)
 
@@ -65,13 +65,6 @@ In my younger and more vulnerable years my father gave me some advice that I've 
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

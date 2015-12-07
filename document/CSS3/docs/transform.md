@@ -4,10 +4,10 @@
 
 작성일 : 2015-11-10
 
-css 레퍼런스 설명: 시각적 서식 모델(visual formatting model)의 좌표 공간을 변형시킬 수 있다. 해당 속성에 지정된 값에 따라 엘리먼트(element)에 이동(translate), 회전(rotate), 크기변경(scale), 기울임(skew)등의 효과를 줄 수 있다. 
+css 레퍼런스 설명: 시각적 서식 모델(visual formatting model)의 좌표 공간을 변형시킬 수 있다. 해당 속성에 지정된 값에 따라 엘리먼트(element)에 이동(translate), 회전(rotate), 크기변경(scale), 기울임(skew)등의 효과를 줄 수 있다.
 
-syntax: 
-```css 
+syntax:
+```
 transform : transform-function | none;
 ```
 
@@ -25,7 +25,7 @@ skew(x-angle, y-angle) : 요소를 지정된 각도만큼 모양을 비스듬히
 matrix(n,n,n,n,n,n)	: translate, scale, rotate, skew 각 속성을 한꺼번에 적용할 수 있는 매트릭스 함수
 
 
-sample code : 
+sample code :
 ```html
 
 <!DOCTYPE html>
@@ -33,14 +33,14 @@ sample code :
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
-<style> 
+<style>
 div {
     width: 200px;
     height: 100px;
     margin-bottom: 50px;
 }
 .none {
-	transform: none; 
+	transform: none;
     background-color: yellow;
 }
 .translate {
@@ -116,7 +116,7 @@ matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n) : translate, scale, rotate, skew 각 �
 
 
 
-sample code : 
+sample code :
 ```html
 
 <!DOCTYPE html>
@@ -124,14 +124,14 @@ sample code :
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
-<style> 
+<style>
 div {
     width: 200px;
     height: 100px;
     margin-bottom: 50px;
 }
 .none {
-	transform: none; 
+	transform: none;
     background-color: yellow;
 }
 .translate3d {
@@ -177,13 +177,6 @@ div {
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

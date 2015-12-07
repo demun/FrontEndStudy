@@ -4,11 +4,11 @@
 
 작성일 : 2015-11-10
 
-css 레퍼런스 설명: 모양이나 색상의 변화를 시간을 두고 줄 수 있는 속성이다. 
+css 레퍼런스 설명: 모양이나 색상의 변화를 시간을 두고 줄 수 있는 속성이다.
 transition-property, transition-duration, transition-timing-function, transition-delay 총 네 가지 속성의 축약으로 transition 하나를 사용할 수 있다.
 
 
-```css
+```
  transition: property duration timing-function delay; ()
 ```
 ex)
@@ -57,13 +57,6 @@ sample code:
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

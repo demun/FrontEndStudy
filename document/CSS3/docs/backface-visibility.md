@@ -4,11 +4,11 @@
 
 작성일 : 2015-09-18
 
-css 레퍼런스 설명: 
+css 레퍼런스 설명:
  - backface-visibility : div 테그 뒷면의 출력 여부를 정의한다.
- 
- - syntax : 
-```sh 
+
+ - syntax :
+```sh
 backface-visibility: visible|hidden|initial|inherit;
 ```
 
@@ -20,7 +20,7 @@ initial:기본 값으로 set되어 있는 값을 불러온다.
 
 inherit:부모 element에 설정되어 있는 값을 상속 받는다.
 
-sample code : 
+sample code :
 ```sh
 <!DOCTYPE html>
 <html>
@@ -62,7 +62,7 @@ div {
 
 ```
 
-결과 
+결과
 
 ![backface-visibility](../images/backface-visibility.jpg)
 
@@ -73,13 +73,6 @@ div {
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

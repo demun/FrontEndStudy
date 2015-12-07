@@ -7,7 +7,7 @@ css 레퍼런스 설명:
 The CSS3 background-size property allows you to specify the size of background images.
 배경 이미지의 사이즈를 설정
 
-Before CSS3, the size of a background image was the actual size of the image. 
+Before CSS3, the size of a background image was the actual size of the image.
 CSS3 allows us to re-use background images in different contexts.
 
 1. auto : Default value<br/>
@@ -17,7 +17,7 @@ CSS3 allows us to re-use background images in different contexts.
 3. cover : 배경을 사용하는 요소를 다 채울 수 있게 이미지를 확대 또는 축소. 가로 세로 비율 유지.<br/>
 4. contain : 배경을 사용하는 요소를 벗어나지 않는 최대 크기로 이미지를 확대 또는 축소. 가로 세로 비율 유지.<br/>
 
- 예제) contain,cover 
+ 예제) contain,cover
  http://www.w3schools.com/css/tryit.asp?filename=trycss3_background-size_contain
 5. initial : Default value. 기본값으로 설정.<br/>
 6. inherit : 부모 요소의 속성값을 상속받음.<br/>
@@ -33,13 +33,6 @@ http://superkts.com/css/background-size
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

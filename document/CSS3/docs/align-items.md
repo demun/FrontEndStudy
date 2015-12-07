@@ -4,11 +4,11 @@
 
 작성일 : 2015-09-27
 
-css 레퍼런스 설명: 
+css 레퍼런스 설명:
  - align-items : flex로 지정된 부모 요소 내에서 모든 flex 항목의 기본 정렬을 지정하는 속성이다.
 
- - syntax : 
-```sh 
+ - syntax :
+```sh
 align-items: stretch|center|flex-start|flex-end|baseline|initial|inherit;
 ```
 
@@ -24,10 +24,10 @@ baseline : 부모 요소의 기준선에 일치하여 정렬된다.
 
 initial : 기본 초기값이다.
 
-inherit : 부모 요소에 적용된 이 속성 값을 상속한다. 
+inherit : 부모 요소에 적용된 이 속성 값을 상속한다.
 
 
-`sample code` : 
+`sample code` :
 
 ```html
 <!DOCTYPE html>
@@ -37,7 +37,7 @@ inherit : 부모 요소에 적용된 이 속성 값을 상속한다.
       #main {
           width: 220px;
           height: 300px;
-          border: 1px solid black; 
+          border: 1px solid black;
           display: -webkit-flex; /* Safari */
           -webkit-align-items: center; /* Safari 7.0+ */
           display: flex;
@@ -63,7 +63,7 @@ inherit : 부모 요소에 적용된 이 속성 값을 상속한다.
 [결과보기 >](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_align-items)
 
 
-참고 : 
+참고 :
 - 인터넷 익스플로러 10 및 이하 버전에서는 align-content 속성을 지원하지 않는다.
 - 사파리 7.0 및 최신 버전에서는 -webkit-align-content 속성을 지원한다.
 
@@ -73,13 +73,6 @@ inherit : 부모 요소에 적용된 이 속성 값을 상속한다.
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

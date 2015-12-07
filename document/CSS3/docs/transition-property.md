@@ -10,15 +10,15 @@
 css 레퍼런스 설명: 변화되는 시간을 초단위로 지정해주는 속성
 
 
-syntax: 
-```css 
+syntax:
+```
 transition-property: none|all|property|initial|inherit;
 ```
 
 
 transition-duration,transition-property 둘은 쌍으로 서로 연관되어 동작함
 
-ex) 
+ex)
 transition-property : width, height;
 
 transition-duration : 2s, 5s;
@@ -85,13 +85,6 @@ sample code:
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

@@ -4,11 +4,11 @@
 
 작성일 : 2015-09-17
 
-css 레퍼런스 설명: 
+css 레퍼런스 설명:
  - column-span : 모든 column을 통합하여 하나의 column으로 통합 정의한다.
- 
- - syntax : 
-```sh 
+
+ - syntax :
+```sh
 column-span: 1|all|initial|inherit;
 ```
 
@@ -20,12 +20,12 @@ initial:기본 값으로 set되어 있는 값을 불러온다.
 
 inherit:부모 element에 설정되어 있는 값을 상속 받는다.
 
-sample code : 
+sample code :
 ```sh
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
+<style>
 .newspaper {
     -webkit-column-count: 3; /* Chrome, Safari, Opera에서 사용하는 css (반드시 앞에 -webkit-을 붙여야함)*/
     -moz-column-count: 3; /* Firefox */
@@ -54,7 +54,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 ```
 
-결과 
+결과
 
 ![column-span](../images/column-span.jpg)
 
@@ -64,13 +64,6 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

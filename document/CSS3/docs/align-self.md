@@ -4,11 +4,11 @@
 
 작성일 : 2015-09-27
 
-css 레퍼런스 설명: 
+css 레퍼런스 설명:
  - align-self : flex로 지정된 부모 요소 내에서 flex 항목 자기 자신만의 정렬을 지정하는 속성이다.
- 
- - syntax : 
-```sh 
+
+ - syntax :
+```sh
 align-self: auto|stretch|center|flex-start|flex-end|baseline|initial|inherit;
 ```
 
@@ -26,10 +26,10 @@ baseline : 부모 요소의 기준선에 일치하여 정렬된다.
 
 initial : 기본 초기값이다.
 
-inherit : 부모 요소에 정의된 align-items 속성 값을 상속 받는다. 
+inherit : 부모 요소에 정의된 align-items 속성 값을 상속 받는다.
 
 
-`sample code` : 
+`sample code` :
 
 ```html
 <!DOCTYPE html>
@@ -70,7 +70,7 @@ inherit : 부모 요소에 정의된 align-items 속성 값을 상속 받는다.
 [결과보기](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_align-self)
 
 
-참고 : 
+참고 :
 - 부모 요소의 align-items 속성을 무시 한다.
 - 인터넷 익스플로러 10 및 이하 버전에서는 align-content 속성을 지원하지 않는다.
 - 사파리 7.0 및 최신 버전에서는 -webkit-align-content 속성을 지원한다.
@@ -81,13 +81,6 @@ inherit : 부모 요소에 정의된 align-items 속성 값을 상속 받는다.
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

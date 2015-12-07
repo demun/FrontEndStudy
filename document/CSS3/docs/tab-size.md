@@ -4,11 +4,11 @@
 
 작성일 : 2015-10-30
 
-css 레퍼런스 설명: 
+css 레퍼런스 설명:
  - tab-size: div 영역의 resize를 정의한다.
- 
- - syntax : 
-```sh 
+
+ - syntax :
+```sh
 tab-size: number|length|initial|inherit;
 ```
 
@@ -20,12 +20,12 @@ initial:기본 값으로 set되어 있는 값을 불러온다.
 
 inherit:부모 element에 설정되어 있는 값을 상속 받는다.
 
-sample code : 
-```sh
+sample code :
+```html
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
+<style>
 #t1 {
     -moz-tab-size: 4; /* Code for Firefox */
     -o-tab-size: 4; /* Code for Opera 10.6-12.1 */
@@ -58,7 +58,7 @@ I	use	tab-size	16
 
 ```
 
-결과 
+결과
 
 ![tab-size](../images/tab-size.jpg)
 
@@ -70,13 +70,6 @@ IE에서는 지원하지 않음
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

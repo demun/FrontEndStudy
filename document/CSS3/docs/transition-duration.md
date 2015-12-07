@@ -8,29 +8,29 @@
 css 레퍼런스 설명: transition 에 어떤 효과를 줄지 css 속성의 이름을 지정해주는 속성
 
 
-syntax: 
-```css 
+syntax:
+```
 transition-duration: time|initial|inherit;
 ```
 
 
 transition-duration,transition-property 둘은 쌍으로 서로 연관되어 동작함
 
-ex) 
+ex)
 
 transition-property : width, height;
 
 transition-duration : 2s, 5s;
 
  - 이때는 width 값이 2s height 값이 5s가 됨.
-  
+
 <br>
 transition-property : width, height, top, left;
 
 transition-duration : 2s, 5s;
 
  - 이때는 duration 값이 반복해서 들어감. width 2s  height 5s  top 2s  left 5s
-  
+
 <br>
 transition-property : width, height;
 
@@ -84,13 +84,6 @@ sample code:
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

@@ -4,10 +4,10 @@
 
 작성일 : 2015-10-30
 
-css 레퍼런스 설명: 
+css 레퍼런스 설명:
  - font-feature-settings : 지원되는 오픈 타입 글꼴에 고급 타이포그래피와 언어 별 글꼴 기능을 적용한다.
- 
-sample code : 
+
+sample code :
 [http://clagnut.com/sandbox/css3/] : 해당 사이트 참조
 
 safari에서는 지원하지 않음
@@ -18,13 +18,6 @@ safari에서는 지원하지 않음
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

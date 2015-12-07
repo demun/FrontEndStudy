@@ -8,9 +8,9 @@ css 레퍼런스 설명:
 예제 : http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_border-radius
 
 
-1.  length : px, em 등 단위로 직접 숫자 지정 
+1.  length : px, em 등 단위로 직접 숫자 지정
 
-2. % : % 값으로 둥근 정도를 지정 
+2. % : % 값으로 둥근 정도를 지정
 
 
 
@@ -30,7 +30,7 @@ However, you can specify each corner separately if you wish. Here are the rules:
 3개 : 좌측 상단, 우측 상단, 우측 하단
 
 3.Two values: first value applies to top-left and bottom-right corner, and the second value applies to top-right and bottom-left corner
-2개 : 좌측 상단, 우측 하단 /  우측 상단 
+2개 : 좌측 상단, 우측 하단 /  우측 상단
 4.One value: all four corners are rounded equally
 
 http://www.w3schools.com/css/tryit.asp?filename=trycss3_border-radius2
@@ -42,13 +42,6 @@ http://www.w3schools.com/css/tryit.asp?filename=trycss3_border-radius2
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

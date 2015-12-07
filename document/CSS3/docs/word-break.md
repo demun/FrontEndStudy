@@ -4,11 +4,11 @@
 
 작성일 : 2015-09-27
 
-css 레퍼런스 설명: 
+css 레퍼런스 설명:
  - word-break : 줄바꿈을 위한 단어 규칙을 지정하는 속성이다.
 
- - syntax : 
-```sh 
+ - syntax :
+```sh
 word-break: normal|break-all|keep-all|initial|inherit;
 ```
 
@@ -18,7 +18,7 @@ break-all: 영어를 한 단어 내에 줄바꿈하는 속성이다. 한국어, 
 
 keep-all : 영어도 한국어, 일본어, 중국어와 동일한 줄바꿈 규칙을 사용하는 속성이다.
 
-`sample code` : 
+`sample code` :
 
 ```html
 <!DOCTYPE html>
@@ -26,13 +26,13 @@ keep-all : 영어도 한국어, 일본어, 중국어와 동일한 줄바꿈 규�
 	<head>
 		<style>
 			p.test1 {
-			    width: 140px; 
+			    width: 140px;
 			    border: 1px solid #000000;
 			    word-break: keep-all;
 			}
 
 			p.test2 {
-			    width: 140px; 
+			    width: 140px;
 			    border: 1px solid #000000;
 			    word-break: break-all;
 			}
@@ -55,13 +55,6 @@ keep-all : 영어도 한국어, 일본어, 중국어와 동일한 줄바꿈 규�
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)

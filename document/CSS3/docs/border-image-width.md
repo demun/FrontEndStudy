@@ -4,11 +4,11 @@
 
 작성일 : 2015-09-18
 
-css 레퍼런스 설명: 
+css 레퍼런스 설명:
  - border-image-width : border image의 크기를 정의한다.
- 
- - syntax : 
-```sh 
+
+ - syntax :
+```sh
 border-image-width: number|%|auto|initial|inherit;
 ```
 
@@ -22,13 +22,13 @@ initial:기본 값으로 set되어 있는 값을 불러온다.
 
 inherit:부모 element에 설정되어 있는 값을 상속 받는다.
 
-sample code : 
+sample code :
 ```sh
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
-#borderimg1 { 
+<style>
+#borderimg1 {
     border: 10px solid transparent;
     padding: 15px;
     border-image-source: url(border.png);
@@ -37,7 +37,7 @@ sample code :
     border-image-width: 10px;        
 }
 
-#borderimg2 { 
+#borderimg2 {
     border: 10px solid transparent;
     padding: 15px;
     border-image-source: url(border.png);
@@ -46,7 +46,7 @@ sample code :
     border-image-width: 20px;        
 }
 
-#borderimg3 { 
+#borderimg3 {
     border: 10px solid transparent;
     padding: 15px;
     border-image-source: url(border.png);
@@ -71,7 +71,7 @@ sample code :
 
 ```
 
-결과 
+결과
 
 ![border-image-width](../images/border-image-width.jpg)
 
@@ -81,13 +81,6 @@ sample code :
 * [align-self](align-self.md)
 * [@keyframes](@keyframes.md)
 * [animation](animation.md)
-* [animation-name](animation-name.md)
-* [animation-duration](animation-duration.md)
-* [animation-timing-function](animation-timing-function.md)
-* [animation-delay](animation-delay.md)
-* [animation-iteration-count](animation-iteration-count.md)
-* [animation-direction](animation-direction.md)
-* [animation-play-state](animation-play-state.md)
 * [backface-visibility](backface-visibility.md)
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)
