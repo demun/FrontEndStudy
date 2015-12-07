@@ -1,14 +1,17 @@
 # 자바스크립트 로드맵
 
+작성자 : 임성은
 
+작성일 : 2015-12-07 14:22
 
+## 공통 진행사항
+
+- 매주 일요일 밤 10~11시 정기 후기 회의 진행 결정
+- 스터디 주차는 발표 문서에 대한 정리 및 발표 준비
 
 ## 1차 진행
 
-- javascript 실무 - 10월 18일 수정
-- 분량 나누기(11월 14일 발표 분량) -
-- 매주 일요일 밤 10~11시 정기 후기 회의 진행 결정
-- 4주차는 3주차 문서에 대한 정리 및 발표 준비
+- 분량 나누기(11월 14일 발표 분량)
 
 **동기 vs 비동기 통신 (1주차-10/19~25)**
 
@@ -55,14 +58,18 @@
 
 ## 2차 진행
 
+- 분량 나누기(12월 5일 발표 분량, 12월 19일 발표 분량)
 
-- 함수지향
-	- 유효범위
-	- 값으로서의 함수와 콜백
+- **함수지향 (11/23~29_ 전체에 대한 요점파악식)**
+
+	- 유효범위 __(12/7~13)__ 
+	- 값으로서의 함수와 콜백 __(12/7~13)__
 	- 클로저
 	- arguments
 	- 함수의 호출
-- 객체지향
+
+- **객체지향**
+
 	- 객체지향 프로그래밍
 	- 생성자와 new
 	- 전역객체
@@ -73,19 +80,14 @@
 	- Object
 	- 데이터 타입
 	- 참조
-- 패턴
-	- 재귀함수
-- 정규표현식
 
+- **패턴**
+
+	- 재귀함수
+
+- **정규표현식**
 
 ----
-
-
-**scope**
-
-* 정의 및 특징 - 반응형 할 시 필수로 알아야 할 개념        
-  혹시나 모르실 듯 하여 좋은 블로그 하나 보내드립니다. 이걸 중심으로 스터디 하시면 됩니다    
-  [http://www.nextree.co.kr/p7363/](http://www.nextree.co.kr/p7363/)
 
 **사용자 정의 함수**
 
@@ -126,6 +128,18 @@
 > 	- 객체
 > 	- 모듈
 > 	- UI와 API 그리고 문서보는 법
+
+
+----
+
+##바로가기
+* [1.동기vs비동기_통신.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/1.%EB%8F%99%EA%B8%B0vs%EB%B9%84%EB%8F%99%EA%B8%B0_%ED%86%B5%EC%8B%A0.md)
+* [2-1.타이머함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-1.%ED%83%80%EC%9D%B4%EB%A8%B8%ED%95%A8%EC%88%98.md)
+* [2-2.인코딩_디코딩_함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-2.%EC%9D%B8%EC%BD%94%EB%94%A9_%EB%94%94%EC%BD%94%EB%94%A9_%ED%95%A8%EC%88%98.md)
+* [2-3.코드실행_함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-3.%EC%BD%94%EB%93%9C%EC%8B%A4%ED%96%89_%ED%95%A8%EC%88%98.md)
+* [2-4.숫자확인_함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-4.%EC%88%AB%EC%9E%90%ED%99%95%EC%9D%B8_%ED%95%A8%EC%88%98.md)
+* [2-5.형변환_함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-5.%ED%98%95%EB%B3%80%ED%99%98_%ED%95%A8%EC%88%98.md)
+* [2-6.기타_함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-6.%EA%B8%B0%ED%83%80_%ED%95%A8%EC%88%98.md)
 
 
 ----
