@@ -1,0 +1,69 @@
+{
+	"type": "Collection",
+	"properties": {
+		"name": {
+			"name": "name",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "name",
+			"order": 0
+		},
+		"street": {
+			"name": "street",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "street",
+			"order": 1
+		},
+		"city": {
+			"name": "city",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "city",
+			"order": 2
+		},
+		"state": {
+			"name": "state",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "state",
+			"order": 3
+		},
+		"zip": {
+			"name": "zip",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "zip",
+			"order": 4
+		},
+		"country": {
+			"name": "country",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "country",
+			"order": 5
+		},
+		"giftwrap": {
+			"name": "giftwrap",
+			"type": "boolean",
+			"typeLabel": "boolean",
+			"required": false,
+			"id": "giftwrap",
+			"order": 6
+		},
+		"products": {
+			"name": "products",
+			"type": "array",
+			"typeLabel": "array",
+			"required": true,
+			"id": "products",
+			"order": 7
+		}
+	}
+}
