@@ -234,12 +234,6 @@ angular.module("customFilters", [])
 ```
 
 가장 처음으로 앵귤러JS를 시작할때 할 일은 모듈선언입니다.
-```javascript
-
-    <script>
-        var sportsStore = angular.module("sportsStore", ["customFilters"]);
-    </script>
-```
 
 앵귤러JS에서 모듈은 최상위 구성요소이며 해당 영역에서 앵귤러JS를 사용하겠다..하고 라고 선언하는것.
 
@@ -252,10 +246,7 @@ angular.module()함수로 선언하며 첫번째 인자값은 모듈의 이름(�
 ```html
 
 <html ng-app="sportsStore">
-
-
     <script>
-    	
         var sportsStore = angular.module("sportsStore", ["customFilters"]);
     </script>
 ```
@@ -305,7 +296,6 @@ Module2.run(function(){ … }) // 3번째 실행
 <br><br><br><br>
 이후 컨트롤러를 선언합니다. 여기서는 sportsStore.js 와 productListControllers.js 두개에서 컨트롤러를 선언했습니다.
 
-두개의 차이점은 
 ```javascript
 //sportsStore.js
 angular.module("sportsStore")
@@ -355,7 +345,7 @@ $http변수는 ajax통신을 할수있게 해주는 내장변수입니다.
 <br>
 scopeStore 컨트롤러에서 데이터를 바인딩하는 부분입니다.
 ```javascript
-$scope.data = new Object();
+	$scope.data = new Object();
 	$http.get("http://localhost:5500/products").success(function(_data){
 		console.log(_data);
 		$scope.data.products = _data;
@@ -402,7 +392,7 @@ item in data.products 는 배열의 내용을 하나씩 item이라는 변수에 
 
 {{item.name}} 이 항목은 실제 컴파일된 웹에서는 kayak, Lifejacket, SoccerBall 들이 리스트로 보이게 될겁니다.
 
-{{item.price | currency}} 이 부분은 필터를 적용하는 방법입니다. 앵귤러JS에서는 | 뒤에 필터를 적용할 수있습니다. 자세한건 뒤에가서 다루겠습니다 여기서는 그냥 저 필터가 숫자를 화폐단위로 바꾸는정도로 이해하시면 됩니다.
+{{item.price | currency}} 이 부분은 필터를 적용하는 방법입니다. 앵귤러JS에서는 '|' 뒤에 필터를 적용할 수있습니다. 자세한건 뒤에가서 다루겠습니다 여기서는 그냥 저 필터가 숫자를 화폐단위로 바꾸는정도로 이해하시면 됩니다.
 
 해당 부분을 실제 컴파일하면 
 
@@ -476,17 +466,13 @@ angular.module("customFilters", [])
 filter는 해당 리스트를 받아서 가공하여 재정의하는 기능을 맡고 있습니다.
 
 ```html
-    <!--customFilter.js 에서 만든 unique필터를 적용, orderBy필터는 기본내장필터, 필터는 선언된 순서대로 적용(orderBy 먼저 적용후 category필터 적용)-->
 <a ng-repeat="item in data.products | orderBy:'category' | unique:'category'"
    ng-click="selectCategory(item)" class=" btn btn-block btn-default btn-lg" 
    ng-class="getCategoryClass(item)">
-   <!-- selectCategory(item)함수를 호출하여 아래  categoryFilterFn를 통해 해당 클릭한 카테고리만 나오도록 목록을 재정의한다.
-   getCategoryClass(item) 함수를 호출해 해당 선택된 카테고리에 클래스를 추가
-   -->
     {{item}}
 </a>
 ```
-위으 소스는 리스트의 카테고리별로 필터링을 해주기위해 카테고리 리스트를 만드는 소스입니다. (팔터링처리부분은 좀더 뒤에 다루겠습니다)
+위의 소스는 리스트의 카테고리별로 필터링을 해주기위해 카테고리 리스트를 만드는 소스입니다. (팔터링처리부분은 좀더 뒤에 다루겠습니다)
 
 카테고리가 겹치는건 하나만 만들어서 리턴해주는 필터소스입니다.
 
@@ -506,6 +492,7 @@ filter는 해당 리스트를 받아서 가공하여 재정의하는 기능을 �
 함수를 선언할때 data에는 필터를 걸게된 리스트의 데이터이고 propertyName은 뷰단에서 받게될 인자값 입니다.
 
 ![바인드](filterBind.png)
+<br>
 주의할 점은 data변수는 해당 리스트중 각 한가지가 아닌 전체 리스트가 들어온다는 점 입니다.
 
 해당 소스를 컴파일 하면 
@@ -519,6 +506,10 @@ filter는 해당 리스트를 받아서 가공하여 재정의하는 기능을 �
 ```
 
 이번에는 ng-click="selectCaategory(item)" 과 ng-class="getCategoryClass(item)" 이부분에대해 알아보겠습니다.
+
+ng-click 은 해당 엘레먼트를 클릭할시에 호출되는 디렉티브 이며 
+
+ng-class 는 해당함수에서 리턴받은 내용을 클래스에 추가하는 디렉티브입니다
 
 해당 함수선언은 컨트롤러에 되어있습니다.
 
@@ -571,41 +562,18 @@ $scope.categoryFilterFn = function (product) {
 productListController.js에서 선언을 해준 함수를 필터로 사용하였습니다.
 이때 변수 바인드는 
 ![바인드](controllerBind.png)
+<br>
+이렇게 아까 .filter() 를 통해 만든 필터를 호출할때와는 다르게 리스트가 아닌 각 하나하나 반복할때마다 호출이 되면서 true를 리턴하면 리스트에 표시가 되고 false가 리턴되면 리스트에 표시되지 않는 방식입니다.
 
+해당 필터는 현재 필터카테고리리스트에서 선택된 카테고리와 같은 카테고리만 보이게 하는 필터입니다.
 
+여기서 특이한점은 처음 페이지를 로드할때 뿐 아니라 카테고리를 클릭할 때 마다 별도의 작업없이 자동으로 실시간으로 필터링이 이루어진다는 점 입니다.
 
+#### 데이터 바인딩을 새로할때
+  - $scope.$apply()를 부를 때
+  - DOM 이벤트 (onChange, onClick 등)가 발생한 후.
+  - $http와 $resource에서 응답이 돌아왔을 경우.
+  - $location에서 URL을 변경한 후.
+  - $timeout이벤트가 발생한 후.
+  - 변경 검사가 완료되면 변경된 부분의 DOM을 다시 시작한다.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1. 데이터 바인딩 구조 이해
-데이터 바인딩 메커니즘의 실현 방법에는 여러 가지 방법이 있지만, 여기서는 두가지정도 언급하고 만다. 첫번째의 경우는 Knockout.js의 경우로 데이터의 값이 변경될 때 이벤트 리스너에서 View에 통지하는 방식을 취하고 있고, 두번째인 AngularJS는 dirty-checking라는 방식으로 구현되어 있는데, 이것은 바인딩 되는 모든 변수에 대해 특정 시간에 이전 값과 현재 값을 비교하고 값에 변화가 있으면 DOM을 갱신하는 구조이다.
-
-
-이를 순차적으로 기술해 보면
-- HTML을 분석하여 지시문(directive)을 컴파일할 때 바인딩되는 변수를 $scope.$watch()로 등록한다.
-- $rootScope 자식들의 scope를 차례로 검색해, watch에 등록된 모든 변수의 변경 검사를 수행한다. 이 과정을 $digest 루프라고 부르고, 아래와 같은 타이밍에서 실행된다.(정기적인 폴링은하지 않습니다)
-$scope.$apply()를 부를 때.
-DOM 이벤트 (onChange, onClick 등)가 발생한 후.
-$http와 $resource에서 응답이 돌아왔을 경우.
-$location에서 URL을 변경한 후.
-$timeout이벤트가 발생한 후.
-- 변경 검사가 완료되면 변경된 부분의 DOM을 다시 시작한다.
