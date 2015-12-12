@@ -1,7 +1,7 @@
 # Sass
 
 
-* [sass-시작](http://sass-lang.com/install)
+* [sass-시작](docs/01-sass-시작.md)
 * [sass-기본사항](http://sass-lang.com/guide)
 	* Variables
 	* Nesting
