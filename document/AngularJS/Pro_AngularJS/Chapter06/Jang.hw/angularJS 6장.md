@@ -342,6 +342,14 @@ $scope변수는 컨트롤러와 필터 서비스 뷰 등의 데이터 전달을 
 
 $http변수는 ajax통신을 할수있게 해주는 내장변수입니다.
 
+
+컨트롤러도 모듈과 마찬가지로 디렉티브로 뷰와 연결해줘야합니다.
+
+```html
+<body ng-controller="sportsStoreCtrl">
+```
+마찬가지로 모듈처럼 div태그에 적용하여 범위를 제한할 수 있습니다.
+
 <br>
 scopeStore 컨트롤러에서 데이터를 바인딩하는 부분입니다.
 ```javascript
@@ -576,4 +584,3 @@ productListController.js에서 선언을 해준 함수를 필터로 사용하였
   - $location에서 URL을 변경한 후.
   - $timeout이벤트가 발생한 후.
   - 변경 검사가 완료되면 변경된 부분의 DOM을 다시 시작한다.
-
