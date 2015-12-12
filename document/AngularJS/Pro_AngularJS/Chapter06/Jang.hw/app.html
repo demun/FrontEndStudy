@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--//선언된 모듈 -->
+<html ng-app="sportsStore">
+<head>
+    <title>SportsStore</title>
+    <script src="js/angular.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+    <script>
+//     모듈 생명주기
+
+//     모듈은 생명주기가 존재하며 각각의 순서가 있다 자세한 건 모듈 고급 장에서 설명하도록 하며, 이번에는 config,run 순서만 어떻게 잡는지 설명을 하도록 하겠습니다.
+//     Config, Run 실행의 순위
+
+//     Module은 module을 주입 받아 사용 할 수 있으며 각각 config, run을 설정/사용 할 수 있습니다.
+//     실행 순서는 다음과 같습니다.
+//     1. 주입받은 module.config
+//     2. 대상 module.config
+//     3. 주입받은 module.run
+//     4. 대상 module.run
+
+//     var module1 = angular.module(‘module1’, [‘module2’]);
+//     var module2 = angular.module(‘module2’,[‘’]);
+//     Module1.config(function(){ … }) // 2번째 실행
+//     Module2.config(function(){ … }) // 1번째 실행
+//     Module1.run(function(){ … }) // 4번째 실행
+//     Module2.run(function(){ … }) // 3번째 실행
+  
+// 1. 데이터 바인딩 구조 이해
+// 데이터 바인딩 메커니즘의 실현 방법에는 여러 가지 방법이 있지만, 여기서는 두가지정도 언급하고 만다. 첫번째의 경우는 Knockout.js의 경우로 데이터의 값이 변경될 때 이벤트 리스너에서 View에 통지하는 방식을 취하고 있고, 두번째인 AngularJS는 dirty-checking라는 방식으로 구현되어 있는데, 이것은 바인딩 되는 모든 변수에 대해 특정 시간에 이전 값과 현재 값을 비교하고 값에 변화가 있으면 DOM을 갱신하는 구조이다.
+
+// 이를 순차적으로 기술해 보면
+// - HTML을 분석하여 지시문(directive)을 컴파일할 때 바인딩되는 변수를 $scope.$watch()로 등록한다.
+// - $rootScope 자식들의 scope를 차례로 검색해, watch에 등록된 모든 변수의 변경 검사를 수행한다. 이 과정을 $digest 루프라고 부르고, 아래와 같은 타이밍에서 실행된다.(정기적인 폴링은하지 않습니다)
+// $scope.$apply()를 부를 때.
+// DOM 이벤트 (onChange, onClick 등)가 발생한 후.
+// $http와 $resource에서 응답이 돌아왔을 경우.
+// $location에서 URL을 변경한 후.
+// $timeout이벤트가 발생한 후.
+// - 변경 검사가 완료되면 변경된 부분의 DOM을 다시 시작한다.
+    
+        <!--//모듈선언<html ng-app="sportsStore"> 두번째 인자값은 추가로 사용할 모듈을 넣는다.-->
+        var sportsStore = angular.module("sportsStore", ["customFilters"]);
+    </script>
+    <!--//모듈선언을 한 뒤에 스크립트 소스를 읽어와야함(sportsStore.js에서 위에 선언된 모듈을 읽어오기 때문) -->
+    <script src="controllers/sportsStore.js"></script>
+    <script src="filters/customFilters.js"></script>
+    <script src="controllers/productListControllers.js"></script>
+</head>
+<!--//sportsStore.js 에서 선언한 Controllerr 선언 -->
+<body ng-controller="sportsStoreCtrl">
+    <div class="navbar navbar-inverse">
+        <a class="navbar-brand" href="#">SPORTS STORE</a>
+    </div>
+    
+    <script>
+        sportsStore.controller("testCtrl",function($scope){
+            $scope.testClick=function(data){console.log(data)}
+        })
+    </script>
+    <!-- 목록과 전혀 상관없는 함수를 호출한다고 해도 필터메소드는 다시 호출된다. -->
+    <a ng-controller="testCtrl" ng-click="testClick('test')">test</a>
+    
+    <!-- //productListCtrl 해당 컨트롤러는 아래 선언하는 div영역에서만 동작한다 -->
+    <div class="panel panel-default row" ng-controller="productListCtrl">
+        <div class="col-xs-3">
+            <a ng-click="selectCategory()"
+               class="btn btn-block btn-default btn-lg">Home</a>
+            <!--customFilter.js 에서 만든 unique필터를 적용, orderBy필터는 기본내장필터, 필터는 선언된 순서대로 적용(orderBy 먼저 적용후 category필터 적용)-->
+            <a ng-repeat="item in data.products | orderBy:'category' | unique:'category'"
+               ng-click="selectCategory(item)" class=" btn btn-block btn-default btn-lg" 
+               ng-class="getCategoryClass(item)">
+               <!-- selectCategory(item)함수를 호출하여 아래  categoryFilterFn를 통해 해당 클릭한 카테고리만 나오도록 목록을 재정의한다.
+               getCategoryClass(item) 함수를 호출해 해당 선택된 카테고리에 클래스를 추가
+               -->
+                {{item}}
+            </a>
+        </div>
+        <div class="col-xs-8">
+            <!-- 
+            //sportsStore.js 에서 불러온 데이터모델을 반복문돌림 
+            //data.produnts는 배열이며 한번 반복될때마다 item변수에 하나씩 담아준다.-->
+            <div class="well" ng-repeat="item in data.products | filter:categoryFilterFn | range:selectedPage:pageSize">
+<!--        <div class="well" ng-repeat="item in data.products | categoryFilterFn:getSelectCategory()"> -->
+                <!--
+                //filter선언필터와 , controller선언필터   두가지 필터방식의차이점
+                controller(filter:'필터명') -  배열을 반복할때 매 반복마다 검사를 하여  true|false 를 리턴받아 true면 보이고 false면 안보이게 하는 방식 (배열안의 데이터를 가공하거나 변경은 불가능하나 훨씬 쉽고 간략하다)
+                filter(필터명:'인자값' - 해당 배열데이터를 모두 받아서 검사 혹은 가공후 다시 배열데이터를 리턴하면 그 배열정보로 재정의됨 (개발이 약간 어려워지지만 데이터자체를 모두 재정의 할 수 있는등 많은 기능을 구현가능)
+                -->
+                <h3>
+                    <strong>{{item.name}}</strong>
+                    <span class="pull-right label label-primary">
+                        {{item.price | currency}}<!--//앵글러에서 지원하는 내장필터 {{값 |필터명}} 로 사용한다. 현재 필터는 숫자를 화폐단위로 변환해서 보여준다. (100,"100" 둘다 자동 형변환이 되어서 적용이 가능) -->
+                        
+                    </span>
+                </h3>
+                <span class="lead">{{item.description}}</span>
+            </div>
+            <div class="pull-right btn-group">
+                <a ng-repeat="page in data.products | filter:categoryFilterFn | pageCount:pageSize"
+                   ng-click="selectPage($index + 1)" class="btn btn-default"
+                   ng-class="getPageClass($index + 1)">
+                    {{$index + 1}}
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
