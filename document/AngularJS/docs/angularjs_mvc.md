@@ -1,5 +1,9 @@
 #angular js mvc partten 
 
+작성자 : 김동일
+
+작성일 : 2015-11
+
 ## 개념 
 - Model / View / Controller 의 약자로 software achitecher 개발 방법 중 하나
 
@@ -27,7 +31,7 @@
 
 ### model2
 
-![model1](images/mvc.jpg)
+![model1](../images/mvc.jpg)
 
 장점 : 
  - Model 1 개발 방식의 단점들을 보완하였음.

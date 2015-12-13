@@ -499,7 +499,7 @@ filter는 해당 리스트를 받아서 가공하여 재정의하는 기능을 �
 여기서 "unique"는 필터의 이름이며 
 함수를 선언할때 data에는 필터를 걸게된 리스트의 데이터이고 propertyName은 뷰단에서 받게될 인자값 입니다.
 
-![바인드](filterBind.png)
+![바인드](../imagesfilterBind.png)
 <br>
 주의할 점은 data변수는 해당 리스트중 각 한가지가 아닌 전체 리스트가 들어온다는 점 입니다.
 
@@ -569,7 +569,7 @@ $scope.categoryFilterFn = function (product) {
 ```
 productListController.js에서 선언을 해준 함수를 필터로 사용하였습니다.
 이때 변수 바인드는 
-![바인드](controllerBind.png)
+![바인드](../images/controllerBind.png)
 <br>
 이렇게 아까 .filter() 를 통해 만든 필터를 호출할때와는 다르게 리스트가 아닌 각 하나하나 반복할때마다 호출이 되면서 true를 리턴하면 리스트에 표시가 되고 false가 리턴되면 리스트에 표시되지 않는 방식입니다.
 
