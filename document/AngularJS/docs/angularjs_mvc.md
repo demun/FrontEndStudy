@@ -12,7 +12,7 @@
 
 ### model1 
 
-![model1](images/model1.jpg)
+![model1](../images/model1.jpg)
 
 장점 : 
  - Model 1개발 방식은 현재 국내에서 가장 많이 사용되고 있는 개발 방식
