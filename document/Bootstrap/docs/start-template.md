@@ -46,10 +46,6 @@
 
 
 ### 프레임워크 사용하기
-|[![초보자 템플릿](../images/start-template0101.jpg)](http://bootstrapk.com/examples/starter-template/)
-#### 초보자 템플릿
-콘테이너와 함께 합쳐진 css와 자바스크립트 | [![초보자 템플릿](../images/start-template0101.jpg)](http://bootstrapk.com/examples/starter-template/)
-#### 초보자 템플릿
-콘테이너와 함께 합쳐진 css와 자바스크립트 | [![초보자 템플릿](../images/start-template0101.jpg)](http://bootstrapk.com/examples/starter-template/)
-#### 초보자 템플릿
-콘테이너와 함께 합쳐진 css와 자바스크립트 |
+| 템플릿명 | 미리보기 | 설명 및 링크 |
+|--------|--------|-----------|
+|초보자 템플릿|![초보자 템플릿](../images/start-template0101.jpg)| 콘테이너와 함께 합쳐진 css와 자바스크립트. [바로가기](http://bootstrapk.com/examples/starter-template/) |
