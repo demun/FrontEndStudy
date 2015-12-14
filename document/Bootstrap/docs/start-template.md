@@ -68,20 +68,20 @@
 ### 맞춤 콤포넌트
 | 템플릿명 | 미리보기 | 설명 및 링크 |
 |--------|--------|-----------|
-|커버|![커버](../images/start-template0401.jpg)| 간단한 메인페이지를 위한 원페이지 템플릿. [바로가기](http://bootstrapk.com/examples/cover/) |
-|캐러셀|![캐러셀](../images/start-template0402.jpg)| 네비게이션바와 캐러셀을 맞춤화하고 새로운 컴포넌트를 더함. [바로가기](http://bootstrapk.com/examples/carousel/) |
-|블로그|![블로그](../images/start-template0403.jpg)| 맞춤화 네비게이션, 헤더, 글자와 간단한 2열 블로그 레이아웃. [바로가기](http://bootstrapk.com/examples/blog/) |
-|대시보드|![대시보드](../images/start-template0404.jpg)| 고정된 사이드바와 네비게이션바, 관리자 대시보드를 위한 기본 구조. [바로가기](http://bootstrapk.com/examples/dashboard/) |
-|로그인 페이지|![로그인 페이지](../images/start-template0405.jpg)| 간단한 로그인을 위한 맞춤화된 폼 레이아웃과 디자인. [바로가기](http://bootstrapk.com/examples/signin/) |
-|양쪽정렬된 네비게이션|![양쪽정렬된 네비게이션](../images/start-template0406.jpg)| 양쪽정렬된 링크로 맞춤 네비게이션바. (사파리에서는 잘 작동 안함) [바로가기](http://bootstrapk.com/examples/justified-nav/) |
-|밑에 붙는 하단|![밑에 붙는 하단](../images/start-template0407.jpg)| 콘텐츠가 뷰포트보다 작아도 밑에 붙는 하단. [바로가기](http://bootstrapk.com/examples/sticky-footer/) |
-|네비게이션바와 밑에 붙는 하|![네비게이션바와 밑에 붙는 하](../images/start-template0408.jpg)| 위에 붙는 고정된 네비게이션 바와 뷰포트 밑에 붙는 하단. [바로가기](http://bootstrapk.com/examples/sticky-footer-navbar/) |
+|커버|![커버](../images/start-template0301.jpg)| 간단한 메인페이지를 위한 원페이지 템플릿. [바로가기](http://bootstrapk.com/examples/cover/) |
+|캐러셀|![캐러셀](../images/start-template0302.jpg)| 네비게이션바와 캐러셀을 맞춤화하고 새로운 컴포넌트를 더함. [바로가기](http://bootstrapk.com/examples/carousel/) |
+|블로그|![블로그](../images/start-template0303.jpg)| 맞춤화 네비게이션, 헤더, 글자와 간단한 2열 블로그 레이아웃. [바로가기](http://bootstrapk.com/examples/blog/) |
+|대시보드|![대시보드](../images/start-template0304.jpg)| 고정된 사이드바와 네비게이션바, 관리자 대시보드를 위한 기본 구조. [바로가기](http://bootstrapk.com/examples/dashboard/) |
+|로그인 페이지|![로그인 페이지](../images/start-template0305.jpg)| 간단한 로그인을 위한 맞춤화된 폼 레이아웃과 디자인. [바로가기](http://bootstrapk.com/examples/signin/) |
+|양쪽정렬된 네비게이션|![양쪽정렬된 네비게이션](../images/start-template0306.jpg)| 양쪽정렬된 링크로 맞춤 네비게이션바. (사파리에서는 잘 작동 안함) [바로가기](http://bootstrapk.com/examples/justified-nav/) |
+|밑에 붙는 하단|![밑에 붙는 하단](../images/start-template0307.jpg)| 콘텐츠가 뷰포트보다 작아도 밑에 붙는 하단. [바로가기](http://bootstrapk.com/examples/sticky-footer/) |
+|네비게이션바와 밑에 붙는 하|![네비게이션바와 밑에 붙는 하](../images/start-template0308.jpg)| 위에 붙는 고정된 네비게이션 바와 뷰포트 밑에 붙는 하단. [바로가기](http://bootstrapk.com/examples/sticky-footer-navbar/) |
 
 
 
 ### 실험
 | 템플릿명 | 미리보기 | 설명 및 링크 |
 |--------|--------|-----------|
-|비반응성 부트스트랩|![비반응성 부트스트랩](../images/start-template0501.jpg)| 부트스트랩의 반응성을 간편하게 비활성화([참고](http://bootstrapk.com/getting-started/#disable-responsive)). [바로가기](http://bootstrapk.com/examples/non-responsive/) |
-|오픈캔버스|![오픈캔버스](../images/start-template0502.jpg)| 토글이 가능한 오프캔버스 네비게이션 메뉴. [바로가기](http://bootstrapk.com/examples/offcanvas/) |
+|비반응성 부트스트랩|![비반응성 부트스트랩](../images/start-template0401.jpg)| 부트스트랩의 반응성을 간편하게 비활성화([참고](http://bootstrapk.com/getting-started/#disable-responsive)). [바로가기](http://bootstrapk.com/examples/non-responsive/) |
+|오픈캔버스|![오픈캔버스](../images/start-template0402.jpg)| 토글이 가능한 오프캔버스 네비게이션 메뉴. [바로가기](http://bootstrapk.com/examples/offcanvas/) |
 
