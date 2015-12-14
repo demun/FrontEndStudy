@@ -15,7 +15,8 @@ grunt는 작성한 코드를 컴파일 하고 테스트 및 처리하는데 유�
 ## Grunt 설치하기
 
 Grunt 설치 전, [node.js](http://nodejs.org/download/) 설치가 필요하다.(npm 포함)
-- `npm`은 [`node packaged modules`](https://www.npmjs.com/)로 node.js에서 개발의존성을 관리하는 방법```
+> `npm`은 [`node packaged modules`](https://www.npmjs.com/)로 node.js에서 개발의존성을 관리하는 방법
+
 
 다음으로 콘솔에서 명령어를 입력.
 * `npm install -g grunt-cli` : `grunt-cli`를 전역적으로 설치
