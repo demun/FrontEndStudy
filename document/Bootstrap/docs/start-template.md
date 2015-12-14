@@ -59,9 +59,9 @@
 ### 움직이는 네비게이션
 | 템플릿명 | 미리보기 | 설명 및 링크 |
 |--------|--------|-----------|
-|네비게이션 바|![네비게이션 바](../images/start-template0201.jpg)| 약간의 콘텐츠와 네비게이션 바(기본). [바로가기](http://bootstrapk.com/examples/navbar/)] |
-|정적 상단 네비게이션 바|![정적 상단 네비게이션 바](../images/start-template0202.jpg)| 약간의 콘텐츠와 상단에 붙어있는 네비게이션 바. [바로가기](http://bootstrapk.com/examples/navbar-static-top/)] |
-|고정된 네비게이션 바|![고정된 네비게이션 바](../images/start-template0203.jpg)| 약간의 콘텐츠와 상단에 고정된 네비게이션 바. [바로가기](http://bootstrapk.com/examples/navbar-fixed-top/)] |
+|네비게이션 바|![네비게이션 바](../images/start-template0201.jpg)| 약간의 콘텐츠와 네비게이션 바(기본). [[바로가기](http://bootstrapk.com/examples/navbar/)] |
+|정적 상단 네비게이션 바|![정적 상단 네비게이션 바](../images/start-template0202.jpg)| 약간의 콘텐츠와 상단에 붙어있는 네비게이션 바. [[바로가기](http://bootstrapk.com/examples/navbar-static-top/)] |
+|고정된 네비게이션 바|![고정된 네비게이션 바](../images/start-template0203.jpg)| 약간의 콘텐츠와 상단에 고정된 네비게이션 바. [[바로가기](http://bootstrapk.com/examples/navbar-fixed-top/)] |
 
 
 
@@ -82,6 +82,6 @@
 ### 실험
 | 템플릿명 | 미리보기 | 설명 및 링크 |
 |--------|--------|-----------|
-|비반응성 부트스트랩|![비반응성 부트스트랩](../images/start-template0401.jpg)| 부트스트랩의 반응성을 간편하게 비활성화([참고](http://bootstrapk.com/getting-started/#disable-responsive)). [바로가기](http://bootstrapk.com/examples/non-responsive/)] |
-|오픈캔버스|![오픈캔버스](../images/start-template0402.jpg)| 토글이 가능한 오프캔버스 네비게이션 메뉴. [바로가기](http://bootstrapk.com/examples/offcanvas/)] |
+|비반응성 부트스트랩|![비반응성 부트스트랩](../images/start-template0401.jpg)| 부트스트랩의 반응성을 간편하게 비활성화([참고](http://bootstrapk.com/getting-started/#disable-responsive)). [[바로가기](http://bootstrapk.com/examples/non-responsive/)] |
+|오픈캔버스|![오픈캔버스](../images/start-template0402.jpg)| 토글이 가능한 오프캔버스 네비게이션 메뉴. [[바로가기](http://bootstrapk.com/examples/offcanvas/)] |
 
