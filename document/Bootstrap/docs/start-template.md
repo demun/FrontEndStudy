@@ -75,7 +75,7 @@
 |로그인 페이지|![로그인 페이지](../images/start-template0305.jpg)| 간단한 로그인을 위한 맞춤화된 폼 레이아웃과 디자인. [바로가기](http://bootstrapk.com/examples/signin/) |
 |양쪽정렬된 네비게이션|![양쪽정렬된 네비게이션](../images/start-template0306.jpg)| 양쪽정렬된 링크로 맞춤 네비게이션바. (사파리에서는 잘 작동 안함) [바로가기](http://bootstrapk.com/examples/justified-nav/) |
 |밑에 붙는 하단|![밑에 붙는 하단](../images/start-template0307.jpg)| 콘텐츠가 뷰포트보다 작아도 밑에 붙는 하단. [바로가기](http://bootstrapk.com/examples/sticky-footer/) |
-|네비게이션바와 밑에 붙는 하|![네비게이션바와 밑에 붙는 하](../images/start-template0308.jpg)| 위에 붙는 고정된 네비게이션 바와 뷰포트 밑에 붙는 하단. [바로가기](http://bootstrapk.com/examples/sticky-footer-navbar/) |
+|네비게이션바와 밑에 붙는 하단|![네비게이션바와 밑에 붙는 하단](../images/start-template0308.jpg)| 위에 붙는 고정된 네비게이션 바와 뷰포트 밑에 붙는 하단. [바로가기](http://bootstrapk.com/examples/sticky-footer-navbar/) |
 
 
 
