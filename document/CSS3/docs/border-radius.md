@@ -1,39 +1,62 @@
-작성자 : 박성희
+# border-radius
 
-작성일 : 2015-10-28
+* 작성자 : 박성희,
+* 작성일 : 2015-10-28
+* 추가 : 허종문 2015-12-15
+
+
+<br>
 
 css 레퍼런스 설명:
 
 사각형 각 모서리 둥글게 만드는 속성, 4개 모서리의 축약 속성, border-radius로 선언하면 4개의 모서리가 동일하게 적용됨.
-예제 : http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_border-radius
+
+예제 :
+
+![border-radius 예제](../images/border-radius-01.jpg)
 
 
-1.  length : px, em 등 단위로 직접 숫자 지정
-
-2. % : % 값으로 둥근 정도를 지정
-
+* length : `px`, `em` 등 단위로 직접 숫자 지정
+* `%` : % 값으로 둥근 정도를 지정
 
 
+* `border-radius` 의 값으로 하나만 주면 `4군데` 모두 적용된다. 예: `border-radius: 10px`
+* 순서는 `top-left` , `top-right` , `bottom-right` , `bottom-left` 적용되고 두번째값부터는 생략가능하다.
 
-(작성중 - 추후 업데이트 예정)
+
+* `border-radius: 25px 0` 이면 `25px 0 25px 0`
+
+![border-radius 예제](../images/border-radius-02.jpg)
+
+* `border-radius: 0 25px` 이면 `0 25px 0 25px`
+
+![border-radius 예제](../images/border-radius-03.jpg)
+
+* `border-radius: 25px 0 25px` 이면 `25px 0 25px 0`
+
+![border-radius 예제](../images/border-radius-04.jpg)
+
+* `border-radius: 25px 0 25px 25px` 이면 `25px 0 25px 25px`
+
+![border-radius 예제](../images/border-radius-05.jpg)
 
 
-If you specify only one value for the border-radius property, this radius will be applied to all 4 corners.
-하나의 value를 주려면, 이 프로터티가 4개 모두에 적용된다.
-However, you can specify each corner separately if you wish. Here are the rules:
-그러나, 4군데의 코너에 각기 다른 value값을 줄 수 있다.
+* 각 속성을 따로 줄수도 있다
 
-1.Four values: first value applies to top-left, second value applies to top-right, third value applies to bottom-right, and fourth value applies to bottom-left corner
-4개 : 좌측 상단, 우측 상단, 좌측 하단, 좌측 하단
+```css
+.test {
+    /* top left */
+    border-top-left-radius: 50px;
 
-2.Three values: first value applies to top-left, second value applies to top-right and bottom-left, and third value applies to bottom-right
-3개 : 좌측 상단, 우측 상단, 우측 하단
+    /* top right */
+    border-top-right-radius: 50px;
 
-3.Two values: first value applies to top-left and bottom-right corner, and the second value applies to top-right and bottom-left corner
-2개 : 좌측 상단, 우측 하단 /  우측 상단
-4.One value: all four corners are rounded equally
+    /* bottom left */
+    border-bottom-left-radius: 50px;
 
-http://www.w3schools.com/css/tryit.asp?filename=trycss3_border-radius2
+    /* bottom right */
+    border-bottom-right-radius: 50px;
+}
 
 
 ### 목록
@@ -46,8 +69,6 @@ http://www.w3schools.com/css/tryit.asp?filename=trycss3_border-radius2
 * [background-clip](background-clip.md)
 * [background-origin](background-origin.md)
 * [background-size](background-size.md)
-* [border-bottom-left-radius](border-bottom-left-radius.md)
-* [border-bottom-right-radius](border-bottom-right-radius.md)
 * [border-image](border-image.md)
 * [border-image-outset](border-image-outset.md)
 * [border-image-repeat](border-image-repeat.md)
@@ -55,8 +76,6 @@ http://www.w3schools.com/css/tryit.asp?filename=trycss3_border-radius2
 * [border-image-source](border-image-source.md)
 * [border-image-width](border-image-width.md)
 * [border-radius](border-radius.md)
-* [border-top-left-radius](border-top-left-radius.md)
-* [border-top-right-radius](border-top-right-radius.md)
 * [box-shadow](box-shadow.md)
 * [box-sizing](box-sizing.md)
 * [column-count](column-count.md)
