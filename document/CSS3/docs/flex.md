@@ -27,7 +27,7 @@ none : 0으로 처리한다.
 inherit:부모 element에 설정되어 있는 값을 상속 받는다.
 
 sample code :
-```sh
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -63,7 +63,6 @@ sample code :
 
 </body>
 </html>
-
 ```
 
 결과

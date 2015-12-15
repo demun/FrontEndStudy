@@ -20,7 +20,9 @@ The property takes three different values: 3가지 value!
 
 
 http://www.w3schools.com/css/tryit.asp?filename=trycss3_background-clip
+
 <br/>
+
 http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_js_background-clip
 
 ### 목록

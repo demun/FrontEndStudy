@@ -59,7 +59,6 @@ You can use the text-align-last property to align the last line of a text, if th
 
 </body>
 </html>
-
 ```
 
 결과

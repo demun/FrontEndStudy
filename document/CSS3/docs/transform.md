@@ -27,7 +27,6 @@ matrix(n,n,n,n,n,n)	: translate, scale, rotate, skew 각 속성을 한꺼번에 
 
 sample code :
 ```html
-
 <!DOCTYPE html>
 <html>
 <head>

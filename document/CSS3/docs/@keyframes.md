@@ -23,7 +23,7 @@ keyframes-selector : 애니메이션을 %별로 정의한다.
 css-styles : 하나 이상의 css 스타일을 정의한다.
 
 sample code :
-```sh
+```html
 <!DOCTYPE html>
 <html>
 <head>
