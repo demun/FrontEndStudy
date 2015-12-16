@@ -146,8 +146,6 @@
   - [2-6.기타_함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-6.%EA%B8%B0%ED%83%80_%ED%95%A8%EC%88%98.md)  
 * [3. 함수지향.](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-0.%ED%95%A8%EC%88%98%EC%A7%80%ED%96%A5.md)
   - [3-1.유효범위.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-1.%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84.md)  
-  - [3-2.값으로서의 함수와 콜백.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3.%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84.md)  
-
 
 ----
 
