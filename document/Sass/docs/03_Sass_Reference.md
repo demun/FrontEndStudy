@@ -230,14 +230,20 @@ Sass 주석은 두가지입니다.
 변수를 주석에도 사용할 수 있습니다.
 
 ```SCSS
-// before
+
+// _style.scss
+
 $version: '1.2.3'
 /* #{$version} */
 
-// after
-/* 1.2.3 */
 ```
+```css
 
+/*style.css*/
+
+/* 1.2.3 */
+
+```
 
 
 
