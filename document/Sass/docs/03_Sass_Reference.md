@@ -2,6 +2,7 @@
 	
 
 #CSS 확장
+
 ### Nested Rules (중첩)
 
 Sass를 이용하면 HTML의 div 안에 div를 넣는다던지 하는 중첩 된 계층구조처럼 CSS선택자를 중첩할 수 있습니다.   
@@ -15,7 +16,7 @@ Sass를 이용하면 HTML의 div 안에 div를 넣는다던지 하는 중첩 된
   p, div {
     font-size: 2em;
     a { font-weight: bold; }
-  }
+
 
   pre { font-size: 3em; }
 }
@@ -179,7 +180,6 @@ Css의 속성중 font-family, font-size, font-weight 등과 같이 `font`로 시
     font-weight: bold;
 }
 ```
-<br>
 [중첩선언 가이드라인 참조](http://sass-guidelin.es/ko/#nesting)
 
 
@@ -257,7 +257,6 @@ $version: '1.2.3'
 
 #SassScript
 
-<br>
 ###Interactive Shell 
 
   SassScript를 테스트해 보고 싶다면 -i option을 사용해 Prompt로 출력해볼수 있습니다.
@@ -305,10 +304,10 @@ body {
 ```
 단, 적절한 이유 없이는 변수를 선언하면 안됩니다. CSS에는 변수 이름에 대한 유효범위가 없기 때문에, 충돌의 위험성이 큽니다. 
 
+* [변수선언 가이드라인 참조](http://sass-guidelin.es/ko/#section-63)
+
 
 <br>
-[변수선언 가이드라인 참조](http://sass-guidelin.es/ko/#section-63)
-
 ###Global flag
 `!global` flag 를 사용하면 중괄호 안에 선언한 지역변수도 전역변수로 설정할 수 있습니다. 
 
@@ -338,8 +337,7 @@ body {
 
 ```
 
-<br>
-[global flag 가이드라인 참조](http://sass-guidelin.es/ko/#global-)
+* [global flag 가이드라인 참조](http://sass-guidelin.es/ko/#global-)
 
 <br>
 ### Data Types
@@ -427,7 +425,6 @@ aside[role="complimentary"] {
 <br>
 ##@-Rules and Directives
 
-<br>
 ### Import (불러오기)
 
 CSS에서 @import로 다른 파일을 연결시킬 수 있습니다. 
@@ -523,6 +520,8 @@ body {
 ```
 Sass 파일명 앞에 `_`를 붙이면 CSS로 변환되지 않습니다. 이점을 이용해 가이드라인에서는 `main.scss`를 제외한 모든 Sass파일명 앞에는 `_`를 사용할 것을 권장하고 있습니다.   
 
+* [패턴 가이드라인 참조 ](http://sass-guidelin.es/ko/#section-54)
+
 
 <br>
 ###Media
@@ -587,7 +586,8 @@ Sass 파일명 앞에 `_`를 붙이면 CSS로 변환되지 않습니다. 이점�
 상속에 상속, 또 그 상속안에 상속을 해버린다거나 하는 경우엔 코드가 되려 더 복잡해질 뿐더러, 본래 지정하고자 했던 속성을 찾아가기 더 어려워질 수도 있습니다. 
 
 또 `@extend`는 `@media` block 안에서는 제대로 작동하지 않습니다. 
-[extend 가이드라인 참조 ](http://sass-guidelin.es/ko/#extend)
+
+* [extend 가이드라인 참조 ](http://sass-guidelin.es/ko/#extend)
 
 
 <br>
@@ -729,7 +729,7 @@ mixin을 사용하려면 먼저 @mixin 지시어를 선언하고 이름을 지�
 ```
 모든것을 mixin으로 선언할수 있다고 해서 과하게 선언하는 것은 좋지않습니다.  선언할때는 20줄 이내로 간단히 정의하길 권장합니다. 예시의 vendor prefixes의 경우에도 _Autoprefixer_를 사용하면 항상 최신 정보를 반영해주고, Sass의 코드를 줄여 줄수 있으니, 수동으로 vendor prefixes를 정의하는것은 권장하지 않습니다. 
 
-[mixin 가이드라인 참조 ](http://sass-guidelin.es/ko/#mixins
+* [mixin 가이드라인 참조 ](http://sass-guidelin.es/ko/#mixins)
 
 
 
