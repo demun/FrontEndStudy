@@ -180,7 +180,7 @@ Css의 속성중 font-family, font-size, font-weight 등과 같이 `font`로 시
     font-weight: bold;
 }
 ```
-[중첩선언 가이드라인 참조](http://sass-guidelin.es/ko/#nesting)
+* [중첩선언 가이드라인 참조](http://sass-guidelin.es/ko/#nesting)
 
 
 
