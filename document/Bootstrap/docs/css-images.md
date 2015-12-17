@@ -13,8 +13,11 @@
 ```html
 <img src="..." class="img-responsive" alt="Responsive image">
 ```
+
 #### SVG 이미지와 IE 8~10
-```인터넷 익스플로러 8~10에서 .img-responsive 는 불균형적으로 적용됨.
+
+```
+인터넷 익스플로러 8~10에서 .img-responsive 는 불균형적으로 적용됨.
 이것을 고치기 위해 width:100% \9;을 더하면 됨.
 부트스트랩은 다른 이미지 포멧에 문제를 일으킬 여지가 있어 위 속성을 기본으로 포함시키지는 않음.
 ```
