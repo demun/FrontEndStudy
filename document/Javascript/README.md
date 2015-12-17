@@ -61,10 +61,11 @@
 
 - 분량 나누기(12월 5일 발표 분량, 12월 19일 발표 분량)
 
-- **[함수지향](https://github.com/demun/FrontEndStudy/tree/master/document/Javascript/docs/Team/04_%ED%95%A8%EC%88%98%EC%A7%80%ED%96%A5) (11/23~29_ 전체에 대한 요점파악식)**
+- **[함수지향1](https://github.com/demun/FrontEndStudy/tree/master/document/Javascript/docs/Team/04_%ED%95%A8%EC%88%98%EC%A7%80%ED%96%A51(%EC%A0%84%EC%B2%B4%EC%9A%94%EC%95%BD%26%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84%26%EC%BD%9C%EB%B0%B1%ED%95%A8%EC%88%98)) (11/23~29_ 전체에 대한 요점파악식)**
 
-	- 유효범위 __(12/7~13)__ 
+	- [유효범위](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-1.%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84.md) __(12/7~13)__ 
 	- 값으로서의 함수와 콜백 __(12/7~13)__
+- **[함수지향2](https://github.com/demun/FrontEndStudy/tree/master/document/Javascript/docs/Team/05_%ED%95%A8%EC%88%98%EC%A7%80%ED%96%A52(%ED%81%B4%EB%A1%9C%EC%A0%80%26arguments%26%ED%95%A8%EC%88%98%ED%98%B8%EC%B6%9C))**
 	- 클로저
 	- arguments
 	- 함수의 호출
@@ -134,14 +135,17 @@
 ----
 
 ##바로가기
-* [1.동기vs비동기_통신.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/1.%EB%8F%99%EA%B8%B0vs%EB%B9%84%EB%8F%99%EA%B8%B0_%ED%86%B5%EC%8B%A0.md)
-* [2-1.타이머함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-1.%ED%83%80%EC%9D%B4%EB%A8%B8%ED%95%A8%EC%88%98.md)
-* [2-2.인코딩_디코딩_함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-2.%EC%9D%B8%EC%BD%94%EB%94%A9_%EB%94%94%EC%BD%94%EB%94%A9_%ED%95%A8%EC%88%98.md)
-* [2-3.코드실행_함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-3.%EC%BD%94%EB%93%9C%EC%8B%A4%ED%96%89_%ED%95%A8%EC%88%98.md)
-* [2-4.숫자확인_함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-4.%EC%88%AB%EC%9E%90%ED%99%95%EC%9D%B8_%ED%95%A8%EC%88%98.md)
-* [2-5.형변환_함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-5.%ED%98%95%EB%B3%80%ED%99%98_%ED%95%A8%EC%88%98.md)
-* [2-6.기타_함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-6.%EA%B8%B0%ED%83%80_%ED%95%A8%EC%88%98.md)
 
+* [1.동기vs비동기_통신.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/1.%EB%8F%99%EA%B8%B0vs%EB%B9%84%EB%8F%99%EA%B8%B0_%ED%86%B5%EC%8B%A0.md)
+* 2. 실무에서 자주쓰이는 함수.
+  - [2-1.타이머함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-1.%ED%83%80%EC%9D%B4%EB%A8%B8%ED%95%A8%EC%88%98.md)
+  - [2-2.인코딩_디코딩_함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-2.%EC%9D%B8%EC%BD%94%EB%94%A9_%EB%94%94%EC%BD%94%EB%94%A9_%ED%95%A8%EC%88%98.md)
+  - [2-3.코드실행_함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-3.%EC%BD%94%EB%93%9C%EC%8B%A4%ED%96%89_%ED%95%A8%EC%88%98.md)
+  - [2-4.숫자확인_함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-4.%EC%88%AB%EC%9E%90%ED%99%95%EC%9D%B8_%ED%95%A8%EC%88%98.md)
+  - [2-5.형변환_함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-5.%ED%98%95%EB%B3%80%ED%99%98_%ED%95%A8%EC%88%98.md)
+  - [2-6.기타_함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-6.%EA%B8%B0%ED%83%80_%ED%95%A8%EC%88%98.md)  
+* [3. 함수지향.](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-0.%ED%95%A8%EC%88%98%EC%A7%80%ED%96%A5.md)
+  - [3-1.유효범위.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-1.%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84.md)  
 
 ----
 

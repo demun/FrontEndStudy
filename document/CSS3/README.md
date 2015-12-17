@@ -52,7 +52,7 @@ image :
 
  - 경로 : images 폴더에 넣을 것
 
- - 문서(*.md 파일)에 이미지 출력시 다음의 방법으로 작성함
+ - 문서(`*.`md 파일)에 이미지 출력시 다음의 방법으로 작성함
 
 ```sh
 ![sample code](../images/image명.jpg)
@@ -61,6 +61,8 @@ image :
 cf) 문서 작성에 대한 상세 내용은 README.md파일의 소스를 참고하시기 바랍니다.
 
 cf) Github 사이트에 등록하는 방법도 [09-GitHub-for-Windows](../Github/docs/09-GitHub-for-Windows.md)를 참고하시기 바랍니다
+
+
 
 ### 목록
 * [align-content](docs/align-content.md)
@@ -72,8 +74,6 @@ cf) Github 사이트에 등록하는 방법도 [09-GitHub-for-Windows](../Github
 * [background-clip](docs/background-clip.md)
 * [background-origin](docs/background-origin.md)
 * [background-size](docs/background-size.md)
-* [border-bottom-left-radius](docs/border-bottom-left-radius.md)
-* [border-bottom-right-radius](docs/border-bottom-right-radius.md)
 * [border-image](docs/border-image.md)
 * [border-image-outset](docs/border-image-outset.md)
 * [border-image-repeat](docs/border-image-repeat.md)
@@ -81,8 +81,6 @@ cf) Github 사이트에 등록하는 방법도 [09-GitHub-for-Windows](../Github
 * [border-image-source](docs/border-image-source.md)
 * [border-image-width](docs/border-image-width.md)
 * [border-radius](docs/border-radius.md)
-* [border-top-left-radius](docs/border-top-left-radius.md)
-* [border-top-right-radius](docs/border-top-right-radius.md)
 * [box-shadow](docs/box-shadow.md)
 * [box-sizing](docs/box-sizing.md)
 * [column-count](docs/column-count.md)
