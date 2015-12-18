@@ -1,0 +1,76 @@
+<!-- 168페이지까지 분석함
+    컨텐츠가 3개만 나와야하는데, 4개가 다 나온다... -->
+
+<!DOCTYPE html>
+<html ng-app='sportsStore'>
+<head>
+  <script src='LiveReload.js'></script>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+  <title>앵귤러 스포츠 상점</title>
+  <script src='angular.js'></script>
+  <link rel='stylesheet' href='bootstrap-3.3.5.css' />
+  <link rel='stylesheet' href='bootstrap-theme-3.3.5.css' />
+  <script>
+    angular.module('sportsStore', ['customFilters']);
+    //★커스텀필터를 추가모듈로 설정! "의존성 선언, 의존성 리졸브"  ==> 의존성 주입!★
+  </script>
+  <script src='./controllers/sportsStore.js'></script>  <!--최상위 컨트롤러 선언-->
+  <script src='./filters/customFilters.js'></script>  <!--커스텀필터 선언-->
+    <!-- 커스텀필터 script엘리먼트를 "의존성선언 코드" 다음에 정의한 이유는,
+        AngularJS가 의존성을 리졸브하려면, 모듈을 사용하기 전에 모든 모듈을 로드해야하기 때문이다.
+        모듈을 '확장' 할때는 script엘리먼트를 선언하는 순서가 중요하지만,
+        새 모듈을 '정의' 하거나, 의존성을 '선언' 할 때는 순서가 중요하지 않다. -->
+  <script src='./controllers/productListControllers.js'></script>
+</head>
+
+<body ng-controller='sportsStoreCtrl'>
+  <div class='navbar navbar-inverse'>
+    <a class='navbar-brand' href='#'>SPORTS STORE</a>
+  </div>
+  <div class='panel panel-default row' ng-controller='productListCtrl'>
+  <!--컨트롤러 안에 또 컨트롤러를 적용하면, '컨트롤러 스코프 상속' 을 활용하게 된다.-->
+    <div class='col-sm-3'>  <!--그리드 좌측면 네비게이션-->
+      카테고리는 여기에
+      <a ng-click='selectCategory()' class='btn btn-block btn-default btn-lg'>
+        Home
+      </a>
+      <a ng-repeat='item in data.products
+                  | orderBy: "category"
+                  | unique: "category"'
+         ng-click='selectCategory(item)' class='btn btn-block btn-default btn-lg'
+         ng-class='getCategoryClass(item)'>
+        {{item}}
+      </a>
+        <!-- orderBy 라는 내장필터(배열을 정렬)가 존재하며, 콜론(:)으로 정렬기준이 되는 객체속성을 인자로 받는다.
+            category 속성을 전달하여 정렬하려 하고있다.
+            customFilters.js 에서 정의한 unique 라는 고유값 필터를 이용해,
+            orderBy 필터가 처리된 후, category속성값을 기반으로 객체가 정렬된다.
+            고유한 카테고리 값만 담긴 문자열 배열이 반환된다.
+            ★★★ 따옴표를 사용함에 주의해야한다. 따옴표를 사용하지않으면 $scope.category를 찾게된다. -->
+    </div>
+    <div class='col-sm-8'>  <!--그리드 우측면 메인컨텐츠-->
+      <div class='well' ng-repeat='item in data.products
+                                 | filter: categoryFilterFn
+                                 | range: selectedPage: pageSize'>  <!--range필터에 인자를 2개를 보낸다-->
+      <!--JSTL의 forEach, JS의 for in()반복문과 같은 방식
+          filter 라는 이름의 내장필터도 있다. (컬렉션을 처리하고, 자신이 갖고 있는 객체의 서브셋을 선택한다.)
+          ==> 여기에서는 productListController 안에 정의되어있는 $scope.categoryFilterFn 함수를 사용한다.-->
+        <h3>
+          <strong>{{item.name}}</strong>
+          <span class='pull-right label label-primary'>{{item.price | currency}}</span>  <!--통화 필터 적용-->
+        </h3>
+        <span class='lead'>{{item.description}}</span>
+      </div>
+      <div class='pull-right btn-group'>
+        <a ng-repeat='page in data.products
+                    | filter: categoryFilterFn
+                    | pageCount: pageSize'
+           ng-click='selectPage($index + 1)' class='btn btn-default'
+           ng-class='getPageClass($index + 1)'>
+          {{$index + 1}}
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
