@@ -12,4 +12,10 @@
 
 * [RestFul의 이해](docs/RestFul의 이해.md)
 
-### 4. 그 외 AngularJS의 이해와 관련 내용들 정리
+
+
+## Pro AngularJS 정리
+
+### Chapter 6
+
+* [Chanter 6 요약](docs/AngularJS 6장.md)
