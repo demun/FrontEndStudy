@@ -18,4 +18,4 @@
 
 ### Chapter 6
 
-* [Chanter 6 요약](docs/AngularJS_Chapter6.md)
+* [Chanter 6 요약](docs/angularJS_Chapter6.md)
