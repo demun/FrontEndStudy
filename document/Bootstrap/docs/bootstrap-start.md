@@ -2,11 +2,29 @@
 부트스트랩을 시작하면서 세팅해야 하는 파일들과 파일 구조, 기본세팅 등을 정리 해 놓았습니다.  
 이미 부트스트랩 홈페이지나 부트스트랩 한글사이트에 나와 있는 내용이지만 다시한번 필요하다고 생각되는 부분만 정리하였습니다.
 
-(소스다운로드와 좀더 자세한 내용은 아래 사이트를 참고하세요)
+
+## 다운로드
+
+* 소스다운로드와 좀더 자세한 내용은 아래 사이트를 참고하세요(버전과 방법은 언제든 바뀔 수 있으므로 홈페이지를 참조 함)
 
 [부트스트랩/영문](http://getbootstrap.com/getting-started/)  
 [부트스트랩/한글](http://bootstrapk.com/getting-started/)
 
+#### 부트스트랩 CDN 
+
+  * [MaxCDN ](https://www.maxcdn.com/) 에서 부트스트랩의 CSS 와 자바스크립트를 CDN 으로 지원합니다. 이를 사용하려면, 아래의 부트스트랩 CDN 링크들을 사용하세요.
+  * 버전은 언제든지 바뀔 수 있습니다.
+
+```
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+```
 
 ## 파일 구조
 
@@ -53,21 +71,6 @@ bootstrap/
 
 > 부트스트랩은 HTML5와 CSS, 자바스크립트를 사용하기 위하여  jQuery 가 
 > 필요합니다.  
-
-#### 부트스트랩 CDN 
-
-  * [MaxCDN ](https://www.maxcdn.com/) 에서 부트스트랩의 CSS 와 자바스크립트를 CDN 으로 지원합니다. 이를 사용하려면, 아래의 부트스트랩 CDN 링크들을 사용하세요.
-
-```
-<!-- 합쳐지고 최소화된 최신 CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-<!-- 부가적인 테마 -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-
-<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-```
 
 ##기본 템플릿 
 
