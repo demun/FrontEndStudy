@@ -1,8 +1,8 @@
 # Sass
 
 
-* [sass-시작](docs/01-sass-시작.md)
-* [sass-기본사항](http://sass-lang.com/guide)
+* [sass-시작](docs/01_Sass_Setting.md)
+* [sass-기본사항](docs/02_Sass_Basic.md)
 	* Variables
 	* Nesting
 	* Partials
@@ -10,7 +10,7 @@
 	* Mixins
 	* Extend
 	* Operators
-* [설명서](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
+* [sass-레퍼런스](docs/03_Sass_Reference.md)
 	* Features
 	* Syntax
 	* Using Sass
