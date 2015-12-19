@@ -23,7 +23,7 @@
     - [css-grid](docs/css-grid.md)  
     - [css-container](docs/css-container.md)  
     - [css-code](#)  
-    - [css-table](#)  
+    - [css-table](docs/css-table.md)  
     - [css-form](#)  
     - [css-button](#)  
     - [css-images](docs/css-images.md)  
