@@ -90,22 +90,18 @@ nav a {
 ```SCSS
 
 // _style.scss
-nav {
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  li { display: inline-block; }
-
-  a {
-    display: block;
-    padding: 6px 12px;
-    text-decoration: none;
+a {
+  font-weight: bold;
+  text-decoration: none; 
+  &:hover {
+    text-decoration: underline; 
   }
 }
-
+body{
+  &.firefox a {
+      font-weight: normal; 
+  }
+}
 ```
 ```css
 
@@ -346,15 +342,6 @@ body {
 * [global flag 가이드라인 참조](http://sass-guidelin.es/ko/#global-)
 
 <br>
-### Data Types
-
-* Strings
-* Lists
-* Maps
-* Colors
-
-
-<br>
 ### Operators (연산)
 
 * Number Operations
@@ -425,6 +412,15 @@ aside[role="complimentary"] {
 
 
 
+
+
+<br>
+### Data Types
+
+* Strings
+* Lists
+* Maps
+* Colors
 
 
 
