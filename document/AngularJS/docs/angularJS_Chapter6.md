@@ -32,7 +32,7 @@ app.html
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/bootstrap-theme.css" rel="stylesheet" />
     <script>
-    	<!--//모듈선언<html ng-app="sportsStore"> 두번째 인자값은 추가로 사용할 모듈을 넣는다.-->
+        <!--//모듈선언<html ng-app="sportsStore"> 두번째 인자값은 추가로 사용할 모듈을 넣는다.-->
         var sportsStore = angular.module("sportsStore", ["customFilters"]);
     </script>
     <!--//모듈선언을 한 뒤에 스크립트 소스를 읽어와야함(sportsStore.js에서 위에 선언된 모듈을 읽어오기 때문) -->
@@ -48,7 +48,7 @@ app.html
     
     <script>
         sportsStore.controller("testCtrl",function($scope){
-        	$scope.testClick=function(data){console.log(data)}
+            $scope.testClick=function(data){console.log(data)}
         })
     </script>
     <!-- 목록과 전혀 상관없는 함수를 호출한다고 해도 필터메소드는 다시 호출된다. -->
@@ -70,16 +70,16 @@ app.html
             </a>
         </div>
         <div class="col-xs-8">
-        	<!-- 
-        	//sportsStore.js 에서 불러온 데이터모델을 반복문돌림 
-        	//data.produnts는 배열이며 한번 반복될때마다 item변수에 하나씩 담아준다.-->
- 			<div class="well" ng-repeat="item in data.products | filter:categoryFilterFn | range:selectedPage:pageSize">
-<!-- 		<div class="well" ng-repeat="item in data.products | categoryFilterFn:getSelectCategory()"> -->
-				<!--
-				//filter선언필터와 , controller선언필터   두가지 필터방식의차이점
-				controller(filter:'필터명') -  배열을 반복할때 매 반복마다 검사를 하여  true|false 를 리턴받아 true면 보이고 false면 안보이게 하는 방식 (배열안의 데이터를 가공하거나 변경은 불가능하나 훨씬 쉽고 간략하다)
-				filter(필터명:'인자값' - 해당 배열데이터를 모두 받아서 검사 혹은 가공후 다시 배열데이터를 리턴하면 그 배열정보로 재정의됨 (개발이 약간 어려워지지만 데이터자체를 모두 재정의 할 수 있는등 많은 기능을 구현가능)
-				-->
+            <!-- 
+            //sportsStore.js 에서 불러온 데이터모델을 반복문돌림 
+            //data.produnts는 배열이며 한번 반복될때마다 item변수에 하나씩 담아준다.-->
+            <div class="well" ng-repeat="item in data.products | filter:categoryFilterFn | range:selectedPage:pageSize">
+<!--        <div class="well" ng-repeat="item in data.products | categoryFilterFn:getSelectCategory()"> -->
+                <!--
+                //filter선언필터와 , controller선언필터   두가지 필터방식의차이점
+                controller(filter:'필터명') -  배열을 반복할때 매 반복마다 검사를 하여  true|false 를 리턴받아 true면 보이고 false면 안보이게 하는 방식 (배열안의 데이터를 가공하거나 변경은 불가능하나 훨씬 쉽고 간략하다)
+                filter(필터명:'인자값' - 해당 배열데이터를 모두 받아서 검사 혹은 가공후 다시 배열데이터를 리턴하면 그 배열정보로 재정의됨 (개발이 약간 어려워지지만 데이터자체를 모두 재정의 할 수 있는등 많은 기능을 구현가능)
+                -->
                 <h3>
                     <strong>{{item.name}}</strong>
                     <span class="pull-right label label-primary">
@@ -108,22 +108,22 @@ sportsStore.js
 //즉 app.html 파일에서 선언된 sportsStore 모듈을 가져오는 역할
 angular.module("sportsStore")
 .controller("sportsStoreCtrl", function ($scope,$http) {
-	$scope.data = new Object();
-	$http.get("http://localhost:5500/products").success(function(_data){
-		console.log(_data);
-		$scope.data.products = _data;
-	})
-	/*[
-	{"name":"kayak"				,"description":"1인용 보트"				,"category":"수상스포츠"	,"price":"275"		,"id":"c3092a908f990808"},
-	{"name":"Lifejacket"		,"description":"멋진 보호 장비"				,"category":"수상스포츠"	,"price":"48.95"	,"id":"ef2dbf0a35380928"},
-	{"name":"Soccer Ball"		,"description":"FIFA 인증 규격 및 무게"		,"category":"축구"		,"price":"19.5"		,"id":"1c2963289dae68ce"},
-	{"name":"Coner Flags"		,"description":"코너플래그 "				,"category":"축구"		,"price":"34.95"	,"id":"be305477aa9628da"},
-	{"name":"Stadium"			,"description":"35,000좌석 경기장"			,"category":"축구"		,"price":"79500.00"	,"id":"14967be4043eca6c"},
-	{"name":"Tinking Cap"		,"description":"두뇌효율을 75% 개선"			,"category":"체스"		,"price":"16"		,"id":"65440347ee5c283d"},
-	{"name":"Undteady Chair"	,"description":"상대방에게 불리한 체스 의자"	,"category":"체스"		,"price":"29.95"	,"id":"755b5a4b87036bed"},
-	{"name":"Human Chess Board"	,"description":"가족이 하기에 즐거운 게임"		,"category":"체스"		,"price":"75"		,"id":"f1b509b3774d4841"},
-	{"name":"Bling-Bling King"	,"description":"금과 다이아몬드로 장식한 킹"	,"category":"체슨"		,"price":"1200"		,"id":"9649b7e680743898"}
-	]	*/
+    $scope.data = new Object();
+    $http.get("http://localhost:5500/products").success(function(_data){
+        console.log(_data);
+        $scope.data.products = _data;
+    })
+    /*[
+    {"name":"kayak"             ,"description":"1인용 보트"             ,"category":"수상스포츠" ,"price":"275"      ,"id":"c3092a908f990808"},
+    {"name":"Lifejacket"        ,"description":"멋진 보호 장비"               ,"category":"수상스포츠" ,"price":"48.95"    ,"id":"ef2dbf0a35380928"},
+    {"name":"Soccer Ball"       ,"description":"FIFA 인증 규격 및 무게"        ,"category":"축구"        ,"price":"19.5"     ,"id":"1c2963289dae68ce"},
+    {"name":"Coner Flags"       ,"description":"코너플래그 "             ,"category":"축구"        ,"price":"34.95"    ,"id":"be305477aa9628da"},
+    {"name":"Stadium"           ,"description":"35,000좌석 경기장"           ,"category":"축구"        ,"price":"79500.00" ,"id":"14967be4043eca6c"},
+    {"name":"Tinking Cap"       ,"description":"두뇌효율을 75% 개선"           ,"category":"체스"        ,"price":"16"       ,"id":"65440347ee5c283d"},
+    {"name":"Undteady Chair"    ,"description":"상대방에게 불리한 체스 의자"    ,"category":"체스"        ,"price":"29.95"    ,"id":"755b5a4b87036bed"},
+    {"name":"Human Chess Board" ,"description":"가족이 하기에 즐거운 게임"     ,"category":"체스"        ,"price":"75"       ,"id":"f1b509b3774d4841"},
+    {"name":"Bling-Bling King"  ,"description":"금과 다이아몬드로 장식한 킹"    ,"category":"체슨"        ,"price":"1200"     ,"id":"9649b7e680743898"}
+    ]   */
 });
 
 ```
@@ -134,7 +134,7 @@ angular.module("sportsStore")
     .constant("productListActiveClass", "btn-primary")//상수를 선언. 
     .constant("productListPageCount", 3)
     .controller("productListCtrl", function ($scope, $filter, productListActiveClass,productListPageCount){//productListActiveClass 변수에 위에서 .constant로 선언한 상수 "btn-primary"를 담는다. 
-    	console.log($scope)
+        console.log($scope)
         var selectedCategory = null;
 
         $scope.selectedPage = 1;
@@ -152,7 +152,7 @@ angular.module("sportsStore")
                 product.category == selectedCategory;
         }
         $scope.getCategoryClass = function (category) {
-        	return selectedCategory == category ? productListActiveClass : "";
+            return selectedCategory == category ? productListActiveClass : "";
         }
         
         $scope.selectPage = function (newPage) {
@@ -188,21 +188,21 @@ angular.module("customFilters", [])
         }
     }
 }).filter("categoryFilterFn",function(){//categoryFilterFn 방식을 .filter메소드로 구현
-	return function(data, selectedCategory){
-		if (angular.isArray(data) && angular.isString(selectedCategory)) {
+    return function(data, selectedCategory){
+        if (angular.isArray(data) && angular.isString(selectedCategory)) {
             var results = [];
             for (var i = 0; i < data.length; i++) {
 
                 if(selectedCategory == null ||
-                			data[i].category == selectedCategory){
-                    results.push(data[i]);	
+                            data[i].category == selectedCategory){
+                    results.push(data[i]);  
                 }
             }
             return results;
         } else {
             return data;
         }
-	}
+    }
 }).filter("range", function ($filter) {
     return function (data, page, size) {
         if (angular.isArray(data) && angular.isNumber(page) && angular.isNumber(size)) {
@@ -210,7 +210,7 @@ angular.module("customFilters", [])
             if (data.length < start_index) {
                 return [];
             } else {
-                return $filter("limitTo")(data.splice(start_index), size);	//$filter("limitTo") 는 내장 필터함수
+                return $filter("limitTo")(data.splice(start_index), size);  //$filter("limitTo") 는 내장 필터함수
             }
         } else {
             return data;
@@ -353,22 +353,22 @@ $http변수는 ajax통신을 할수있게 해주는 내장변수입니다.
 <br>
 scopeStore 컨트롤러에서 데이터를 바인딩하는 부분입니다.
 ```javascript
-	$scope.data = new Object();
-	$http.get("http://localhost:5500/products").success(function(_data){
-		console.log(_data);
-		$scope.data.products = _data;
-	})
-	/*[
-	{"name":"kayak"				,"description":"1인용 보트"				,"category":"수상스포츠"	,"price":"275"		,"id":"c3092a908f990808"},
-	{"name":"Lifejacket"		,"description":"멋진 보호 장비"				,"category":"수상스포츠"	,"price":"48.95"	,"id":"ef2dbf0a35380928"},
-	{"name":"Soccer Ball"		,"description":"FIFA 인증 규격 및 무게"		,"category":"축구"		,"price":"19.5"		,"id":"1c2963289dae68ce"},
-	{"name":"Coner Flags"		,"description":"코너플래그 "				,"category":"축구"		,"price":"34.95"	,"id":"be305477aa9628da"},
-	{"name":"Stadium"			,"description":"35,000좌석 경기장"			,"category":"축구"		,"price":"79500.00"	,"id":"14967be4043eca6c"},
-	{"name":"Tinking Cap"		,"description":"두뇌효율을 75% 개선"			,"category":"체스"		,"price":"16"		,"id":"65440347ee5c283d"},
-	{"name":"Undteady Chair"	,"description":"상대방에게 불리한 체스 의자"	,"category":"체스"		,"price":"29.95"	,"id":"755b5a4b87036bed"},
-	{"name":"Human Chess Board"	,"description":"가족이 하기에 즐거운 게임"		,"category":"체스"		,"price":"75"		,"id":"f1b509b3774d4841"},
-	{"name":"Bling-Bling King"	,"description":"금과 다이아몬드로 장식한 킹"	,"category":"체슨"		,"price":"1200"		,"id":"9649b7e680743898"}
-	]	*/
+    $scope.data = new Object();
+    $http.get("http://localhost:5500/products").success(function(_data){
+        console.log(_data);
+        $scope.data.products = _data;
+    })
+    /*[
+    {"name":"kayak"             ,"description":"1인용 보트"             ,"category":"수상스포츠" ,"price":"275"      ,"id":"c3092a908f990808"},
+    {"name":"Lifejacket"        ,"description":"멋진 보호 장비"               ,"category":"수상스포츠" ,"price":"48.95"    ,"id":"ef2dbf0a35380928"},
+    {"name":"Soccer Ball"       ,"description":"FIFA 인증 규격 및 무게"        ,"category":"축구"        ,"price":"19.5"     ,"id":"1c2963289dae68ce"},
+    {"name":"Coner Flags"       ,"description":"코너플래그 "             ,"category":"축구"        ,"price":"34.95"    ,"id":"be305477aa9628da"},
+    {"name":"Stadium"           ,"description":"35,000좌석 경기장"           ,"category":"축구"        ,"price":"79500.00" ,"id":"14967be4043eca6c"},
+    {"name":"Tinking Cap"       ,"description":"두뇌효율을 75% 개선"           ,"category":"체스"        ,"price":"16"       ,"id":"65440347ee5c283d"},
+    {"name":"Undteady Chair"    ,"description":"상대방에게 불리한 체스 의자"    ,"category":"체스"        ,"price":"29.95"    ,"id":"755b5a4b87036bed"},
+    {"name":"Human Chess Board" ,"description":"가족이 하기에 즐거운 게임"     ,"category":"체스"        ,"price":"75"       ,"id":"f1b509b3774d4841"},
+    {"name":"Bling-Bling King"  ,"description":"금과 다이아몬드로 장식한 킹"    ,"category":"체슨"        ,"price":"1200"     ,"id":"9649b7e680743898"}
+    ]   */
 ```
 ajax로 "http://localhost:5500/products" url을 호출하고 받아온 값을 
 $scope.data.products 변수에 담고있습니다.
@@ -379,11 +379,10 @@ $scope.data.products 변수에 담고있습니다.
 해당리스트를 app.html에서 표시해보겠습니다.
 ```html
 
- 			<div class="well" ng-repeat="item in data.products | filter:categoryFilterFn | range:selectedPage:pageSize">
+            <div class="well" ng-repeat="item in data.products | filter:categoryFilterFn | range:selectedPage:pageSize">
                 <h3>
                     <strong>{{item.name}}</strong>
-                    <span class="pull-right label label-primary">
-                        {{item.price | currency}}
+                    <span class="pull-right label label-primary">                        {{item.price | currency}}
                         
                     </span>
                 </h3>
@@ -535,7 +534,7 @@ angular.module("sportsStore")
         }
 
         $scope.getCategoryClass = function (category) {
-        	return selectedCategory == category ? productListActiveClass : "";
+            return selectedCategory == category ? productListActiveClass : "";
         }
 ```
 뷰단에서 컨트롤러의 $scope변수에 선언한 함수에 접근을 할 수 있습니다.
@@ -584,3 +583,109 @@ productListController.js에서 선언을 해준 함수를 필터로 사용하였
   - $location에서 URL을 변경한 후.
   - $timeout이벤트가 발생한 후.
   - 변경 검사가 완료되면 변경된 부분의 DOM을 다시 시작한다.
+
+
+<br>
+
+이번에는 페이징 처리를 해보겠습니다.
+
+``` html
+<div class="pull-right btn-group">
+    <a ng-repeat="page in data.products | filter:categoryFilterFn | pageCount:pageSize"
+       ng-click="selectPage($index + 1)" class="btn btn-default"
+       ng-class="getPageClass($index + 1)">
+        {{$index + 1}}
+    </a>
+</div>
+```
+해상 소스는 게시물의 건와 페이지사이즈를 계산해 페이지링크를 걸 숫자를 추출해내는 소스 입니다.
+
+1 2 3 4 5 <-- 이런식으로 
+
+필터를 통해 해당 숫자를 추출합니다. 페이징숫자를 추출하는 소스설명은 생략하겠습니다.
+```javascript
+
+.filter("pageCount", function () {
+    return function (data, size) {
+        if (angular.isArray(data)) {
+            var result = [];
+            for (var i = 0; i < Math.ceil(data.length / size) ; i++) {
+                result.push(i);
+            }
+            return result;
+        } else {
+            return data;
+        }
+    }
+});
+```
+여기서 넘겨주는 pageSize 변수는 productListController.js 의 constant로 선언되어있습니다.
+```script
+    .constant("productListPageCount", 3)
+
+
+        $scope.pageSize = productListPageCount;
+```
+특정 페이지숫자를 클릭했을때 ng-click과 ng-class를 통해서 해당 클릭이벤트와 클래스를 추가해줍니다.
+
+각 이벤트선언은 productListController.js 에 되어있습니다.
+
+```javascript
+
+        $scope.selectPage = function (newPage) {
+            $scope.selectedPage = newPage;
+        }
+
+
+        $scope.getPageClass = function (page) {
+            return $scope.selectedPage == page ? productListActiveClass : "";
+        }
+```
+
+페이지 숫자를 클릭했을때 $.scope변수의 selectedPage에 현재 클릭한 숫자를 담고 있습니다.
+
+이번에는 해당 클릭된 페이지숫자를 이용하여 해당 페이지의 게시건을 가져와보도록 하겠습니다.
+
+```html
+
+<div class="well" ng-repeat="item in data.products | filter:categoryFilterFn | range:selectedPage:pageSize">
+
+    <h3>
+        <strong>{{item.name}}</strong>
+        <span class="pull-right label label-primary">
+            {{item.price | currency}}
+            
+        </span>
+    </h3>
+    <span class="lead">{{item.description}}</span>
+</div>
+```
+```javascript
+.filter("range", function ($filter) {
+    return function (data, page, size) {
+        if (angular.isArray(data) && angular.isNumber(page) && angular.isNumber(size)) {
+            var start_index = (page - 1) * size;
+            if (data.length < start_index) {
+                return [];
+            } else {
+                return $filter("limitTo")(data.splice(start_index), size);  
+            }
+        } else {
+            return data;
+        }
+    }
+})
+```
+
+range:selectedPage:pageSize <-- 이부분에서 range라는 필터를 통해 필터링을 하게됩니다.
+
+
+
+:뒤에 값이 range필터의 인자값으로 들어가기 때문에 
+page, size 변수에 $scope에 내장되어있는 selectedPage와 pageSize가 전달되게 됩니다.
+
+선택된 페이지와 페이지사이즈로 해당 페이지의 게시물을 불러오는 스크립트 소스입니다.
+
+여기서 $filter("limitTo")라는걸 볼 수 있는데 이는 앵귤러JS의 내강 필터함수입니다. 이부분은 좀더 나중에 다루도록 하겠습니다. 지금은 일단 몇가지 필터링을 할 수 있는 내장함수를 지원한다 정도로 생각하시면 될거같습니다.
+
+
