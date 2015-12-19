@@ -498,7 +498,7 @@ filter는 해당 리스트를 받아서 가공하여 재정의하는 기능을 �
 여기서 "unique"는 필터의 이름이며 
 함수를 선언할때 data에는 필터를 걸게된 리스트의 데이터이고 propertyName은 뷰단에서 받게될 인자값 입니다.
 
-![바인드](../imagesfilterBind.png)
+![바인드](../images/filterBind.png)
 <br>
 주의할 점은 data변수는 해당 리스트중 각 한가지가 아닌 전체 리스트가 들어온다는 점 입니다.
 
