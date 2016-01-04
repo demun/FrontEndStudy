@@ -10,7 +10,7 @@
 `<table>`에 약간의 패딩과 수평 구분 선을 주기 위해서 가장 기본 스타일인 `.table`을 사용할 수 있습니다.
 
 [예제](http://codepen.io/luensys/pen/NxNLXO)
-```
+```html
 <table class="table">
   <thead>
     <tr>
