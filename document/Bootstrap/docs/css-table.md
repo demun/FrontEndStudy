@@ -51,7 +51,7 @@
 ```
 
 [예제](http://codepen.io/luensys/pen/wMGEyx)
-```
+```html
 <table class="table table-striped">
   <thead>
     <tr>
@@ -89,7 +89,7 @@
 테이블의 테두리와 셀에 줄을 넣기 위해서 `.table-bordered`를 추가하세요.
 
 [예제](http://codepen.io/luensys/pen/obxPdZ)
-```
+```html
 <table class="table table-bordered">
   <thead>
     <tr>
@@ -127,7 +127,7 @@
 `<tbody>` 안의 테이블 행들의 Hover 상태를 활성화하려면 `.table-hover`를 추가해주세요.
 
 [예제](http://codepen.io/luensys/pen/bEpxMm)
-```
+```html
 <table class="table table-hover">
   <thead>
     <tr>
@@ -165,7 +165,7 @@
 셀 패딩을 반으로 줄여서 좀 더 콤팩트 하게 테이블을 만들기 위해서는 `.table-condensed`를 추가하세요.
 
 [예제](http://codepen.io/luensys/pen/vLGzre)
-```
+```html
 <table class="table table-condensed">
   <thead>
     <tr>
@@ -211,7 +211,7 @@
 |`.danger`|위험하거나 부정적일 수 있는 액션을 의미합니다.|
 
 [예제](http://codepen.io/luensys/pen/KVzxBL)
-```
+```html
 <table class="table">
   <thead>
     <tr>
@@ -267,7 +267,7 @@
 ```
 
 [예제](http://codepen.io/luensys/pen/yeOxGB)
-```
+```html
 <div class="table-responsive">
   <table class="table">
     <thead>
