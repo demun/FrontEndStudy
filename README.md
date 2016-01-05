@@ -1,6 +1,6 @@
-# FrontEndStudy
+# 프론트엔드스터디(FrontEndStudy)
 
-프론트엔드스터디는 그룹형 스터디로써 프론트엔드 전반에 사용되는 기술을 공부하고 문서작성해서 서로 공유하는 스터디 입니다.
+프론트엔드스터디는 그룹형 스터디로써 프론트엔드 전반에 사용되는 기술을 공부하는 스터디 입니다.
 모든 문서는 스터디멤버가 작성하고, 익히고, 사용하는걸 목표로 만들어집니다.
 
 <br>
@@ -36,9 +36,13 @@
 * [Sass](document/Sass/README.md) - 진행중
 
 
-<br>
+### 배우고자하는 기술들
 
 
+* [React](http://reactkr.github.io/react/docs/getting-started-ko-KR.html)
+* ECMAScript 2015
+* Backbonejs
+* TypeScript
 * [PostCSS](document/PostCSS/README.md) - 진행대기
 * [CoffeeScript](document/CoffeeScript/README.md) - 진행대기
 * [Atom](document/Atom/README.md) - 진행대기
@@ -49,5 +53,3 @@
 * [Yeoman](document/Yeoman/README.md) - 진행대기
 
 <br>
-
-
