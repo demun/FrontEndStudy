@@ -1,283 +1,171 @@
 #함수지향 
 
 * **함수지향**
-    - 유효범위(Scope)
-    - 값으로서의 함수와 콜백
+    - 클로저
+    - arguments
+    - 함수의 호출
 
-자바스크립트와 다른 언어의 가장 큰 차이점은 이 함수가 값이 될 수 있다는 것이며, 그로인해 함수의 로직을 재활용 할 수 있다는 점입니다. 
-현재 자바스크립트의 사용처가 웹, 서버 등등을 가리지 않고 커진 이유가 이런 재활용성에 있습니다.    
+### 클로저 (closure)
+
+클로저란 내부함수가 외부함수의 context에 접근할 수 있는 것을 가리킵니다.   
+
+####내부함수
+자바스크립트는 함수 안에 또 다른 함수를 선언할 수 있습니다. 
+
+```javascript
+<script>
+function outter(){
+    function inner(){
+        var title = '저는 inner의 지역변수 입니다.'; 
+        alert(title);
+    }
+    inner();
+}
+outter();
+</script>
+```
+[ex) 클로저1 실행](http://codepen.io/JaYoungKim/pen/GoWRpx?editors=001)    
+
+위 예문에서 `function outter` 는 외부함수이고, 이 외부함수 안에 `function inner`라는 내부함수가 들어있습니다.
+위 예문을 다시 표현하면 아래와 같습니다. 
+
+```javascript
+<script>
+function outter(){
+    var inner=function(){
+        var title = '저는 inner의 지역변수 입니다.'; 
+        alert(title);
+    }
+    inner();
+}
+outter();
+</script>
+```
+[ex) 클로저2 실행](http://codepen.io/JaYoungKim/pen/bEqGVQ?editors=001)    
+
+`outter` 라는 함수 안에 inner라는 변수를 설정하고 이 변수에 funtion을 담는것입니다. 
+또, 내부함수는 외부함수의 지역변수에 접근할 수 있습니다.
+
+```javascript
+<script>
+function outter(){
+    var title = '저는 outter의 지역변수 입니다.';  
+    function inner(){        
+        alert(title);
+    }
+    inner();
+}
+outter();
+</script>
+```
+[ex) 클로저3 실행](http://codepen.io/JaYoungKim/pen/yeMLYm?editors=001)   
+
+위 함수의 결과값은 **저는 outter의 지역변수 입니다.**입니다. 
+inner 함수가 title라는 변수를 가지고 있지 않으면 inner 함수는 그 외부에서 title 변수를 찾게됩니다. 
+
+
+####클로저
+내부함수는 외부함수의 지역변수에 접근할 수 있다고 했는데, 이것은 외부함수의 실행이 끝나고 외부함수가 소멸된 후에도 유효합니다. 
+
+```javascript
+<script>
+function outter(){
+    var title = '저는 outter의 지역변수 입니다.';  
+    return function(){        
+        alert(title);
+    }
+}
+inner = outter();
+inner();
+</script>
+```
+
+[ex) 클로저4 실행](http://codepen.io/JaYoungKim/pen/vLxYLW?editors=001)   
+
+`inner = outter();`에서 함수 inner는 outter함수를 호출하고 하고 있고, outter함수는 이름없는 `function()`을 호출 하고 있습니다.
+`inner = outter();`의 결과는 이름이 없는 함수의 값인 **저는 outter의 지역변수 입니다.**입니다.  `inner = outter();`의 실행 이후 함수 outter();는 소멸합니다. 그렇다면 이후 'inner();'는 아무값도 가지지 않는것이 자연스럽지만, 결과는 마찬가지로 **저는 outter의 지역변수 입니다.**라는 alert을 띄웁니다. 이것으로 지역변수 title은 소멸되지 않았다는 것을 알 수 있습니다. 즉 클로저란 내부함수가 외부함수의 지역변수에 접근 할 수 있고, 외부함수는 외부함수의 지역변수를 사용하는 내부함수가 소멸될 때까지 소멸되지 않는 특성을 의미하는 것입니다.
+
+```javascript
+<script>
+function a(title){
+    return {
+        a1 : function (){
+            return title;
+        },
+        a2 : function(_title){
+            title = _title
+        }
+    }
+}
+num = a('123');
+str = a('문자');
+ 
+alert(num.a1());
+alert(str.a1());
+ 
+num.a2('345');
+ 
+alert(num.a1());
+alert(str.a1());
+</script>
+```
+
+[ex) 클로저5 실행](http://codepen.io/JaYoungKim/pen/wMJvXb?editors=001)   
+
+함수 a는 내부함수로 a1과, a2를 가지고 있습니다. 내부함수 a1은 함수 a의 변수 title을 반환하고, a2의 변수 _title=title 이므로 a2도 마찬가지로 함수 a의 변수 title을 반환합니다. 클로저는 객체의 인자에서도 사용할 수 있습니다. 즉 내부 함수 a1과 a2는 동일한 외부함수 a를 반환한다는 뜻입니다. 
+
+그래서 처음 'alert(num.a1()); alert(str.a1());' 결과값이 각각 num = a('123'); str = a('문자'); 을 반환하여  `123 / 문자` 
+를 출력하는 것 입니다. 
+
+그런데, 두번째로 출력하는 'alert(num.a1()); alert(str.a1());'는 중간에 `num.a2('345');` 으로 인해 `345 / 문자`를 출력하게됩니다.
+
+똑같은 외부함수 a를 공유하고 있는 num과 str의 a1의 결과값이 다르게 나타나는것으로서, 각 내부함수들은 새로운 지역변수를 포함하는 클로저를 생성함에 따라 각각 독립된 객체로 분류할수 있음을 알 수 있습니다. 
+JavaScript는 기본적으로 Private한 속성을 지원하지 않지만, 클로저의 이러한 특성을 이용해서 Private한 속성을 사용할 수 있습니다.
+
+> 참고 Private 속성은 객체의 외부에서는 접근 할 수 없는 외부에 감춰진 속성이나 메소드를 의미합니다. 이를 통해서 객체의 내부에서만 사용해야 하는 값이 노출됨으로서 생길 수 있는 오류를 줄일 수 있습니다. 자바와 같은 언어에서는 이러한 특성을 언어 문법 차원에서 지원하고 있습니다.
+
+#### 클로저에서 자주 범하는 오류 
+```javascript
+<script>
+var arr = []
+for(var i = 0; i < 5; i++){
+    arr[i] = function(){
+        return i;
+    }
+}
+for(var index in arr) {
+    alert(arr[index]());
+}
+</script>
+```
+
+[ex) 클로저오류 예제1 실행](http://codepen.io/JaYoungKim/pen/YwZPpg?editors=001)   
+
+0~4까지의 값을 출력하기 위해서 위의 코드는 아래와 같이 변경되어야합니다. 
+
+```javascript
+<script>
+var arr = []
+for(var i = 0; i < 5; i++){
+    arr[i] = function(id) {
+        return function(){
+            return id;
+        }
+    }(i);
+}
+for(var index in arr) {
+    alert(arr[index]());
+}
+</script>
+```
+
+[ex) 클로저오류 예제2 실행](http://codepen.io/JaYoungKim/pen/EPWaZE?editors=001)  
+
+
+
+
+
+
 
 <br>
-### 함수 
-```javascript
-<script>
-	function numbering(){
-	    i = 0;
-	    while(i < 10){
-	        document.write(i);
-	        i += 1;
-	    }   
-	}
-	numbering();
-</script>
-```
-
-함수는 function 뒤에 함수의 이름 `numbering`이 오고, 소괄호가 따라옵니다. 소괄호엔 인자라는 값이 차례로 들어오는데 이 값은 함수를 호출할 때 함수의 로직으로 전달될 변수입니다. 인자는 생략 할 수 있습니다. 함수를 호출 했을 때 실행하게 될 로직 부분이 중괄호 안쪽에 들어갑니다.
-위의 `numbering` 함수는 0부터 9까지를 화면에 출력하라는 내용의 로직이며, 제일 하단의 `numbering();` 이라는 구문에 의해서 numbering이라는 이름의 함수가 호출됩니다.    
-
-[ex) 함수 실행](http://codepen.io/JaYoungKim/pen/RrrQrE?editors=001)    
-    
-
-<br>
-### 유효범위(Scope)
-
-####지역변수 전역변수 
-유효범위는 변수의 수명(=값을 가지는 영역)을 의미합니다. 
-
-```javascript
-<script>
-	var var_scope = 'global';
-
-	function funtion_scope(){
-		    alert(var_scope);
-	}
-	funtion_scope();
-</script>
-```
-[ex) 유효범위 예제1 실행](http://codepen.io/JaYoungKim/pen/jWWZVq?editors=001)    
-    
-
-위의 결과값은 **global** 입니다.    
-`var var_scope = 'global';`은 어디서든 접근 할 수 있는 **전역변수** 입니다.    
-그래서`funtion_scope`안에서 `var_scope`의 값을 정의하지 않더라도 `var_scope`가 **global**이라는 값을 가질 수 있는것 입니다.    
-
-```javascript
-<script>
-	var var_scope = 'global';
-	function funtion_scope(){
-	    var var_scope = 'local';
-	    alert('함수안 '+var_scope);
-	}
-	funtion_scope();
-	alert('함수밖 '+var_scope);
-</script>
-```
-[ex) 유효범위 예제2 실행](http://codepen.io/JaYoungKim/pen/Ywwepd?editors=001)    
-    
-
-위의 결과값은 **함수안 local**과 **함수밖 global** 입니다.    
-각각의 값을 보면 알 수 있듯이, 함수 내에서 정의된 `var_scope = 'local';` 은 같은 함수 영역 안에서만 적용이 가능하고,    
-`alert('함수밖 '+var_scope);`은 함수 밖에서 정의 된 `var var_scope = 'global';`의 값을 가져오는 것입니다.    
-이렇게 한 함수 내에 정의되어 그 함수 안에서만 사용할 수 있는 `var_scope = 'local';`과 같은 변수를 *지역변수*라고 합니다. 
-
-아래는 같은 예제를 살짝 변형한 내용입니다. 
-
-```javascript
-<script>
-	var var_scope = 'global';
-	function funtion_scope(){
-	    var_scope = 'local';
-	    alert('함수안 '+var_scope);
-	}
-	funtion_scope();
-	alert('함수밖 '+var_scope);
-</script>
-```
-[ex) 유효범위 예제3 실행](http://codepen.io/JaYoungKim/pen/pggaRN?editors=001)    
-    
-
-위의 결과값은 위의 결과값은 **함수안 local**과 **함수밖 local** 입니다.   
-함수 바깥에서도 `local`을 출력하는 이유는 함수 내에서 var_scope를 변수로 선언하지 않았기 떄문입니다.
-var을 사용하지 않은 변수는 무조건 **전역변수**가 됩니다.
-전역변수를 사용하게되면 길게 짠 스크립트내에서 본인이 예상치 않았던 결과값이 출력될 수 있고, 함수의 동작도 달라질 수 있습니다.    
-이것은 버그의 원인이 되며, 여러사람과의 협업에 어려움을 일으킬 수 있습니다. 또, 함수를 다른 애플리케이션에 사용할 때도 문제가 발생 할 수 있습니다.
-그래서 전역변수의 사용은 안하길 권장하며, 항상 변수를 선언할 때는 `var`을 붙이기를 권장합니다.
-
-전역변수를 사용해야 하는 경우에는 하나의 객체를 전역변수로 만들고 객체의 속성으로 변수를 관리하는 방법을 사용합니다.
-
-```javascript
-<script>
-	MYAPP = {} //전역변수
-	MYAPP.calculator = { 
-	    'left' : null,
-	    'right' : null 
-	}
-	MYAPP.coordinate = { 
-	    'left' : null,
-	    'right' : null 
-	}
-		 
-	MYAPP.calculator.left = 10; 
-	MYAPP.calculator.right = 20; 
-	function sum(){
-	    return MYAPP.calculator.left + MYAPP.calculator.right;
-	}
-	document.write(sum());
-</script>
-```
-[ex) 유효범위 예제4 실행](http://codepen.io/JaYoungKim/pen/OMMQpL?editors=001)    
-    
-
-전역변수를 사용 하고 싶지 않을 때는 아래처럼 **익명함수(=이름이 없는 함수)**로 만듬으로서 로직을 모듈화 할 수 있습니다.
-
-```javascript
-<script>
-(function(){
-	var MYAPP = {}
-	MYAPP.calculator = {
-	    'left' : null,
-	    'right' : null
-	}
-	MYAPP.coordinate = {
-	        'left' : null,
-	        'right' : null
-	    }
-	    MYAPP.calculator.left = 10;
-	    MYAPP.calculator.right = 20;
-	    function sum(){
-	        return MYAPP.calculator.left + MYAPP.calculator.right;
-	    }
-	    document.write(sum());
-	}())
-</script>
-```
-`MYAPP`이라는 본래는 전역변수였을 변수가 `function()` 이라는 익명함수 안으로 들어감으로써 `MYAPP`는 지역변수가 되었습니다. 
-
-<br>
-####유효범위의 대상
-
-자바스크립트는 **`funtion`으로 정의된 함수 내에서 사용된 변수만을 '지역변수'로 사용**합니다.
-
-```javascript
-<script>
-
-	for(var i = 0; i < 1; i++){
-    var name = 'coding everybody';
-	}
-	alert(name);
-
-</script>
-```
-[ex) 유효범위 예제5 실행](http://codepen.io/JaYoungKim/pen/pggade?editors=001)    
-    
-
-위의 예시는 `funtion`이 아닌 `for`문 안에 선언된 변수 이기 때문에 { } 바깥에 선언된 `alert(name);`이 에러가 나지않고 제대로 **coding everybody**라는 값을 호출합니다.     
-
-#####정적 유효범위
-
-자바스크립트는 함수가 선언된 시점에서의 유효범위를 갖습니다. 이 방식은 **closer**에서도 다루게 됩니다.
-
-```javascript
-<script>
-	var i = 5;
-	 
-	function a(){
-	    var i = 10;
-	    b();
-	}
-	 
-	function b(){
-	    document.write(i);
-	}
-	 
-	a();
-
-</script>
-```
-[ex) 유효범위 예제6 실행](http://codepen.io/JaYoungKim/pen/VeeQrg?editors=001)    
-    
-
-위의 선언에서 함수 `a()`안의 함수 `b()`를 호출할 때 함수 `b()`가 가지는 값은 함수 `a()`에서 정의 된 `var i = 10;`이 아니라, 
-전역변수인 `var i = 5;`의 값인 *5*를 호출하게됩니다.     
-`var i = 10;`은 함수 `a()`안에서만 사용 할 수 있는 지역변수이기 때문에,함수`a()` 바깥에 정의되어 있는 함수 `b()`에서는 그 값을 찾아올 수 없습니다.
-이렇게 정의된 영역 안에서만 사용되는 유효범위의 방식을 **정적 유효범위(static scoping), 혹은 렉시컬(lexical scoping)**이라고 합니다. 
-
-<br>
-<br>
-### 값으로서의 함수
-
-JavaScript에서는 함수도 객체이며 함수도 하나의 값을 가집니다. 
-
-```javascript
-<script>
-		function a(){} 
-</script>
-```
-`function a(){}` 은 `var a=funtion(){}` 와 같은 의미입니다. 즉 함수 `a`는 변수 `a`와 같은 의미라는 뜻입니다.
-
-```javascript
-<script>
-	a = {
-	    b:function(){
-		}
-	};
-</script>
-```
-위의 구문에서 `b`는 *Key*이며 b에 정의된 `function()`은 **value** 즉 값 입니다.
-위의 구문을 풀어보자면 `a`라는 변수 안의 객체에는 `b`라는 속성이 있는데 `b`라는 속성의 값은 함수 `function()`이고, 이 함수 `function()`을 **메소드(methode)**라고 부릅니다.
-
-함수는 값이기 때문에 다른 함수의 인자로도 전달될수 있습니다.
-아래구문은 함수 b와 c가 함수 a의 값으로 전달된 예문입니다.
-
-```javascript
-<script>
-	function a(func, a1){
-    	return func(a1)
-	}
-	function b(b1){
-	    return b1+1
-	}
-	alert(a(b, 1));
-</script>
-```
-[ex) 값으로서의 함수 예제1 실행](http://codepen.io/JaYoungKim/pen/qbbxPM?editors=001)    
-    
-
-위의 구문에서 함수 'a'는 func라는 인자(=변수)값과 a1이라는 인자를 가지고, func()를 호출합니다. func(a1)은 func()를 호출할때 func의 첫번째 인자값으로 a1을 넣으라는 뜻입니다.    
-`alert(a(b, 1));`를 보면 함수 'a'가 가지는 인자 func에는 값으로서의 함수 `b`를 전달하고 인자 `a1`에는 값 `1`을 전달합니다.     
-함수 a안에서 func는 첫번째 인자 값으로 a1을 넣도록 호출되니, func에 전달된 함수 b의 인자 b1은 a1을 전달받게 되는겁니다. 그런데 a1은 'alert(a(b, 1));' 에서 1을 전달 받도록 되어있으니, 
-인자 b1은 1이 되게 되게 됩니다. 함수 b는 'b1+1' 을 리턴받으니, 즉 `1+1`은 2. alert(a(b, 1)); 의 결과값은 **2**가 되는 것입니다.    
-
-함수는 함수의 리턴 값으로도 사용할 수 있고 배열값으로도 사용할 수 있습니다.
-
-```javascript
-<script>
-// 리턴값 예제
-	function a(mode){
-	    var funcs = {
-	        'plus' : function(left, right){return left + right}
-	    }
-	    return funcs[mode];
-	}
-	alert(a('plus')(2,1));
-
-// 배열값 예제
-	var process = [
-	    function(input){ return input + 10;},
-	    function(input){ return input * input;},
-	    function(input){ return input / 2;}
-	];
-	var input = 1;
-	for(var i = 0; i < process.length; i++){
-	    input = process[i](input);
-	}
-	alert(input);
-</script>
-```
-    
-[ex) 값으로서의 함수 리턴값 예제 실행](http://codepen.io/JaYoungKim/pen/VeeQyg?editors=001)    
-[ex) 값으로서의 함수 배열값 예제 실행](http://codepen.io/JaYoungKim/pen/wMMyyK?editors=001)    
-        
-
-* 콜백함수는 [1.동기 비동기 통신](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/1.%EB%8F%99%EA%B8%B0vs%EB%B9%84%EB%8F%99%EA%B8%B0_%ED%86%B5%EC%8B%A0.md) 참조.     
-* [AJAX](https://opentutorials.org/course/1375/6843)
- Ajax는 Asynchronous JavaScript and XML의 약자입니다. 한국어로는 비동기적 자바스크립트와 XML 정도로 직역할 수 있는데 자바스크립트를 이용해서 비동기적으로 서버와 브라우저가 데이터를 주고 받는 방식을 의미합니다. 
-
-<br>
-
-----
-
-* [참고. 생활코딩-자바스크립트 유효범위](https://opentutorials.org/course/743/6495)    
-* [참고. 생활코딩-자바스크립트 값으로서의 함수와 콜백](https://opentutorials.org/course/743/6508)    
-
-----
+### arguments
