@@ -134,7 +134,7 @@ for(var i = 0; i < 5; i++){
     }
 }
 for(var index in arr) {
-    alert(arr[index]());
+    document.write(arr[index]());
 }
 </script>
 ```
@@ -154,7 +154,7 @@ for(var i = 0; i < 5; i++){
     }(i);
 }
 for(var index in arr) {
-    alert(arr[index]());
+    document.write(arr[index]());
 }
 </script>
 ```
@@ -184,7 +184,7 @@ document.write('result : ' + sum(1,2,3,4));
 </script>
 ```
 
-[ex) arguments1 실행](http://codepen.io/JaYoungKim/pen/EPWaZE?editors=001)  
+[ex) arguments1 실행](http://codepen.io/JaYoungKim/pen/jWBYPW?editors=001)  
 
 위의 `함수 sum`은 'sum()' 으로 인자에 대한 정의가 없지만, `document.write('result : ' + sum(1,2,3,4));` 에선 인자값을 전달하여 값을 출력하도록 되어있습니다.     
 실제 출력 결과는 **10** 입니다.    
@@ -201,21 +201,26 @@ arguments는 함수안에서 사용할 수 있도록 그 이름이나 특성이 
 ```javascript
 <script>
 function zero(){ // 함수에 정의된 인자.
-    console.log(
-        'zero.length', zero.length,
-        'arguments', arguments.length
+    document.write(
+        'zero.length : ', zero.length,
+        ' ',
+        'arguments : ', arguments.length
     );
 }
 function one(arg1){ // 함수에 정의된 인자.
-    console.log(
-        'one.length', one.length,
-        'arguments', arguments.length
+    document.write(
+        '<br/>',
+        'one.length : ', one.length,
+        ' ',
+        'arguments : ', arguments.length
     );
 }
 function two(arg1, arg2){ // 함수에 정의된 인자.
-    console.log(
-        'two.length', two.length,
-        'arguments', arguments.length
+    document.write(
+        '<br/>',
+        'two.length : ', two.length,
+        ' ',
+        'arguments : ', arguments.length
     );
 }
 zero(); 			  // 함수로 전달될 실제 인자.
@@ -223,7 +228,7 @@ one('val1', 'val2');  // 함수로 전달될 실제 인자.
 two('val1');  		  // 함수로 전달될 실제 인자.
 </script>
 ```
-[ex) arguments1 실행](http://codepen.io/JaYoungKim/pen/EPWaZE?editors=001)  
+[ex) arguments2 실행](http://codepen.io/JaYoungKim/pen/pgepJb?editors=001)  
 
 
 
@@ -237,18 +242,81 @@ two('val1');  		  // 함수로 전달될 실제 인자.
 ### 함수의 호출
 
 ```javascript
+<script>
 function func(){
 }
 func();
-```
+</script>
+```    
 기본적으로 함수를 호출하는 방법은 위와 같지만, JavaScript는 함수를 호출하는 특별한 방법을 제공합니다. 
 함수도 하나의 객체이기 때문에 여러 메소드를 가지고 있고, `func();`는 함수 객체의 인스턴트로서 마찬가지로 함수의 메소드를 상속받을 수 있습니다. 
+    
 
- #### 함수.apply / 함수.call
+####  함수.apply / 함수.call
 
 ```javascript
+<script>
 function func(arg1, arg2){
     return arg1+arg2;
 }
 alert(func.apply(null, [1,2]))
+</script>
 ```
+
+[ex) 함수호출1 실행](http://codepen.io/JaYoungKim/pen/dGvJbK?editors=001)  
+
+위 함수의 funk는 apply이라는 메소드를 상속받아 호출하고 있습니다.
+apply 메소드는 두개의 인자를 가질 수 있는데, 첫번째 인자는 함수안의 this를 대체해주는 값입니다. 
+위의 함수의 경우 함수 안에 this가 설정되어 있지 않기때문에, `null`값이 들어갔습니다. 
+두번째 인자는 실제 함수에 전달할 인자가 배열 값으로 들어갑니다. 
+`alert(func.apply(null, [1,2]))`에서 [1,2]가 func(arg1, arg2)에 순차적으로 대입되게 됩니다. 
+Function.call도 사용법은 비슷합니다. 
+
+위의 경우에는 일반적으로 함수를 호출하는 것과 크게 결과 값이 달라지지 않습니다. 
+apply 를 제대로 사용하기 위해서는 this가 포함된 함수가 필요합니다. 
+
+```javascript
+<script>
+a = {val1:1, val2:2, val3:3}
+b = {v1:10, v2:50, v3:100, v4:25}
+function func(){
+    var i = 0;
+    for(name in this){
+        i += this[name];
+    }
+    return i;
+}
+alert(func.apply(a)) 
+alert(func.apply(b)) 
+</script>
+```
+
+[ex) 함수호출2 실행](http://codepen.io/JaYoungKim/pen/xZqPBL?editors=001)  
+
+apply를 사용한 조금더 복잡한 예제입니다.    
+위의 함수 func는 for in문을 이용하여 this의 값을 열거 후, 각 속성의 값(=this[name])을 지역변수 i에 저장하고 이를 리턴합니다.  
+간단히 말해 함수 func는 인자값을 던져주면 그 값을 차례대로 더한다는 뜻입니다.   
+`alert(func.apply(a))`는 첫번째 인자로 `a`객체를 this에 전달하고, `a` 객체는 각각 val1, val2, val3 라는 이름의 속성을 가지고 있습니다. val1, val2, val3 의 값은 각각 1,2,3이고 이것을 차례대로 더하면 **6**이라는 결과 값이 호출 됩니다. 
+위의 함수는 아래 처럼 표현 할 수 있습니다.
+
+```javascript
+<script>
+
+function func(){
+    var i = 0;
+    for(name in this){
+    	if(typeof this[name] !== 'function')
+        i += this[name];
+    }
+    return i;
+}
+a = {val1:1, val2:2, val3:3, func:func}
+b = {v1:10, v2:50, v3:100, v4:25, func:func}
+alert(a.func());
+alert(b.func());
+</script>
+```
+[ex) 함수호출3 실행](http://codepen.io/JaYoungKim/pen/BjWJBg?editors=001)  
+
+즉, 함수.apply를 사용할 경우 마치 함수를 객체 a의 하나의 속성처럼 사용할 수 있다는 것입니다. 
+일반적인 객체지향 언어에서는 하나의 객체에 소속된 함수는 그 객체의 소유물이 됩니다. 하지만 JavaScript에서 함수는 독립적인 객체로서 존재하고, apply나 call 메소드를 통해서 다른 객체의 소유물인 것처럼 실행할 수 있습니다. 
