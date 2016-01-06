@@ -169,3 +169,86 @@ for(var index in arr) {
 
 <br>
 ### arguments
+
+```javascript
+<script>
+function sum(){
+    var i, _sum = 0;    
+    for(i = 0; i < arguments.length; i++){
+        document.write(i+' : '+arguments[i]+'<br />');
+        _sum += arguments[i];
+    }   
+    return _sum;
+}
+document.write('result : ' + sum(1,2,3,4));
+</script>
+```
+
+[ex) arguments1 실행](http://codepen.io/JaYoungKim/pen/EPWaZE?editors=001)  
+
+위의 `함수 sum`은 'sum()' 으로 인자에 대한 정의가 없지만, `document.write('result : ' + sum(1,2,3,4));` 에선 인자값을 전달하여 값을 출력하도록 되어있습니다.     
+실제 출력 결과는 **10** 입니다.    
+인자가 없는데 값이 제대로 출력되는 이유는 `arguments`라는 특수한 객체가 있기 때문입니다. 
+arguments는 함수안에서 사용할 수 있도록 그 이름이나 특성이 약속되어 있는 일종의 객체입니다. arguments[0]은 함수로 전달된 첫번째 인자를 알아낼 수 있습니다. 그리고 `arguments.length`를 이용해서 함수로 전달된 인자의 개수를 알아낼 수도 있습니다. 
+이러한 특성은 배열과 비슷하다고 생각하시면 됩니다. 
+`arguments`에 반복문을 결합하면 함수로 전달된 인자의 값을 순차적으로 가져올 수 있고, 그 값을 더해서 리턴하면 인자로 전달된 값에 대한 총합을 구하는 함수를 만들 수 있게 됩니다.
+
+####매개변수의 수
+매개변수에는 관련된 두가지 수가 있습니다.
+1. 함수.length : 함수에 정의된 인자의 수.
+2. arguments.length : 함수로 전달된 실제 인자의 수.
+
+```javascript
+<script>
+function zero(){ // 함수에 정의된 인자.
+    console.log(
+        'zero.length', zero.length,
+        'arguments', arguments.length
+    );
+}
+function one(arg1){ // 함수에 정의된 인자.
+    console.log(
+        'one.length', one.length,
+        'arguments', arguments.length
+    );
+}
+function two(arg1, arg2){ // 함수에 정의된 인자.
+    console.log(
+        'two.length', two.length,
+        'arguments', arguments.length
+    );
+}
+zero(); 			  // 함수로 전달될 실제 인자.
+one('val1', 'val2');  // 함수로 전달될 실제 인자.
+two('val1');  		  // 함수로 전달될 실제 인자.
+</script>
+```
+[ex) arguments1 실행](http://codepen.io/JaYoungKim/pen/EPWaZE?editors=001)  
+
+
+
+
+
+
+
+
+
+<br>
+### 함수의 호출
+
+```javascript
+function func(){
+}
+func();
+```
+기본적으로 함수를 호출하는 방법은 위와 같지만, JavaScript는 함수를 호출하는 특별한 방법을 제공합니다. 
+함수도 하나의 객체이기 때문에 여러 메소드를 가지고 있고, `func();`는 함수 객체의 인스턴트로서 마찬가지로 함수의 메소드를 상속받을 수 있습니다. 
+
+ #### 함수.apply / 함수.call
+
+```javascript
+function func(arg1, arg2){
+    return arg1+arg2;
+}
+alert(func.apply(null, [1,2]))
+```
