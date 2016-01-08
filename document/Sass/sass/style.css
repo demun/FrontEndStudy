@@ -1,18 +1,10 @@
-#main {
-  content: "First content";
-  new-content: "First time reference";
-}
-
-#main {
-  content: "Non-null content";
-}
-
-#demo {
-  width: 5em;
-}
-
 #sidebar {
-  width: 5em;
+  width: 300px;
+}
+@media only screen and (max-width: 400px) {
+  #sidebar {
+    width: 100px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

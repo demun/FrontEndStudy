@@ -27,9 +27,11 @@
   width: 97%;
 
   p, div {
-    font-size: 2em;
-    a { font-weight: bold; }
-
+      font-size: 2em;
+      
+      a { font-weight: bold; 
+      }
+  }
 
   pre { font-size: 3em; }
 }

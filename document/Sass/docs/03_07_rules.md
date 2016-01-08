@@ -254,8 +254,56 @@ $value: 1.5;
 * [extend 가이드라인 참조 ](http://sass-guidelin.es/ko/#extend)
 
 
+####Multiple Extends
+하나의 선택자는 하나이상으로 선택자를 확장할 수 있습니다.
+즉, 모든 확장된 선택자에서 스타일를 상속한다는 의미입니다.
 
+```SCSS 
 
+// _style.scss
+.error {
+    border: 1px #f00;
+    background-color: #fdd;
+}
+
+.attention {
+    font-size: 3em;
+    background-color: #ff0;
+}
+
+.seriousError {
+  @extend .error;
+  @extend .attention;
+  border-width: 3px;
+}
+
+```
+
+```css
+
+/* style.css */
+.demo-01 {
+    border: 1px #f00;
+    background-color: #fdd;
+}
+
+.demo-02 {
+    @extend .demo-01;
+    border-width: 3px;
+}
+
+.demo-03 {
+    @extend .demo-02;
+    position: fixed;
+    top: 10%;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+}
+```
+
+그리고 @extend .error; @extend .attention; 은 선택자들의 항목을 콤마로 구분하여 다음과 같이 쓸 수 있습니다.    
+@extend .error, attention;
 
 <br>
 ###@at-root

@@ -32,7 +32,7 @@ Sass 주석은 두가지입니다.
 
 // _style.scss
 
-$version: '1.2.3'
+$version: '1.2.3';
 /* #{$version} */
 
 ```
