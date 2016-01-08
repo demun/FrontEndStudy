@@ -59,16 +59,15 @@
 
 ## 2차 진행
 
-- 분량 나누기(12월 5일 발표 분량, 12월 19일 발표 분량)
+- 분량 나누기(12월 5일, 12월 19일, 1월 9일 발표 분량)
 
 - **[함수지향1](https://github.com/demun/FrontEndStudy/tree/master/document/Javascript/docs/Team/04_%ED%95%A8%EC%88%98%EC%A7%80%ED%96%A51(%EC%A0%84%EC%B2%B4%EC%9A%94%EC%95%BD%26%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84%26%EC%BD%9C%EB%B0%B1%ED%95%A8%EC%88%98)) (11/23~29_ 전체에 대한 요점파악식)**
 
 	- [유효범위](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-1.%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84.md) __(12/7~13)__ 
 	- [값으로서의 함수와 콜백](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-2.%EC%BD%9C%EB%B0%B1%ED%95%A8%EC%88%98.md) __(12/7~13)__
 - **[함수지향2](https://github.com/demun/FrontEndStudy/tree/master/document/Javascript/docs/Team/05_%ED%95%A8%EC%88%98%EC%A7%80%ED%96%A52(%ED%81%B4%EB%A1%9C%EC%A0%80%26arguments%26%ED%95%A8%EC%88%98%ED%98%B8%EC%B6%9C))**
-	- 클로저
-	- arguments
-	- 함수의 호출
+	- [클로저](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-3.%20%ED%81%B4%EB%A1%9C%EC%A0%80.md) __(12/14~16/01/03)__
+	- [arguments&함수의 호출](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-4.Arguments%26%ED%95%A8%EC%88%98%ED%98%B8%EC%B6%9C.md) __(12/14~16/01/03)__
 
 - **객체지향**
 
@@ -106,31 +105,12 @@
   HTML5 스터디하면 할까 하다 Javascript 실무에서 많이 쓰이다 보니 여기서 스터디 하겠습니다.
 * HTML5에서 추가로 도입한 Socket 통신 방법(javascript로 코딩)
 * 개념 및 기초
-  https://www.websocket.org/ , http://html5korea.com/%EC%9B%B9%EC%86%8C%EC%BC%93websocket-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0%EA%B0%95%EC%9D%98%EB%B2%88%EC%97%AD/ 를 바탕으로 스터디함
+  https://www.websocket.org/ , http://html5korea.com/웹소켓websocket-시작하기강의번역/ 를 바탕으로 스터디함
 
 ** web worker **
 
  HTML5 스터디하면 할까 하다 Javascript 실무에서 많이 쓰이다 보니 여기서 스터디 하겠습니다.
  http://www.w3schools.com/html/html5_webworkers.asp 를 바당으로 스터디 할 것
-
-
-----
-
-
-> - 자바스크립트 기본
-> 	- 숫자와 문자
-> 	- 변수
-> 	- 주석
-> 	- 줄바꿈과 여백
-> 	- 비교
-> 	- 조건문
-> 	- 반복문
-> 	- 함수
-> 	- 배열
-> 	- 객체
-> 	- 모듈
-> 	- UI와 API 그리고 문서보는 법
-
 
 ----
 
@@ -145,8 +125,10 @@
   - [2-5.형변환_함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-5.%ED%98%95%EB%B3%80%ED%99%98_%ED%95%A8%EC%88%98.md)
   - [2-6.기타_함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/2-6.%EA%B8%B0%ED%83%80_%ED%95%A8%EC%88%98.md)  
 * [3. 함수지향.](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-0.%ED%95%A8%EC%88%98%EC%A7%80%ED%96%A5.md)
-  - [3-1.유효범위.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-1.%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84.md)  
+  - [3-1.유효범위.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-1.%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84.md)
   - [3-2.콜백함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-2.%EC%BD%9C%EB%B0%B1%ED%95%A8%EC%88%98.md)
+  - [3-3.클로저.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-3.%20%ED%81%B4%EB%A1%9C%EC%A0%80.md)
+  - [3-4.Arguments&함수호출.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-4.Arguments%26%ED%95%A8%EC%88%98%ED%98%B8%EC%B6%9C.md)
   
 ----
 
