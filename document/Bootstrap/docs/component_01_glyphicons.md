@@ -1,13 +1,13 @@
 ## 아이콘 (Glyphicons)
 
-####[사용가능한 기호](http://getbootstrap.com/components/#glyphicons-glyphs)   
+### [사용가능한 기호](http://getbootstrap.com/components/#glyphicons-glyphs)   
 부트스트랩을 위해 무료로 아이콘을 제공합니다.
 [Glyphicons](http://glyphicons.com/)Halflings 세트로 폰트 포멧에 250 기호 이상을 포함하고 있습니다. 
 
 ---
 ![component_glyphicons](../images/component_glyphicons_01.jpg)
 ---
-#### [사용법](http://getbootstrap.com/components/#glyphicons-how-to-use)    
+### [사용법](http://getbootstrap.com/components/#glyphicons-how-to-use)    
 
 모든 아이콘은 기본클래스와 개개의 클래스를 필요로 합니다. 사용하려면, 다음의 코드를 어디든지 붙혀놓으면 됩니다. 적절한 패딩을 위해 아이콘과 글자 사이에 공간을 남겨두세요.
 
@@ -31,11 +31,11 @@ Less 컴파일러에서 제공되는 `relative URLs 옵션` 을 활용하세요.
 
 ```html
 <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-```   
+```
 ---
 
 
-####[예제](http://getbootstrap.com/components/#glyphicons-examples)
+### [예제](http://getbootstrap.com/components/#glyphicons-examples)
 툴바와 네비게이션을 위해 버튼과 버튼 그룹에 그들을 사용하거나, 폼 입력요소 앞에 덧붙힙니다.
 
 ![component_glyphicons_ex](../images/component_glyphicons_02.jpg)
@@ -48,7 +48,7 @@ Less 컴파일러에서 제공되는 `relative URLs 옵션` 을 활용하세요.
 <button type="button" class="btn btn-default btn-lg">
   <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
 </button>
-```    
+```
 아이콘은 경보에서 그것이 에러메시지라는 것을 전달하기 위해 사용됩니다. 그리고 그것은 보조 공학 사용자들에게도 알리기 위해 추가적인 `.sr-only `텍스트가 필요합니다.
 ![component_glyphicons_ex](../images/component_glyphicons_03.jpg)
 
@@ -58,7 +58,7 @@ Less 컴파일러에서 제공되는 `relative URLs 옵션` 을 활용하세요.
   <span class="sr-only">Error:</span>
   Enter a valid email address
 </div>
-```   
+```
 
 <br />
 ---
@@ -67,4 +67,4 @@ Less 컴파일러에서 제공되는 `relative URLs 옵션` 을 활용하세요.
 * [부트스트랩 ReadMe](../README.md)
 
 ---
-* 다음페이지 - 드롭다운 [Dropdowns](docs/component_02_dropdowns.md)
+* 다음페이지 - 드롭다운 [Dropdowns](component_02_dropdowns.md)

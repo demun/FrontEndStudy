@@ -17,7 +17,7 @@
 사용되어질 수 있는 정확한 기법(`.sr-only` 클래스를 사용하여 숨겨진 `<label>` 요소나, `aria-label`, `aria-labelledby`, `aria-describedby`, `title`, `placeholder` 요소를 사용)과 전달하는 필요하게 될 추가적인 정보들은 당신이 사용하는 인터페이스 위젯의 정확한 유형에 따라서 달라질 것입니다. 이 섹션의 예제는 몇 가지 유형별 접근을 제안합니다.
 ---
 
-####[기본 예제](http://getbootstrap.com/components/#input-groups-basic)
+###[기본 예제](http://getbootstrap.com/components/#input-groups-basic)
 
 입력콘트롤의 양쪽에 애드온이나 버튼을 넣으세요. 당신은 한쪽 아니면 양쪽 다 넣을 수 있습니다.    
 
@@ -44,11 +44,11 @@
   <span class="input-group-addon">.00</span>
 </div>
 
-```    
+```
 
 --- 
 
-####[크기 조절](http://getbootstrap.com/components/#input-groups-sizing)
+###[크기 조절](http://getbootstrap.com/components/#input-groups-sizing)
 `.input-group` 에 크기조절 클래스를 추가하세요. 내부의 요소들은 자동으로 크기조절이 됩니다.     
 각각의 태그에 폼콘트롤 크기 클래스들을 반복할 필요가 없습니다.
 
@@ -72,7 +72,7 @@
 ```
 --- 
 
-####[체크박스와 라디오 에드온](http://getbootstrap.com/components/#input-groups-checkboxes-radios)
+###[체크박스와 라디오 에드온](http://getbootstrap.com/components/#input-groups-checkboxes-radios)
 입력그룹 내 에드온에 문자 대신 체크박스나 라디오를 두세요.
 
 ![component_input_03](../images/component_input_03.jpg)
@@ -100,7 +100,7 @@
 
 --- 
 
-####[버튼 에드온](http://getbootstrap.com/components/#input-groups-buttons)
+###[버튼 에드온](http://getbootstrap.com/components/#input-groups-buttons)
 입력그룹 내 버튼은 별도의 약간 다른 중첩 태그를 필요로 합니다. `.input-group-addon` 대신 `.input-group-btn` 으로 버튼을 감쌉니다. 이것은 오버라이드 할 수 없는 기본 브라우저 스타일들로 인해 필요합니다.
 
 ![component_input_04](../images/component_input_04.jpg)
@@ -127,7 +127,7 @@
 ```
 --- 
 
-####[드롭다운 버튼](http://getbootstrap.com/components/#input-groups-buttons-dropdowns)
+###[드롭다운 버튼](http://getbootstrap.com/components/#input-groups-buttons-dropdowns)
 
 ![component_input_05](../images/component_input_05.jpg)
 
@@ -168,7 +168,7 @@
 
 ---
 
-####[분할된 버튼](http://getbootstrap.com/components/#input-groups-buttons-segmented)
+###[분할된 버튼](http://getbootstrap.com/components/#input-groups-buttons-segmented)
 
 ![component_input_06](../images/component_input_06.jpg)
 
@@ -190,7 +190,7 @@
 
 ---
 
-####[복합적인 버튼](http://getbootstrap.com/components/#input-groups-buttons-multiple)
+###[복합적인 버튼](http://getbootstrap.com/components/#input-groups-buttons-multiple)
 
 ![component_input_07](../images/component_input_07.jpg)
 
@@ -217,5 +217,5 @@
 * [부트스트랩 ReadMe](../README.md)
 
 ---
-* 이전페이지 - 버튼 드롭다운 [Button dropdowns](docs/component_04_button_dropdown.md) 
-* 다음페이지 - 네비게이션 [Navs](docs/component_06_navs.md)
+* 이전페이지 - 버튼 드롭다운 [Button dropdowns](component_04_button_dropdown.md) 
+* 다음페이지 - 네비게이션 [Navs](component_06_navs.md)

@@ -7,7 +7,7 @@
 
 ---
 
-####단버튼 드롭다운
+###단버튼 드롭다운
 
 몇가지 기본 마크업을 변경하여 버튼을 드롭다운 토글로 바꾸세요.
 
@@ -29,11 +29,11 @@
   </ul>
 </div>
 
-```    
+```
 
 --- 
 
-####[분할된 버튼 드롭다운](http://getbootstrap.com/components/#dropdowns)
+###[분할된 버튼 드롭다운](http://getbootstrap.com/components/#dropdowns)
 똑같은 마크업에, 분리된 버튼만 추가하여 분할된 버튼 드롭다운을 만드세요.
 
 ![component_button_dropdown_02](../images/component_button_dropdown_02.jpg)
@@ -56,11 +56,11 @@
   </ul>
 </div>
 
-```    
+```
 
 --- 
 
-####[크기조절](http://getbootstrap.com/components/#btn-dropdowns-sizing)
+###[크기조절](http://getbootstrap.com/components/#btn-dropdowns-sizing)
 버튼 드롭다운은 모든 크기의 버튼에서 동작합니다.
 
 ![component_button_dropdown_03](../images/component_button_dropdown_03.jpg)
@@ -97,11 +97,11 @@
   </ul>
 </div>
 
-```    
+```
 
 --- 
 
-####[드롭업형](http://getbootstrap.com/components/#btn-dropdowns-dropup)
+###[드롭업형](http://getbootstrap.com/components/#btn-dropdowns-dropup)
 상위태그에 `.dropup` 을 더하여 드롭다운 메뉴를 요소 위로 올라가도록 작동시키세요.
 
 ![component_button_dropdown_04](../images/component_button_dropdown_04.jpg)
@@ -119,7 +119,7 @@
   </ul>
 </div>
 
-```    
+```
 
 
 
@@ -130,5 +130,5 @@
 * [부트스트랩 ReadMe](../README.md)
 
 ---
-* 이전페이지 - 버튼 그룹 [Button groups](docs/component_03_button.md)
-* 다음페이지 - 입력 그룹 [Input groups](docs/component_05_input_groups.md)
+* 이전페이지 - 버튼 그룹 [Button groups](component_03_button.md)
+* 다음페이지 - 입력 그룹 [Input groups](component_05_input_groups.md)

@@ -4,7 +4,7 @@
 
 ---
 
-#### 기본 패널
+#### [기본 패널](http://getbootstrap.com/components/#panels-basic)
 
 - 기본적으로 패딩과 테두리가 들어가 있음.
 - 기본클래스는 `.panel.panel-default`
@@ -22,7 +22,7 @@
 
 ---
 
-#### 상단/타이틀이 있는 패널
+#### [상단/타이틀이 있는 패널](http://getbootstrap.com/components/#panels-heading)
 
 - 패널 내부에 `.panel-heading` 항목을 추가할 수 있음.
 - `.panel-heading` 내부엔 `<h1> ~ <h6>` 태그를 이용하여 타이틀 추가가 가능함.
@@ -50,7 +50,7 @@
 
 ---
 
-#### 하단(푸터)가 있는 패널
+#### [하단(푸터)가 있는 패널](http://getbootstrap.com/components/#panels-footer)
 
 - 하단에 버튼이나 부가적인 텍스트를 추가할 수 있음.
 - 패널 내부에 `.panel-footer` 로 추가.
@@ -69,7 +69,7 @@
 
 ---
 
-#### 맥락적인 클래스(색상/스타일)
+#### [맥락적인 클래스(색상/스타일)](http://getbootstrap.com/components/#panels-alternatives)
 
 - 각 항목별 의미에 따라 기본 색상이 지정되어 있다.
 - 다섯가지 종류가 있음.
@@ -92,7 +92,7 @@
 
 ---
 
-#### 테이블과 함께 사용
+#### [테이블과 함께 사용](http://getbootstrap.com/components/#panels-tables)
 
 - 패널 내부에 테이블을 추가할 수 있음.
 - 두가지 경우
@@ -138,8 +138,37 @@
 ```
 
 
+#### [list 그룹과 함께 사용](http://getbootstrap.com/components/#panels-list-group)
+- 패널 내부에 꽉찬 너비의 [list group](component_18_list_group.md)을 추가할 수 있음.
+
+![스크린샷](../images/bootstrap-cp-panel-07.png)
+
+```html
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Panel heading</div>
+  <div class="panel-body">
+    <p>...</p>
+  </div>
+
+  <!-- List group -->
+  <ul class="list-group">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Morbi leo risus</li>
+    <li class="list-group-item">Porta ac consectetur ac</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+</div>
+```
+
+
+<br >
 ---
 
 * [원문사이트 바로가기](http://getbootstrap.com/components/#panels)
+* [부트스트랩 ReadMe](../README.md)
 
-* [이전페이지- 부트스트랩 컴포넌트 : 목록 그룹(list group)](component-list-group.md)
+---
+* 이전페이지 - 목록 그룹 [List group](component_18_list_group.md) 
+* 다음페이지 - 반응성 임베드 [Responsive embed](component_20_responsive_embed.md)

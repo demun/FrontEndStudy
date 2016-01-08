@@ -4,7 +4,7 @@
 
 ---
 
-####[예제](http://getbootstrap.com/components/#dropdowns-example)
+###[예제](http://getbootstrap.com/components/#dropdowns-example)
 드롭다운의 트리거와 드롭다운 메뉴를 `.dropdown` 으로 둘러싸세요, 아니면 다른 태그에 position: relative; 를 정의하고, 메뉴 HTML 을 추가하세요. 드롭다운 메뉴는 부모에 `.dropup` 를 추가하는 것으로 바뀌는 것이 가능합니다.    
 
 ![component_glyphicons_ex](../images/component_dropdown_01.jpg)
@@ -36,10 +36,10 @@
   </ul>
 </div>
 
-```    
+```
 ---
 
-####[정렬](http://getbootstrap.com/components/#dropdowns-alignment)
+###[정렬](http://getbootstrap.com/components/#dropdowns-alignment)
 기본적으로, 드롭다운 메뉴는 자동적으로 좌상단에 위치합니다. 우측 정렬하려면 .dropdown-menu 에 `.dropdown-menu-right` 를 추가하세요.
 
 * 추가적으로 위치를 잡는 것이 필요할 수 있습니다
@@ -53,10 +53,10 @@
   ...
 </ul>
 
-```    
+```
 ---   
 
-####[제목(Headers)](http://getbootstrap.com/components/#dropdowns-headers)
+###[제목(Headers)](http://getbootstrap.com/components/#dropdowns-headers)
 드롭다운 메뉴의 액션 그룹에 라벨을 붙이려면 헤더를 추가하세요.
 
 ![component_glyphicons_ex](../images/component_dropdown_02.jpg)
@@ -69,10 +69,10 @@
   ...
 </ul>
 
-```     
+```
 ---   
 
-####[구분선(Divider)](http://getbootstrap.com/components/#dropdowns-divider)
+###[구분선(Divider)](http://getbootstrap.com/components/#dropdowns-divider)
 
 드롭다운 메뉴에 일련의 링크를 구분하기 위해 구분선을 추가하세요.
 
@@ -85,10 +85,10 @@
   <li role="presentation" class="divider"></li>
   ...
 </ul>
-```   
+```
 ---   
 
-####[비활성화된 메뉴 항목](http://getbootstrap.com/components/#dropdowns-disabled)
+###[비활성화된 메뉴 항목](http://getbootstrap.com/components/#dropdowns-disabled)
 링크를 비활성화 하려면 드롭다운의 `<li>` 에 `.disabled` 를 추가하세요.
 
 ![component_glyphicons_ex](../images/component_dropdown_04.jpg)
@@ -100,7 +100,7 @@
   <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Disabled link</a></li>
   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another link</a></li>
 </ul>
-```   
+```
 
 <br />
 ---
@@ -109,5 +109,5 @@
 * [부트스트랩 ReadMe](../README.md)
 
 ---
-* 이전페이지 - 아이콘 [Glyphicons](docs/component_01_glyphicons.md)
-* 다음페이지 - 버튼 그룹 [Button groups](docs/component_03_button.md)
+* 이전페이지 - 아이콘 [Glyphicons](component_01_glyphicons.md)
+* 다음페이지 - 버튼 그룹 [Button groups](component_03_button.md)

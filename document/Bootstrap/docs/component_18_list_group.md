@@ -1,10 +1,10 @@
-## 목록 그룹(List Group)
+## List 그룹(List Group)
 
-간단한 목록 뿐만 아니라 복잡한 내용도 맞춤화 하여 보여줄 수 있는 강력한 컴포넌트
+간단한 list 뿐만 아니라 복잡한 내용도 맞춤화 하여 보여줄 수 있는 강력한 컴포넌트
 
 ----
 
-#### 기본예제
+### [기본예제](http://getbootstrap.com/components/#list-group-basic)
 
 ![스크린샷](../images/bootstrap-cp-list-01.png)
 
@@ -20,9 +20,9 @@
 
 ---
 
-#### 뱃지
+### [뱃지](http://getbootstrap.com/components/#list-group-badges)
 
-목록 항목(item)에 뱃지를 추가하면 오른쪽에 자동 위치
+list 항목(item)에 뱃지를 추가하면 오른쪽에 자동 위치
 
 ![스크린샷](../images/bootstrap-cp-list-02.png)
 
@@ -37,7 +37,7 @@
 
 ---
 
-#### 링크항목
+### [링크항목](http://getbootstrap.com/components/#list-group-linked)
 
 링크항목은 `<ul>` 대신 `<div>` 와 `<a>`를 사용. (class는 기본예제와 동일)
 
@@ -70,7 +70,26 @@
 
 ---
 
-#### 맥락적인 클래스(색상/스타일)
+### [버튼 클래스](http://getbootstrap.com/components/#list-group-buttons)
+
+- 각각의 버튼이 리스트 그룹처럼 표기된다. 
+- 표준 .btn 클래스를 사용하지 말것. 
+
+
+![스크린샷](../images/bootstrap-cp-list-01.png)
+```html
+<div class="list-group">
+  <button type="button" class="list-group-item">Cras justo odio</button>
+  <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
+  <button type="button" class="list-group-item">Morbi leo risus</button>
+  <button type="button" class="list-group-item">Porta ac consectetur ac</button>
+  <button type="button" class="list-group-item">Vestibulum at eros</button>
+</div>
+```
+
+---
+
+### [맥락적인 클래스(색상/스타일)](http://getbootstrap.com/components/#list-group-contextual-classes)
 
 - 각 항목별 의미에 따라 기본 색상이 지정되어 있다.
 - `list-group-item`에 클래스를 추가하여 사용
@@ -101,7 +120,7 @@
 
 ---
 
-#### 컨텐츠가 있는 항목
+### [컨텐츠가 있는 항목](http://getbootstrap.com/components/#list-group-custom-content)
 - 항목에 컨텐츠를 추가하는 것이 가능함.
 
 ![스크린샷](../images/bootstrap-cp-list-06.png)
@@ -117,8 +136,13 @@
 
 ---
 
-* [원문사이트 바로가기](http://getbootstrap.com/components/#list-group)
+<br >
+---
 
-* [이전페이지- 부트스트랩CSS_그리드](css-grid.md)
-* [다음페이지- 부트스트랩 컴포넌트 : 패널(panelmark)](component-panelmark.md)
+* [원문사이트 바로가기](http://getbootstrap.com/components/#list-group)
+* [부트스트랩 ReadMe](../README.md)
+
+---
+* 이전페이지 - 미디어 객체 [Media object](component_17_media_object.md)
+* 다음페이지 - 패널 [Panels](component_19_panelmark.md) 
 

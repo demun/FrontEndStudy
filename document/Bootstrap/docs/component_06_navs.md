@@ -10,10 +10,10 @@
 
 ----
 
-####[탭형](http://getbootstrap.com/components/#nav-tabs)
+###[탭형](http://getbootstrap.com/components/#nav-tabs)
 `.nav-tabs` 클래스는 `.nav` 클래스가 필요한 것을 기억하세요.
 
-![component_input_01](../images/component_nav_01.jpg)
+![component_nav_01](../images/component_nav_01.jpg)
 
 ```html
 
@@ -23,13 +23,13 @@
   <li role="presentation"><a href="#">Messages</a></li>
 </ul>
 
-```    
+```
 
 --- 
-####[알약형 (Pills)](http://getbootstrap.com/components/#nav-pills)
+###[알약형 (Pills)](http://getbootstrap.com/components/#nav-pills)
 같은 HTML 이지만, .nav-pills 을 대신 사용하세요.
 
-![component_input_02](../images/component_nav_02.jpg)
+![component_nav_02](../images/component_nav_02.jpg)
 
 ```html
 
@@ -39,9 +39,9 @@
   <li role="presentation"><a href="#">Messages</a></li>
 </ul>
 
-```    
+```
 알약형은 수직적으로 쌓을 수도 있습니다. .nav-stacked 을 추가하세요.
-![component_input_03](../images/component_nav_03.jpg)
+![component_nav_03](../images/component_nav_03.jpg)
 
 ```html
 
@@ -49,18 +49,18 @@
   ...
 </ul>
 
-```    
+```
 
 --- 
 
-####[양쪽정렬형 (Justified)](http://getbootstrap.com/components/#nav-justified)
+###[양쪽정렬형 (Justified)](http://getbootstrap.com/components/#nav-justified)
 `.nav-justified` 로 탭형이나 알약형을 그것들의 상위 태그와 같은 너비로 만드세요. 작은 화면에서는, 네비게이션 링크는 쌓이게 됩니다.
 양쪽정렬된 `navbar nav` 링크는 현재 지원되지 않습니다.
 
 * 사파리와 반응형 양쪽정렬 navs
 > v8.0 이후로, 사파리는 양쪽정렬된 `nav` 에서 당신의 브라우저를 수평적으로 크기를 조절할때 에러를 렌더링하는 버그를 보였습니다. 이 버그는 [양쪽정렬된 nav 예제](http://bootstrapk.com/examples/justified-nav/) 에서 볼 수 있습니다.
 
-![component_input_04](../images/component_nav_04.jpg)
+![component_nav_04](../images/component_nav_04.jpg)
 
 ```html
 
@@ -70,17 +70,17 @@
   <li role="presentation"><a href="#">Messages</a></li>
 </ul>
 
-```    
+```
 
 --- 
 
-####[비활성화된 링크](http://getbootstrap.com/components/#nav-disabled-links)
+###[비활성화된 링크](http://getbootstrap.com/components/#nav-disabled-links)
 어떤 네비게이션 콤포넌트(탭형, 알약형, 목록형)에서, 회색 링크와 금지 호버 효과 를 위해 `.disabled` 를 추가하세요.
 
 * 링크 기능성은 영향을 받지 않습니다.
 > 이 클래스는 의 기능성이 아닌 모습에만 변화하도록 합니다. 링크를 비활성화하려면 맞춤 자바스크립트를 사용하세요.
 
-![component_input_05](../images/component_nav_05.jpg)
+![component_nav_05](../images/component_nav_05.jpg)
 
 ```html
 
@@ -90,16 +90,16 @@
   <li role="presentation"><a href="#">Messages</a></li>
 </ul>
 
-```    
+```
 
 --- 
 
-####[드롭다운 사용하기](http://getbootstrap.com/components/#nav-dropdowns)
+###[드롭다운 사용하기](http://getbootstrap.com/components/#nav-dropdowns)
 약간의 HTML 과 [드롭다운 자바스크립트 플러그인](http://bootstrapk.com/javascript/#dropdowns) 로 드롭다운 메뉴를 추가하세요.
 
-#####탭형에서의 드롭다운
+####탭형에서의 드롭다운
 
-![component_input_06](../images/component_nav_06.jpg)
+![component_nav_06](../images/component_nav_06.jpg)
 
 ```html
 
@@ -116,10 +116,10 @@
   ...
 </ul>
 
-```    
-#####알약형에서의 드롭다운
+```
+####알약형에서의 드롭다운
 
-![component_input_07](../images/component_nav_07.jpg)
+![component_nav_07](../images/component_nav_07.jpg)
 
 ```html
 
@@ -136,7 +136,7 @@
   ...
 </ul>
 
-```    
+```
 --- 
 
 
@@ -148,5 +148,5 @@
 * [부트스트랩 ReadMe](../README.md)
 
 ---
-* 이전페이지 - 입력 그룹 [Input groups](docs/component_05_input_groups.md)
-* 다음페이지 - 네비게이션 바 [Navbar](docs/component_07_navbar.md)
+* 이전페이지 - 입력 그룹 [Input groups](component_05_input_groups.md)
+* 다음페이지 - 네비게이션 바 [Navbar](component_07_navbar.md)

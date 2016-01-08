@@ -4,7 +4,7 @@
 
 ---
 
-####예제
+###예제
 드롭다운의 트리거와 드롭다운 메뉴를 `.dropdown` 으로 둘러싸세요, 아니면 다른 태그에 position: relative; 를 정의하고, 메뉴 HTML 을 추가하세요. 드롭다운 메뉴는 부모에 `.dropup` 를 추가하는 것으로 바뀌는 것이 가능합니다.    
 
 * 버튼 그룹안의 툴팁 & 팝오버 특별한 설정이 필요합니다
@@ -17,7 +17,7 @@
 
 ---
 
-####[기본 예제](http://getbootstrap.com/components/#btn-groups-single)
+###[기본 예제](http://getbootstrap.com/components/#btn-groups-single)
 `.btn` 로 된 일련의 버튼들을 `.btn-group` 으로 감싸세요.
 
 ![component_button_01](../images/component_button_01.jpg)
@@ -30,10 +30,10 @@
   <button type="button" class="btn btn-default">Right</button>
 </div>
 
-```    
+```
 ---   
 
-####[버튼 툴바](http://getbootstrap.com/components/#btn-groups-toolbar)
+###[버튼 툴바](http://getbootstrap.com/components/#btn-groups-toolbar)
 더 복합적인 콤포넌트를 만드려면 `<div class="btn-group">` 세트를 `<div class="btn-toolbar">` 으로 합치세요.
 
 ![component_button_02](../images/component_button_02.jpg)
@@ -45,12 +45,11 @@
   <div class="btn-group" role="group" aria-label="...">...</div>
   <div class="btn-group" role="group" aria-label="...">...</div>
 </div>
-
-```   
-```     
+ 
+```
 ---   
 
-####[크기 조절](http://getbootstrap.com/components/#btn-groups-sizing)
+###[크기 조절](http://getbootstrap.com/components/#btn-groups-sizing)
 그룹 내 모든 버튼에 일일이 크기조절 클래스를 적용하는 대신, `.btn-group` 에 `.btn-group-*` 을 추가합니다.
 
 ![component_button_03](../images/component_button_03.jpg)
@@ -61,10 +60,10 @@
 <div class="btn-group" role="group" aria-label="...">...</div>
 <div class="btn-group btn-group-sm" role="group" aria-label="...">...</div>
 <div class="btn-group btn-group-xs" role="group" aria-label="...">...</div>
-```   
+```
 ---   
 
-####[중첩하기](http://getbootstrap.com/components/#btn-groups-nested)
+###[중첩하기](http://getbootstrap.com/components/#btn-groups-nested)
 일련의 버튼과 같이 있는 드롭다운 메뉴를 원할 때는 `.btn-group` 안에 다른 `.btn-group` 을 넣으시면 됩니다.
 
 ![component_button_04](../images/component_button_04.jpg)
@@ -85,11 +84,11 @@
     </ul>
   </div>
 </div>
-```   
+```
 
 ---
 
-####[수직형](http://getbootstrap.com/components/#btn-groups-vertical)
+###[수직형](http://getbootstrap.com/components/#btn-groups-vertical)
 버튼 그룹이 수평으로 말고 수직으로 쌓입니다. `분리된 버튼 드롭다운은 지원되지 않습니다.`
 
 ![component_button_05](../images/component_button_05.jpg)
@@ -98,11 +97,11 @@
 <div class="btn-group-vertical" role="group" aria-label="...">
   ...
 </div>
-```   
+```
 
 ---
 
-####[양쪽정렬된 버튼 그룹](http://getbootstrap.com/components/#btn-groups-justified)
+###[양쪽정렬된 버튼 그룹](http://getbootstrap.com/components/#btn-groups-justified)
 버튼 그룹을 그것의 부모의 꽉찬 너비 걸쳐 같은 크기로 늘리게 합니다. 또한 버튼 그룹내의 드롭다운에도 작동합니다.
 
 * 모서리 다루기
@@ -121,7 +120,7 @@
 <div class="btn-group btn-group-justified" role="group" aria-label="...">
   ...
 </div>
-```  
+```
 
 * 버튼으로서의 링크   
  > 만약 `<a>` 요소가 버튼으로서 사용된다면, 그들은 적절한 `role="button"` 이 주어져야 합니다.
@@ -145,7 +144,7 @@
     <button type="button" class="btn btn-default">Right</button>
   </div>
 </div>
-```  
+```
 
 
 
@@ -157,5 +156,5 @@
 * [부트스트랩 ReadMe](../README.md)
 
 ---
-* 이전페이지 - 드롭다운 [Dropdowns](docs/component_02_dropdowns.md)
-* 다음페이지 - 버튼 드롭다운 [Button dropdowns](docs/component_04_button_dropdown.md) 
+* 이전페이지 - 드롭다운 [Dropdowns](component_02_dropdowns.md)
+* 다음페이지 - 버튼 드롭다운 [Button dropdowns](component_04_button_dropdown.md) 
