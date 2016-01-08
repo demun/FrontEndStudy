@@ -59,16 +59,15 @@
 
 ## 2차 진행
 
-- 분량 나누기(12월 5일 발표 분량, 12월 19일 발표 분량)
+- 분량 나누기(12월 5일, 12월 19일, 1월 9일 발표 분량)
 
 - **[함수지향1](https://github.com/demun/FrontEndStudy/tree/master/document/Javascript/docs/Team/04_%ED%95%A8%EC%88%98%EC%A7%80%ED%96%A51(%EC%A0%84%EC%B2%B4%EC%9A%94%EC%95%BD%26%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84%26%EC%BD%9C%EB%B0%B1%ED%95%A8%EC%88%98)) (11/23~29_ 전체에 대한 요점파악식)**
 
 	- [유효범위](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-1.%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84.md) __(12/7~13)__ 
 	- [값으로서의 함수와 콜백](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-2.%EC%BD%9C%EB%B0%B1%ED%95%A8%EC%88%98.md) __(12/7~13)__
 - **[함수지향2](https://github.com/demun/FrontEndStudy/tree/master/document/Javascript/docs/Team/05_%ED%95%A8%EC%88%98%EC%A7%80%ED%96%A52(%ED%81%B4%EB%A1%9C%EC%A0%80%26arguments%26%ED%95%A8%EC%88%98%ED%98%B8%EC%B6%9C))**
-	- 클로저
-	- arguments
-	- 함수의 호출
+	- [클로저](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-3.%20%ED%81%B4%EB%A1%9C%EC%A0%80.md) __(12/14~16/01/03)__
+	- [arguments&함수의 호출](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-4.Arguments%26%ED%95%A8%EC%88%98%ED%98%B8%EC%B6%9C.md) __(12/14~16/01/03)__
 
 - **객체지향**
 
@@ -128,6 +127,8 @@
 * [3. 함수지향.](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-0.%ED%95%A8%EC%88%98%EC%A7%80%ED%96%A5.md)
   - [3-1.유효범위.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-1.%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84.md)
   - [3-2.콜백함수.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-2.%EC%BD%9C%EB%B0%B1%ED%95%A8%EC%88%98.md)
+  - [3-3.클로저.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-3.%20%ED%81%B4%EB%A1%9C%EC%A0%80.md)
+  - [3-4.Arguments&함수호출.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-4.Arguments%26%ED%95%A8%EC%88%98%ED%98%B8%EC%B6%9C.md)
   
 ----
 
