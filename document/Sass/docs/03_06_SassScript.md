@@ -136,12 +136,6 @@ Map은 대부분 SassScript 기능을 사용하여 조작할 수 있습니다.
 
 $map: (key1: value1, key2: value2, key3: value3);
 ```
-#### Colors
-
-
-
-
-
 
 <br>
 ### Operators (연산) 
@@ -176,7 +170,7 @@ p {
   margin-left: 9px; }
 
 ```
-#{}을 사용했을 때의 예시 :
+\#{}을 사용했을 때의 예시 :
 
 ```SCSS
 
@@ -195,14 +189,67 @@ p {
   font: 12px/30px; }
 
 ```
-  -Subtraction, Negative Numbers, and -
 #####  Color Operations
 
+sass에서는 색깔연산도 가능합니다.
+
+
+\#112233 + #332211 이런식으로 사용가능하며 
+\# 11 22 33 에서 11은 Red, 22는 Green 33은 Blue 값을 나타내는 RGB숫자로 구성이 되어있습니다.
+각각 숫자는 16진수로 표시되고 서로 연산시 red는 red끼리 green은 green끼리 blue는 blue끼리 연산이 되게 됩니다.
+
+```SCSS
+ex) #128012 + #212223  = #33a235
+
+}
+
+
+\#552230 - #225010 = #330020
+- green값이 22-50이 되어 마이너스로 가게되면 그냥 00으로 표시됩니다.
+
+\#224400 * #aa02ff = #ff8800
+- red값은 22*ff는 ff를 초과하였지만 그냥 ff로 표시됩니다. 또한 00*ff는 0은 곱셈을 하면 무조건 0이 나오기때문에 00이 나오게됩니다.
+
+\#101010 / #102021 = #010100
+- 여기서 확인할수 있는건 10/20 = 0.5 까지는 01을 반환하나 그이상가면 00을 반환하는거로 봐서 소수점은 반올림 한다는 것을 확인할 수 있습니다.
+
+
 #####  String Operations
+
+sass는 문자열끼리의 연산도 지원합니다.
+
+문자열끼리는 오로지 `'+'`연산만이 지원이되며 -,*,/ 는 무시합니다.
+
+```SCSS
+ex) 'ab'+'cd' = 'abcd' 
+
+}
+
 #####  Boolean Operations
+
+참/거짓 연산자는 보통 언어에서 지원하는것과 동일합니다
+
+```SCSS
+ex) true and true = true
+
+}
+
+true and false = false
+
+true or true = true
+
+true or false = false
+
 #####  List Operations
+sass에서는 list연산이 불가능합니다
 
+(a,b) + (c,d) 를 하여도 (a,b,c,d) 가 나오질 않습니다.
 
+list연산을 사용하려면 사스의 내장함수를 사용하시기 바랍니다.
+
+[SassScript list functions](http://sass-lang.com/documentation/Sass/Script/Functions.html#list-functions)
+
+<br><br>
 아래는 width값을 알아내기 위한 간단한 연산 예문입니다.
 
 ```SCSS 
@@ -247,7 +294,6 @@ aside[role="complimentary"] {
 ```
 
 
-
 ### Parentheses
 
 ```css
@@ -268,7 +314,7 @@ sass자체에서 지원하는 내장함수들입니다.
 [sass Functions](http://sass-lang.com/documentation/Sass/Script/Functions.html)
 링크를 통해 들어가셔서 api를 확인하실 수 있습니다.
 
-### Keyword Arguments
+
 ### Interpolation : #{} 보간법
 SASS 는 변수를 "" 내부에서 처리할 수 있는 보간법을 지원하고 있습니다.
 다시 말해서, #{} 구문을 사용하여 선택자 및 속성 이름에 변수를 사용할 수가 있습니다.
@@ -293,7 +339,7 @@ p.foo {
   border-color: blue; }
 
 ```
-#{} 은 SassScript의 속성값에서 사용하는 것도 가능합니다. <해석불가>
+\#{} 은 SassScript의 속성값에서 사용하는 것도 가능합니다. <해석불가>
 
 ```SCSS
 
