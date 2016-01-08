@@ -9,8 +9,16 @@
 
 
 ### Nested Rules (중첩)
+```css
+/*styel.css*/
+#main {
+  width: 97%; }
 
-Sass를 이용하면 HTML의 div 안에 div를 넣는다던지 하는 중첩 된 계층구조처럼 CSS선택자를 중첩할 수 있습니다.   
+#main p{
+    font-size: 2em; }
+```
+보통 CSS의 케스케이딩문법은 위의 문법처럼 부모 클래스를 열거하는 식으로 상속을 구현하고 있습니다. 
+그러나 Sass를 이용하면 HTML의 div 안에 div를 넣는다던지 하는 중첩 된 계층구조처럼 CSS선택자를 중첩할 수 있습니다.   
 이것은 부모 선택자를 중복 작성하는 것을 방지합니다. 
 
 ```SCSS
@@ -90,7 +98,9 @@ nav a {
 <br>
 ### Referencing Parent Selectors: & (부모선택자:&)
 
-가상선택자의 경우에는 부모 선택자를 참조해야합니다. 중첩해서 부모선택자를 작성하는 대신 `&`로 부모선택자를 호출할 수 있습니다. 
+중첩규칙으로 부모선택자를 중첩해서 사용하는 방법을 방지했지만, 중첩규칙은 부모 클래스 안에 속한 자식 클래스에만 사용할 수 있는 규칙입니다. 
+가상선택자 같은 경우에는 부모 선택자를 참조해야 합니다. `부모선택자:hover` , `부모선택자.추가선택자` 처럼 부모 클래스 라인에서 동일하게 반복될 경우에는 중첩규칙으론 대체할 수 가 없습니다.
+이런경우 중첩해서 부모선택자를 작성하는 대신 `&`로 부모선택자를 호출할 수 있습니다. 
 
 ```SCSS
 
@@ -119,7 +129,8 @@ a {
   body.firefox a {
     font-weight: normal; }
 ```
-또 접미사로도 사용될 수 있지만, 이 경우 선택자의 전체 이름이 명확히 인지되지 않기 때문에 권장하지 않습니다.
+이처럼 연관된 스타일을 여러 줄을 만드는 것이 아닌, 하나로 그룹핑 할 수 있다는 장점을 가지고 있습니다. 
+그러나, 접미사로도 사용될 경우 선택자의 전체 이름이 명확히 인지되지 않기 때문에 권장하지 않습니다.
 
 ```SCSS
 // _style.scss
@@ -138,6 +149,34 @@ a {
   #main-sidebar {
     border: 1px solid; }
 ```
+
+추가로 [믹스인]()과 [조건문]()을 이용하여 부모 선택자가 존재하는지의 여부를 감지할 수도 있습니다.
+
+```SCSS
+// _style.scss
+@mixin does-parent-exist {
+    @if & {
+      &:hover {
+        color: red;
+      }
+    }
+    @else {
+      a {
+        color: red;
+      }
+    }
+}
+
+// 부모선택자가 있다면...
+.demo {
+  @include does-parent-exist;
+}
+
+// 부모선택자가 없다면...
+@include does-parent-exist;
+
+```
+
 
 <br>
 ### Nested Properties (중첩 속성)
@@ -183,3 +222,74 @@ Css의 속성중 font-family, font-size, font-weight 등과 같이 `font`로 시
 ```
 * [중첩선언 가이드라인 참조](http://sass-guidelin.es/ko/#nesting)
 
+###Placeholder Selectors: %foo (대체 선택자)
+
+Sass에서는 특별한 선택자로 `placeholder selector`를 지원합니다. 
+이 선택자는 클래스(.)나 아이디(#)를 대체하여 `%`를 사용해서 지정할 수 있지만, 
+Css로 컴파일시에 대체선택자만을 사용한 코드는  컴파일 되지 않습니다.
+
+```SCSS
+// _style.scss
+
+// 이 자체만으로는 Css에 렌더링 되지 않습니다.
+#context a%extreme {
+  color: blue;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+```
+위 코드로는 %extreme는 임의의 클래스나 아이디를 대체할 뿐입니다.
+실제 사용되기 위해선 `@extend %이름`을 사용해 호출해주어야합니다.
+
+```SCSS
+// _style.scss
+
+.notice {
+  @extend %extreme;
+}
+
+```
+```css
+
+// _style.css
+#context a.notice {
+  color: blue;
+  font-weight: bold;
+  font-size: 2em; }
+
+```
+
+mixin으로의 선언을 대신하여 아래와 같은 방식으로도 표현할 수 있습니다.
+
+```SCSS
+// _style.scss
+%button
+    font-weight: bold
+    color: blue
+
+.button-1
+    @extend %button
+    background-color: #fff
+
+.button-2
+    @extend %button
+    background-color: #ddd
+
+```
+```css
+
+// _style.css
+.button-1, .button-2 {
+    font-weight: bold;
+    color: blue;
+}
+
+.button-1 {
+    background-color: #fff;
+}
+
+.button-2 {
+    background-color: #ddd;
+}
+```

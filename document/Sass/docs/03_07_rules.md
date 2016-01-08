@@ -1,29 +1,13 @@
 # Sass Reference
 
-* @-Rules and Directives
-	- @import
-		+ Partials
-		+ Nested @import
-	- @media
-	- @extend
-		+ How it Works
-		+ Extending Complex Selectors
-		+ Multiple Extends
-		+ Chaining Extends
-		+ Selector Sequences
-		+ Merging Selector Sequences
-		+ @extend-Only Selectors
-		+ The !optional Flag
-		+ @extend in Directives
-	- @at-root
-	 	+ @at-root (without: ...) and @at-root (with: ...)
-	- @debug
-	- @warn
-	- @error
-
 ##7. @-Rules and Directives
+- @import
+- @media
+- @extend
+- @at-root
+- @debug & @warn &@error
 
-### Import (불러오기) -1차
+### Import (불러오기) 
 
 CSS에서 @import로 다른 파일을 연결시킬 수 있습니다. 
 SASS에서도 @import를 사용할 수 있는데, CSS의 @import와는 문법이나 작동 방식이 다릅니다.
@@ -88,7 +72,7 @@ sidebar {
   -webkit-border-left-radius: 8px; }
 ```
 <br>
-### Partials -1차
+#### Partials 
 
 Sass를 작성 시 CSS의 작은 조각파일을 포함하는 partial Sass파일을 만들어 다른 Sass파일에 포함 시킬 수 있습니다. 
 
@@ -122,12 +106,94 @@ Sass 파일명 앞에 `_`를 붙이면 CSS로 변환되지 않습니다. 이점�
 
 
 <br>
-###Media
+###@media
 
+@media는 Css에서 정의되어있는 미디어 쿼리 입니다. Sass에서 @media는 별도의 클래스 선언없이도 해당하는 클래스 안에 바로 정의할 수 있습니다. 이로서 굳이 선택자를 반복하거나 스타일을 작성을 중단할 필요없이 media 관련 스타일을 바로 추가할 수 있습니다. 
 
+```SCSS 
+
+/// _style.scss
+.sidebar {
+  width: 300px;
+  @media screen and (orientation: landscape) {
+    width: 500px;
+  }
+}
+
+```
+
+```css
+
+/* style.css */
+ 
+.sidebar {
+  width: 300px; }
+  @media screen and (orientation: landscape) {
+    .sidebar {
+      width: 500px; } }
+
+```
+@media의 쿼리는 서로 중첩 될 수도 있습니다.
+
+```SCSS 
+
+/// _style.scss
+@media screen {
+  .sidebar {
+     height:300px
+    @media (orientation: landscape) {
+      width: 500px;
+    }
+  }
+}
+
+```
+
+```css
+
+/* style.css */
+
+@media screen {
+  .sidebar {
+    height: 300px;
+  }
+}
+@media screen and (orientation: landscape) {
+  .sidebar {
+    width: 500px;
+  }
+}
+
+```
+마지막으로, @media 쿼리의 기능 이름과 특성 대신에  SassScript식(변수, 함수 및 연산자 포함)을 포함 할 수 있습니다. 
+
+```SCSS 
+
+/// _style.scss
+$media: screen;
+$feature: -webkit-min-device-pixel-ratio;
+$value: 1.5;
+
+@media #{$media} and ($feature: $value) {
+  .sidebar {
+    width: 500px;
+  }
+}
+
+```
+
+```css
+
+/* style.css */
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  .sidebar {
+    width: 500px; } }
+
+```
 
 <br>
-### Extend/Inheritance (확장/상속) -1차
+### Extend/Inheritance (확장/상속)
 `@extend`를 사용하면 미리 정의된 다른 Css 선언을 상속 받을 수 있습니다. 아래는 .success, .error, .warning 등의 메세지 속성을 `@extend`를 사용하여 간단히 정의한 예시입니다. 
 
 ```SCSS 
@@ -194,3 +260,148 @@ Sass 파일명 앞에 `_`를 붙이면 CSS로 변환되지 않습니다. 이점�
 
 <br>
 ###@at-root
+
+@at-root 지시어는 하나 이상의 규칙을 부모 선택자 아래 중첩되지 않고 document root상에 출력됩니다.
+
+```SCSS 
+
+/// _style.scss
+.parent {
+  background:#ddd;
+  
+  @at-root {
+    .child1 {
+      font-size: 12px;
+    }
+    .child2 {
+      padding: 10px;
+    }
+  }
+  .step-child {
+    color: #c4c4c4;
+  }
+}
+
+```
+
+```css
+
+/* style.css */
+.parent {
+  background: #ddd;
+}
+.child1 {
+  font-size: 12px;
+}
+
+.child2 {
+  padding: 10px;
+}
+.parent .step-child {
+  color: #c4c4c4;
+}
+
+```
+
+#### @at-root (without: ...) 와 @at-root(with: ...) 
+
+기본적으로 @at-root는 단순히 부모선택자를 제외하지만  @media와 같은 중첩된 지시어의 밖으로 옮기는 것도 가능합니다.
+
+```
+// _style.scss
+@media print {
+  .page {
+    width: 8in;
+    @at-root (without: media) {
+      color: red;
+    }
+    @at-root (without: page) {
+      .number{
+        color: red;
+      }
+    }
+  }
+}
+
+```
+
+```css
+
+/* style.css */
+@media print {
+  .page {
+    width: 8in;
+  }
+}
+.page {
+  color: red;
+}
+@media print {
+  .page .number {
+    color: red;
+  }
+}
+
+```
+
+
+<br>
+###@debug & warn & @error
+
+@debug, @warn 지시어는 표준 에러 출력 스트림에 SassScript 식의 값을 출력합니다.
+
+ @warn 과 @debug사이에 두 가지 중요한 차이점이 있습니다.
+
+  1. `--quie` 또는 `:quiet` 옵션으로 @warn을 해제할 수 있습니다.
+  2. @warn경우에는 stylesheet에서 경고의 원인이 된 위치와 내용을 메시지로 출력해주지만 @debug는 cmd 나 터미널에서 출력됩니다.  
+
+```SCSS
+// _style.scss
+@debug 10em + 12em;
+
+```
+
+```css
+
+/* style.css */
+Line 1 DEBUG: 22em
+
+```
+```
+// _style.scss
+@debug 10em + 12em;
+
+```
+
+```cmd
+Line 1 DEBUG: 22em
+
+```
+
+
+```SCSS
+@mixin adjust-location($x, $y) {
+  @if unitless($x) {
+    @warn " #{$x} 에 px이 있다고 가정 ";
+    $x: 1px * $x;
+  }
+  @if unitless($y) {
+    @warn " #{$y} 에 px이 있다고 가정 ";
+    $y: 1px * $y;
+  }
+  position: relative; left: $x; top: $y;
+}
+```
+@error 지시어는 치명적인 오류와 같은 SassScript식의 값을 출력합니다. 그것은 mixin과 함수의 인자를 검증하기에 유용합니다. 
+
+```SCSS
+@mixin adjust-location($x, $y) {
+  @if unitless($x) {
+    @error "$x may not be unitless, was #{$x}.";
+  }
+  @if unitless($y) {
+    @error "$y may not be unitless, was #{$y}.";
+  }
+  position: relative; left: $x; top: $y;
+}
+```

@@ -1,0 +1,18 @@
+#main {
+  content: "First content";
+  new-content: "First time reference";
+}
+
+#main {
+  content: "Non-null content";
+}
+
+#demo {
+  width: 5em;
+}
+
+#sidebar {
+  width: 5em;
+}
+
+/*# sourceMappingURL=style.css.map */

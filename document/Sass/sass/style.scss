@@ -1,0 +1,23 @@
+$content: "First content";
+$content: "Second content?" !default;
+$new_content: "First time reference" !default;
+
+#main {
+  content: $content;
+  new-content: $new_content;
+}
+
+$content: null;
+$content: "Non-null content" !default;
+
+#main {
+  content: $content;
+}
+
+#demo {
+  $width : 5em !global; 
+  width: $width;
+}
+#sidebar {
+  width: $width;
+}
