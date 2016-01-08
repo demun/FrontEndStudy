@@ -22,3 +22,37 @@
 이때 내부 함수를 클로저함수라고 합니다.
 변수 A는 클로저 현상에 의해 외부함수의 호출이 끝나더라도 사라지지않고 값을 유지하게 됩니다.
 [==> CondePen 확인] http://codepen.io/minyeong/pen/MKmovM
+
+addCount() 함수가 호출되면 지역변수 count가 0으로 초기화됨과 동시에 생성됩니다. 
+증가 연산자에 의해 1이되고 이 값을 리턴하기때문에 1이 출력됩니다.그리고 모든 구문을 실행한 함수는 종료됩니다. 이와동시에 함수 내부에서 만들어진 
+count는 메모리에서 사라집니다.
+2.count, 3.count 역시 첫번째와 동일하게 실행되기 때문에 1이 출력됩니다.
+
+이와같이 일반적인 경우 함수 내부에 위치하고 있는 지역변수는 함수가 종료됨과 동시에 모든 메모리에서 사라집니다. 
+그렇지않은 경우 클로저를 사용한 경우 입니다. 
+
+###예시
+```javascript
+<script>
+function createCounter(){
+            var count=0;
+            function addCount(){
+                count++;
+                return count;
+            }
+            return addCount;
+        }
+
+        var counter = createCounter();
+
+        document.write("1. count = " + counter(),"<br>");
+        document.write("2. count = " + counter(),"<br>");
+        document.write("3. count = " + counter(),"<br>");
+</script>
+```
+createCounter() 함수가 호출되면 지역변수 count가 0으로 초기화됨과 동시에 만들어집니다.
+그리고 내부에 addCount()라는 함수도 만들어지고 addCount()의 함수를 리턴한 후 createCounter()함수는 종료된다.
+이때 변수 count는 클로저 현상에 의해 createCounter()함수의 호출이 끝나더라도 사라지지않고 값을 유지하게된다.
+counter() 가 실행되면 count 값이 증가하기 때문에
+2. count 와 3. count 의 값이 증가하여 출력됩니다.
+[==> CondePen 확인] http://codepen.io/minyeong/pen/KVmvzp
