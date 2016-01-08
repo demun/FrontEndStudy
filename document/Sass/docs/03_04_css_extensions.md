@@ -295,3 +295,35 @@ mixin으로의 선언을 대신하여 아래와 같은 방식으로도 표현할
     background-color: #ddd;
 }
 ```
+
+####CSS 에서와 같은 결합 선택자 사용하기
+```SCSS
+// _style.scss
+div {
+  color:black;
+
+  // 선택 연산자
+  .foo {
+    color: black; // 자손(descendant) 선택자
+  }
+  > .foo {
+    color: black; // 자식(child) combinator
+  }
+  + .foo {
+    color: #000; // 인접형제(adjacent sibling) 선택자
+  }
+  ~ .foo {
+    color: yellow; // 일반형제(general sibling) 선택자
+  }
+  & .foo {
+    color: #fff; // Sass 부모(Parent) 참조 선택자
+  }
+  .foo & {
+    color: red; // Sass 부모(Parent) 참조 선택자
+  }
+  &.bar {
+    color: green;
+  }
+}
+
+```

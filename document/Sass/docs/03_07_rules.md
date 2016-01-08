@@ -305,6 +305,170 @@ $value: 1.5;
 그리고 @extend .error; @extend .attention; 은 선택자들의 항목을 콤마로 구분하여 다음과 같이 쓸 수 있습니다.    
 @extend .error, attention;
 
+####가변 Extends
+한개의 선택자는 차례로 세번째의 확장된 다른 선택자를 확장하는 것이 가능합니다.
+
+```SCSS
+/* style.css */
+.demo-01 {
+    border: 1px #f00;
+    background-color: #fdd;
+}
+
+.demo-02 {
+    @extend .demo-01;
+    border-width: 3px;
+}
+
+.demo-03 {
+    @extend .demo-02;
+    position: fixed;
+    top: 10%;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+}
+```
+
+```css
+/* style.css */
+.error, .seriousError, .criticalError {
+  border: 1px #f00;
+  background-color: #fdd; }
+
+.seriousError, .criticalError {
+  border-width: 3px; }
+
+.criticalError {
+  position: fixed;
+  top: 10%;
+  bottom: 10%;
+  left: 10%;
+  right: 10%; }
+```
+
+####선택자 순서
+
+.foo .bar 또는 .foo + .bar 등의 선택자 배열은 현재 확장 할 수 없습니다.     
+ 중첩 된 선택자는 자체는 `,`로 @extend 사용하기 위해서만 가능합니다.
+
+```SCSS
+/* style.css */
+#fake-links .link {
+  @extend a;
+}
+
+a {
+  color: blue;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+```
+
+```css
+/* style.css */
+a, #fake-links .link {
+  color: blue; }
+  a:hover, #fake-links .link:hover {
+    text-decoration: underline; }
+```
+
+#####선택자 순서 병합
+
+때때로 선택 순서는 다른 순서로 나타나, 다른 선택자를 확장합니다. 이 경우, 두 순서가​​ 병합 될 필요가있습니다.
+
+```SCSS
+/* style.css */
+#admin .tabbar a {
+  font-weight: bold;
+}
+#demo .overview .fakelink {
+  @extend a;
+}
+```
+
+병합되는 선택자에서 공통 선택자가 없을 경우 두개의 새로운 선택자가 생성됩니다. 
+
+```css
+/* style.css */
+#admin .tabbar a,
+#admin .tabbar #demo .overview .fakelink,
+#demo .overview #admin .tabbar .fakelink {
+  font-weight: bold; }
+```
+두 선택자가 일부 선택자를 공유할 경우, 공통 선택자는 병합되지만, 여전히 다른 경우의 수가 발생하므로 아래와 같은 파일이 생성됩니다. 
+```SCSS
+/* style.css */
+#admin .tabbar a {
+  font-weight: bold;
+}
+#admin .overview .fakelink {
+  @extend a;
+}
+```
+
+```css
+/* style.css */
+#admin .tabbar a,
+#admin .tabbar .overview .fakelink,
+#admin .overview .tabbar .fakelink {
+  font-weight: bold;
+```
+
+
+####@extend-Only Selectors (%foo)
+
+
+```SCSS
+/* style.css */
+// 이것은 그 자체로는 출력되지 않습니다. 
+#context a%extreme {
+  color: blue;
+  font-weight: bold;
+  font-size: 2em;
+}
+```
+
+```SCSS
+/* style.css */
+.notice {
+  @extend %extreme;
+}
+```
+
+```css
+/* style.css */
+#context a.notice {
+  color: blue;
+  font-weight: bold;
+  font-size: 2em; }
+```
+
+#### !optional Flag
+!optional 은 @extend 상속 시,선언된 선택자가 존재하지 않을 경우 '옵션' 처리하여 오류를 발생시키지 않도록 할 수 있습니다.
+
+```SCSS
+/* style.css */
+//   재사용 가능한 .btn-link 라고 한다면
+.btn-link {
+  background-color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  color: #000;
+}
+
+.btn-link-01 {
+  @extend .btn-link-01 !optional; 
+  // .btn-link-01 클래스를 상속함을 명시 하였으나 .btn-link-01 선택자가 없어도 에러가 발생하지 않는다.
+  background-color: red;
+  .decs & {
+    background-color: darken(red, 20%);
+  }
+}
+
+```
+
 <br>
 ###@at-root
 
