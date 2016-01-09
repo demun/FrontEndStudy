@@ -18,6 +18,20 @@
 클로저는 일종의 현상이기 때문에 정해진 문법은 없지만 위의 문법처럼 내부함수를 포함하고 있는 함수의 변수를 사용하는 구조의 경우로 표현할수 있다. 
 이때 내부 함수를 클로저 함수라고 합니다.
 변수 A는 클로저 현상에 의해 외부함수의 호출이 끝나더라도 사라지지않고 값을 유지하게 됩니다.
+
+###일반 함수인 경우 
+```javascript
+<script>
+function addCount(){
+  var count=0;
+  count++;
+  return count;
+}
+document.write("1. count = "+addCount(),"<br>");
+document.write("2. count = "+addCount(),"<br>");
+document.write("3. count = "+addCount(),"<br>");
+</script>
+```
 [==> CondePen 확인] http://codepen.io/minyeong/pen/MKmovM
 
 addCount() 함수가 호출되면 지역변수 count가 0으로 초기화됨과 동시에 생성됩니다. 
@@ -58,9 +72,7 @@ counter()가 실행되면 addCount()값이 실행되어 증가연산자에 의�
 counter에 담겨있는 함수를 호출하는 순간에 이미 사라진 외부함수에서 정의된 지역변수에 접근이 성공적으로 이루어진것입니다. 
 
 ###클로저를 사용하면 좋은점 
-
 함수내부에 데이터가 만들어지기 때문에 함수 외부에서 수정할수 없는 보호된 데이터를 만들 수 있습니다.(객체지향 프로그래밍에서는 
 이를 private데이터 라고 부릅니다.)
 
-
-[참고] 자바스크립트+jquery 완전정복 스터디 1
+[출처] 자바스크립트+jquery 완전정복 스터디 1
