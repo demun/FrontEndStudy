@@ -1,4 +1,4 @@
-#클로저 
+#클로저 (closure)
 
 함수내부에 만든 지역변수가 사라지지 않고 계속해서 값을 유지하고 있는 상태를 말합니다.
 일반 지역변수의 경우 함수호출이 완료되면 사라지지만 클로저를 이용하면 함수호출 완료후 사라지는 지역변수를 사라지지않는 데이터저장소로 만들수가 있습니다.
@@ -50,9 +50,13 @@ function createCounter(){
         document.write("3. count = " + counter(),"<br>");
 </script>
 ```
-createCounter() 함수가 호출되면 지역변수 count가 0으로 초기화됨과 동시에 만들어집니다.
-그리고 내부에 addCount()라는 함수도 만들어지고 addCount()의 함수를 리턴한 후 createCounter()함수는 종료된다.
-이때 변수 count는 클로저 현상에 의해 createCounter()함수의 호출이 끝나더라도 사라지지않고 값을 유지하게된다.
-counter() 가 실행되면 count 값이 증가하기 때문에
-2. count 와 3. count 의 값이 증가하여 출력됩니다.
 [==> CondePen 확인] http://codepen.io/minyeong/pen/KVmvzp
+
+createCounter() 함수가 호출되면 지역변수 count가 0으로 초기화됨과 동시에 만들어집니다.
+그리고 내부에 addCount()라는 함수도 만들어지고 addCount()의 함수를 리턴한 후 createCounter()함수는 종료됩니다.
+
+####counter()가 실행되면 addCount()값이 실행되어 증가연산자에 의해서 2. count 와 3. count 의 값이 증가하여 출력됩니다.
+외부함수가 내부함수를 리턴했다라는것은 그함수를 종료되었다는 뜻이므로 createCounter()함수는 종료되지만
+counter 에 담겨있는 함수를 호출하는 순간에 이미 사라진 외부함수에서 정의된 지역변수에 접근이 성공적으로 이루어진것입니다. 
+
+
