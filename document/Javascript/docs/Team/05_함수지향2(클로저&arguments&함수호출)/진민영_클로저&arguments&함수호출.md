@@ -12,14 +12,11 @@
       function 내부함수(){
         변수 A사용;
       }
-
-
  }
-
 </script>
 ```
 클로저는 일종의 현상이기 때문에 정해진 문법은 없지만 위의 문법처럼 내부함수를 포함하고 있는 함수의 변수를 사용하는 구조의 경우로 표현할수 있다. 
-이때 내부 함수를 클로저함수라고 합니다.
+이때 내부 함수를 클로저 함수라고 합니다.
 변수 A는 클로저 현상에 의해 외부함수의 호출이 끝나더라도 사라지지않고 값을 유지하게 됩니다.
 [==> CondePen 확인] http://codepen.io/minyeong/pen/MKmovM
 
@@ -44,7 +41,7 @@ function createCounter(){
         }
 
         var counter = createCounter();
-
+        
         document.write("1. count = " + counter(),"<br>");
         document.write("2. count = " + counter(),"<br>");
         document.write("3. count = " + counter(),"<br>");
@@ -55,8 +52,10 @@ function createCounter(){
 createCounter() 함수가 호출되면 지역변수 count가 0으로 초기화됨과 동시에 만들어집니다.
 그리고 내부에 addCount()라는 함수도 만들어지고 addCount()의 함수를 리턴한 후 createCounter()함수는 종료됩니다.
 
-####counter()가 실행되면 addCount()값이 실행되어 증가연산자에 의해서 2. count 와 3. count 의 값이 증가하여 출력됩니다.
-외부함수가 내부함수를 리턴했다라는것은 그함수를 종료되었다는 뜻이므로 createCounter()함수는 종료되지만
-counter 에 담겨있는 함수를 호출하는 순간에 이미 사라진 외부함수에서 정의된 지역변수에 접근이 성공적으로 이루어진것입니다. 
+counter()가 실행되면 addCount()값이 실행되어 증가연산자에 의해서 2. count 와 3. count 의 값이 증가하여 출력됩니다.
+
+외부함수가 내부함수를 리턴했다라는것은 그함수를 종료되었다는 뜻이므로 createCounter()(외부함수)는 종료되지만
+counter에 담겨있는 함수를 호출하는 순간에 이미 사라진 외부함수에서 정의된 지역변수에 접근이 성공적으로 이루어진것입니다. 
 
 
+[출처] 자바스크립트+jquery 완전정복 스터디 1
