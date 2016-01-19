@@ -10,7 +10,7 @@
 	* Mixins
 	* Extend
 	* Operators
-* [sass-레퍼런스](docs/03_04_Sass_Reference.md)
+* [sass-레퍼런스](docs/03_04_css_extensions.md)
 	1. Features
 	2. Syntax
 	3. Using Sass

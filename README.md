@@ -6,14 +6,7 @@
 <br>
 
 
-## LoadMap
 
-* [부트스트랩 로드맵](document/@Rule/bootstrap.md)
-* [자바스크립트 로드맵](document/@Rule/javascript.md)
-* [jquery 로드맵](document/@Rule/jquery.md)
-* [angular 로드맵](document/@Rule/angular.md)
-* [sass 로드맵](document/@Rule/sass.md)
-* [postcss 로드맵](document/@Rule/postcss.md)
 * [문서-작성-방법](document/@Rule/문서-작성-방법.md)
 
 
@@ -26,6 +19,7 @@
 * [Sublimetext](document/Sublimetext/README.md) - 진행완료
 * [Grunt](document/Grunt/README.md) - 진행완료
 * [CSS3](document/CSS3/README.md) - 진행완료
+* [Sass](document/Sass/README.md) - 진행완료
 
 <br>
 
@@ -33,23 +27,14 @@
 * [Jquery](document/Jquery/README.md) - 진행중
 * [Angularjs](document/AngularJS/README.md) - 진행중
 * [Bootstrap](document/Bootstrap/README.md) - 진행중
-* [Sass](document/Sass/README.md) - 진행중
 
 
 ### 배우고자하는 기술들
 
 
-* [React](http://reactkr.github.io/react/docs/getting-started-ko-KR.html)
-* ECMAScript 2015
-* Backbonejs
-* TypeScript
 * [PostCSS](document/PostCSS/README.md) - 진행대기
 * [CoffeeScript](document/CoffeeScript/README.md) - 진행대기
 * [Atom](document/Atom/README.md) - 진행대기
-* [html5](document/html5/README.md) - 진행대기
 * [CSS](document/CSS/README.md) - 진행대기
-* [Gulp](document/Gulp/README.md) - 진행대기
-* [Bower](document/Bower/README.md) - 진행대기
-* [Yeoman](document/Yeoman/README.md) - 진행대기
 
 <br>
