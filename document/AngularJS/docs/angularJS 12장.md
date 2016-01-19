@@ -58,7 +58,7 @@ To Do List
 </html>
 ```
 
-[http://codepen.io/skypentum/pen/ZQXgmE?editors=100]예제
+[http://codepen.io/skypentum/pen/ZQXgmE?editors=100](예제)
 
 #### Form을 사용하는 Data Binding의 두가지 방법
 
@@ -84,7 +84,7 @@ complete: false
 :
 <script>
 ```
-[http://codepen.io/skypentum/pen/MKENLg?editors=100]예제
+[http://codepen.io/skypentum/pen/MKENLg?editors=100](예제)
 
 ### Form 유효성 검사
 
@@ -143,9 +143,25 @@ Valid: {{myForm.$valid}}
 </html>
 ```
 
-[http://codepen.io/skypentum/pen/xZXvBR?editors=100]예제
+[http://codepen.io/skypentum/pen/xZXvBR?editors=100](예제)
 
-Adding the Form Element
+validation Form Element (css 사용)
+[http://codepen.io/skypentum/pen/jWaLBv?editors=100](예제)
 
+Deferring Validation Feedback
+[http://codepen.io/skypentum/pen/wMPqdy?editors=100](예제)
 
+Using the Form Directive Attributes
+[http://codepen.io/skypentum/pen/LGOjjN?editors=100](예제)
 
+Using Checkboxes
+[http://codepen.io/skypentum/pen/bEYrrM?editors=100](예제)
+
+Using Text Areas
+[http://codepen.io/skypentum/pen/rxYzzE?editors=100](예제)
+
+Using Select Elements
+[http://codepen.io/skypentum/pen/bEYoNz?editors=100](예제)
+
+Creating optgroup Elements
+[http://codepen.io/skypentum/pen/oboGXe?editors=100](예제)
