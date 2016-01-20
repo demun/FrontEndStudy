@@ -36,7 +36,7 @@
 - [플러그인 모음-jqueryrain](http://www.jqueryrain.com)
 - 슬라이드
     - [slidesjs 플러그인](docs/01_02_jquery_plugin_slidesjs.md)
-    - [bxslider](docs/01_01_jquery_plugin_bxsider.md)
+    - [bxslider](docs/01_01_jquery_plugin_bxslider.md)
     - [Swiper](http://www.idangero.us/swiper/#.VkhuaXbhC70)
     - [cycle2](http://jquery.malsup.com/cycle2/)
     - slick 플러그인 정리
