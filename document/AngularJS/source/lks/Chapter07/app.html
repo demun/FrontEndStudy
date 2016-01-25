@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="sportsStore">
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />  <!--이게 없으면 한글이 깨진다-->
+	<title>SportsStore</title>
+	<script src='angular.js'></script>
+	<link href='bootstrap.css' rel='stylesheet' />
+	<link href='bootstrap-theme.css' rel='stylesheet' />
+	<script type="text/javascript">
+		angular.module("sportsStore", ["customFilters"]);
+	</script>
+	<script src="controller/sportsStore.js"></script>
+	<script src="filters/customFilters.js"></script>
+	<script src="controller/productListControllers.js"></script>
+</head>
+
+<body ng-controller="sportsStoreCtrl">
+	<div class="navbar navbar-inverse">
+		<a class="navbar-brand" href="#">SPORTS STORE</a>
+	</div>
+
+    <div class="alert alert-danger" ng-show="data.error">
+        Error ({{data.error.status}}). The product data was not loaded. 
+        <a href="/app.html" class="alert-link">Click here to try again</a>
+    </div>
+
+    <ng-include src="'views/productList.html'"></ng-include>
+</body>
+</html>

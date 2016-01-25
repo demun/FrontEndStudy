@@ -1,6 +1,6 @@
-var connect = require('connect'),
+﻿var connect = require('connect'),
     serveStatic = require('serve-static'),
-    workspaceDir = './Chapter07',
+    workspaceDir = './',
     port = 5000;
 
 var app = connect();
