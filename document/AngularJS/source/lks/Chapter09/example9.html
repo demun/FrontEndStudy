@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>AngularJS Demo</title>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script src="angular.js"></script>
+    <script>
+
+        var myApp = angular.module("exampleApp", []);
+
+        myApp.controller("dayCtrl", function ($scope) {
+            var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday",
+                "Thursday", "Friday", "Saturday"];
+            $scope.day = dayNames[new Date().getDay()];
+        });
+
+        myApp.controller("tomorrowCtrl", function ($scope) {
+            var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday",
+                "Thursday", "Friday", "Saturday"];
+            $scope.day = dayNames[(new Date().getDay() + 1) % 7];
+        });
+
+        // 디렉티브는 HTML을 확장하고 개선할 때 사용
+        myApp.directive("highlight", function () {
+            // 모든 Module 메소드는 함수를 인자로 받는다
+            // 이러한 함수는 팩터리 함수라고 부르며,
+            // function () { return 에 해당하는 부분이 바로 팩터리 함수이다.
+            return function (scope, element, attrs) {
+                // 팩토리 함수는 종종 작업자 함수를 반환함
+                // 이는 AngularJS가 어떤 작업을 수행하는데 필요한 객체 또한 함수라는 뜻이다
+                if (scope.day == attrs["highlight"]) {
+                    element.css("color", "red");
+                } 
+            }
+        });
+        // HTML의 속성을 변경시켜줄 때 주로 사용
+         
+    </script>
+</head>
+<body> 
+    <div class="panel">
+        <div class="page-header">
+            <h3>AngularJS App</h3>
+        </div>
+        <h4 ng-controller="dayCtrl" highlight="Monday">
+        <!-- dayCtrl 모듈이 실행될 때 highlight는 Monday를 가져가게 된다
+        위 함수에 보게되면 highlight의 속성값과 scope.day 값이 같게 될 때 HTML 속성을 변하게 한다. -->
+            Today is {{day || "(unknown)"}}
+        </h4>
+        <h4 ng-controller="tomorrowCtrl">Tomorrow is {{day || "(unknown)"}}</h4>
+    </div>
+</body>
+</html>

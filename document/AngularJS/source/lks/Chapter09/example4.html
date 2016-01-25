@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp" >
+<head>
+	<title>AngularJS Demo</title>
+	<link href="bootstrap.css" rel="stylesheet" />
+	<link href="bootstrap-theme.css" rel="stylesheet" />
+	<script src="angular.js"></script>
+	<script>
+
+		var myApp = angular.module("exampleApp", []);
+
+		myApp.controller("dayCtrl", function ($scope) {
+			// 이 곳에는 컨트롤러에 대한 내용을 추가함
+			// 이 때 주의할 것은 함수가 호출될 때 자동으로 $scope를 넘겨주게 된다.
+			// 따라서 아래 ng-controller="dayCtrl"이 호출되며 $scope의 값을 가져오게 된다.
+			// controller statements will go here
+		});
+
+	</script>
+</head>
+<body>
+	<div class="panel" ng-controller="dayCtrl">
+	<!-- 가져온 $scope에서 변수가 정의 된 것이 있으면 해당 변수 값을 채우게 됨 -->
+	<!-- 또한 View에 controller가 실행된 결과를 적용하게 됨 -->
+		<div class="page-header">
+			<h3>AngularJS App</h3>
+		</div>
+		<h4>Today is {{day || "(unknown)"}}</h4>
+	</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp" >
+<head>
+    <title>AngularJS Demo</title>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script src="angular.js"></script>
+    <script>
+
+        var myApp = angular.module("exampleApp", []);
+
+        myApp.controller("dayCtrl", function ($scope) {
+            var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday",
+                "Thursday", "Friday", "Saturday"];
+            $scope.day = dayNames[new Date().getDay()];
+            // getDay()함수를 이용해 요일의 숫자 값을 가져오고
+            // 그 값을 이용해 dayNames의 문자를 가져옴
+            // 그 후 $scope.day를 이용해 day 값을 전달 함
+        });
+
+    </script>
+</head>
+<body>
+    <div class="panel" ng-controller="dayCtrl">
+        <div class="page-header">
+            <h3>AngularJS App</h3>
+        </div>
+        <h4>Today is {{day || "(unknown)"}}</h4>
+        <!-- day 값을 가져와 값을 표시하게 됨 -->
+    </div>
+</body>
+</html>
