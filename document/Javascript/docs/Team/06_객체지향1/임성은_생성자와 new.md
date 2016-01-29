@@ -63,7 +63,7 @@ p2.name = 'leezche';
 p2.introduce = function(){
     return 'My name is '+this.name; 
 }
-document.write(p2.introduce());
+document.write(p2.introduce()+"<br />");
 
 //코드 개선
 
