@@ -90,5 +90,5 @@ My name is leezche
 [==> CondePen 확인](http://codepen.io/lseeee/pen/PZaoEB)
 
 ##참고
-[생성자와 new] https://opentutorials.org/module/532/6570][생성자와 new]
+[생성자와 new https://opentutorials.org/module/532/6570][생성자와 new]
 [생성자와 new]:https://opentutorials.org/module/532/6570
