@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>AngularJS Demo</title>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script src="angular.js"></script>
+    <script>
+
+        var myApp = angular.module("exampleApp", []);
+
+        myApp.controller("dayCtrl", function ($scope, days) {
+            $scope.day = days.today;
+        });
+
+        myApp.controller("tomorrowCtrl", function ($scope, days) {
+            $scope.day = days.tomorrow;
+        });
+
+        myApp.directive("highlight", function ($filter) {
+
+            var dayFilter = $filter("dayName");
+            
+            return function (scope, element, attrs) {
+                if (dayFilter(scope.day) == attrs["highlight"]) {
+                    element.css("color", "red");
+                } 
+            }
+        });
+         
+        myApp.filter("dayName", function () {
+            var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday",
+                            "Thursday", "Friday", "Saturday"];
+            return function (input) {
+                return angular.isNumber(input) ? dayNames[input] : input;
+            };
+        });
+
+        // 이 부분에서는 변수를 선언하고 해당 변수가 갖는 값을 지정하게 된다.
+        // Module.value 매소드는 고정값 및 객체를 반환하는 서비스를 하게 되고,
+        // 이를 활용해 service나 filter 같은 모듈 매소드를 통해 생성되는 객체뿐 아니라 모든 값이나 객체에 대해 의존성 주입을 활용할 수 있게 되므로 그만큼 편하다.
+        // 한마디로 좀 더 일관적인 개발 기법을 적용하게 해주고 단위 테스트를 단순화 함
+        var now = new Date();
+        myApp.value("nowValue", now);
+        // now라는 변수를 선언하고, 이 변수에 Date를 대입하고
+        // nowValue라는 value 서비스를 생성했다.
+        // days 서비스를 선언할 때 nowValue 서비스를 의존성으로 선언해 사용한다.
+
+        myApp.service("days", function (nowValue) {
+            this.today = nowValue.getDay();
+            this.tomorrow = this.today + 1;
+        });
+
+        // myApp.service("days", function () {
+        //     this.today = now.getDay();
+        //     this.tomorrow = this.today + 1;
+        // });
+        // Value를 사용할 생각이 없다면,
+        // 클로저 기능을 활용하여 구현할 수도 있다.
+
+
+    </script>
+</head>
+<body> 
+    <div class="panel">
+        <div class="page-header">
+            <h3>AngularJS App</h3>
+        </div>
+        <h4 ng-controller="dayCtrl" highlight="Monday">
+            Today is {{day || "(unknown)" | dayName}}
+        </h4>
+        <h4 ng-controller="tomorrowCtrl">
+            Tomorrow is {{day || "(unknown)" | dayName}}
+        </h4>
+    </div>
+</body>
+</html>
