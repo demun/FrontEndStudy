@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Directives</title>
+    <script src="angular.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script>
+        angular.module("exampleApp", [])
+            .controller("defaultCtrl", function ($scope) {
+                $scope.todos = [
+                    { action: "Get groceries", complete: false },
+                    { action: "Call plumber", complete: false },
+                    { action: "Buy running shoes", complete: true },
+                    { action: "Buy flowers", complete: false },
+                    { action: "Call family", complete: false }];
+
+                // 2. 아래는 showList의 값에 따라 list.html, table.html을 되돌려주도록 설계되었다.
+                $scope.viewFile = function () {
+                    return $scope.showList ? "list.html" : "table.html";
+                };
+            });
+    </script>
+</head>
+<body>
+    <div id="todoPanel" class="panel" ng-controller="defaultCtrl">
+        <h3 class="panel-header">To Do List</h3>
+
+        <div class="well">
+            <div class="checkbox">
+                <label>
+                    <!-- 1. 아래는 ng-model로서 showList를 사용하게 되고
+                    showList 값이 바꿀 때마다 viewFile 함수의 return값이 바뀌게 된다. -->
+                    <input type="checkbox" ng-model="showList">
+                    Use the list view
+                </label>
+            </div>
+        </div>
+
+        <ng-include src="viewFile()"></ng-include>
+        <!-- 3. 결국 viewFile()함수는 위의 결과들로 return된 list.html 또는 table.html을 표시하게 된다. -->
+
+    </div>
+</body>
+</html>

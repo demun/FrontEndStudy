@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Directives</title>
+    <script src="angular.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script>
+        angular.module("exampleApp", [])
+            .controller("defaultCtrl", function ($scope) {
+                $scope.todos = [
+                    { action: "Get groceries", complete: false },
+                    { action: "Call plumber", complete: false },
+                    { action: "Buy running shoes", complete: true },
+                    { action: "Buy flowers", complete: false },
+                    { action: "Call family", complete: false }];
+            });
+    </script>
+</head>
+<body>
+    <div id="todoPanel" class="panel" ng-controller="defaultCtrl">
+        <h3 class="panel-header">To Do List</h3>
+        <!-- 아래는 부분 뷰를 다른 파일로 정리해 첨부하는 것을 구현한 것이다.
+        ng-include는 해당 파일을 현재의 위치에 넣어주게 된다.
+        이 경우 메인 문서에 정의된 것처럼 처리가 되므로
+        컨트롤러에서 정의한 데이터 모델 및 동작에도 접근할 수 있고,
+        $index, $first같은 특수 변수에도 똑같이 접근이 가능하게 된다. -->
+        <ng-include src="'table.html'"></ng-include>
+    </div>
+</body>
+</html>

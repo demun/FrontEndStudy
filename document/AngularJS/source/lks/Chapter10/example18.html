@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Directives</title>
+    <script src="angular.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script>
+        angular.module("exampleApp", [])
+            .controller("defaultCtrl", function ($scope) {
+
+                $scope.data = {};
+                    
+                $scope.todos = [
+                    { action: "Get groceries", complete: false },
+                    { action: "Call plumber", complete: false },
+                    { action: "Buy running shoes", complete: true },
+                    { action: "Buy flowers", complete: false },
+                    { action: "Call family", complete: false }];
+            });
+    </script>
+</head>
+<body>
+    <div id="todoPanel" class="panel" ng-controller="defaultCtrl">
+        <h3 class="panel-header">To Do List</h3>
+
+        <div class="well">
+        <!-- AngularJS의 경우는 HTML을 파싱하고 디렉티브를 처리하는 준비과정 동안은 HTML문서를 보여주게 된다.
+        물론 현재는 그 시간이 매우 빨라 보이지 않지만 실패할 경우 그 내용이 고스란히 보이게 된다.
+        이러한 문제를 해결하기 위해 ng-cloak 디렉티브를 사용할 수 있다. -->
+            <div class="radio" ng-repeat="button in ['None', 'Table', 'List']">
+                <label ng-cloak>
+                    <input type="radio" ng-model="data.mode" 
+                        value="{{button}}" ng-checked="$first">
+                    {{button}}
+                </label>
+            </div>
+        </div>
+
+        <div ng-switch on="data.mode" ng-cloak>
+            <div ng-switch-when="Table">
+                <table class="table">
+                    <thead>
+                        <tr><th>#</th><th>Action</th><th>Done</th></tr>
+                    </thead>
+                    <tr ng-repeat="item in todos" ng-class="$odd ? 'odd' : 'even'">
+                        <td>{{$index + 1}}</td>
+                        <td ng-repeat="prop in item">{{prop}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div ng-switch-when="List">
+                <ol>
+                    <li ng-repeat="item in todos">
+                        {{item.action}}<span ng-if="item.complete"> (Done)</span>
+                    </li>
+                </ol>
+            </div>
+            <div ng-switch-default>
+                Select another option to display a layout
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
