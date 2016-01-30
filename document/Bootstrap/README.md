@@ -63,11 +63,11 @@
     - 스크롤 스파이 [](#)
     - 탭 [](#)
     - 툴팁 [](#)
-    - 팝오버 [](#)
-    - 경보 [](#)
-    - 버튼 [](#)
+    - 팝오버 [popover](docs/javascript-popover.md)
+    - 경보 [alerts](docs/javascript-alert.md)
+    - 버튼 [button](docs/javascript-button.md)
     - 보이기/가리기 [Collapse](docs/javascript-collapse.md)  
-    - 캐러셀 [Carousel](docs/javascript-collapse.md)  
+    - 캐러셀 [Carousel](docs/javascript-carousel.md)  
     - 메뉴 [Affix](#)
     
 
