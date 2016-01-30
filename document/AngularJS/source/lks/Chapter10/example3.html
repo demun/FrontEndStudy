@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Directives</title>
+    <script src="angular.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script>
+        angular.module("exampleApp", [])
+            .controller("defaultCtrl", function ($scope) {
+                $scope.todos = [
+                    { action: "Get groceries", complete: false },
+                    { action: "Call plumber", complete: false },
+                    { action: "Buy running shoes", complete: true },
+                    { action: "Buy flowers", complete: false },
+                    { action: "Call family", complete: false }];
+            });
+    </script>
+</head>
+<body>
+    <div id="todoPanel" class="panel" ng-controller="defaultCtrl">
+        <h3 class="panel-header">To Do List</h3>
+        <!-- 아래는 양방향 바인딩의 예시이다. -->
+        <div class="well">
+            <div>The first item is: {{todos[0].action}}</div>
+            <!-- todos[0].action을 바인딩하여 표시하는 구문이다.
+            기존 예제와 다를 것이 없지만
+            실제로는 아래 input form에서 todos[0].action을 바꿀 수 있게 되어있어
+            해당 값이 바뀔 때마다 이 바인딩 된 값이 바뀌게 된다. -->
+        </div>
+        
+        <div class="form-group well">
+            <label for="firstItem">Set First Item:</label>
+            <input name="firstItem" class="form-control" ng-model="todos[0].action" />
+            <!-- ng-model 디렉티브는 이 디렉티브가 정용된 엘리먼트의 내용을 설정하고,
+            수정하는 값에 반응해 데이터 모델을 업데이트 한다.
+            웹브라우저에서 실행해보면 그 값의 변화를 확인할 수 있다. -->
+        </div>        
+    </div>
+</body>
+</html>

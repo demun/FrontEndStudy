@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Directives</title>
+    <script src="angular.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script>
+    // 이번 예제는 바인딩에 대한 설명이다.
+    // AngularJS에서는 두 종류 바인딩을 지원하며,
+    // 1. 단방향 바인딩은 데이터 모델로부터 값을 가져와 HTMLL 엘리먼트에 집어넣는다.
+    // 2. 라이브 바인딩은 바인딩 된 데이터 모델의 값이 변할 경우 새 값을 표시하기 위해 HTML 엘리먼트 또한 업데이트 된다.
+    // ng-bind는 단방향 데이터 바인딩을 생성하는 역할을 하는데
+    // AngularJS는 중괄호를 만나면 자동으로 바인딩을 하므로 직접 사용하는 경우는 그리 많지 않다.
+    </script>
+    <script>
+        angular.module("exampleApp", [])
+            .controller("defaultCtrl", function ($scope) {
+                $scope.todos = [
+                    { action: "Get groceries", complete: false },
+                    { action: "Call plumber", complete: false },
+                    { action: "Buy running shoes", complete: true },
+                    { action: "Buy flowers", complete: false },
+                    { action: "Call family", complete: false }];
+            });
+    // 이 예제는 디렉티브 적용 및 방지 등을 보여준다.
+    // 아래는 디렉티브를 적용하는 여러 방식을 보여준다.
+    </script>
+</head>
+<body>
+    <div id="todoPanel" class="panel" ng-controller="defaultCtrl">
+        <h3 class="panel-header">To Do List</h3>
+  
+        <div>There are {{todos.length}} items</div>
+
+        <div>
+            There are <span ng-bind="todos.length"></span> items(어트리뷰트)
+        </div>
+        <!-- 디렉티브를 어트리뷰트로 적용하는 방식
+        todos.length 속성에 대한 단방향 데이터 바인딩을 설정한다. -->
+
+        <div>
+            There are <span class="ng-bind: todos.length"></span> items(클래스 어트리뷰트)
+        </div>
+        <!-- 디렉티브를 class 어트리뷰트로 적용하는 방식
+        일부 버전에서는 비표준 어트리뷰트를 허용하지 않는 경우도 있기 때문에
+        표준 class 더트리뷰트를 이용하여 선언하여 그 것을 피해갈 수 있다 -->
+
+        <div ng-bind-template=
+             "First: {{todos[0].action}}. Second: {{todos[1].action}}">
+        </div>
+        <!-- 단일 데이터 바인딩 표현식만 처리가 가능하므로 여러 바인딩이 필요할 땐
+        ng-bind-template를 사용하게 된다. -->
+
+        <div ng-non-bindable>
+            AngularJS uses {{ and }} characters for templates
+        </div>
+        <!-- 바인딩을 사용하지 않기 원한다면 ng-non-bindable을 사용하면 된다. -->
+    </div>
+</body>
+</html>

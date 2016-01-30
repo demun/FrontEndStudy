@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Directives</title>
+    <script src="angular.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script>
+        angular.module("exampleApp", [])
+            .controller("defaultCtrl", function ($scope) {
+                $scope.todos = [
+                    { action: "Get groceries", complete: false },
+                    { action: "Call plumber", complete: false },
+                    { action: "Buy running shoes", complete: true },
+                    { action: "Buy flowers", complete: false },
+                    { action: "Call family", complete: false }];
+            });
+        // 디렉티브와 바인딩을 설명하기 위해 우선 controller를 선언하고
+        // 기본 골격을 만들었다.
+        // 위 내용은 todos라는 변수로 이어서 올 예제들을 위한 값을 넣어둔 것이다.
+    </script>
+</head>
+<body>
+    <div id="todoPanel" class="panel" ng-controller="defaultCtrl">
+        <h3 class="panel-header">To Do List</h3>
+        Data items will go here...
+    </div>
+</body>
+</html>
