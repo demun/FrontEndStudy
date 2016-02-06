@@ -1,0 +1,72 @@
+<!-- 이벤트 처리 -->
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Directives</title>
+    <script src="angular.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script>
+        angular.module("exampleApp", [])
+            .controller("defaultCtrl", function ($scope) {
+
+                $scope.todos = [
+                    { action: "Get groceries", complete: false },
+                    { action: "Call plumber", complete: false },
+                    { action: "Buy running shoes", complete: true },
+                    { action: "Buy flowers", complete: false },
+                    { action: "Call family", complete: false }];
+
+                $scope.buttonNames = ["Red", "Green", "Blue"];
+
+                $scope.data = {
+                    rowColor: "Blue",
+                    columnColor: "Green"
+                };
+
+                $scope.handleEvent = function (e) {
+                    console.log("Event type: " + e.type);
+                    $scope.data.columnColor = e.type == "mouseover" ? "Green" : "Blue";
+                }
+                // 이벤트 시점에서 mouseover가 true일 때 Green, false일 때 Blue를 columnColor에 넣어준다.
+            });
+    </script>
+    <style>
+        .Red { background-color: lightcoral; }
+        .Green { background-color: lightgreen; }
+        .Blue { background-color: lightblue; }
+    </style>
+</head>
+<body>
+    <div id="todoPanel" class="panel" ng-controller="defaultCtrl">
+        <h3 class="panel-header">To Do List</h3>
+
+        <div class="well">
+            <span ng-repeat="button in buttonNames">
+                <button class="btn btn-info" ng-click="data.rowColor = button">
+                    {{button}}
+                </button>
+            </span>
+            <!-- 버튼을 3번 반복해 만들며 버튼 클릭시 data.rowColor에 button 값을 넣어줄 수 있도록 하였다.
+            따라서 버튼을 클릭할 때마다 tr 의 색상이 바뀌게 된다. -->
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr><th>#</th><th>Action</th><th>Done</th></tr>
+            </thead>
+            <!-- ng-mouseenter는 마우스가 해당 tr에 들어올 때, leave는 나갈 때
+            event 값과 함께 handleEvent를 호출한다.
+            호출 후 columnColor에 Green 또는 Blue를 넣어주며 그로인해 해당 columnColor 값을 클래스로 갖는 td의
+            색상을 바꿔주게 된다. -->
+            <tr ng-repeat="item in todos" ng-class="data.rowColor"
+                ng-mouseenter="handleEvent($event)"
+                ng-mouseleave="handleEvent($event)">
+                <td>{{$index + 1}}</td>
+                <td>{{item.action}}</td>
+                <td ng-class="data.columnColor">{{item.complete}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

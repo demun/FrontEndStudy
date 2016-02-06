@@ -1,0 +1,50 @@
+<!-- 커스텀 이벤트 디렉티브 생성 -->
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Directives</title>
+    <script src="angular.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script>
+        angular.module("exampleApp", [])
+            .controller("defaultCtrl", function ($scope, $location) {
+                // 이번 컨트롤러는 다른 때와는 다르게 location 값을 가져온다.
+                // 해당 컨트롤러의 위치에서의 control을 결정하게 되는 것이다.
+
+                // message 디렉티브 초기 값은 Tap Me 이다.
+                // 만일 message 값이 바뀌면 해당 위치의 값이 바뀔 것이다.
+                $scope.message = "Tap Me!";
+
+                // 아래는 커스텀 이벤트를 처리하는 곳이다.
+                // tap이란 디렉티브를 정의하며 해당 디렉티브가 위치한 곳에 어떤 이벤트가 생기게 되면
+                // 아래의 디렉티브가 실행이 된다.
+            }).directive("tap", function () {
+                return function (scope, elem, attrs) {
+                    // tap의 디렉티브에서 온 엘레멘트 값 중 아래는 jqLite의 on 메서드를 사용해서
+                    // touchstart를 가져와 함수를 실행시키도록 하였다.
+                    // 이 때 $apply는 골호안의 값을 실행시키는 역할을 한다.
+                    // 따라서 tap의 attrabute는 message='Tapped!'이므로 이 명령이 수행되게 된다.
+                    elem.on("touchstart", function () {
+                        scope.$apply(attrs["tap"]);
+                    });
+                }
+                // 아래는 Tap 후 untap을할 때의 custom 이벤트도 구현해 보았다.
+            // }).directive("untap", function () {
+            //     return function (scope, elem, attrs) {
+            //         elem.on("touchend", function () {
+            //             scope.$apply(attrs["untap"]);
+            //         });
+            //     }
+            });
+    </script>
+</head>
+<body>
+    <div id="todoPanel" class="panel" ng-controller="defaultCtrl">
+        <div class="well" tap="message = 'Tapped!'">
+        <!-- <div class="well" tap="message = 'Tapped!'" untap="message = 'Tap Me!'"> -->
+            {{message}}
+        </div>
+    </div>
+</body>
+</html>

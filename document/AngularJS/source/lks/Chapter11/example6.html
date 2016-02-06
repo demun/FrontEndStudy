@@ -1,0 +1,75 @@
+<!-- 클래스 및 CSS 관리 -->
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Directives</title>
+    <script src="angular.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script>
+        angular.module("exampleApp", [])
+            .controller("defaultCtrl", function ($scope) {
+                $scope.todos = [
+                    { action: "Get groceries", complete: false },
+                    { action: "Call plumber", complete: false },
+                    { action: "Buy running shoes", complete: true },
+                    { action: "Buy flowers", complete: false },
+                    { action: "Call family", complete: false }];
+
+                $scope.buttonNames = ["Red", "Green", "Blue"];
+                //radio 버튼의 이름과 속성을 정해줬다.
+
+                $scope.settings = {
+                    Rows: "Red", 
+                    Columns: "Green"
+                };
+                // 우선 Rows와 Columns 속성을 사용해서 배경색을 선택가능하도록 준비하였다.
+            });
+    </script>
+    <style>
+        tr.Red { background-color: lightcoral; }
+        tr.Green { background-color: lightgreen;}
+        tr.Blue { background-color: lightblue; }
+        /* 각 속성 값이 주어졌을 때 tr의 스타일에 대한 class 이다. */
+    </style>
+</head>
+<body>
+    <div id="todoPanel" class="panel" ng-controller="defaultCtrl">
+        <h3 class="panel-header">To Do List</h3>
+
+        <div class="row well">
+            <!-- 아래는 key 값와 val 값을 반복해서 보여준다.
+            실제 key 값과 val 값은 두 개이믐로 두 번 반복이 되고 그 아래에 button 배치를
+            buttonNames의 숫자에 맞게 배치한다. 따라서 총 6번의 반복이 이루어지고
+            그 중 두 번은 key 값을 출력하고 sub 항목이 반복 된다. -->
+            <div class="col-xs-6" ng-repeat="(key, val) in settings">
+                <h4>{{key}}</h4>
+                <div class="radio" ng-repeat="button in buttonNames">
+                    <label>
+                        <input type="radio" ng-model="settings[key]"
+                               value="{{button}}">{{button}}
+                    </label>
+                </div>
+            </div>
+            <!-- 참고로 settings[key]의 값은 ng-model이기 때문에 이 값이 바뀔 때마다 디렉티브 값은 모두 갱신이 되게 된다. -->
+        </div>
+        <table class="table">
+            <thead>
+                <tr><th>#</th><th>Action</th><th>Done</th></tr>
+            </thead>
+            <!-- 아래 반복되는 구문의 CSS class는 settings.Rows에 해당하는 값을 가지는 class 명을 표시하게 된다.
+            따라서 Rows의 값(class명)이 처음에 Red 이므로 붉은 색상이 표시되고 시작한다. -->
+            <tr ng-repeat="item in todos" ng-class="settings.Rows">
+                <td>{{$index + 1}}</td>
+                <td>{{item.action}}</td>
+                <td ng-style="{'background-color': settings.Columns}">
+                    {{item.complete}}
+                </td>
+            </tr>
+            <!-- 그리고 ng-style로 되어 있는 곳은 그 위치의 style을 바로 변경해 주는 기능을 하는데,
+            background-color를 settings.colums 의 값을 가져와 표시하게 된다.
+            따라서 초기 값은 Green으로 녹색으로 표시가 된다. -->
+        </table>
+    </div>
+</body>
+</html>

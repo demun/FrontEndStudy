@@ -1,0 +1,56 @@
+<!-- 엘리먼트 디렉티브 활용 -->
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Directives</title>
+    <script src="angular.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script>
+        angular.module("exampleApp", [])
+            .controller("defaultCtrl", function ($scope) {
+                $scope.todos = [
+                    { action: "Get groceries", complete: false },
+                    { action: "Call plumber", complete: false },
+                    { action: "Buy running shoes", complete: true },
+                    { action: "Buy flowers", complete: false },
+                    { action: "Call family", complete: false }];
+            });
+    </script>
+    <style>
+        td > *:first-child {font-weight: bold}
+        /* TD 안에 있는 엘리멘트 중 첫 번째 엘리멘트에 대해서만 bold를 적용함*/
+    </style>
+</head>
+<body>
+    <div id="todoPanel" class="panel" ng-controller="defaultCtrl">
+        <h3 class="panel-header">To Do List</h3>
+
+        <div class="checkbox well">
+            <label>
+                <input type="checkbox" ng-model="todos[2].complete" />
+                Item 3 is complete
+            </label>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr><th>#</th><th>Action</th><th>Done</th></tr>
+            </thead>
+            <tr ng-repeat="item in todos">
+                <td>{{$index + 1}}</td>
+                <td>{{item.action}}</td>
+                <td>
+                    <span ng-hide="item.complete">(Incomplete)</span>
+                    <span ng-show="item.complete">(Done)</span>
+                    <!-- ng-hide의 값이 true이면 display:none을 하면서 값을 감추고
+                    ng-show의 값이 false이면 dispaly:none을 하면서 값을 감추게 된다.
+                    이 때 참조할 사항은 ng-if와는 달리 엘리멘트는 살아있는 상태에서 display none을 하게 되어
+                    incomplete는 bold, done는 일반폰트로 보여지게 되는 것이다.
+                    ng-if는 다음 예제에서 보여준다. -->
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
