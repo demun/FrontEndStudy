@@ -54,7 +54,7 @@ form.html
 </html>
 ```
 
-[http://codepen.io/anon/pen/JGmwqN?editors=100](예제)
+[예제](http://codepen.io/anon/pen/JGmwqN?editors=100)
 
 ## 양방향 데이터 바인딩의 두가지 방법
 
@@ -70,7 +70,7 @@ form.html
 :
 ```
 
-[http://codepen.io/skypentum/pen/ZQXgmE?editors=100](예제)
+[예제](http://codepen.io/skypentum/pen/ZQXgmE?editors=100)
 
 2. 암시적인 model 속성을 생성 
 
@@ -99,7 +99,7 @@ $scope.addNewItem = function (newItem) {
 <script>
 ```
 
-[http://codepen.io/anon/pen/xZymeg?editors=100](예제)
+[예제](http://codepen.io/anon/pen/xZymeg?editors=100)
 
 - 주의 : 암시적 model 속성을 사용 시 사용하려는 객체난 속성이 존재하지 않을 경우 스크립트 에러가 발생하므로, 이에 대한 대비 코드를 작성하는 것이 필요
 
@@ -166,7 +166,7 @@ $scope.addNewItem = function (newItem) {
 </html>
 ```
 
-[http://codepen.io/anon/pen/LGgqYz?editors=100](예제)
+[예제](http://codepen.io/anon/pen/LGgqYz?editors=100)
 
 2. validation Form Element (css 사용)
 
@@ -180,11 +180,11 @@ $error - 유효성 검증 오류에 대한 상세 정보 제공
 ```
 - 사용자에게 유효성 검증을 실시간으로 피드백하여 전달
 
-[http://codepen.io/skypentum/pen/jWaLBv?editors=100](예제)
+[예제](http://codepen.io/skypentum/pen/jWaLBv?editors=100)
 
 - 특수 변수를 활용하여 유효성 검증 피드백을 전달
 
-[http://codepen.io/anon/pen/QyZYNL?editors=100](예제)
+[예제](http://codepen.io/anon/pen/QyZYNL?editors=100)
 
 ### Form별 디랙티브 어트리뷰트 활용
 
@@ -198,7 +198,7 @@ ng-pattern - 정규식 설정하여 유효성 검증
 ng-required - 데이터 바인딩을 통해 required 어트리뷰트 값을 설정함
 ```
 
-[http://codepen.io/skypentum/pen/LGOjjN?editors=100](예제)
+[예제](http://codepen.io/skypentum/pen/LGOjjN?editors=100)
 
 2.Checkbox 엘리먼트
 ```
@@ -208,13 +208,13 @@ ng-true-value - 엘리먼트 체크할 때 모델 바인딩 표현식에 설정�
 ng-false-value - 엘리먼트 체크해제 할 때 모델 바인딩 표현식에 설정할 값을 지정
 ```
 
-[http://codepen.io/skypentum/pen/bEYrrM?editors=100](예제)
+[예제](http://codepen.io/skypentum/pen/bEYrrM?editors=100)
 
 3.Text Area 엘리먼트
 
 - input 엘리먼트와 동일한 유효성 검증 지원
 
-[http://codepen.io/skypentum/pen/rxYzzE?editors=100](예제)
+[예제](http://codepen.io/skypentum/pen/rxYzzE?editors=100)
 
 4.Select 엘리먼트
 ```
@@ -222,8 +222,8 @@ ng-required - 데이터 바인딩을 통해 required 어트리뷰트 값을 설�
 ng-options - 객체에 있는 데이터 인자값을 설정함
 ```
 
-[http://codepen.io/anon/pen/gPBqgq?editors=100](예제)
+[예제](http://codepen.io/anon/pen/gPBqgq?editors=100)
 
 - 빈 value 어트리뷰트가 들어 있는 option를 직접 추가할 수 있다.
 
-[http://codepen.io/anon/pen/GoYzrP?editors=100](예제)
+[예제](http://codepen.io/anon/pen/GoYzrP?editors=100)
