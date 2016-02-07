@@ -110,7 +110,7 @@ $scope.addNewItem = function (newItem) {
 
 1. Form 엘리먼트에서의 유효성 검증 
 
-- <form name="myForm" novalidate ng-submit="addUser(newUser)">
+- form name="myForm" novalidate ng-submit="addUser(newUser)"
 - novalidate라는 어트리뷰트를 사용하여 브라우저 스스로 폼 유효성 검증을 수행하지 않게 하고 ng-submit 디랙티브를 이용하여 커스텀 응답을 지정함
 ```
 <html ng-app="exampleApp">
