@@ -34,4 +34,4 @@
 
 ### angularJS 요약
 
-* [angularJS 요약](docs/angularJS 요약.md)
+* [angularJS 요약](docs/angularJS 요약.md)

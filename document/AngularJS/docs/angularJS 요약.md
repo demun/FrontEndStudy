@@ -88,7 +88,7 @@
     
 ## AngularJS 초기 로딩 과정
 
-![AngularJS 초기 로딩](../images/angular_loading.PNG)
+![AngularJS 초기 로딩](../images/angular_loading.png)
     
 1. 브라우저에 의해 HTML DOM Parsing이 이루어 진다.(HTML, Script 등…)
 2. 파싱이 끝난 뒤 angular.js 에 의해 document.ready() 에 등록된 angular.init()호출하여 ng-app directive 를 찾는다. [init](https://github.com/angular/angular.js/blob/master/src/angular.suffix)
