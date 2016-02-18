@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Angular Scope</title>
+    <script type="application/javascript" src="angular.js"></script>
+    <script>
+        var app = angular.module('exampleApp', []);
+        
+        app.controller('ctrl1', function($scope) {
+            $scope.text = 'scope 1 text';
+        });
+        
+        app.controller('ctrl2', function($scope) {});
+    </script>
+</head>
+<body>
+	<div ng-controller="ctrl1">
+        <span>{{text}}</span>
+        <div ng-controller="ctrl2">
+            <span>{{text}}</span>
+        </div>
+    </div>
+</body>
+</html>

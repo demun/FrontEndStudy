@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Style</title>
+    <style>
+        .display-area {
+            min-height: 100px;
+            background-color: beige;
+            margin-top: 20px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        $(function() {
+            $("#btn").on("click", function() {
+                var text = $("#textBox").val();
+                
+                $("#displayBox").text(text);
+            });
+        });
+    </script>
+</head>
+<body>
+	Text: <input id="textBox" type="text">
+    <button id="btn">확인</button>
+    
+    <div class="display-area">
+        <span id="displayBox"></span>
+    </div>
+</body>
+</html>

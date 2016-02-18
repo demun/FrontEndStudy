@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+
+<head>
+    <title>Angular Directive</title>
+    <script type="application/javascript" src="angular.js"></script>
+    <script>
+        var app = angular.module('exampleApp', []);
+        app.directive('helloWorld', function () {
+            return {
+                restrict: 'E',
+                template: '<div>hello world!!</div>',
+                replace: true
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <hello-world></hello-world>
+</body>
+
+</html>

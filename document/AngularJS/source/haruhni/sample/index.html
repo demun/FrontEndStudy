@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Angular Sample</title>
+    
+    <script type="application/javascript" src="lib/angular.js"></script>
+    <script type="application/javascript" src="lib/angular-route.js"></script>
+    
+    <script type="text/javascript">
+        angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
+    </script>
+    
+    <script type="application/javascript" src="script/titleDiretive.js"></script>
+    
+    <script type="application/javascript" src="script/movie.js"></script>
+    <script type="application/javascript" src="script/book.js"></script>
+    <script type="application/javascript" src="script/app.js"></script>
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+<body ng-app="example">
+    <div ng-controller="mainCtrl">
+        <div>
+            <a href='movie'>movie</a>
+            <a href='book'>book</a>
+        </div>
+        <div class="ng-view-container">
+            <div ng-view></div>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Angular Digest Test</title>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="application/javascript" src="angular.js"></script>
+    <script>
+        var app = angular.module('exampleApp', []);
+        
+        app.controller('ctrl', function($scope) {
+            $scope.text = '';
+            
+            $scope.angularClick = function() {
+                $scope.text = 'angular Click';
+            };
+            
+            $('#jQueryBtn').on('click', function () {
+                $scope.text = 'jQuery Click';
+                
+//                $scope.$apply();
+            });
+        });
+    </script>
+</head>
+<body>
+	<div ng-controller="ctrl">
+        <button ng-click="angularClick();">Angular Click</button>
+        <button id="jQueryBtn">jQuery Click</button>
+        
+        text : <span>{{text}}</span>
+    </div>
+</body>
+</html>
