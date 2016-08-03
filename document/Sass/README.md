@@ -82,7 +82,7 @@
 			Variable Arguments
 		Passing Content Blocks to a Mixin
 			Variable Scope and Content Blocks
-	10. [Function Directives](docs/03_10_function.md)
+	10. [Function Directives](docs/03_10_funtion.md)
 	11. Output Style
 		- :nested
 		- :expanded
