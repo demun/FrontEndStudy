@@ -15,26 +15,34 @@
 
 ## 목차
 
-* [Github](document/Github/README.md) - 진행완료
-* [Sublimetext](document/Sublimetext/README.md) - 진행완료
-* [Grunt](document/Grunt/README.md) - 진행완료
-* [CSS3](document/CSS3/README.md) - 진행완료
-* [Sass](document/Sass/README.md) - 진행완료
+* [Github](document/Github/README.md)
+* [Sublimetext](document/Sublimetext/README.md)
+* [Grunt](document/Grunt/README.md)
+* [CSS3](document/CSS3/README.md)
+* [Sass](document/Sass/README.md)
 
 <br>
 
-* [Javascript](document/Javascript/README.md) - 진행중
-* [Jquery](document/Jquery/README.md) - 진행중
-* [Angularjs](document/AngularJS/README.md) - 진행중
-* [Bootstrap](document/Bootstrap/README.md) - 진행중
+* [Javascript](document/Javascript/README.md)
+* [Jquery](document/Jquery/README.md)
+* [Angularjs](document/AngularJS/README.md)
+* [Bootstrap](document/Bootstrap/README.md)
 
 
-### 배우고자하는 기술들
+### 대기중
 
 
-* [PostCSS](document/PostCSS/README.md) - 진행대기
-* [CoffeeScript](document/CoffeeScript/README.md) - 진행대기
-* [Atom](document/Atom/README.md) - 진행대기
-* [CSS](document/CSS/README.md) - 진행대기
+* [ES6](document/ES6/README.md)
+
+
+<br>
+
+
+
+* [PostCSS](document/PostCSS/README.md)
+* [CoffeeScript](document/CoffeeScript/README.md)
+* [Atom](document/Atom/README.md)
+* [Less](document/Less/README.md)
+* [Gulp](document/Gulp/README.md)
 
 <br>
