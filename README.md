@@ -32,7 +32,7 @@
 ### 대기중
 
 
-* :flag_black: [ES6](document/ES6/README.md)
+* :raised_hand: [ES6](document/ES6/README.md)
 
 
 <br>
