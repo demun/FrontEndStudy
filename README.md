@@ -1,4 +1,4 @@
-# 프론트엔드스터디(FrontEndStudy)
+# :mortar_board: 프론트엔드스터디(FrontEndStudy)
 
 프론트엔드스터디는 그룹형 스터디로써 프론트엔드 전반에 사용되는 기술을 공부하는 스터디 입니다.
 모든 문서는 스터디멤버가 작성하고, 익히고, 사용하는걸 목표로 만들어집니다.
@@ -29,10 +29,10 @@
 * [Bootstrap](document/Bootstrap/README.md)
 
 
-### :thumbsup: 대기중
+### 대기중
 
 
-* [ES6](document/ES6/README.md)
+* :flag_black: [ES6](document/ES6/README.md)
 
 
 <br>
