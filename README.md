@@ -29,7 +29,7 @@
 * [Bootstrap](document/Bootstrap/README.md)
 
 
-### 대기중
+### :flag_white: 대기중
 
 
 * [ES6](document/ES6/README.md)
