@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Directives</title>
+    <script src="angular.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script>
+        angular.module("exampleApp", [])
+            .controller("defaultCtrl", function ($scope) {
+                $scope.todos = [
+                    { action: "Get groceries", complete: false },
+                    { action: "Call plumber", complete: false },
+                    { action: "Buy running shoes", complete: true },
+                    { action: "Buy flowers", complete: false },
+                    { action: "Call family", complete: false }];
+            });
+    </script>
+    <style>
+        td > *:first-child {font-weight: bold}
+    </style>
+</head>
+<body>
+    <div id="todoPanel" class="panel" ng-controller="defaultCtrl">
+        <h3 class="panel-header">To Do List</h3>
+
+        <div class="checkbox well">
+            <label>
+                <input type="checkbox" ng-model="todos[2].complete" />
+                Item 3 is complete
+            </label>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr><th>#</th><th>Action</th><th>Done</th></tr>
+            </thead>
+            <!-- <tr ng-repeat="item in todos" ng-hide="item.complete">
+                <td>{{$index + 1}}</td>
+                <td>{{item.action}}</td>
+                <td>{{item.complete}}</td>
+            </tr> -->
+            <!-- ng-repeate와 ng-show, ng-hide 디렉티브는 모두 테이블을 구성하는 엘리멘트에 적용은 가능하나
+            적용시 문제가 될 가능성이 있다.
+            위 에제의 경우 테이블에 striped 속성을 주고 구현을 했는데
+            예제 상으로 볼 때는 문제가 쉽게 보이지 않지만 실제 동작하는 것을 보면
+            striped된 열이 교차되서 나오는 것이 아니라 동일 색상이 중복되는 경우가 발생할 수 있게 된다.
+            예제 화면을 보면서 이해하면 쉬움 -->
+            <!-- 참고로 ng-repeat와 ng-if를 이용하면 해결할 수도 있어보이는데
+            AngularJS에서는 ng-repeat와 ng-if를 동시에 사용할 수가 없다.
+            두 디렉티브는 모두 자식 디렉티브를 수정하려고 하는데 이로인해 충돌이 발생하기 때문이다.
+            라고 설명은 되어 있으나 실제로는 에러 없이 동작하는 것을 확인하였다. -->
+            <tr ng-repeat="item in todos" ng-if="!item.complete">
+                <td>{{$index + 1}}</td>
+                <td>{{item.action}}</td>
+                <td>{{item.complete}}</td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>

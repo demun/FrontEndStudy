@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>AngularJS Demo</title>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script src="angular.js"></script>
+    <script>
+
+        var myApp = angular.module("exampleApp", []);
+
+        myApp.controller("dayCtrl", function ($scope) {
+            $scope.day = new Date().getDay() + 1;
+        });
+
+        myApp.controller("tomorrowCtrl", function ($scope) {
+            $scope.day = (new Date().getDay() + 1) % 7 + 1;
+        });
+
+        myApp.directive("highlight", function ($filter) {
+            // $filter라는 것을 넣게되면
+            // 이를 통해 필터 서비스 객체를 가져올 수 있고
+            // 그것을 통해 모든 필터에 접근이 가능하도록 해줌
+            var dayFilter = $filter("dayName");
+            // dayName이라는 필터에 접근할 수 있도록 함
+            // 접근하는 값은 dayFilter가 됨
+                    
+            return function (scope, element, attrs) {
+                if (dayFilter(scope.day) == attrs["highlight"]) {
+                    element.css("color", "red");
+                } 
+            }
+        });
+         
+        myApp.filter("dayName", function () {
+            var dayNames = ["", "Sunday", "Monday", "Tuesday", "Wednesday",
+                            "Thursday", "Friday", "Saturday"];
+            return function (input) {
+                return angular.isNumber(input) ? dayNames[input] : input;
+            };
+        });
+
+    </script>
+</head>
+<body> 
+    <div class="panel">
+        <div class="page-header">
+            <h3>AngularJS App</h3>
+        </div>
+        <h4 ng-controller="dayCtrl" highlight="Saturday">
+            Today is {{day || "(unknown)" | dayName}}
+        </h4>
+        <h4 ng-controller="tomorrowCtrl">
+            Tomorrow is {{day || "(unknown)" | dayName}}
+        </h4>
+    </div>
+</body>
+</html>

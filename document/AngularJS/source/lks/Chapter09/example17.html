@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>AngularJS Demo</title>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script src="angular.js"></script>
+    <script src="controllers.js"></script>
+    <script src="filters.js"></script>
+
+    <script>
+
+        var myApp = angular.module("exampleApp",
+            ["exampleApp.Controllers", "exampleApp.Filters",
+                "exampleApp.Services", "exampleApp.Directives"]);
+
+        myApp.constant("startTime", new Date().toLocaleTimeString());
+        // constant 메소드를 사용함
+        // 이 메소드는 value 메소드와 유사하지만,
+        // config 메소드에 의해 의존성이 선언될 수 있는 서비스를 생성한다.
+        myApp.config(function (startTime) {
+            console.log("Main module config: " + startTime);
+        });
+        // config 메소드는 이 메소드를 호출한 모듈이 로드된 후 호출할 함수를 인자로 받는다.
+        // 모듈을 설정하는데 사용하며,,
+        // 주로 연결 상세정보나 사용자 인증 정보처럼 서버에서 가져온 값을 주입하는데 사용한다.
+        myApp.run(function (startTime) {
+            console.log("Main module run: " + startTime);
+        });
+        // run 메소드도 함수를 인자로 받는데,
+        // 이 함수는 모든 모듈이 로드되고, 각 모듈의 의존서이 해결된 후 호출 된다.
+        
+        // 모듈의 생명주기를 보여주기 위한 예제이다.
+        // AngularJS앱은 호출되는 시점들에 대해 좀 더 상세히 정의해줄 수 있다.
+        // 
+        // 콜백함수(config, run)가 호출되는 순서는 아래와 같다
+        // 1. exampleApp.Services 모듈의 config 콜백
+        // 2. exampleApp 모듈의 config 콜백
+        // 3. exampleApp.Services 모듈의 run 콜백
+        // 4. exampleApp 모듈의 run 콜백
+        // AngularJS에서는 특정 모듈에 대한 의존성이 존재할 경우 해당 콜백이 먼저 호출되게 할 수 있다.
+
+        angular.module("exampleApp.Directives", [])
+            .directive("highlight", function ($filter) {
+
+                var dayFilter = $filter("dayName");
+
+                return function (scope, element, attrs) {
+                    if (dayFilter(scope.day) == attrs["highlight"]) {
+                        element.css("color", "red");
+                    }
+                }
+            });
+             
+        var now = new Date();
+        myApp.value("nowValue", now);
+
+        angular.module("exampleApp.Services", [])
+            .service("days", function (nowValue) {
+                this.today = nowValue.getDay();
+                this.tomorrow = this.today + 1;
+            })
+            .config(function() {
+                console.log("Services module config: (no time)");
+            })
+            .run(function (startTime) {
+                console.log("Services module run: " + startTime);
+            });
+
+    </script>
+
+
+</head>
+<body> 
+    <div class="panel">
+        <div class="page-header">
+            <h3>AngularJS App</h3>
+        </div>
+        <h4 ng-controller="dayCtrl" highlight="Monday">
+            Today is {{day || "(unknown)" | dayName}}
+        </h4>
+        <h4 ng-controller="tomorrowCtrl">
+            Tomorrow is {{day || "(unknown)" | dayName}}
+        </h4>
+    </div>
+</body>
+</html>

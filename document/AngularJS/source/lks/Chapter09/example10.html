@@ -10,11 +10,13 @@
         var myApp = angular.module("exampleApp", []);
 
         myApp.controller("dayCtrl", function ($scope) {
-            $scope.day = new Date().getDay();
+            $scope.day = new Date().getDay() + 1;
+            // 본래 코드에서 수정함
+            // 이 숫자가 0일 경우 아래 비교 구문에 문제가 생겨버림
         });
 
         myApp.controller("tomorrowCtrl", function ($scope) {
-            $scope.day = new Date().getDay() + 1;
+            $scope.day = (new Date().getDay() + 1) % 7 + 1;
         });
 
         myApp.directive("highlight", function () {
@@ -26,10 +28,11 @@
         });
          
         myApp.filter("dayName", function () {
-            var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday",
+            var dayNames = ["", "Sunday", "Monday", "Tuesday", "Wednesday",
                             "Thursday", "Friday", "Saturday"];
             return function (input) {
                 return angular.isNumber(input) ? dayNames[input] : input;
+                // dayName 입력 값(input)을 통해 원하는 결과를 만들어냄
             };
         });
 
@@ -42,6 +45,8 @@
         </div>
         <h4 ng-controller="dayCtrl" highlight="Monday">
             Today is {{day || "(unknown)" | dayName}}
+            <!-- 필터 적용
+            | 앞의 값을 dayName이라는 필터에 넣어 결과를 만들어 내게 함 -->
         </h4>
         <h4 ng-controller="tomorrowCtrl">
             Tomorrow is {{day || "(unknown)" | dayName}}

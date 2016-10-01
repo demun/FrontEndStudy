@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>AngularJS Demo</title>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script src="angular.js"></script>
+    <script src="controllers.js"></script>
+    <script src="filters.js"></script>
+    <script>
+
+        var myApp = angular.module("exampleApp",
+            ["exampleApp.Controllers", "exampleApp.Filters",
+             "exampleApp.Services", "exampleApp.Directives"]);
+        // angular.module 매소드에서의 두 번째 인자는 모듈 의존성 배열이다.
+        // 그래서 이를 활용하여 복잡한 코드를 조직화 하는 것이 가능하다.
+        // controllers와 filters는 조직화해 다른 파일로 생성하고
+        // directive와 service는 아래 정리 하였다.
+
+        angular.module("exampleApp.Directives", [])
+            .directive("highlight", function ($filter) {
+
+                var dayFilter = $filter("dayName");
+
+                return function (scope, element, attrs) {
+                    if (dayFilter(scope.day) == attrs["highlight"]) {
+                        element.css("color", "red");
+                    }
+                }
+            });
+
+         
+        var now = new Date();
+        myApp.value("nowValue", now);
+
+        angular.module("exampleApp.Services", [])
+            .service("days", function (nowValue) {
+                this.today = nowValue.getDay();
+                this.tomorrow = this.today + 1;
+            });
+
+    </script>
+</head>
+<body> 
+    <div class="panel">
+        <div class="page-header">
+            <h3>AngularJS App</h3>
+        </div>
+        <h4 ng-controller="dayCtrl" highlight="Monday">
+            Today is {{day || "(unknown)" | dayName}}
+        </h4>
+        <h4 ng-controller="tomorrowCtrl">
+            Tomorrow is {{day || "(unknown)" | dayName}}
+        </h4>
+    </div>
+</body>
+</html>

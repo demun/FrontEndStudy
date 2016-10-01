@@ -1,0 +1,35 @@
+<!-- 특수 어트리뷰트 관리 -->
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Directives</title>
+    <script src="angular.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script>
+        angular.module("exampleApp", [])
+            .controller("defaultCtrl", function ($scope) {
+                $scope.dataValue = false;
+            });
+    </script>
+</head>
+<body>
+    <div id="todoPanel" class="panel" ng-controller="defaultCtrl">
+        <h3 class="panel-header">To Do List</h3>
+
+        <div class="checkbox well">
+            <label>
+                <input type="checkbox" ng-model="dataValue">
+                Set the Data Value
+            </label>
+            <!-- ng-model인 dataValue는 체크가 되면 1, 체크되지 않으면 0을 나타낸다. -->
+        </div>
+            
+        <button class="btn btn-success" ng-disabled="dataValue">My Button</button>
+        <!-- dataValue에 따라 버튼이 enable이 되고 되지 않고가 결정되게 된다.
+        이렇게 하게되는 이유는 버튼의 경우 disabled를 하고 나면 disabled="disabled"를 한다고 다시 활성화되지는 않기 때문이다.
+        따라서 이러한 것과는 다른 형태의 접근 방식이 필요하기 때문에
+        불리언 어트리뷰트 디렉티브를 사용하게 된다. -->
+    </div>
+</body>
+</html>

@@ -59,7 +59,7 @@
 
 ## 2차 진행
 
-- 분량 나누기(12월 5일, 12월 19일, 1월 9일 발표 분량)
+- 분량 나누기(12월 5일, 12월 19일, 1월 9일, 1월 30일 발표 분량)
 
 - **[함수지향1](https://github.com/demun/FrontEndStudy/tree/master/document/Javascript/docs/Team/04_%ED%95%A8%EC%88%98%EC%A7%80%ED%96%A51(%EC%A0%84%EC%B2%B4%EC%9A%94%EC%95%BD%26%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84%26%EC%BD%9C%EB%B0%B1%ED%95%A8%EC%88%98)) (11/23~29_ 전체에 대한 요점파악식)**
 
@@ -69,10 +69,10 @@
 	- [클로저](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-3.%20%ED%81%B4%EB%A1%9C%EC%A0%80.md) __(12/14~16/01/03)__
 	- [arguments&함수의 호출](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/3-4.Arguments%26%ED%95%A8%EC%88%98%ED%98%B8%EC%B6%9C.md) __(12/14~16/01/03)__
 
-- **객체지향**
+- **[객체지향](https://github.com/demun/FrontEndStudy/tree/master/document/Javascript/docs/Team/06_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A51)**
 
-	- 객체지향 프로그래밍
-	- 생성자와 new
+	- [객체지향 프로그래밍](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/Team/06_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A51/%EC%9E%84%EC%84%B1%EC%9D%80_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md) __(01/10~01/29)__
+	- 생성자와 new __(01/10~01/29)__
 	- 전역객체
 	- this
 	- 상속
@@ -114,7 +114,7 @@
 
 ----
 
-##바로가기
+## 정리문서 바로가기
 
 * [1.동기vs비동기_통신.md](https://github.com/demun/FrontEndStudy/blob/master/document/Javascript/docs/1.%EB%8F%99%EA%B8%B0vs%EB%B9%84%EB%8F%99%EA%B8%B0_%ED%86%B5%EC%8B%A0.md)
 * 2. 실무에서 자주쓰이는 함수.

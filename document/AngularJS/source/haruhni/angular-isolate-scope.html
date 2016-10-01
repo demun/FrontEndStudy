@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Angular iSolate Scope</title>
+    <script type="application/javascript" src="angular.js"></script>
+    <script>
+        var app = angular.module('exampleApp', []);
+        
+        app.controller('ctrl', function($scope) {
+            $scope.text = 'scope 1 text';
+            
+            var childScope = $scope.$new();
+            console.log('child scope text :: ' + childScope.text);
+            console.log('$scope === childe.parent ', $scope === childScope.$parent);
+            
+            var isolateChildScope = $scope.$new(true);
+            console.log('isolate child scope text :: ' + isolateChildScope.text);
+            console.log('$scope === isolate childe.parent ', $scope == isolateChildScope.$parent);
+        });
+    </script>
+</head>
+<body>
+	<div ng-controller="ctrl">
+        <span>{{text}}</span>
+    </div>
+</body>
+</html>

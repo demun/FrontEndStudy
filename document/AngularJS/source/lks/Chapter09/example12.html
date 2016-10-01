@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>AngularJS Demo</title>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script src="angular.js"></script>
+    <script>
+
+        var myApp = angular.module("exampleApp", []);
+
+        myApp.controller("dayCtrl", function ($scope, days) {
+            // 3. 이렇게 서비스에 접근하기위해선 function에 서비스 명을 넣어 
+            // days 서비스에 대한 의존성을 선언해 접근할 수 있다.
+            $scope.day = days.today;
+            // 2. days라는 매소드에서 today가 갖는 값을 받아온다.
+        });
+
+        myApp.controller("tomorrowCtrl", function ($scope, days) {
+            $scope.day = days.tomorrow;
+        });
+
+        myApp.directive("highlight", function ($filter) {
+
+            var dayFilter = $filter("dayName");
+            
+            return function (scope, element, attrs) {
+                if (dayFilter(scope.day) == attrs["highlight"]) {
+                    element.css("color", "red");
+                } 
+            }
+        });
+         
+        myApp.filter("dayName", function () {
+            var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday",
+                            "Thursday", "Friday", "Saturday"];
+            return function (input) {
+                return angular.isNumber(input) ? dayNames[input] : input;
+            };
+        });
+
+        // 1. 서비스는 애플리케이션 전역에서 사용할 만한 기능을 제공하는 싱글턴 객체다.
+        // AngularJS에는 여러 내장 서비스가 있으며 실제로 커스텀 해서 사용이 가능하다
+        // 아래는 service 매소드 이다.
+        myApp.service("days", function () {
+            // day를 이용해 아래의 것을 수행할 수 있다.
+            this.today = new Date().getDay();
+            this.tomorrow = this.today + 1;
+        });
+
+    </script>
+</head>
+<body> 
+    <div class="panel">
+        <div class="page-header">
+            <h3>AngularJS App</h3>
+        </div>
+        <h4 ng-controller="dayCtrl" highlight="Saturday">
+            Today is {{day || "(unknown)" | dayName}}
+        </h4>
+        <h4 ng-controller="tomorrowCtrl">
+            Tomorrow is {{day || "(unknown)" | dayName}}
+        </h4>
+    </div>
+</body>
+</html>

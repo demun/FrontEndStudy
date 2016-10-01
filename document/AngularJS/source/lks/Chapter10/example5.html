@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Directives</title>
+    <script src="angular.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script>
+        angular.module("exampleApp", [])
+            .controller("defaultCtrl", function ($scope) {
+                $scope.todos = [
+                    { action: "Get groceries", complete: false },
+                    { action: "Call plumber", complete: false },
+                    { action: "Buy running shoes", complete: true },
+                    { action: "Buy flowers", complete: false },
+                    { action: "Call family", complete: false }];
+            });
+    </script>
+</head>
+<body>
+    <div id="todoPanel" class="panel" ng-controller="defaultCtrl">
+        <h3 class="panel-header">To Do List</h3>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Action</th>
+                    <th>Done</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in todos">
+                    <td ng-repeat="prop in item">{{prop}}</td>
+                </tr>
+            </tbody>
+            <!-- 객체 속성을 반복하도록 수정하였다.
+            이러한 방법을 사용하게 되면 좀 더 단순하게 설계가 가능하다.
+            단, 엘리멘트 구조가 바뀌게 된다면 영향을 받을 수 있게 된다 -->
+        </table>
+
+    </div>
+</body>
+
+</html>
